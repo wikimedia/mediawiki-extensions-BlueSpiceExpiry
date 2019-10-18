@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * Script to expire all pages (or all pages in defined namespaces)
+ *
+ * Part of BlueSpice MediaWiki
+ *
+ * @author     Robert Vogel <vogel@hallowelt.com>, Benedikt Hofmann <hofmann@hallowelt.com>
+ * @package    BlueSpice_Reminder
+ * @subpackage Expiry
+ * @copyright  Copyright (C) 2017 Hallo Welt! GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
+ * @filesource
+ */
+require_once( dirname(dirname(dirname(dirname(__FILE__)))) . '/maintenance/Maintenance.php' );
+
+/**
+ * Maintenance class to handle the expiration
+ * @package BlueSpice_Reminder
+ * @subpackage Expiry
+ */
+class ExpireAll extends Maintenance {
+
+	public function __construct() {
+		parent::__construct();
+		$this->mDescription = "Checks the needed reminder notifications for the day and send them.";
+		$this->addOption( 'namespaces', 'Use only this namespaces' );
+	}
+
+	public function execute() {
+
+		$aNamespaces = explode( ',', $this->getOption( 'namespaces', '' ) );
+
+		$aConds = array();
+
+		$sYesterday = date( 'Y-m-d', time() - 3600*24 );
+
+		if ( !empty( $aNamespaces ) ) {
+			$aConds = array( 'page_namespace' => $aNamespaces );
+		}
+
+		echo 'Search for needed pages ... ';
+		$dbw = wfGetDB( DB_MASTER );
+		$res = $dbw->select(
+			'page',
+			'page_id',
+			$aConds
+		);
+		echo 'Done' . PHP_EOL;
+
+		$aPageIDs = array();
+
+		foreach ( $res as $row ) {
+			$aPageIDs[] = $row->page_id;
+		}
+
+		$res = $dbw->select(
+			'bs_expiry',
+			array( 'exp_page_id', 'exp_id', 'exp_date' )
+		);
+
+		$aDoUpdate = array();
+		$aDoNothing = array();
+
+		foreach ( $res as $row ) {
+			if ( $row->exp_date > $sYesterday ) {
+				$aDoUpdate[$row->exp_page_id][] = $row->exp_id;
+			}
+			else {
+				$aDoNothing[$row->exp_page_id][] = $row->exp_id;
+			}
+		}
+
+		echo 'Updating relevant pages ... ';
+		foreach ( $aPageIDs as $iPageID ) {
+			if ( isset( $aDoUpdate[$iPageID] ) ) {
+				$dbw->update(
+					'bs_expiry',
+					array( 'exp_date' => $sYesterday ),
+					array( 'exp_id' => $aDoUpdate[$iPageID] )
+				);
+			}
+			elseif ( isset( $aDoNothing[$iPageID] ) ) {
+				continue;
+			}
+			else {
+				$dbw->insert(
+					'bs_expiry',
+					array(
+						'exp_page_id' => $iPageID,
+						'exp_date' => $sYesterday
+					)
+				);
+			}
+
+		}
+		echo 'Done' . PHP_EOL;
+
+	}
+
+}
+
+$maintClass = "ExpireAll";
+require_once( RUN_MAINTENANCE_IF_MAIN );
