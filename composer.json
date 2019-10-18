@@ -1,0 +1,12 @@
+{
+	"name": "bluespice/expiry",
+	"type": "mediawiki-extension",
+	"description": "Pages can be marked as expired.",
+	"license": "GPL-3.0-only",
+	"extra": {
+		"installer-name": "BlueSpiceExpiry"
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
