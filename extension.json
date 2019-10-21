@@ -92,7 +92,6 @@
 			"styles": "bluespice.expiry.less",
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
-
 		"ext.bluespice.Expiry.Highlight": {
 			"styles": "bluespice.expiry.highlight.less",
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
