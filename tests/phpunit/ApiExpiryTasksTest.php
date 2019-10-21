@@ -14,7 +14,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		return 'bs-expiry-tasks';
 	}
 
-	public function setUp() {
+	public function setUp() : void {
 		parent::setUp();
 		$this->insertPage( 'Dummy' );
 	}
