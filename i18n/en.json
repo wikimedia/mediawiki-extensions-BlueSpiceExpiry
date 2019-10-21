@@ -54,5 +54,9 @@
 	"bs-expiry-pageinfoelement-expired-label": "expired",
 	"bs-expiry-pageinfoelement-expired-tooltip": "This page is expired",
 	"bs-expiry-pageinfoelement-unexpire-label": "unexpire",
-	"bs-expiry-pageinfoelement-unexpire-tooltip": "Unexpire this page"
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "Unexpire this page",
+	"apihelp-bs-expiry-tasks-summary": "Provides tasks such as editing or deleting expiries",
+	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried",
+	"right-expirearticle": "Expire pages",
+	"action-expirearticle": "expire pages"
 }

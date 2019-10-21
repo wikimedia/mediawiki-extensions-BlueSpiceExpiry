@@ -3,10 +3,11 @@
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 
 /**
+ * @group Broken
  * @group medium
  * @group api
  * @group BlueSpice
- * @group BlueSpiceReminder
+ * @group BlueSpiceExpiry
  */
 class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 2;

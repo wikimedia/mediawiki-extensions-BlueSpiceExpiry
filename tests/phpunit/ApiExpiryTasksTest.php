@@ -3,11 +3,12 @@
 use BlueSpice\Tests\BSApiTasksTestBase;
 
 /**
+ * @group Broken
  * @group medium
  * @group API
  * @group Database
  * @group BlueSpice
- * @group BlueSpiceReminder
+ * @group BlueSpiceExpiry
  */
 class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	protected function getModuleName() {
