@@ -54,5 +54,9 @@
 	"bs-expiry-pageinfoelement-expired-label": "Label for expiry information in page header for expired page",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Tooltip for expiry information in page header for expired page",
 	"bs-expiry-pageinfoelement-unexpire-label": "Label for expiry information in page header to unexpire page",
-	"bs-expiry-pageinfoelement-unexpire-tooltip": "Tooltip for expiry information in page header to unexpire page"
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "Tooltip for expiry information in page header to unexpire page",
+	"apihelp-bs-expiry-tasks-summary": "{{doc-apihelp-summary|bs-expiry-tasks}}",
+	"apihelp-bs-expiry-store-summary": "{{doc-apihelp-summary|bs-expiry-store}}",
+	"right-expirearticle": "{{doc-right|expirearticle}}",
+	"action-expirearticle": "{{doc-action|expirearticle}}"
 }
