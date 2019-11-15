@@ -2,15 +2,25 @@
 
 class ApiExpiryStore extends BSApiExtJSStoreBase {
 
-	public function __construct($mainModule, $moduleName, $modulePrefix = '') {
-		parent::__construct($mainModule, $moduleName, $modulePrefix);
+	/**
+	 *
+	 * @param string $mainModule
+	 * @param string $moduleName
+	 * @param string $modulePrefix
+	 */
+	public function __construct( $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
 	}
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeData( $sQuery = '' ) {
-
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isAnon() ) {
-			return array();
+			return [];
 		}
 
 		$iOffset = 0;
@@ -18,11 +28,11 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		$sSortField = 'exp_date';
 		$sSortDirection = 'DESC';
 		$iDate = 0;
-		
-		$aData = array (
-			'results' => array (),
+
+		$aData = [
+			'results' => [],
 			'total' => 0
-		);
+		];
 		if ( BsCore::checkAccessAdmission( 'read' ) === false || $oUser->isAnon() ) {
 			return $aData;
 		}
@@ -38,21 +48,21 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 				break;
 		}
 
-		$aTables = array(
+		$aTables = [
 			'bs_expiry', 'page'
-		);
-		$aFields = array(
+		];
+		$aFields = [
 			"{$sTblPrfx}bs_expiry.exp_id",
 			"{$sTblPrfx}bs_expiry.exp_page_id",
 			"{$sTblPrfx}bs_expiry.exp_date",
 			"{$sTblPrfx}page.page_title",
 			"{$sTblPrfx}bs_expiry.exp_comment",
-		);
-		$aConditions = array();
-		$aOptions = array(
+		];
+		$aConditions = [];
+		$aOptions = [
 			'ORDER BY' => "{$sSortField} {$sSortDirection}",
 			'GROUP BY' => "{$sTblPrfx}bs_expiry.exp_id"
-		);
+		];
 
 		if ( is_null( $iOffset ) ) {
 			$aOptions['OFFSET'] = $iOffset;
@@ -62,14 +72,14 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			$aOptions['LIMIT'] = $iLimit;
 		}
 
-		$aJoinConditions = array(
-			"page" => array( 'JOIN', "{$sTblPrfx}bs_expiry.exp_page_id = {$sTblPrfx}page.page_id" )
-		);
+		$aJoinConditions = [
+			"page" => [ 'JOIN', "{$sTblPrfx}bs_expiry.exp_page_id = {$sTblPrfx}page.page_id" ]
+		];
 
 		// give other extensions the opportunity to modify the query
 		Hooks::run(
 			'BsExpiryBeforeBuildOverviewQuery',
-			array(
+			[
 				$this,
 				&$aTables,
 				&$aFields,
@@ -78,15 +88,15 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 				&$aJoinConditions,
 				&$sSortField,
 				&$sSortDirection
-			)
+			]
 		);
 
-/*
+		/*
 		$iUserId = $oUser->getId();
 		if ( $iUserId && !$oUser->getOption( "MW::Reminder::ShowAllReminders" ) ) {
 			$aConditions["{$sTblPrfx}bs_reminder.rem_user_id"] = $iUserId;
 		}
-*/
+		*/
 		if ( $iDate !== 0 ) {
 			$aConditions[] = "{$sTblPrfx}bs_expiry.exp_date <= '" . $iDate . "'";
 		}
@@ -98,15 +108,15 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->exp_page_id );
-				$aResultSet = array(
+				$aResultSet = [
 					'id' => $row->exp_id,
 					'page_title' => $oTitle->getPrefixedText(),
 					'page_link' => $oTitle->getLocalURL(),
 					'expiry_date' => $row->exp_date,
 					'article_id' => $row->exp_page_id,
 					'exp_comment' => $row->exp_comment
-				);
-				Hooks::run( 'BsExpiryBuildOverviewResultSet', array( $this, &$aResultSet, $row ) );
+				];
+				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;
 			}
 		}
@@ -117,7 +127,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			"COUNT({$sTblPrfx}bs_expiry.exp_id) AS total",
 			$aConditions,
 			__METHOD__,
-			array (),
+			[],
 			$aJoinConditions
 		);
 		if ( $res ) {
@@ -127,70 +137,77 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 
 		$aReminders = $aData;
 
-		$aOutput = array();
+		$aOutput = [];
 
 		foreach ( $aReminders['results'] as $aReminder ) {
-			$oReminder = (object) $aReminder;
+			$oReminder = (object)$aReminder;
 			$aOutput[] = $oReminder;
 		}
 
 		return $aOutput;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function isReadMode() {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeMetaData( $sQuery = '' ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isAnon() ) {
-			return array();
+			return [];
 		}
 
-		$aMetadata = array(
+		$aMetadata = [
 			'idProperty' => 'id',
 			'root' => 'results',
 			'totalProperty' => 'total',
 			'successProperty' => 'success',
-			'fields' => array(
-				array( 'name' => 'page_title' ),
-				array( 'name' => 'page_link' ),
-				array ( 'name' => 'exp_date' ),
-				array ( 'name' => 'article_id' ),
-				array ( 'name' => 'exp_comment' )
-			),
-			'sortInfo' => array(
+			'fields' => [
+				[ 'name' => 'page_title' ],
+				[ 'name' => 'page_link' ],
+				[ 'name' => 'exp_date' ],
+				[ 'name' => 'article_id' ],
+				[ 'name' => 'exp_comment' ]
+			],
+			'sortInfo' => [
 				'field' => 'exp_date',
 				'direction' => 'DESC'
-			)
-		);
+			]
+		];
 
-		$aMetadata['columns'][] = array (
+		$aMetadata['columns'][] = [
 			'header' => wfMessage( 'bs-expiry-header-pagename' )->plain(),
 			'dataIndex' => 'page_title',
 			'render' => 'page',
 			'sortable' => true
-		);
-		$aMetadata['columns'][] = array (
+		];
+		$aMetadata['columns'][] = [
 			'header' => wfMessage( 'bs-expiry-header-date' )->plain(),
 			'dataIndex' => 'exp_date',
 			'render' => 'date',
 			'sortable' => true
-		);
+		];
 
 		\Hooks::run( 'BsExpiryBuildOverviewMetadata', [ &$aMetadata ] );
 
 		return $aMetadata;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getDescription() {
 		return 'ExtJS store backend for Expiry';
-	}
-
-	public function getParamDescription() {
-		$aDesc = parent::getParamDescription();
-		//TODO: Add 'user' field to allow fechting for different users
-		return $aDesc;
 	}
 
 }

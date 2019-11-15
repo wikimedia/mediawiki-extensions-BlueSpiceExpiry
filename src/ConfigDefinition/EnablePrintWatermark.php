@@ -4,6 +4,10 @@ namespace BlueSpice\Expiry\ConfigDefinition;
 
 class EnablePrintWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_EXPORT . '/BlueSpiceExpiry',
@@ -12,6 +16,10 @@ class EnablePrintWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getLabelMessageKey() {
 		return 'bs-expiry-pref-enableprintwatermark';
 	}

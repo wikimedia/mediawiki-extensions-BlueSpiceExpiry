@@ -13,7 +13,7 @@ class AddExpiryTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 		);
 		// BS 2.23.3: Independence of Expiry from Reminder
 		// add additional columns
-		if( $this->updater->getDB()->fieldExists( 'bs_expiry' , 'expires' ) ) {
+		if ( $this->updater->getDB()->fieldExists( 'bs_expiry', 'expires' ) ) {
 			$this->updater->addExtensionField(
 				'bs_expiry',
 				'exp_date',
@@ -34,6 +34,10 @@ class AddExpiryTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 		}
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getExtensionPath() {
 		return dirname( dirname( dirname( __DIR__ ) ) );
 	}

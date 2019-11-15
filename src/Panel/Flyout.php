@@ -50,7 +50,7 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 	 * @return string
 	 */
 	public function getBody() {
-		if( empty( $this->expiryTS ) ) {
+		if ( empty( $this->expiryTS ) ) {
 			return '';
 		}
 
@@ -58,7 +58,7 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 
 		$cssClass = 'expired';
 		$message = new \Message( 'bs-expiry-flyout-body-hint-expired' );
-		if( $currentTS < $this->expiryTS ) {
+		if ( $currentTS < $this->expiryTS ) {
 			$cssClass = 'expires';
 			$message = new \Message( 'bs-expiry-flyout-body-hint-expires' );
 		}
@@ -74,7 +74,6 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 			$message->params( $formattedDate )->text()
 		);
 	}
-
 
 	/**
 	 *
@@ -95,7 +94,7 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 	/**
 	 *
 	 * @param \IContextSource $context
-	 * @return boolean
+	 * @return bool
 	 */
 	public function shouldRender( $context ) {
 		return $context->getUser()->isLoggedIn();
@@ -110,7 +109,7 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 	}
 
 	public function isActive() {
-		if( !empty( $this->expiryTS ) ) {
+		if ( !empty( $this->expiryTS ) ) {
 			return true;
 		}
 
