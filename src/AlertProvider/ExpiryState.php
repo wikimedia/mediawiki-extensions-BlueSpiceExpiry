@@ -11,7 +11,7 @@ class ExpiryState extends AlertProviderBase {
 	 * @return html|false
 	 */
 	public function getHTML() {
-		if( $this->skipForContextReasons() ) {
+		if ( $this->skipForContextReasons() ) {
 			return false;
 		}
 
@@ -19,12 +19,13 @@ class ExpiryState extends AlertProviderBase {
 			$this->skin->getTitle()->getArticleID()
 		);
 
-		if( !$expiry || empty( $expiry['exp_date'] ) ) {
+		if ( !$expiry || empty( $expiry['exp_date'] ) ) {
 			return false;
 		}
 
-		if( !$date = DateTime::createFromFormat( 'Y-m-d', $expiry['exp_date'] ) ) {
-			//something is very wrong in the database!
+		$date = DateTime::createFromFormat( 'Y-m-d', $expiry['exp_date'] );
+		if ( !$date ) {
+			// something is very wrong in the database!
 			return false;
 		}
 
@@ -45,15 +46,15 @@ class ExpiryState extends AlertProviderBase {
 	}
 
 	/**
-	 * @return boolean
+	 * @return bool
 	 */
 	protected function skipForContextReasons() {
-		if( !$this->skin->getTitle()->exists() ) {
+		if ( !$this->skin->getTitle()->exists() ) {
 			return true;
 		}
 
 		$action = $this->skin->getRequest()->getVal( 'action', 'view' );
-		if( !in_array( $action, [ 'view', 'submit' ] ) ) {
+		if ( !in_array( $action, [ 'view', 'submit' ] ) ) {
 			return true;
 		}
 

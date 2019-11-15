@@ -41,19 +41,19 @@ class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 		$aArticleIds[] = $this->insertPage( 'FakePage' )['id'];
 
 		$oDbw = wfGetDB( DB_MASTER );
-		//$oDbw->delete( 'bs_expiry', [ 'pa_page_id' => $oTitle->getArticleID() ] );
-		$aExpiryData = array(
-				array(
+		// $oDbw->delete( 'bs_expiry', [ 'pa_page_id' => $oTitle->getArticleID() ] );
+		$aExpiryData = [
+				[
 					'exp_page_id' => $aArticleIds[0],
 					'exp_comment' => "DummyPage comment",
 					'exp_date' => date( "Y-m-d", time() + ( 7 * 24 * 60 * 60 ) )
-				),
-				array(
+				],
+				[
 					'exp_page_id' => $aArticleIds[1],
 					'exp_comment' => "FakePage comment",
 					'exp_date' => date( "Y-m-d", time() - ( 21 * 24 * 60 * 60 ) )
-				)
-			);
+				]
+			];
 		$oDbw->insert( 'bs_expiry', $aExpiryData, __METHOD__ );
 
 		return 2;
@@ -92,9 +92,14 @@ class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	public function provideKeyItemData() {
-		return[
-			'Test page DummyPage: exp_comment' => [ "exp_comment", "DummyPage comment" ],
-			'Test page DummyPage: expiry_date' => [ "expiry_date", date( "Y-m-d", time() + ( 7 * 24 * 60 * 60 ) ) ]
+		return [
+			'Test page DummyPage: exp_comment' => [
+				"exp_comment", "DummyPage comment"
+			],
+			'Test page DummyPage: expiry_date' => [
+				"expiry_date",
+				date( "Y-m-d", time() + ( 7 * 24 * 60 * 60 ) )
+			]
 		];
 	}
 }

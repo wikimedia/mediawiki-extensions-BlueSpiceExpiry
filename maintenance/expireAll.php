@@ -12,7 +12,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-require_once( dirname(dirname(dirname(dirname(__FILE__)))) . '/maintenance/Maintenance.php' );
+require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 /**
  * Maintenance class to handle the expiration
@@ -28,15 +28,14 @@ class ExpireAll extends Maintenance {
 	}
 
 	public function execute() {
-
 		$aNamespaces = explode( ',', $this->getOption( 'namespaces', '' ) );
 
-		$aConds = array();
+		$aConds = [];
 
-		$sYesterday = date( 'Y-m-d', time() - 3600*24 );
+		$sYesterday = date( 'Y-m-d', time() - 3600 * 24 );
 
 		if ( !empty( $aNamespaces ) ) {
-			$aConds = array( 'page_namespace' => $aNamespaces );
+			$aConds = [ 'page_namespace' => $aNamespaces ];
 		}
 
 		echo 'Search for needed pages ... ';
@@ -48,7 +47,7 @@ class ExpireAll extends Maintenance {
 		);
 		echo 'Done' . PHP_EOL;
 
-		$aPageIDs = array();
+		$aPageIDs = [];
 
 		foreach ( $res as $row ) {
 			$aPageIDs[] = $row->page_id;
@@ -56,19 +55,19 @@ class ExpireAll extends Maintenance {
 
 		$res = $dbw->select(
 			'bs_expiry',
-			array( 'exp_page_id', 'exp_id', 'exp_date' )
+			[ 'exp_page_id', 'exp_id', 'exp_date' ]
 		);
 
-		$aDoUpdate = array();
-		$aDoNothing = array();
+		$aDoUpdate = [];
+		$aDoNothing = [];
 
 		foreach ( $res as $row ) {
 			if ( $row->exp_date > $sYesterday ) {
 				$aDoUpdate[$row->exp_page_id][] = $row->exp_id;
 			}
-			else {
+ else {
 				$aDoNothing[$row->exp_page_id][] = $row->exp_id;
-			}
+	}
 		}
 
 		echo 'Updating relevant pages ... ';
@@ -76,29 +75,28 @@ class ExpireAll extends Maintenance {
 			if ( isset( $aDoUpdate[$iPageID] ) ) {
 				$dbw->update(
 					'bs_expiry',
-					array( 'exp_date' => $sYesterday ),
-					array( 'exp_id' => $aDoUpdate[$iPageID] )
+					[ 'exp_date' => $sYesterday ],
+					[ 'exp_id' => $aDoUpdate[$iPageID] ]
 				);
 			}
-			elseif ( isset( $aDoNothing[$iPageID] ) ) {
+ elseif ( isset( $aDoNothing[$iPageID] ) ) {
 				continue;
-			}
-			else {
+	}
+ else {
 				$dbw->insert(
 					'bs_expiry',
-					array(
+					[
 						'exp_page_id' => $iPageID,
 						'exp_date' => $sYesterday
-					)
+					]
 				);
-			}
+	}
 
 		}
 		echo 'Done' . PHP_EOL;
-
 	}
 
 }
 
 $maintClass = "ExpireAll";
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;

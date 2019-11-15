@@ -9,7 +9,7 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialExpiry = \SpecialPageFactory::getPage( 'Expiry' );
 
-		if( !$oSpecialExpiry ) {
+		if ( !$oSpecialExpiry ) {
 			return true;
 		};
 
