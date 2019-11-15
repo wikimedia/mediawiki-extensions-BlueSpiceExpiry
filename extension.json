@@ -78,7 +78,7 @@
 		"BlueSpice\\Expiry\\": "src/"
 	},
 	"AutoloadClasses": {
-		"SpecialExpiry": "includes/specials/SpecialExpiry.class.php",
+		"SpecialExpiry": "includes/specials/SpecialExpiry.php",
 		"ApiExpiryTasks": "includes/api/ApiExpiryTasks.php",
 		"ApiExpiryStore": "includes/api/ApiExpiryStore.php",
 		"ExpiryHooks": "includes/ExpiryHooks.php"

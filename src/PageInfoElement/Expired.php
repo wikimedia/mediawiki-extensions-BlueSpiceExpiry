@@ -38,13 +38,13 @@ class Expired extends PageInfoElement {
 	/**
 	 *
 	 * @param \ContextSource $context
-	 * @return boolean
+	 * @return bool
 	 */
 	public function shouldShow( $context ) {
 		$id = $context->getTitle()->getArticleID();
-		$expiry = Expiry::getExpiryForPage( $id	);
+		$expiry = Expiry::getExpiryForPage( $id );
 
-		if( !$expiry || empty( $expiry['exp_date'] ) ) {
+		if ( !$expiry || empty( $expiry['exp_date'] ) ) {
 			return false;
 		}
 

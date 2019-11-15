@@ -1,26 +1,38 @@
 <?php
 
-class ApiExpiryTasks extends BSApiTasksBase {
-	protected $aTasks = array( 'saveExpiry', 'deleteExpiry', 'getDetailsForExpiry' );
+use BlueSpice\Api\Response\Standard;
 
+class ApiExpiryTasks extends BSApiTasksBase {
+	/**
+	 *
+	 * @var string[]
+	 */
+	protected $aTasks = [ 'saveExpiry', 'deleteExpiry', 'getDetailsForExpiry' ];
+
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_getDetailsForExpiry( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 
 		$iArticleId = isset( $oTaskData->articleId )
-			? (int) $oTaskData->articleId
-			: 0
-		;
+			? (int)$oTaskData->articleId
+			: 0;
 
 		$oTitle = Title::newFromID( $iArticleId );
 
 		$aExpiry = \BlueSpice\Expiry\Extension::getExpiryForPage( $iArticleId );
 
 		if ( !$aExpiry ) {
-			$oResult->message = $oResult->errors['expiryId'] = wfMessage( 'bs-expiry-unknown-page-msg' )->plain();
+			$oResult->message = $oResult->errors['expiryId']
+				= wfMessage( 'bs-expiry-unknown-page-msg' )->plain();
 			return $oResult;
 		}
 
-		$aReturnData = array();
+		$aReturnData = [];
 		$aReturnData['date'] = $aExpiry['exp_date'];
 		$aReturnData['id'] = $aExpiry['exp_id'];
 		$aReturnData['comment'] = $aExpiry['exp_comment'];
@@ -30,12 +42,19 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		return $oResult;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_saveExpiry( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		$bIsUpdate = false;
 		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors['permissionError'] = wfMessage( 'bs-permissionerror' )->plain();
+			$oResult->message = $oResult->errors['permissionError']
+				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
 
@@ -48,8 +67,8 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		// this is normally the case when clicking the expiry on a normal page
 		// (not the overview specialpage) or the edit button on the specialpage
 		// and data needs to be prefilled
-		if ( empty( $oTaskData->articleId ) && !empty( $oTaskData->id) ) {
-			$res = $dbr->select( 'bs_expiry', 'exp_page_id', array ( 'exp_id' => (int) $oTaskData->id ) );
+		if ( empty( $oTaskData->articleId ) && !empty( $oTaskData->id ) ) {
+			$res = $dbr->select( 'bs_expiry', 'exp_page_id', [ 'exp_id' => (int)$oTaskData->id ] );
 			if ( !$res ) {
 				$oResult->message = $oResult->errors['noactions'] =
 					wfMessage( 'bs-expiry-unknown-page-msg' )->text();
@@ -60,9 +79,9 @@ class ApiExpiryTasks extends BSApiTasksBase {
 					wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 				return $oResult;
 			}
-			$oTaskData->articleId = (int) $row['exp_page_id'];
+			$oTaskData->articleId = (int)$row['exp_page_id'];
 		}
-		if( empty( $oTaskData->articleId ) && !empty( $oTaskData->pageName ) ) {
+		if ( empty( $oTaskData->articleId ) && !empty( $oTaskData->pageName ) ) {
 			$oTitle = Title::newFromText( $oTaskData->pageName );
 		} else {
 			$oTitle = Title::newFromID( $oTaskData->articleId );
@@ -73,29 +92,29 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 			return $oResult;
 		}
-		//TODO: is valid date?
+		// TODO: is valid date?
 		$sFormattedFieldValue = date( "Y-m-d", $iDate );
 
 		$res = $dbr->select(
 			'bs_expiry',
 			'*',
-			array (
+			[
 				'exp_page_id' => (int)$oTitle->getArticleID()
-			),
+			],
 			__METHOD__
 		);
 		$iExpiryId = 0;
 		if ( $res && $res->numRows() ) {
 			$row = $res->fetchRow();
-			$iExpiryId = (int) $row['exp_id'];
+			$iExpiryId = (int)$row['exp_id'];
 			$bIsUpdate = true;
 		}
 
-		$aData = array (
+		$aData = [
 			'exp_page_id' => (int)$oTitle->getArticleID(),
 			'exp_date' => $sFormattedFieldValue,
 			'exp_comment' => $sComment
-		);
+		];
 
 		$dbw = wfGetDB( DB_MASTER );
 		if ( !$iExpiryId ) {
@@ -121,7 +140,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				return $oResult;
 			}
 		} else {
-			$res = $dbw->update( 'bs_expiry', $aData, array ( 'exp_id' => $iExpiryId ) );
+			$res = $dbw->update( 'bs_expiry', $aData, [ 'exp_id' => $iExpiryId ] );
 			if ( !$res ) {
 				$oResult->message = $oResult->errors['updateerror'] =
 					wfMessage( 'bs-expiry-update-error' )->text();
@@ -129,7 +148,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			}
 
 			try {
-				Hooks::run( 'BsExpiryOnUpdate', array ( $oTaskData, $iExpiryId ) );
+				Hooks::run( 'BsExpiryOnUpdate', [ $oTaskData, $iExpiryId ] );
 			} catch ( Exception $e ) {
 				$oResult->message = $oResult->errors['createerror'] =
 					$e->getMessage();
@@ -150,6 +169,12 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		return $oResult;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_deleteExpiry( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 
@@ -166,13 +191,14 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->delete(
 			'bs_expiry',
-			array(
+			[
 				'exp_id' => $iExpiryId
-			),
+			],
 			__METHOD__
 		);
 
-		if( !empty( $iArticleId ) && $oTitle = Title::newFromID( $iArticleId ) ) {
+		$oTitle = Title::newFromID( $iArticleId );
+		if ( !empty( $iArticleId ) && $oTitle ) {
 			$oTitle->invalidateCache();
 		}
 
@@ -181,11 +207,15 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		return $oResult;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'getDetailsForExpiry' => array( 'read' ),
-			'saveExpiry' => array( 'expirearticle' ),
-			'deleteExpiry' => array( 'expirearticle' )
-		);
+		return [
+			'getDetailsForExpiry' => [ 'read' ],
+			'saveExpiry' => [ 'expirearticle' ],
+			'deleteExpiry' => [ 'expirearticle' ]
+		];
 	}
 }

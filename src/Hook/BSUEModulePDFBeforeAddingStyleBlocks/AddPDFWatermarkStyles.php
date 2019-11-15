@@ -7,7 +7,7 @@ use BlueSpice\UEModulePDF\Hook\BSUEModulePDFBeforeAddingStyleBlocks;
 class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 
 	protected function skipProcessing() {
-		if( !$this->getConfig( 'ExpiryEnablePDFWatermark' ) ) {
+		if ( !$this->getConfig( 'ExpiryEnablePDFWatermark' ) ) {
 			return true;
 		}
 		return false;
@@ -19,7 +19,7 @@ class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 			\RequestContext::getMain()->getUser()->getOption( 'language' )
 		);
 		$img = "{$GLOBALS['IP']}/extensions/BlueSpiceExpiry/resources/images/bg-expired-$lang.png";
-		if( !file_exists( $img ) ) {
+		if ( !file_exists( $img ) ) {
 			$lang = 'en';
 			$img = "{$GLOBALS['IP']}/extensions/BlueSpiceExpiry/resources/images/bg-expired-$lang.png";
 		}
