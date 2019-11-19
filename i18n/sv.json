@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"bs-expiry-header-pagename": "Sida",
+	"bs-expiry-header-comment": "Kommentar",
+	"bs-expiry-article-label": "Sida",
+	"bs-expiry-comment-label": "Kommentar",
+	"bs-expiry-edit-grid-header-username": "Användare",
+	"bs-expiry-edit-grid-header-date": "Datum",
+	"bs-expiry-edit-grid-header-comment": "Kommentar",
+	"bs-expiry-flyout-body-hint-expires": "upphör $1"
+}

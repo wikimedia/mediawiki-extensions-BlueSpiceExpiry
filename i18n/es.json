@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"expiry": "Caducidad",
+	"prefs-expiry": "Caducidad",
+	"bs-expiry-unexpire-article": "La página caducó",
+	"bs-expiry-header-pagename": "Página",
+	"bs-expiry-header-date": "Caduca el",
+	"bs-expiry-header-comment": "Comentario",
+	"bs-expiry-article-label": "Página",
+	"bs-expiry-create-error": "No se pudo crear la caducidad.",
+	"bs-expiry-nav-link-title-expiry": "Caducidad",
+	"bs-expiry-flyout-title": "Caducidad de página",
+	"bs-expiry-flyout-form-title": "Crear una caducidad nueva para esta página",
+	"bs-expiry-flyout-next-comment": "Comentario: $1",
+	"bs-expiry-edit-grid-header-date": "Fecha",
+	"bs-expiry-edit-grid-header-comment": "Comentario",
+	"bs-expiry-flyout-body-hint-expires": "caduca el $1",
+	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Esta página ha caducado",
+	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades"
+}

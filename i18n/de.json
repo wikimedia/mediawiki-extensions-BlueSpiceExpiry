@@ -1,17 +1,15 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Killarnee"
+		]
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
 	"expiry": "Veraltete Seiten",
-	"specialexpiry": "Veraltete Seiten",
+	"specialexpiry": "Veraltete Artikel",
 	"prefs-expiry": "Veraltete Seiten",
-	"apihelp-bs-expiry-store-description" : "Stellt die Daten für Spezial:Veraltete Seiten bereit",
-	"apihelp-bs-expiry-tasks-description" : "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
-	"disabled-prefs-expiry": "Seiten veralten",
-	"todo-apihelp-bs-expiry-store-description" : "Liefert die Daten für den Überblick veralteter Seiten (Spezial:Veraltete Seiten)",
-	"todo-apihelp-bs-expiry-tasks-description" : "Führt Aufgaben wie Aktualisieren und Löschen auf dem Überblick veralteter Seiten (Spezial:Veraltete Seiten) aus",
-	"disabled-prefs-Expiry": "Seiten veralten",
+	"apihelp-bs-expiry-store-description": "Stellt die Daten für Spezial:Veraltete Seiten bereit",
+	"apihelp-bs-expiry-tasks-description": "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
 	"bs-expiry-unexpire-article": "Seite ist nicht mehr aktuell",
 	"bs-expiry-do-unexpire-article": "Aktualität neu bestätigen",
 	"bs_expiry-unexpire-success": "Die Seite wurde als aktuell bestätigt",
@@ -23,7 +21,7 @@
 	"bs-expiry-dialog-title": "Aktualität bearbeiten",
 	"bs-expiry-date-label": "Veraltet am",
 	"bs-expiry-article-label": "Seite",
-	"bs-expiry-comment-label" : "Kommentar",
+	"bs-expiry-comment-label": "Kommentar",
 	"bs-expiry-delete-error-unknown": "Veraltung konnte nicht entfernt werden.",
 	"bs-expiry-unknown-page-msg": "Die Seite existiert nicht.",
 	"bs-expiry-create-error": "Aktualität konnte nicht festgelegt werden.",

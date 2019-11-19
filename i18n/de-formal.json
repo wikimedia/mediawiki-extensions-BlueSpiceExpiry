@@ -1,7 +1,5 @@
 {
-	"@metadata": {
-		"authors": []
-	},
+	"@metadata": [],
 	"bs-expiry-text-delete": "Sind Sie sicher, dass Sie {{PLURAL:$1|diese Veraltung|diese $1 Veraltungen}} löschen wollen?",
 	"bs-expiry-flyout-intro": "Hier können Sie eine Seite als veraltet oder aktuell markieren und bei veralteten Seite sehen, welche Änderungen stattgefunden haben, seit die Seite nicht mehr aktuell ist.",
 	"bs-expiry-alert-body-expired": "Diese Seite ist seit $1 nicht mehr aktuell. Bitte prüfen Sie den Inhalt."

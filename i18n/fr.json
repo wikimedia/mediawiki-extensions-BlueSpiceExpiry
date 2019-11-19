@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expiré.",
+	"expiry": "Expiration",
+	"specialexpiry": "Articles expirés",
+	"prefs-expiry": "Expiration",
+	"apihelp-bs-expiry-store-description": "Sert les données pour la grille d’aperçu général de Special:Expiry",
+	"apihelp-bs-expiry-tasks-description": "Exécute les tâches comme la mise à jour et la suppression de la grille générale de Special:Expiry",
+	"bs-expiry-unexpire-article": "La page est expirée",
+	"bs-expiry-do-unexpire-article": "La page est encore à jour (ne plus faire expirer cette page).",
+	"bs_expiry-unexpire-success": "La page a bien été marquée comme non expirée",
+	"bs_expiry-unexpire-unsuccess": "La page n’a pas pu être marquée comme non expirée",
+	"bs-expiry-header-pagename": "Page",
+	"bs-expiry-header-date": "Expire le",
+	"bs-expiry-header-comment": "Commentaire",
+	"bs-expiry-dialog-title": "Modifier l’expiration",
+	"bs-expiry-date-label": "Expire le",
+	"bs-expiry-article-label": "Page",
+	"bs-expiry-comment-label": "Commentaire",
+	"bs-expiry-delete-error-unknown": "L’expiration n’a pas pu être supprimée.",
+	"bs-expiry-unknown-page-msg": "La page n’existe pas.",
+	"bs-expiry-create-error": "L’expiration n’a pas pu être créée.",
+	"bs-expiry-update-error": "L’expiration n’a pas pu être mise à jour.",
+	"bs-expiry-update-success": "L’expiration a bien été mise à jour",
+	"bs-expiry-save-success": "L’expiration a bien été créée",
+	"bs-expiry-unexpire-success": "L’expiration a bien été supprimée",
+	"bs-expiry-unexpire-unsuccess": "ID d’expiration non trouvé",
+	"bs-expiry-menu-entry-create": "Expiration",
+	"bs-expiry-text-delete": "Voulez-vous vraiment supprimer {{PLURAL:$1|cette expiration|ces $1 expirations}} ?",
+	"bs-expiry-title-delete": "Supprimer l’expiration",
+	"bs-expiry-nav-link-title-expiry": "Expiration",
+	"bs-expiry-flyout-title": "Expiration de la page"
+}

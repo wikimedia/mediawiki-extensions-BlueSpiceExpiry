@@ -1,13 +1,15 @@
 {
 	"@metadata": {
-		"authors": [ "Markus Glaser" ]
+		"authors": [
+			"Markus Glaser"
+		]
 	},
 	"bs-expiry-extension-description": "Describes the Expiry extension.",
 	"expiry": "Page title for special page of expiry manager",
 	"specialexpiry": "Name of the special page for expiry",
 	"prefs-expiry": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for expiry section in preferences.",
-	"apihelp-bs-expiry-store-description" : "Describes the API endpoint that provides expiry data",
-	"apihelp-bs-expiry-tasks-description" : "Describes the API endpoint that handles expiry tasks",
+	"apihelp-bs-expiry-store-description": "Describes the API endpoint that provides expiry data",
+	"apihelp-bs-expiry-tasks-description": "Describes the API endpoint that handles expiry tasks",
 	"bs-expiry-unexpire-article": "Label in statebar to mark apage as expired",
 	"bs-expiry-do-unexpire-article": "Label in statebar to mark a page as not expired",
 	"bs_expiry-unexpire-success": "Message to display when the page was unexpired successfully",
@@ -19,15 +21,15 @@
 	"bs-expiry-dialog-title": "Title for dialog to edit expiry",
 	"bs-expiry-date-label": "Label of the dialog field for expiry date",
 	"bs-expiry-article-label": "Label of the dialog field for page to expire",
-	"bs-expiry-comment-label" : "Label of the dialog field for comment",
+	"bs-expiry-comment-label": "Label of the dialog field for comment",
 	"bs-expiry-delete-error-unknown": "Message to display when the expiry could not be deleted.",
 	"bs-expiry-unknown-page-msg": "Message to display when the page does not exist.",
 	"bs-expiry-create-error": "Message to display when the expiry could not be created.",
 	"bs-expiry-update-error": "Message to display when the expiry could not be updated.",
 	"bs-expiry-update-success": "Message to display when the expiry was updated successfully",
 	"bs-expiry-save-success": "Message to display when the expiry was created successfully",
-	"bs-expiry-unexpire-unsuccess": "Message to display when the expiry ID not found",
 	"bs-expiry-unexpire-success": "Message to display when the expiry was deleted successfully",
+	"bs-expiry-unexpire-unsuccess": "Message to display when the expiry ID not found",
 	"bs-expiry-menu-entry-create": "More menu item for creating expiry",
 	"bs-expiry-text-delete": "Confirmation question to be displayed when user wants to delete one or more expiries.\n\n$1 number of expiries",
 	"bs-expiry-title-delete": "Title for dialog to remove expiry",
