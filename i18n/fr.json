@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Thibaut120094"
 		]
 	},
-	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expiré.",
+	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expirées.",
 	"expiry": "Expiration",
 	"specialexpiry": "Articles expirés",
 	"prefs-expiry": "Expiration",
@@ -28,10 +29,36 @@
 	"bs-expiry-update-success": "L’expiration a bien été mise à jour",
 	"bs-expiry-save-success": "L’expiration a bien été créée",
 	"bs-expiry-unexpire-success": "L’expiration a bien été supprimée",
-	"bs-expiry-unexpire-unsuccess": "ID d’expiration non trouvé",
+	"bs-expiry-unexpire-unsuccess": "ID d’expiration non trouvée",
 	"bs-expiry-menu-entry-create": "Expiration",
 	"bs-expiry-text-delete": "Voulez-vous vraiment supprimer {{PLURAL:$1|cette expiration|ces $1 expirations}} ?",
 	"bs-expiry-title-delete": "Supprimer l’expiration",
 	"bs-expiry-nav-link-title-expiry": "Expiration",
-	"bs-expiry-flyout-title": "Expiration de la page"
+	"bs-expiry-flyout-title": "Expiration de la page",
+	"bs-expiry-flyout-intro": "Vue d’ensemble des expirations pour cette page",
+	"bs-expiry-flyout-form-title": "Créer une nouvelle expiration pour cette page",
+	"bs-expiry-flyout-next-expired": "Cette page est expirée !",
+	"bs-expiry-flyout-next-current": "Cette page expire {{PLURAL:$1|demain|dans $1 jjours ($2)}} !",
+	"bs-expiry-flyout-expiry-not-set": "Cette page n’est pas paramétrée pour expirer !",
+	"bs-expiry-flyout-next-comment": "Commentaire : $1",
+	"bs-expiry-flyout-manager-button-label": "Gestionnaire d’expiration",
+	"bs-expiry-edit-grid-header-username": "Utilisateur",
+	"bs-expiry-edit-grid-header-date": "Date",
+	"bs-expiry-edit-grid-header-comment": "Commentaire",
+	"bs-expiry-edit-grid-title": "Modifications depuis que cette page a expiré",
+	"bs-expiry-edit-grid-empty": "Aucune modification depuis que la page a expiré",
+	"bs-expiry-flyout-body-hint-expired": "expiré le $1",
+	"bs-expiry-flyout-body-hint-expires": "expire le $1",
+	"bs-expiry-alert-body-expired": "Cette page a expiré le $1. Veuillez vérifier le contenu.",
+	"bs-expiry-pref-enablepdfwatermark": "Afficher le filigrane pour les pages expirées en PDF",
+	"bs-expiry-pref-enableprintwatermark": "Afficher le filigrane pour les pages expirées dans la version imprimée",
+	"bs-expiry-pref-enablepagewatermark": "Afficher le filigrane pour les pages expirées",
+	"bs-expiry-pageinfoelement-expired-label": "expiré",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Cette page a expiré",
+	"bs-expiry-pageinfoelement-unexpire-label": "ne plus expirer",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "Ne plus expirer cette page",
+	"apihelp-bs-expiry-tasks-summary": "Fournit les tâches comme la modification ou la suppression des expirations",
+	"apihelp-bs-expiry-store-summary": "Fournit un stockage pour les expirations, qui peut être interrogé",
+	"right-expirearticle": "Faire expirer les pages",
+	"action-expirearticle": "faire expirer les pages"
 }

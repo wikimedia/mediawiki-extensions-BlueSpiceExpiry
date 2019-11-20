@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"bs-expiry-header-comment": "Commento",
+	"bs-expiry-date-label": "Scade il",
+	"bs-expiry-article-label": "Pagina",
+	"bs-expiry-comment-label": "Commento",
+	"bs-expiry-edit-grid-header-username": "Utente",
+	"bs-expiry-edit-grid-header-date": "Data",
+	"bs-expiry-edit-grid-header-comment": "Commento",
+	"bs-expiry-flyout-body-hint-expires": "scade il $1",
+	"bs-expiry-pageinfoelement-expired-label": "scaduto"
+}
