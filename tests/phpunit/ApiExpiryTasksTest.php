@@ -20,8 +20,11 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		$this->insertPage( 'Dummy' );
 	}
 
+	/**
+	 * @covers \ApiExpiryTasks::task_saveExpiry
+	 */
 	public function testSaveExpiry() {
-		//New expiry
+		// New expiry
 		$oTitle = Title::newFromText( 'Dummy' );
 		$iNextWeek = time() + ( 7 * 24 * 60 * 60 );
 		$oResponse = $this->executeTask(
@@ -36,14 +39,14 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		$this->assertTrue( $oResponse->success, 'SaveExpiry (create) task failed' );
 		$this->assertSelect(
 			'bs_expiry',
-			array( 'exp_date', 'exp_comment' ),
-			array( 'exp_page_id' => $oTitle->getArticleID() ),
-			array(
-				array( date( "Y-m-d", $iNextWeek ), 'Test expiry' )
-			)
+			[ 'exp_date', 'exp_comment' ],
+			[ 'exp_page_id' => $oTitle->getArticleID() ],
+			[
+				[ date( "Y-m-d", $iNextWeek ), 'Test expiry' ]
+			]
 		);
 
-		//Update expiry
+		// Update expiry
 		$iExpiryId = $this->getExpiryFromArticleID( $oTitle->getArticleID() );
 
 		$this->assertGreaterThan( 0, $iExpiryId, 'Failed to retrieve expiry from DB' );
@@ -61,14 +64,17 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		$this->assertTrue( $oResponse->success, 'SaveExpiry (update) task failed' );
 		$this->assertSelect(
 			'bs_expiry',
-			array( 'exp_date', 'exp_comment' ),
-			array( 'exp_page_id' => $oTitle->getArticleID() ),
-			array(
-				array( date( "Y-m-d", $iLastWeek ), 'Updated expiry' )
-			)
+			[ 'exp_date', 'exp_comment' ],
+			[ 'exp_page_id' => $oTitle->getArticleID() ],
+			[
+				[ date( "Y-m-d", $iLastWeek ), 'Updated expiry' ]
+			]
 		);
 	}
 
+	/**
+	 * @covers \ApiExpiryTasks::task_getDetailsForExpiry
+	 */
 	public function testGetDetailsForExpiry() {
 		$oTitle = Title::newFromText( 'Dummy' );
 		$oResponse = $this->executeTask(
@@ -80,9 +86,16 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 
 		$this->assertTrue( $oResponse->success, 'GetDetailsForExpiry task failed' );
 		$aPayload = $oResponse->payload;
-		$this->assertEquals( date( "Y-m-d", time() - ( 7 * 24 * 60 * 60 ) ), $aPayload['date'], 'Returned expiry has unexpected date' );
+		$this->assertEquals(
+			date( "Y-m-d", time() - ( 7 * 24 * 60 * 60 ) ),
+			$aPayload['date'],
+			'Returned expiry has unexpected date'
+		);
 	}
 
+	/**
+	 * @covers \ApiExpiryTasks::task_deleteExpiry
+	 */
 	public function testDeleteExpiry() {
 		$oTitle = Title::newFromText( 'Dummy' );
 		$iArticleId = $oTitle->getArticleID();
@@ -90,26 +103,30 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 			'deleteExpiry',
 			[
 				'articleId' => $iArticleId,
-				'expiryId' => $this->getExpiryFromArticleID ( $iArticleId )
+				'expiryId' => $this->getExpiryFromArticleID( $iArticleId )
 			]
 		);
 
 		$this->assertTrue( $oResponse->success, 'DeleteExpiry task failed' );
-		$this->assertEquals( 0, $this->getExpiryFromArticleID( $iArticleId ), 'DeleteExpiry task succeded, but expiry is not deleted' );
+		$this->assertEquals(
+			0,
+			$this->getExpiryFromArticleID( $iArticleId ),
+			'DeleteExpiry task succeded, but expiry is not deleted'
+		);
 	}
 
 	protected function getExpiryFromArticleID( $iArticleId ) {
 		$res = wfGetDB( DB_REPLICA )->select(
 			'bs_expiry',
 			'exp_id',
-			array (
+			[
 				'exp_page_id' => $iArticleId
-			)
+			]
 		);
 		$iExpiryId = 0;
 		if ( $res && $res->numRows() ) {
 			$row = $res->fetchRow();
-			$iExpiryId = (int) $row['exp_id'];
+			$iExpiryId = (int)$row['exp_id'];
 		}
 		return $iExpiryId;
 	}

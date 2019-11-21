@@ -1,6 +1,12 @@
 <?php
 
 class ExpiryHooks {
+	/**
+	 *
+	 * @param SkinTemplate $oSkinTemplate
+	 * @param array &$links
+	 * @return bool
+	 */
 	public static function onSkinTemplateNavigation( $oSkinTemplate, &$links ) {
 		$oUser = RequestContext::getMain()->getUser();
 		$oTitle = RequestContext::getMain()->getTitle();
@@ -18,27 +24,32 @@ class ExpiryHooks {
 			return true;
 		}
 
-		$links['actions']['expiryCreate'] = array(
+		$links['actions']['expiryCreate'] = [
 			"class" => '',
 			"text" => wfMessage( 'bs-expiry-menu-entry-create' )->plain(),
 			"href" => "#",
 			"bs-group" => "hidden"
-		);
+		];
 
-		return true;
-	}
-
-	public static function onQueryPages( &$wgQueryPages ) {
-		$wgQueryPages[] = array( 'SpecialExpiry', 'Expired_Articles' );
 		return true;
 	}
 
 	/**
-	* Hook handler for UnitTestList
-	*
-	* @param array $paths
-	* @return boolean
-	*/
+	 *
+	 * @param array &$wgQueryPages
+	 * @return bool
+	 */
+	public static function onQueryPages( &$wgQueryPages ) {
+		$wgQueryPages[] = [ 'SpecialExpiry', 'Expired_Articles' ];
+		return true;
+	}
+
+	/**
+	 * Hook handler for UnitTestList
+	 *
+	 * @param array &$paths
+	 * @return bool
+	 */
 	public static function onUnitTestsList( &$paths ) {
 		$paths[] = __DIR__ . '/../tests/phpunit/';
 		return true;

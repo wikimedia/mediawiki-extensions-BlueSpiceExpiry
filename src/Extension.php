@@ -3,7 +3,7 @@
 namespace BlueSpice\Expiry;
 
 class Extension extends \BlueSpice\Extension {
-	public static $expirys = array();
+	public static $expirys = [];
 
 	/**
 	 *
@@ -15,7 +15,7 @@ class Extension extends \BlueSpice\Extension {
 			return null;
 		}
 
-		//  basic caching, do not ask for an article id twice per call
+		// basic caching, do not ask for an article id twice per call
 		if ( isset( self::$expirys[$articleId] ) ) {
 			return self::$expirys[$articleId];
 		}

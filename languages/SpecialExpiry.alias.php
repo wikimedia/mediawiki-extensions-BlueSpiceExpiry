@@ -12,11 +12,11 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-$specialPageAliases = array(
-	'en' => array(
-		'Expiry' => array( 'Expiry', 'Expired_Articles' )
-	),
-	'de' => array(
-		'Expiry' => array( 'Veraltete_Artikel' )
-	)
-);
+$specialPageAliases = [
+	'en' => [
+		'Expiry' => [ 'Expiry', 'Expired_Articles' ]
+	],
+	'de' => [
+		'Expiry' => [ 'Veraltete_Artikel' ]
+	]
+];
