@@ -1,13 +1,29 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
+	"bs-expiry-extension-description": "Sidor kan märkas som föråldrade.",
+	"expiry": "Utgången",
+	"specialexpiry": "Förgångna artiklar",
+	"prefs-expiry": "Förgångna",
+	"apihelp-bs-expiry-store-description": "Levrar datorna till översikttabellen i Special:Expiry",
+	"apihelp-bs-expiry-tasks-description": "Utför uppgifter som att uppdatera och radera för översiktstabellen i Special:Expiry",
+	"bs-expiry-unexpire-article": "Sedan har utlöpt",
+	"bs-expiry-do-unexpire-article": "Sedan el fortfarande ajour. (inte märk denna sidan som utlöpt längre)",
 	"bs-expiry-header-pagename": "Sida",
 	"bs-expiry-header-comment": "Kommentar",
+	"bs-expiry-dialog-title": "Redigera utlopp",
+	"bs-expiry-date-label": "Upphör om:",
 	"bs-expiry-article-label": "Sida",
 	"bs-expiry-comment-label": "Kommentar",
+	"bs-expiry-delete-error-unknown": "Mallen kunde inte raderas.",
+	"bs-expiry-unknown-page-msg": "Sidan finns inte.",
+	"bs-expiry-create-error": "Mapp kunde inte skapas!",
+	"bs-expiry-update-error": "Kampanjen kunde inte uppdateras",
+	"bs-expiry-update-success": "Utlopp uppdaterats",
 	"bs-expiry-edit-grid-header-username": "Användare",
 	"bs-expiry-edit-grid-header-date": "Datum",
 	"bs-expiry-edit-grid-header-comment": "Kommentar",
