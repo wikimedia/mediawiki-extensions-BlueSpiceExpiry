@@ -6,6 +6,7 @@
 	},
 	"bs-expiry-header-pagename": "Side",
 	"bs-expiry-article-label": "Side",
+	"bs-expiry-unknown-page-msg": "Siden findes ikke.",
 	"bs-expiry-edit-grid-header-username": "Bruger",
 	"bs-expiry-edit-grid-header-date": "Dato"
 }

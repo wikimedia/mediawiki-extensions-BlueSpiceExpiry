@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Adithyak1997"
+			"Adithyak1997",
+			"Praveenp"
 		]
 	},
 	"bs-expiry-extension-description": "താളുകൾ കാലഹരണപ്പെട്ടതായി അടയാളപ്പെടുത്താം.",
 	"specialexpiry": "കാലഹരണപ്പെട്ട ലേഖനങ്ങൾ",
+	"prefs-expiry": "കാലാവധി അവസാനിക്കുന്നത്",
 	"bs-expiry-unexpire-article": "താൾ കാലഹരണപ്പെട്ടു",
 	"bs_expiry-unexpire-unsuccess": "താൾ കാലഹരണപ്പെടാൻ പാടില്ല",
 	"bs-expiry-header-pagename": "താൾ",
