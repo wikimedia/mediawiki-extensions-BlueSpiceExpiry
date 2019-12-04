@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Expiry\Panel;
 
+use Message;
 use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
 use BlueSpice\Calumma\IActiveStateProvider;
@@ -26,24 +27,24 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getFlyoutTitleMessage() {
-		return wfMessage( 'bs-expiry-flyout-title' );
+		return Message::newFromKey( 'bs-expiry-flyout-title' );
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getFlyoutIntroMessage() {
-		return wfMessage( 'bs-expiry-flyout-intro' );
+		return Message::newFromKey( 'bs-expiry-flyout-intro' );
 	}
 
 	/**
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getTitleMessage() {
-		return wfMessage( 'bs-expiry-nav-link-title-expiry' );
+		return Message::newFromKey( 'bs-expiry-nav-link-title-expiry' );
 	}
 
 	/**
@@ -57,10 +58,10 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 		$currentTS = wfTimestampNow();
 
 		$cssClass = 'expired';
-		$message = new \Message( 'bs-expiry-flyout-body-hint-expired' );
+		$message = Message::newFromKey( 'bs-expiry-flyout-body-hint-expired' );
 		if ( $currentTS < $this->expiryTS ) {
 			$cssClass = 'expires';
-			$message = new \Message( 'bs-expiry-flyout-body-hint-expires' );
+			$message = Message::newFromKey( 'bs-expiry-flyout-body-hint-expires' );
 		}
 
 		$lang = $this->skintemplate->getSkin()->getLanguage();
