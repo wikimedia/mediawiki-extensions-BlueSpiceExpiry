@@ -33,9 +33,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'results' => [],
 			'total' => 0
 		];
-		if ( BsCore::checkAccessAdmission( 'read' ) === false || $oUser->isAnon() ) {
-			return $aData;
-		}
+
 		$dbr = wfGetDB( DB_REPLICA );
 		$sTblPrfx = $dbr->tablePrefix();
 
@@ -108,13 +106,17 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->exp_page_id );
+				if ( !$oTitle->userCan( 'read' ) ) {
+					continue;
+				}
 				$aResultSet = [
 					'id' => $row->exp_id,
 					'page_title' => $oTitle->getPrefixedText(),
 					'page_link' => $oTitle->getLocalURL(),
 					'expiry_date' => $row->exp_date,
 					'article_id' => $row->exp_page_id,
-					'exp_comment' => $row->exp_comment
+					'exp_comment' => $row->exp_comment,
+					'user_can_expire' => $oTitle->userCan( 'expirearticle' )
 				];
 				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;
