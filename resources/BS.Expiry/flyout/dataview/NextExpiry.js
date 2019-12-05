@@ -4,6 +4,7 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 	articleId: mw.config.get( 'wgArticleId' ),
 	expirationStatus: '',
 	expirationDate: '',
+	userCanExpire: false,
 	initComponent: function() {
 		this.store = new BS.store.BSApi( {
 			apiAction: 'bs-expiry-store',
@@ -33,12 +34,17 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 			this.fireEvent( 'expirationDataSet', this, this.getExpirationInfo() );
 		}, this );
 
+		var unexpire = '';
+		if ( this.userCanExpire ) {
+			unexpire = "<a href='#' class='bs-expiry-unexpire' data-expid='{id}'>"
+				+ mw.message( 'bs-expiry-do-unexpire-article' ).plain()
+				+ "</a>";
+		}
 		this.itemTpl = new Ext.XTemplate(
 			"<div class='bs-expiry-flyout-next-{expiration_status}'",
 			"<span>{expiry_message}</span>&nbsp",
-			"<a href='#' class='bs-expiry-unexpire' data-expid='{id}'>",
-			mw.message( 'bs-expiry-do-unexpire-article' ).plain(),
-			"</a><br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
+			unexpire,
+			"<br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
 		);
 		this.emptyText = mw.message( 'bs-expiry-flyout-expiry-not-set' ).plain();
 		this.callParent( arguments );

@@ -5,14 +5,17 @@ Ext.define( 'BS.Expiry.flyout.Base', {
 		'BS.Expiry.flyout.dataview.NextExpiry',
 		'BS.Expiry.flyout.grid.ChangesSinceExpired'
 	],
+	userCanExpire: false,
 	makeTopPanelItems: function() {
 		if( !this.nextExpiry ) {
-			this.nextExpiry = new BS.Expiry.flyout.dataview.NextExpiry();
+			this.nextExpiry = new BS.Expiry.flyout.dataview.NextExpiry( {
+				userCanExpire: this.userCanExpire
+			} );
 			this.nextExpiry.on( 'expirationDataSet', this.onExpirationDataSet, this );
 		}
 		return [
 			this.nextExpiry
-		]
+		];
 	},
 
 	makeBottomPanelItems: function() {
@@ -23,11 +26,11 @@ Ext.define( 'BS.Expiry.flyout.Base', {
 
 		return [
 			this.btnManager
-		]
+		];
 	},
 
 	onBtnManagerClick: function() {
-		var url = mw.util.getUrl( "Special:Expiry/" );
+		var url = mw.util.getUrl( "Special:Expiry" );
 		window.location = url;
 	},
 
@@ -47,7 +50,7 @@ Ext.define( 'BS.Expiry.flyout.Base', {
 	},
 
 	onExpirationDataSet: function( view, data ) {
-		if( $.isEmptyObject( data ) ) {
+		if( $.isEmptyObject( data ) && this.userCanExpire ) {
 			this.expiryForm = new BS.Expiry.flyout.form.Expiry( {} );
 			this.expiryForm.on( 'save', this.saveExpiry, this );
 

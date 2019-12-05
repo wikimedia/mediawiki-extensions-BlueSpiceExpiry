@@ -20,7 +20,15 @@ Ext.define( 'BS.Expiry.Panel', {
 			apiAction: 'bs-expiry-store',
 			autoLoad: true,
 			remoteSort: true,
-			fields: [ 'id', 'page_title', 'page_link', 'expiry_date', 'article_id', 'exp_comment' ],
+			fields: [
+				'id',
+				'page_title',
+				'page_link',
+				'expiry_date',
+				'article_id',
+				'exp_comment',
+				'user_can_expire'
+			],
 			sortInfo: {
 				field: 'id',
 				direction: 'ASC'
@@ -170,5 +178,15 @@ Ext.define( 'BS.Expiry.Panel', {
 	},
 	reloadStore: function() {
 		this.strMain.reload();
+	},
+	makeRowActions: function() {
+		var actions = this.callParent( arguments );
+		for( var i = 0; i < actions.length; i++ ) {
+			actions[i].isDisabled = function( view, rowIndex, colIndex, item, record  ) {
+				return !record.get( 'user_can_expire' );
+			};
+		}
+
+		return actions;
 	}
 });
