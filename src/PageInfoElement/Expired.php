@@ -16,7 +16,7 @@ class Expired extends PageInfoElement {
 	 * @return Message
 	 */
 	public function getLabelMessage() {
-		return new Message( 'bs-expiry-pageinfoelement-expired-label' );
+		return $this->msg( 'bs-expiry-pageinfoelement-expired-label' );
 	}
 
 	/**
@@ -32,7 +32,7 @@ class Expired extends PageInfoElement {
 	 * @return Message
 	 */
 	public function getTooltipMessage() {
-		return new Message( 'bs-expiry-pageinfoelement-expired-tooltip' );
+		return $this->msg( 'bs-expiry-pageinfoelement-expired-tooltip' );
 	}
 
 	/**
@@ -105,8 +105,8 @@ class Expired extends PageInfoElement {
 
 	public function makeMenu() {
 		$html = '';
-		$label = new Message( 'bs-expiry-pageinfoelement-unexpire-label' );
-		$tooltip = new Message( 'bs-expiry-pageinfoelement-unexpire-tooltip' );
+		$label = $this->msg( 'bs-expiry-pageinfoelement-unexpire-label' );
+		$tooltip = $this->msg( 'bs-expiry-pageinfoelement-unexpire-tooltip' );
 
 		$html .= \Html::openElement( 'ul' );
 		$html .= \Html::openElement( 'li' );
