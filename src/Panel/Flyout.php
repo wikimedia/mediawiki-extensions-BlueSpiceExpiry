@@ -3,6 +3,7 @@
 namespace BlueSpice\Expiry\Panel;
 
 use Message;
+use QuickTemplate;
 use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
 use BlueSpice\Calumma\IActiveStateProvider;
@@ -17,10 +18,10 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 
 	/**
 	 *
-	 * @param \SkinTemplate $skintemplate
+	 * @param QuickTemplate $skintemplate
 	 * @param string $expiryTS Timestamp in TS_MW format
 	 */
-	public function __construct( $skintemplate, $expiryTS ) {
+	public function __construct( QuickTemplate $skintemplate, $expiryTS ) {
 		parent::__construct( $skintemplate );
 
 		$this->expiryTS = $expiryTS;
