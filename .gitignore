@@ -2,3 +2,4 @@ Thumbs.db
 composer.lock
 vendor
 nbproject
+node_modules
