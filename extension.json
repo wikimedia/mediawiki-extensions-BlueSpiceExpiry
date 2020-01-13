@@ -187,8 +187,7 @@
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
 		"QueryPages": "ExpiryHooks::onQueryPages",
-		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
-		"UnitTestsList" : "ExpiryHooks::onUnitTestsList"
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback"
 	},
 	"manifest_version": 2
 }
