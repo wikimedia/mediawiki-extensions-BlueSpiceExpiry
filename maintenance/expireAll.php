@@ -23,8 +23,9 @@ class ExpireAll extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = "Checks the needed reminder notifications for the day and send them.";
+		$this->addDescription( "Checks the needed reminder notifications for the day and send them." );
 		$this->addOption( 'namespaces', 'Use only this namespaces' );
+		$this->requireExtension( 'BlueSpiceExpiry' );
 	}
 
 	public function execute() {
@@ -38,14 +39,15 @@ class ExpireAll extends Maintenance {
 			$aConds = [ 'page_namespace' => $aNamespaces ];
 		}
 
-		echo 'Search for needed pages ... ';
+		$this->output( 'Search for needed pages ... ' );
 		$dbw = wfGetDB( DB_MASTER );
 		$res = $dbw->select(
 			'page',
 			'page_id',
-			$aConds
+			$aConds,
+			__METHOD__
 		);
-		echo 'Done' . PHP_EOL;
+		$this->output( "Done\n" );
 
 		$aPageIDs = [];
 
@@ -55,7 +57,9 @@ class ExpireAll extends Maintenance {
 
 		$res = $dbw->select(
 			'bs_expiry',
-			[ 'exp_page_id', 'exp_id', 'exp_date' ]
+			[ 'exp_page_id', 'exp_id', 'exp_date' ],
+			[],
+			__METHOD__
 		);
 
 		$aDoUpdate = [];
@@ -64,39 +68,38 @@ class ExpireAll extends Maintenance {
 		foreach ( $res as $row ) {
 			if ( $row->exp_date > $sYesterday ) {
 				$aDoUpdate[$row->exp_page_id][] = $row->exp_id;
-			}
- else {
+			} else {
 				$aDoNothing[$row->exp_page_id][] = $row->exp_id;
-	}
+			}
 		}
 
-		echo 'Updating relevant pages ... ';
+		$this->output( 'Updating relevant pages ... ' );
 		foreach ( $aPageIDs as $iPageID ) {
 			if ( isset( $aDoUpdate[$iPageID] ) ) {
 				$dbw->update(
 					'bs_expiry',
 					[ 'exp_date' => $sYesterday ],
-					[ 'exp_id' => $aDoUpdate[$iPageID] ]
+					[ 'exp_id' => $aDoUpdate[$iPageID] ],
+					__METHOD__
 				);
-			}
- elseif ( isset( $aDoNothing[$iPageID] ) ) {
+			} elseif ( isset( $aDoNothing[$iPageID] ) ) {
 				continue;
-	}
- else {
+			} else {
 				$dbw->insert(
 					'bs_expiry',
 					[
 						'exp_page_id' => $iPageID,
 						'exp_date' => $sYesterday
-					]
+					],
+					__METHOD__
 				);
-	}
-
+			}
 		}
-		echo 'Done' . PHP_EOL;
+
+		$this->output( "Done\n" );
 	}
 
 }
 
-$maintClass = "ExpireAll";
+$maintClass = ExpireAll::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
