@@ -62,11 +62,11 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'GROUP BY' => "{$sTblPrfx}bs_expiry.exp_id"
 		];
 
-		if ( is_null( $iOffset ) ) {
+		if ( $iOffset === null ) {
 			$aOptions['OFFSET'] = $iOffset;
 		}
 
-		if ( is_null( $iLimit ) ) {
+		if ( $iLimit === null ) {
 			$aOptions['LIMIT'] = $iLimit;
 		}
 
