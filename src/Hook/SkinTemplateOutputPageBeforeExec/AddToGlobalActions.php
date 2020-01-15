@@ -11,7 +11,7 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 
 		if ( !$oSpecialExpiry ) {
 			return true;
-		};
+		}
 
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,

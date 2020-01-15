@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Expiry\PageInfoElement;
 
-use Message;
-use BlueSpice\PageInfoElement;
-use BlueSpice\IPageInfoElement;
 use BlueSpice\Expiry\Extension as Expiry;
+use BlueSpice\IPageInfoElement;
+use BlueSpice\PageInfoElement;
+use Message;
 
 class Expired extends PageInfoElement {
 	public $expire = 'undefined';

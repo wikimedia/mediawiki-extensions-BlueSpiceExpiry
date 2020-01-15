@@ -108,7 +108,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $oResponse->success, 'DeleteExpiry task failed' );
-		$this->assertEquals(
+		$this->assertSame(
 			0,
 			$this->getExpiryFromArticleID( $iArticleId ),
 			'DeleteExpiry task succeded, but expiry is not deleted'

@@ -2,11 +2,11 @@
 
 namespace BlueSpice\Expiry\Panel;
 
+use BlueSpice\Calumma\IActiveStateProvider;
+use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Calumma\Panel\BasePanel;
 use Message;
 use QuickTemplate;
-use BlueSpice\Calumma\Panel\BasePanel;
-use BlueSpice\Calumma\IFlyout;
-use BlueSpice\Calumma\IActiveStateProvider;
 
 class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 

@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Expiry\Hook\SkinTemplateOutputPageBeforeExec;
 
+use BlueSpice\Expiry\Panel\Flyout;
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
-use BlueSpice\Expiry\Panel\Flyout;
 
 class AddExpiredInfo extends SkinTemplateOutputPageBeforeExec {
 

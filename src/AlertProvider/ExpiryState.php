@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Expiry\AlertProvider;
 
-use DateTime;
 use BlueSpice\AlertProviderBase;
+use DateTime;
 
 class ExpiryState extends AlertProviderBase {
 
