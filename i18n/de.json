@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Killarnee"
+			"Killarnee",
+			"Mglaser"
 		]
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
@@ -56,5 +57,9 @@
 	"bs-expiry-pageinfoelement-expired-label": "veraltet",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Diese Seite ist als veraltet markiert",
 	"bs-expiry-pageinfoelement-unexpire-label": "Veraltet Markierung entfernen",
-	"bs-expiry-pageinfoelement-unexpire-tooltip": "Veraltet Markierung entfernen"
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "Veraltet Markierung entfernen",
+	"apihelp-bs-expiry-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Veraltungen bereit",
+	"apihelp-bs-expiry-store-summary": "Stellt einen Suchspeicher für Veraltungen bereit, die abgefragt werden können",
+	"right-expirearticle": "Seiten als veraltet markieren",
+	"action-expirearticle": "Seiten als veraltet zu markieren"
 }
