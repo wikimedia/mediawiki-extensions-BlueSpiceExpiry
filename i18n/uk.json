@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"bs-expiry-flyout-next-comment": "Коментар: $1",
+	"bs-expiry-edit-grid-header-username": "Користувач",
+	"bs-expiry-edit-grid-header-date": "Дата",
+	"bs-expiry-edit-grid-header-comment": "Коментар"
+}

@@ -1,16 +1,19 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Killarnee",
+			"Mglaser"
+		]
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
 	"expiry": "Veraltete Seiten",
-	"specialexpiry": "Veraltete Seiten",
+	"specialexpiry": "Veraltete Artikel",
 	"prefs-expiry": "Veraltete Seiten",
-	"apihelp-bs-expiry-store-description" : "Stellt die Daten für Spezial:Veraltete Seiten bereit",
-	"apihelp-bs-expiry-tasks-description" : "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
+	"apihelp-bs-expiry-store-description": "Stellt die Daten für Spezial:Veraltete Seiten bereit",
+	"apihelp-bs-expiry-tasks-description": "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
 	"disabled-prefs-expiry": "Seiten veralten",
-	"todo-apihelp-bs-expiry-store-description" : "Liefert die Daten für den Überblick veralteter Seiten (Spezial:Veraltete Seiten)",
-	"todo-apihelp-bs-expiry-tasks-description" : "Führt Aufgaben wie Aktualisieren und Löschen auf dem Überblick veralteter Seiten (Spezial:Veraltete Seiten) aus",
+	"todo-apihelp-bs-expiry-store-description": "Liefert die Daten für den Überblick veralteter Seiten (Spezial:Veraltete Seiten)",
+	"todo-apihelp-bs-expiry-tasks-description": "Führt Aufgaben wie Aktualisieren und Löschen auf dem Überblick veralteter Seiten (Spezial:Veraltete Seiten) aus",
 	"disabled-prefs-Expiry": "Seiten veralten",
 	"bs-expiry-unexpire-article": "Seite ist nicht mehr aktuell",
 	"bs-expiry-do-unexpire-article": "Aktualität neu bestätigen",
@@ -23,7 +26,7 @@
 	"bs-expiry-dialog-title": "Aktualität bearbeiten",
 	"bs-expiry-date-label": "Veraltet am",
 	"bs-expiry-article-label": "Seite",
-	"bs-expiry-comment-label" : "Kommentar",
+	"bs-expiry-comment-label": "Kommentar",
 	"bs-expiry-delete-error-unknown": "Veraltung konnte nicht entfernt werden.",
 	"bs-expiry-unknown-page-msg": "Die Seite existiert nicht.",
 	"bs-expiry-create-error": "Aktualität konnte nicht festgelegt werden.",
@@ -58,5 +61,9 @@
 	"bs-expiry-pageinfoelement-expired-label": "veraltet",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Diese Seite ist als veraltet markiert",
 	"bs-expiry-pageinfoelement-unexpire-label": "Veraltet Markierung entfernen",
-	"bs-expiry-pageinfoelement-unexpire-tooltip": "Veraltet Markierung entfernen"
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "Veraltet Markierung entfernen",
+	"apihelp-bs-expiry-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Veraltungen bereit",
+	"apihelp-bs-expiry-store-summary": "Stellt einen Suchspeicher für Veraltungen bereit, die abgefragt werden können",
+	"right-expirearticle": "Seiten als veraltet markieren",
+	"action-expirearticle": "Seiten als veraltet zu markieren"
 }
