@@ -7,7 +7,9 @@ use BlueSpice\SkinData;
 
 class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
-		$oSpecialExpiry = \SpecialPageFactory::getPage( 'Expiry' );
+		$oSpecialExpiry = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'Expiry' );
 
 		if ( !$oSpecialExpiry ) {
 			return true;
