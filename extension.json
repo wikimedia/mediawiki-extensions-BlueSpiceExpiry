@@ -42,9 +42,26 @@
 			},
 			"PageInfoElementRegistry": {
 				"bs-expiry-expired": "\\BlueSpice\\Expiry\\PageInfoElement\\Expired::factory"
+			},
+			"NotificationRegistrationFunctions": [
+				"\\BlueSpice\\Expiry\\Notification\\Expiry::registerNotifications"
+			],
+			"RunJobsTriggerHandlerRegistry": {
+				"bs-expiry-send-daily": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Daily::factory",
+				"bs-expiry-send-weekly": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Weekly::factory"
+			}
+		},
+		"BlueSpiceEchoConnector": {
+			"NotificationIcons": {
+				"expiry": {
+					"path": "BlueSpiceExpiry/resources/images/bs-infobar-expired.png"
+				}
 			}
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"GroupPermissions": {
 		"*": {
 			"expirearticle": false

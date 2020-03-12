@@ -58,5 +58,15 @@
 	"apihelp-bs-expiry-tasks-summary": "Provides tasks such as editing or deleting expiries",
 	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried",
 	"right-expirearticle": "Expire pages",
-	"action-expirearticle": "expire pages"
+	"action-expirearticle": "expire pages",
+	"echo-category-title-bs-expiry-daily-cat": "Expiry - Daily",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Notfiy me when a page expires today",
+	"echo-category-title-bs-expiry-weekly-cat": "Expiry - Weekly",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Notfiy me when a page expires in a week",
+	"notification-bs-expiry-today-subject": "Page \"$1\" has expired",
+	"notification-bs-expiry-today-web-body": "The page \"$1\" has expired. Please review the page's content to decide whether it needs to be updated. If the page content is still up-to-date, you can simply unexpire the page. \n\nExpiry comment:\n$2",
+	"notification-bs-expiry-today-email-body": "The page \"$1\" has expired. Please review the page's content to decide whether it needs to be updated. If the page content is still up-to-date, you can simply unexpire the page. \n\nExpiry comment:\n$2",
+	"notification-bs-expiry-one-week-subject": "Page \"$1\" will expire this week",
+	"notification-bs-expiry-one-week-web-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2",
+	"notification-bs-expiry-one-week-email-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2"
 }
