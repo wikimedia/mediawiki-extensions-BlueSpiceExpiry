@@ -11,8 +11,10 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 		$title = $this->getContext()->getTitle();
 		$canExpire = false;
-		if ( $title && $title->exists() && $title->userCan( 'expirearticle' ) ) {
-			$canExpire = true;
+		if ( $title && $title->exists() ) {
+			$canExpire = \MediaWiki\MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan( 'expirearticle', $this->getContext()->getUser(), $title );
 		}
 		$this->out->addJsConfigVars( 'bsgExpiryCanExpire', $canExpire );
 	}

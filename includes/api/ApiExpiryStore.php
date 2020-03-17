@@ -106,9 +106,13 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->exp_page_id );
-				if ( !$oTitle->userCan( 'read' ) ) {
+				$pm = \MediaWiki\MediaWikiServices::getInstance()
+					->getPermissionManager();
+
+				if ( !$pm->userCan( 'read', $this->getUser(), $oTitle ) ) {
 					continue;
 				}
+				$canExpire = $pm->userCan( 'expirearticle', $this->getUser(), $oTitle );
 				$aResultSet = [
 					'id' => $row->exp_id,
 					'page_title' => $oTitle->getPrefixedText(),
@@ -116,7 +120,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					'expiry_date' => $row->exp_date,
 					'article_id' => $row->exp_page_id,
 					'exp_comment' => $row->exp_comment,
-					'user_can_expire' => $oTitle->userCan( 'expirearticle' )
+					'user_can_expire' => $canExpire
 				];
 				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;

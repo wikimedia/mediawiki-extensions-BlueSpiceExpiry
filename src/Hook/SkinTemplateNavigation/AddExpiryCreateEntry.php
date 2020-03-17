@@ -10,17 +10,22 @@ class AddExpiryCreateEntry extends SkinTemplateNavigation {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		if ( !$this->sktemplate->getUser()->isLoggedIn() ) {
+		$user = $this->sktemplate->getUser();
+		$title = $this->sktemplate->getTitle();
+
+		if ( !$user->isLoggedIn() ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->exists()
-			|| $this->sktemplate->getTitle()->isSpecialPage() ) {
+		if ( !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getUser()->isAllowed( 'expirearticle' ) ) {
+		if ( !$user->isAllowed( 'expirearticle' ) ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->userCan( 'read' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'read', $user, $title )
+		) {
 			return true;
 		}
 
