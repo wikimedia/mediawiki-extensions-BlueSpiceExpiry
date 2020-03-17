@@ -59,6 +59,6 @@
 	"bs-expiry-pageinfoelement-unexpire-tooltip": "Зняти позначку про застарілість із цієї сторінки",
 	"apihelp-bs-expiry-tasks-summary": "Забезпечує такі завдання, як редагування чи вилучення втрат актуальності",
 	"apihelp-bs-expiry-store-summary": "Забезпечує сховок для втрат актуальності, до якого можна надсилати запити",
-	"right-expirearticle": "позначення сторінок як застарілих",
+	"right-expirearticle": "Позначення сторінок як застарілих",
 	"action-expirearticle": "позначення сторінок як застарілих"
 }
