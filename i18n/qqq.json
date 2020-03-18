@@ -61,5 +61,15 @@
 	"apihelp-bs-expiry-tasks-summary": "{{doc-apihelp-summary|bs-expiry-tasks}}",
 	"apihelp-bs-expiry-store-summary": "{{doc-apihelp-summary|bs-expiry-store}}",
 	"right-expirearticle": "{{doc-right|expirearticle}}",
-	"action-expirearticle": "{{doc-action|expirearticle}}"
+	"action-expirearticle": "{{doc-action|expirearticle}}",
+	"echo-category-title-bs-expiry-daily-cat": "Message to display on user preferences for notifications category bs-expiry-daily-cat",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Tooltip for Echo notification category bs-expiry-daily-cat",
+	"echo-category-title-bs-expiry-weekly-cat": "Message to display on user preferences for notifications category bs-expiry-weekly-cat",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Tooltip for Echo notification category bs-expiry-weekly-cat",
+	"notification-bs-expiry-today-subject": "Subject of the notification that a page expired today.\n* $1 - the title of the page, that expired",
+	"notification-bs-expiry-today-web-body": "Body of the notification that a page expired today.\n* $1 - the title of the page, that expired\n* $2 - comment that was left when the expiration date was set for the page",
+	"notification-bs-expiry-today-email-body": "Body of the notification that a page expired today.\n* $1 - the title of the page, that expired\n* $2 - comment that was left when the expiration date was set for the page",
+	"notification-bs-expiry-one-week-subject": "Subject of the notification that a page expires in this week.\n* $1 - the title of the page, that expired",
+	"notification-bs-expiry-one-week-web-body": "Body of the notification that a page expires in this week.\n* $1 - the title of the page, that expires\n* $2 - comment that was left when the expiration date was set for the page",
+	"notification-bs-expiry-one-week-email-body": "Body of the notification that a page expires in this week.\n* $1 - the title of the page, that expires\n* $2 - comment that was left when the expiration date was set for the page"
 }
