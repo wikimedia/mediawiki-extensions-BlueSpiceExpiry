@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"沈澄心"
 		]
 	},
 	"bs-expiry-article-label": "页面",
-	"bs-expiry-pref-enablepagewatermark": "在过期的页面上显示水印"
+	"bs-expiry-edit-grid-header-username": "用户",
+	"bs-expiry-edit-grid-header-date": "日期",
+	"bs-expiry-pref-enablepagewatermark": "在过期的页面上显示水印",
+	"bs-expiry-pageinfoelement-expired-label": "已过期"
 }
