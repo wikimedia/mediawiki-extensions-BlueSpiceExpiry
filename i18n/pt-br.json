@@ -59,5 +59,15 @@
 	"apihelp-bs-expiry-tasks-summary": "Fornece tarefas como editar ou excluir vencimentos",
 	"apihelp-bs-expiry-store-summary": "Fornece uma loja para expirar, que pode ser consultada",
 	"right-expirearticle": "Expirar páginas",
-	"action-expirearticle": "expirar páginas"
+	"action-expirearticle": "expirar páginas",
+	"echo-category-title-bs-expiry-daily-cat": "Expiração - Diariamente",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Notificar-me quando uma página expirar hoje",
+	"echo-category-title-bs-expiry-weekly-cat": "Expiração - Semanal",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Notificar-me quando uma página expirar em uma semana",
+	"notification-bs-expiry-today-subject": "A página \"$1\" expirou",
+	"notification-bs-expiry-today-web-body": "A página \"$1\" expirou. Revise o conteúdo da página para decidir se ela precisa ser atualizada. Se o conteúdo da página ainda estiver atualizado, você pode simplesmente expirar a página.\n\nComentário de expiração:\n$2",
+	"notification-bs-expiry-today-email-body": "A página \"$1\" expirou. Revise o conteúdo da página para decidir se ela precisa ser atualizada. Se o conteúdo da página ainda estiver atualizado, você pode simplesmente expirar a página.\n\nComentário de expiração:\n$2",
+	"notification-bs-expiry-one-week-subject": "A página \"$1\" expirará esta semana",
+	"notification-bs-expiry-one-week-web-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2",
+	"notification-bs-expiry-one-week-email-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2"
 }

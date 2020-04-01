@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexander Yukal"
+		]
+	},
+	"echo-category-title-bs-expiry-daily-cat": "Срок действия - Ежедневно",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Сообщите мне, когда срок действия страницы истечет сегодня",
+	"echo-category-title-bs-expiry-weekly-cat": "Срок действия - Еженедельно",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Сообщите мне, когда срок действия страницы истечет через неделю",
+	"notification-bs-expiry-today-subject": "Срок действия страницы \"$1\" истек",
+	"notification-bs-expiry-today-email-body": "Срок действия страницы \"$1\" истек. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять. Если содержимое страницы все еще обновлено, вы можете просто удалить страницу.\n\nКомментарий срока действия:\n$2",
+	"notification-bs-expiry-one-week-subject": "Страница \"$1\" истекает на этой неделе",
+	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2"
+}

@@ -65,5 +65,15 @@
 	"apihelp-bs-expiry-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Veraltungen bereit",
 	"apihelp-bs-expiry-store-summary": "Stellt einen Suchspeicher für Veraltungen bereit, die abgefragt werden können",
 	"right-expirearticle": "Seiten als veraltet markieren",
-	"action-expirearticle": "Seiten als veraltet zu markieren"
+	"action-expirearticle": "Seiten als veraltet zu markieren",
+	"echo-category-title-bs-expiry-daily-cat": "Veraltung - täglich",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Benachrichtige mich, wenn ein Artikel heute veraltet",
+	"echo-category-title-bs-expiry-weekly-cat": "Veraltung - wöchentlich",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Benachrichtige mich, wenn ein Artikel in einer Woche veraltet",
+	"notification-bs-expiry-today-subject": "Der Artikel \"$1\" ist veraltet",
+	"notification-bs-expiry-today-web-body": "Der Artikel \"$1\" ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-today-email-body": "Der Artikel \"$1\" ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-one-week-subject": "Der Artikel \"$1\" wird diese Woche veralten",
+	"notification-bs-expiry-one-week-web-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-one-week-email-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2"
 }
