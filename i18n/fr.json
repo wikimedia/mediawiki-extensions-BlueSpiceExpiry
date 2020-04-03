@@ -68,7 +68,7 @@
 	"echo-category-title-bs-expiry-weekly-cat": "Expiration — Hebdomadaire",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Me notifier quand une page expire dans une semaine",
 	"notification-bs-expiry-today-subject": "La page « $1 » a expiré",
-	"notification-bs-expiry-today-web-body": "La page « $1 » a expiré. Veuillez vérifier le contenu de la page pour décider s’il doit être mis à jour. Si le contenu de la page est toujours à jour, vous pouvez simplement enlever l’expiration de la tâche. \n\nCommentaire d’expiration :\n$2",
+	"notification-bs-expiry-today-web-body": "La page « $1 » a expiré. Veuillez vérifier le contenu de la page pour décider s’il doit être mis à jour. Si le contenu de la page est encore à jour, vous pouvez simplement enlever l’expiration de la tâche. \n\nCommentaire d’expiration :\n$2",
 	"notification-bs-expiry-today-email-body": "La page « $1 » a expiré. Veuillez vérifier le contenu de la page pour décider s’il doit être mis à jour. Si le contenu de la page est toujours à jour, vous pouvez simplement supprimer l’expiration de la page. \n\nCommentaire d’expiration :\n$2",
 	"notification-bs-expiry-one-week-subject": "La page « $1 » expirera cette semaine",
 	"notification-bs-expiry-one-week-web-body": "La page « $1 » expirera cette semaine. Veuillez vérifier le contenu de la page pour décider s’il doit être mis à jour. \n\nCommentaire d’expiration :\n$2",
