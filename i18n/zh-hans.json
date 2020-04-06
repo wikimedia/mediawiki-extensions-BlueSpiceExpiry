@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
-			"沈澄心"
+			"沈澄心",
+			"铁桶"
 		]
 	},
+	"bs-expiry-header-pagename": "页面",
 	"bs-expiry-article-label": "页面",
 	"bs-expiry-edit-grid-header-username": "用户",
 	"bs-expiry-edit-grid-header-date": "日期",
