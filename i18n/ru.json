@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alexander Yukal"
+			"Alexander Yukal",
+			"Meerrahtar"
 		]
 	},
+	"bs-expiry-header-pagename": "Страница",
+	"bs-expiry-comment-label": "Комментарий",
 	"echo-category-title-bs-expiry-daily-cat": "Срок действия - Ежедневно",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Сообщите мне, когда срок действия страницы истечет сегодня",
 	"echo-category-title-bs-expiry-weekly-cat": "Срок действия - Еженедельно",
