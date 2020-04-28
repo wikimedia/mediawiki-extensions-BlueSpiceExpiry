@@ -5,7 +5,7 @@ namespace BlueSpice\Expiry\Data;
 use BlueSpice\Data\FieldType;
 
 class Schema extends \BlueSpice\Data\Schema {
-	public const TABLE_NAME = 'bs_expiry';
+	const TABLE_NAME = 'bs_expiry';
 
 	public function __construct() {
 		parent::__construct( [
