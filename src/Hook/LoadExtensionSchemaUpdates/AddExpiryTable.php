@@ -17,19 +17,19 @@ class AddExpiryTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 			$this->updater->addExtensionField(
 				'bs_expiry',
 				'exp_date',
-				"$dir/bs_expiry.patch.add_independence_cols.sql"
+				"$dir/maintenance/db/bs_expiry.patch.add_independence_cols.sql"
 			);
 			// copy date and page_id from reminder, delete all unused entries
 			$this->updater->modifyExtensionField(
 				'bs_expiry',
 				'exp_date',
-				"$dir/bs_expiry.patch.copy_from_reminder_new_version.sql"
+				"$dir/maintenance/db/bs_expiry.patch.copy_from_reminder_new_version.sql"
 			);
 			// delete expires column
 			$this->updater->dropExtensionField(
 				'bs_expiry',
 				'expires',
-				"$dir/bs_expiry.patch.drop_exists_and_rem_id.sql"
+				"$dir/maintenance/db/bs_expiry.patch.drop_exists_and_rem_id.sql"
 			);
 		}
 	}
