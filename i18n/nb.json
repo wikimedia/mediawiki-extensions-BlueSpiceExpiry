@@ -59,5 +59,15 @@
 	"apihelp-bs-expiry-tasks-summary": "Tilbyr oppgaver som redigering og sletting av utløp",
 	"apihelp-bs-expiry-store-summary": "Gir et lager for utløp som det kan spørres mot",
 	"right-expirearticle": "Merke sider som utløpt",
-	"action-expirearticle": "merke sider som utløpt"
+	"action-expirearticle": "merke sider som utløpt",
+	"echo-category-title-bs-expiry-daily-cat": "Utløp – daglig",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Varsle meg når en side utløper i dag",
+	"echo-category-title-bs-expiry-weekly-cat": "Utløp – ukentlig",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Varsle meg når en side utløper om ei uke",
+	"notification-bs-expiry-today-subject": "Siden «$1» har utløpt",
+	"notification-bs-expiry-today-web-body": "Siden «$1» har utløpt. Sjekk sidens innhold for å sjekke om den bør oppdateres. Hvis sideinnholdet fortsatt er gyldig kan du merke siden som ikke utløpt.\n\nUtløpskommentar:\n$2",
+	"notification-bs-expiry-today-email-body": "Siden «$1» har utløpt. Sjekk sidens innhold for å avgjøre om den må oppdateres. Hvis sidens innhold fortsatt er gyldig kan du merke siden som ikke utløpt.\n\nUtløpskommentar:\n$2",
+	"notification-bs-expiry-one-week-subject": "Siden «$1» utløper denne uka",
+	"notification-bs-expiry-one-week-web-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2",
+	"notification-bs-expiry-one-week-email-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2"
 }
