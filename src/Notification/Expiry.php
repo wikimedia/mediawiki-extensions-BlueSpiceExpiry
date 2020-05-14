@@ -20,7 +20,6 @@ abstract class Expiry extends BaseNotification {
 	 */
 	public function __construct( $type, $agent, $title, $affectedUsers, $comment = '' ) {
 		$params = [ 'comment' => $comment ];
-		error_log( var_export( $params, 1 ) );
 		parent::__construct( $type, $agent, $title, $params );
 
 		$audience = [];
