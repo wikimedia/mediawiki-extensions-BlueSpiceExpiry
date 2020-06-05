@@ -31,5 +31,8 @@
 	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
 	"bs-expiry-pageinfoelement-expired-label": "expirado",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Esta página ha caducado",
-	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades"
+	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades",
+	"bs-expiry-date-label": "Caduca el",
+	"bs-expiry-delete-error-unknown": "No se pudo eliminar la caducidad.",
+	"bs-expiry-update-error": "No se pudo actualizar la caducidad."
 }
