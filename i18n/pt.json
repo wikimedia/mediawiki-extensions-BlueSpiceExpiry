@@ -61,5 +61,11 @@
 	"apihelp-bs-expiry-tasks-summary": "Fornece tarefas como editar ou eliminar expirações",
 	"apihelp-bs-expiry-store-summary": "Fornece um armazenamento para expirações, que podem ser consultadas",
 	"right-expirearticle": "Expirar páginas",
-	"action-expirearticle": "expirar páginas"
+	"action-expirearticle": "expirar páginas",
+	"echo-category-title-bs-expiry-daily-cat": "Expira - Diariamente",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "Não notificar-me quando uma página expira hoje",
+	"echo-category-title-bs-expiry-weekly-cat": "Expira - Semanalmente",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "Notificar-me quando uma página expira em uma semana",
+	"notification-bs-expiry-today-subject": "A págian \"$1\" expirou",
+	"notification-bs-expiry-one-week-subject": "A página \"$1\" irá expirar esta semana"
 }
