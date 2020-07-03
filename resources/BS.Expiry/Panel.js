@@ -13,7 +13,7 @@
 
 Ext.define( 'BS.Expiry.Panel', {
 	extend: 'BS.CRUDGridPanel',
-	requires: [ 'BS.store.BSApi', 'BS.Expiry.PanelDialog' ],
+	requires: [ 'BS.store.BSApi', 'BS.Expiry.PanelDialog', 'BS.Expiry.dialog.ChangeDate' ],
 	initComponent: function() {
 
 		this.strMain = new BS.store.BSApi({
@@ -104,15 +104,26 @@ Ext.define( 'BS.Expiry.Panel', {
 		);
 	},
 	onBtnEditClick: function () {
-		this.selectedRow = this.grdMain.getSelectionModel().getSelection();
-		var rowData = this.selectedRow[0].getData();
+		var me = this;
+		this.selectedRows = this.grdMain.getSelectionModel().getSelection();
+		if ( this.selectedRows.length > 1 ) {
+			if ( !this.dlgChangeDate ) {
+				this.dlgChangeDate = new BS.Expiry.dialog.ChangeDate( {
+					id: 'bs-expiry-dlg-changedate'
+				} );
+				this.dlgChangeDate.on( 'ok', me.onChangeDateOk, me );
+			}
+			this.dlgChangeDate.setData();
+			this.dlgChangeDate.show();
+			return;
+		}
+		var rowData = this.selectedRows[0].getData();
 		var obj = {
 			id: rowData.id,
 			date: rowData.expiry_date,
 			page_title: rowData.page_title,
 			comment: rowData.exp_comment
 		};
-		var me = this;
 		if ( !this.dlgEdit ) {
 			this.dlgEdit = new BS.Expiry.PanelDialog({
 				id: 'bs-expiry-dlg-edit'
@@ -145,6 +156,30 @@ Ext.define( 'BS.Expiry.Panel', {
 			me.reloadStore();
 		});
 		$( document ).trigger( "BSExpiryAddOk", [ this, obj ] );
+	},
+	onChangeDateOk: function( data ) {
+		var selectedRow = this.grdMain.getSelectionModel().getSelection();
+		var me = this;
+		for ( var i = 0; i < selectedRow.length; i++ ){
+			var obj = selectedRow[i].getData();
+			if ( !obj.user_can_expire ) {
+				continue;
+			}
+			obj.date = this.dlgChangeDate.getData().date;
+			obj.comment = obj.exp_comment || '';
+			bs.api.tasks.exec(
+				'expiry',
+				'saveExpiry',
+				obj
+			)
+			.done( function() {
+				if ( selectedRow.length !== i ) {
+					return;
+				}
+				me.reloadStore();
+			} );
+			$( document ).trigger( "BSExpiryEditOk", [ this, obj ] );
+		}
 	},
 	onEditExpiryOk: function( data ) {
 		var obj = this.dlgEdit.getData();
@@ -188,5 +223,11 @@ Ext.define( 'BS.Expiry.Panel', {
 		}
 
 		return actions;
-	}
+	},
+	onGrdMainSelectionChange: function( sender, records, opts ) {
+		this.callParent( arguments );
+		if( records && records.length > 0 ) {
+			this.btnEdit.enable();
+		}
+	},
 });
