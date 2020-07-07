@@ -70,6 +70,12 @@
 			"Registry": {
 				"expiry": "\\BlueSpice\\Expiry\\Reminder\\Expiry::factory"
 			}
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"expirationdate": "BlueSpice\\Expiry\\SMWConnector\\PropertyValueProvider\\ExpirationDate::factory",
+				"isexpired": "BlueSpice\\Expiry\\SMWConnector\\PropertyValueProvider\\IsExpired::factory"
+			}
 		}
 	},
 	"ServiceWiringFiles": [

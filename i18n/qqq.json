@@ -75,5 +75,10 @@
 	"notification-bs-expiry-one-week-web-body": "Body of the notification that a page expires in this week.\n* $1 - the title of the page, that expires\n* $2 - comment that was left when the expiration date was set for the page",
 	"notification-bs-expiry-one-week-email-body": "Body of the notification that a page expires in this week.\n* $1 - the title of the page, that expires\n* $2 - comment that was left when the expiration date was set for the page",
 	"bs-expiry-create-reminder-label": "Label for checkbox to create reminder",
-	"bs-expiry-reminder-type-expiry": "Label for reminder of type \"expiry\"\n{{Identical|Expiry}}"
+	"bs-expiry-reminder-type-expiry": "Label for reminder of type \"expiry\"\n{{Identical|Expiry}}",
+	"bs-expiry-do-updateexpirydate-article": "Label for button that opens a dialog that allows the user to update the expiration date of a page",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Label of _EXPIRATIONDATE semantic special property",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Description of _EXPIRATIONDATE semantic special property",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Label of _ISEXPIRED semantic special property",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property"
 }
