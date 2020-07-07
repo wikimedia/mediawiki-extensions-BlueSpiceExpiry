@@ -73,5 +73,9 @@
 	"notification-bs-expiry-one-week-email-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2",
 	"bs-expiry-create-reminder-label": "Create reminder",
 	"bs-expiry-reminder-type-expiry": "Expiry",
-	"bs-expiry-do-updateexpirydate-article": "Change expiry date"
+	"bs-expiry-do-updateexpirydate-article": "Change expiry date",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiry/Expiration date",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date for when the page expires",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiry/Is expired",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Tells if the page has expired"
 }
