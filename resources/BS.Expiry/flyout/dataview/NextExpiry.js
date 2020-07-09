@@ -34,16 +34,24 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 			this.fireEvent( 'expirationDataSet', this, this.getExpirationInfo() );
 		}, this );
 
-		var unexpire = '';
+		var unexpire = '', updateexpiry = '';
+		var store = this.store;
 		if ( this.userCanExpire ) {
-			unexpire = "<a href='#' class='bs-expiry-unexpire' data-expid='{id}'>"
+			unexpire = "<li><a href='#' class='bs-expiry-unexpire' data-expid='{id}'>"
 				+ mw.message( 'bs-expiry-do-unexpire-article' ).plain()
-				+ "</a>";
+				+ "</a></li>";
+			updateexpiry = "<li><a href='#' class='bs-expiry-updateexpirydate' "
+				+ "data-expiry='{expiry_json}'>"
+				+ mw.message( 'bs-expiry-do-updateexpirydate-article' ).plain()
+				+ "</a></li>";
 		}
 		this.itemTpl = new Ext.XTemplate(
-			"<div class='bs-expiry-flyout-next-{expiration_status}'",
+			"<div class='bs-expiry-flyout-next-{expiration_status}'>",
 			"<span>{expiry_message}</span>&nbsp",
+			"<ul>",
 			unexpire,
+			updateexpiry,
+			"</ul>",
 			"<br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
 		);
 		this.emptyText = mw.message( 'bs-expiry-flyout-expiry-not-set' ).plain();
@@ -54,6 +62,6 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 		return {
 			status: this.expirationStatus,
 			date: this.expirationDate
-		}
+		};
 	}
 } );
