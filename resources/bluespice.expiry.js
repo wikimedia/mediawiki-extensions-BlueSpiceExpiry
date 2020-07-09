@@ -14,6 +14,35 @@
 		} );
 	});
 
+	$( d ).on( 'click', 'a.bs-expiry-updateexpirydate', function() {
+		var me = this;
+		var expiry = $(this).data( 'expiry' ) || {};
+		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
+			Ext.onReady( function() {
+				if ( !me.dlgExpiry ) {
+					me.dlgExpiry = Ext.create( 'BS.Expiry.dialog.ChangeDate', {
+						id: 'bs-expiry-dlg-changedate-page'
+					} );
+					me.dlgExpiry.on( 'ok', function() {
+						expiry.date = me.dlgExpiry.getData().date;
+						expiry.comment = expiry.exp_comment;
+						bs.api.tasks.exec(
+							'expiry',
+							'saveExpiry',
+							expiry
+						).done( function(){
+							window.location.reload();
+						} );
+						$( d ).trigger( "BSExpiryEditOk", [ me, expiry ] );
+					}, me );
+				}
+				expiry.articleId = mw.config.get( 'wgArticleId' );
+				me.dlgExpiry.setData( expiry );
+				me.dlgExpiry.show( me );
+			});
+		});
+	});
+
 	$( d ).on( 'click', "#ca-expiryCreate, .ca-expiryCreate", function ( e ) {
 		e.preventDefault();
 		var me = this;
