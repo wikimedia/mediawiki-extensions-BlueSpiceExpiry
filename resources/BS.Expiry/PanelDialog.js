@@ -59,7 +59,8 @@ Ext.define( "BS.Expiry.PanelDialog", {
 			date: new Date( this.dfDate.getValue() ).getTime() / 1000,
 			id: this.hfId.getValue(),
 			articleId: articleId,
-			comment: this.taComment.getValue()
+			comment: this.taComment.getValue(),
+			setReminder: !this.cbxCreateReminder ? false : this.cbxCreateReminder.getValue()
 		};
 		$( document ).trigger( "BSExpiryGetData", [ this, obj ] );
 		return obj;

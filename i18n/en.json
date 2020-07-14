@@ -68,5 +68,7 @@
 	"notification-bs-expiry-today-email-body": "The page \"$1\" has expired. Please review the page's content to decide whether it needs to be updated. If the page content is still up-to-date, you can simply unexpire the page. \n\nExpiry comment:\n$2",
 	"notification-bs-expiry-one-week-subject": "Page \"$1\" will expire this week",
 	"notification-bs-expiry-one-week-web-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2",
-	"notification-bs-expiry-one-week-email-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2"
+	"notification-bs-expiry-one-week-email-body": "The page \"$1\" will expire this week. Please review the page's content to decide whether it needs to be updated. \n\nExpiry comment:\n$2",
+	"bs-expiry-create-reminder-label": "Create reminder",
+	"bs-expiry-reminder-type-expiry": "Expiry"
 }

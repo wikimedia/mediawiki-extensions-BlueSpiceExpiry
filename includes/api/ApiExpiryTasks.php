@@ -58,6 +58,9 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
+		$setReminder = isset( $oTaskData->setReminder ) && $oTaskData->setReminder == true
+			? true
+			: false;
 		$sComment = addslashes( $oTaskData->comment );
 
 		$iDate = isset( $oTaskData->date )
@@ -157,6 +160,9 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		$oResult->success = true;
+		if ( $setReminder ) {
+			$this->setReminders( $aData );
+		}
 
 		$oTitle->invalidateCache();
 
@@ -167,6 +173,74 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		return $oResult;
+	}
+
+	/**
+	 *
+	 * @param array $expiryData
+	 * @return bool
+	 */
+	private function setReminders( $expiryData ) {
+		if ( !$this->getServices()->hasService( 'BSReminderFactory' ) ) {
+			return false;
+		}
+		$types = $this->getServices()->getService( 'BSReminderFactory' )->getRegisteredTypes();
+		if ( !in_array( 'expiry', $types ) ) {
+			return false;
+		}
+		$res = $this->getDB( DB_REPLICA )->select(
+			'bs_reminder',
+			'*',
+			[ 'rem_page_id' => $expiryData['exp_page_id'],
+			'rem_type' => 'expiry'
+		] );
+		$userReminderUpdated = false;
+		foreach ( $res as $row ) {
+			if ( $row->rem_user_id === $this->getUser()->getId() ) {
+				$userReminderUpdated = true;
+			}
+			$row->rem_date = $expiryData['exp_date'];
+			$this->getDB( DB_MASTER )->update(
+				'bs_reminder',
+				(array)$row,
+				[ 'rem_id' => $row->rem_id ]
+			);
+		}
+		if ( $userReminderUpdated ) {
+			return true;
+		}
+		return $this->getDB( DB_MASTER )->insert(
+			'bs_reminder',
+			[
+				'rem_date' => $expiryData['exp_date'],
+				'rem_page_id' => $expiryData['exp_page_id'],
+				'rem_user_id' => $this->getUser()->getId(),
+				'rem_comment' => $expiryData['exp_comment'],
+				'rem_type' => 'expiry',
+				'rem_is_repeating' => false,
+			]
+		);
+	}
+
+	/**
+	 *
+	 * @param array $expiryData
+	 * @return bool
+	 */
+	private function deleteReminders( $expiryData ) {
+		if ( !$this->getServices()->hasService( 'BSReminderFactory' ) ) {
+			return false;
+		}
+		$types = $this->getServices()->getService( 'BSReminderFactory' )->getRegisteredTypes();
+		if ( !in_array( 'expiry', $types ) ) {
+			return false;
+		}
+		return $this->getDB( DB_REPLICA )->delete(
+			'bs_reminder',
+			[ 'rem_page_id' => $expiryData['exp_page_id'],
+				'rem_type' => 'expiry'
+			]
+		);
 	}
 
 	/**
@@ -197,6 +271,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			__METHOD__
 		);
 
+		$this->deleteReminders( [ 'exp_page_id' => $iArticleId ] );
 		$oTitle = Title::newFromID( $iArticleId );
 		if ( !empty( $iArticleId ) && $oTitle ) {
 			$oTitle->invalidateCache();
