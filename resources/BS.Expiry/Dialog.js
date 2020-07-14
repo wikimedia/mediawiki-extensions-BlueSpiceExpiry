@@ -27,8 +27,14 @@ Ext.define( "BS.Expiry.Dialog", {
 			this.dfDate,
 			this.taComment,
 			this.hfId
-		]
+		];
 		var items = this.items;
+		if ( mw.config.get( 'bsgReminderRegisteredTypes', null ) && mw.config.get( 'bsgReminderRegisteredTypes' ).expiry ) {
+			this.cbxCreateReminder = Ext.create( 'Ext.form.field.Checkbox', {
+				fieldLabel: mw.message( 'bs-expiry-create-reminder-label' ).plain()
+			});
+			this.items.push( this.cbxCreateReminder );
+		}
 		$( document ).trigger( "BSExpiryInitCreateForm", [ this, items ] );
 
 		return this.items;
@@ -72,7 +78,8 @@ Ext.define( "BS.Expiry.Dialog", {
 			date: new Date( this.dfDate.getValue() ).getTime() / 1000,
 			id: this.hfId.getValue(),
 			articleId: mw.config.get( 'wgArticleId' ),
-			comment: this.taComment.getValue()
+			comment: this.taComment.getValue(),
+			setReminder: !this.cbxCreateReminder ? false : this.cbxCreateReminder.getValue()
 		};
 		$( document ).trigger( "BSExpiryGetData", [ this, obj ] );
 		return obj;

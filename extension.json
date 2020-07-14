@@ -57,6 +57,11 @@
 					"path": "BlueSpiceExpiry/resources/images/bs-infobar-expired.png"
 				}
 			}
+		},
+		"BlueSpiceReminder": {
+			"Registry": {
+				"expiry": "\\BlueSpice\\Expiry\\Reminder\\Expiry::factory"
+			}
 		}
 	},
 	"ServiceWiringFiles": [
@@ -134,7 +139,8 @@
 				"bs-expiry-date-label",
 				"bs-expiry-delete-error-unknown",
 				"bs-expiry-comment-label",
-				"bs-expiry-article-label"
+				"bs-expiry-article-label",
+				"bs-expiry-create-reminder-label"
 			],
 			"dependencies": "ext.bluespice"
 		},
