@@ -11,10 +11,6 @@ class Extension extends \BlueSpice\Extension {
 	 * @return bool | stdClass
 	 */
 	public static function getExpiryForPage( $articleId ) {
-		if ( \BsCore::checkAccessAdmission( 'expirearticle' ) === false ) {
-			return null;
-		}
-
 		// basic caching, do not ask for an article id twice per call
 		if ( isset( self::$expirys[$articleId] ) ) {
 			return self::$expirys[$articleId];
