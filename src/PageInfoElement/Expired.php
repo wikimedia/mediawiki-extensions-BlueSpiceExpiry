@@ -13,6 +13,12 @@ class Expired extends PageInfoElement {
 
 	/**
 	 *
+	 * @var bool
+	 */
+	private $showMenu = false;
+
+	/**
+	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -41,6 +47,9 @@ class Expired extends PageInfoElement {
 	 * @return bool
 	 */
 	public function shouldShow( $context ) {
+		if ( !$context->getTitle()->userCan( 'read' ) ) {
+			return false;
+		}
 		$id = $context->getTitle()->getArticleID();
 		$expiry = Expiry::getExpiryForPage( $id );
 
@@ -48,6 +57,9 @@ class Expired extends PageInfoElement {
 			return false;
 		}
 
+		if ( $context->getTitle()->userCan( 'expirearticle' ) ) {
+			$this->showMenu = true;
+		}
 		$this->expId = $expiry['exp_id'];
 
 		$this->expire = 'expired';
@@ -100,9 +112,16 @@ class Expired extends PageInfoElement {
 	 * @return string
 	 */
 	public function getMenu() {
+		if ( !$this->showMenu ) {
+			return '';
+		}
 		return $this->makeMenu();
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function makeMenu() {
 		$html = '';
 		$label = $this->msg( 'bs-expiry-pageinfoelement-unexpire-label' );
