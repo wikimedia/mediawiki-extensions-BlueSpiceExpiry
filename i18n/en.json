@@ -9,7 +9,7 @@
 	"apihelp-bs-expiry-store-description" : "Serves the data for Special:Expiry overview grid",
 	"apihelp-bs-expiry-tasks-description" : "Executes tasks like update and delete for Special:Expiry overview grid",
 	"bs-expiry-unexpire-article": "Page is expired",
-	"bs-expiry-do-unexpire-article": "Page is still up to date. (unexpire this page)",
+	"bs-expiry-do-unexpire-article": "Delete expiry date",
 	"bs_expiry-unexpire-success": "The page was unexpired successfully",
 	"bs_expiry-unexpire-unsuccess": "The page could not be unexpired",
 	"bs-expiry-specialpage-subtitle": "← $1",
