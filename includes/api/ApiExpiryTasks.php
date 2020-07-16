@@ -290,7 +290,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		return [
 			'getDetailsForExpiry' => [ 'read' ],
 			'saveExpiry' => [ 'expirearticle' ],
-			'deleteExpiry' => [ 'expirearticle' ]
+			'deleteExpiry' => [ 'expiry-delete' ]
 		];
 	}
 }
