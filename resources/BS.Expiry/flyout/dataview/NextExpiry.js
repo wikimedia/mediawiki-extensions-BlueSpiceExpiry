@@ -5,6 +5,7 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 	expirationStatus: '',
 	expirationDate: '',
 	userCanExpire: false,
+	userCanDeleteExpiration: false,
 	initComponent: function() {
 		this.store = new BS.store.BSApi( {
 			apiAction: 'bs-expiry-store',
@@ -36,10 +37,13 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 
 		var unexpire = '', updateexpiry = '';
 		var store = this.store;
-		if ( this.userCanExpire ) {
+		if ( this.userCanDeleteExpiration ) {
 			unexpire = "<li><a href='#' class='bs-expiry-unexpire' data-expid='{id}'>"
 				+ mw.message( 'bs-expiry-do-unexpire-article' ).plain()
 				+ "</a></li>";
+
+		}
+		if ( this.userCanExpire ) {
 			updateexpiry = "<li><a href='#' class='bs-expiry-updateexpirydate' "
 				+ "data-expiry='{expiry_json}'>"
 				+ mw.message( 'bs-expiry-do-updateexpirydate-article' ).plain()

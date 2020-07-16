@@ -62,6 +62,8 @@
 	"apihelp-bs-expiry-store-summary": "{{doc-apihelp-summary|bs-expiry-store}}",
 	"right-expirearticle": "{{doc-right|expirearticle}}",
 	"action-expirearticle": "{{doc-action|expirearticle}}",
+	"right-expiry-delete": "{{doc-right|expiry-delete}}",
+	"action-expiry-delete": "{{doc-action|expiry-delete}}",
 	"echo-category-title-bs-expiry-daily-cat": "Message to display on user preferences for notifications category bs-expiry-daily-cat",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Tooltip for Echo notification category bs-expiry-daily-cat",
 	"echo-category-title-bs-expiry-weekly-cat": "Message to display on user preferences for notifications category bs-expiry-weekly-cat",

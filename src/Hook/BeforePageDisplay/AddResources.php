@@ -11,10 +11,15 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 		$title = $this->getContext()->getTitle();
 		$canExpire = false;
+		$canDeleteExpiration = false;
 		if ( $title && $title->exists() && $title->userCan( 'expirearticle' ) ) {
 			$canExpire = true;
 		}
+		if ( $title && $title->exists() && $title->userCan( 'expiry-delete' ) ) {
+			$canDeleteExpiration = true;
+		}
 		$this->out->addJsConfigVars( 'bsgExpiryCanExpire', $canExpire );
+		$this->out->addJsConfigVars( 'bsgExpiryCanDeleteExpiration', $canDeleteExpiration );
 	}
 
 }
