@@ -69,5 +69,7 @@
 	"notification-bs-expiry-today-email-body": "Siden «$1» har utløpt. Sjekk sidens innhold for å avgjøre om den må oppdateres. Hvis sidens innhold fortsatt er gyldig kan du merke siden som ikke utløpt.\n\nUtløpskommentar:\n$2",
 	"notification-bs-expiry-one-week-subject": "Siden «$1» utløper denne uka",
 	"notification-bs-expiry-one-week-web-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2",
-	"notification-bs-expiry-one-week-email-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2"
+	"notification-bs-expiry-one-week-email-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2",
+	"bs-expiry-create-reminder-label": "Opprett påminnelse",
+	"bs-expiry-reminder-type-expiry": "Utløp"
 }

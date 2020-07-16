@@ -69,5 +69,7 @@
 	"notification-bs-expiry-today-email-body": "\"$1\" sayfasının süresi doldu. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin. Sayfa içeriği hala güncelse, sayfanın kullanım ömrünü doldurabilirsiniz.\n\nSüre sonu yorumu:\n$2",
 	"notification-bs-expiry-one-week-subject": "\"$1\" sayfasının süresi bu hafta sona erecek",
 	"notification-bs-expiry-one-week-web-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
-	"notification-bs-expiry-one-week-email-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2"
+	"notification-bs-expiry-one-week-email-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
+	"bs-expiry-create-reminder-label": "Hatırlatıcı oluştur",
+	"bs-expiry-reminder-type-expiry": "Bitiş"
 }

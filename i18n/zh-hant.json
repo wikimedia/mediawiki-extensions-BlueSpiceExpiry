@@ -69,5 +69,7 @@
 	"notification-bs-expiry-today-email-body": "頁面「$1」已逾期。請檢視頁面的內容來決定是否需要更新。若頁面內容為最新，您可以簡單地來將頁面取消逾期。\n\n逾期註釋：\n$2",
 	"notification-bs-expiry-one-week-subject": "頁面「$1」將在這週逾期",
 	"notification-bs-expiry-one-week-web-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2",
-	"notification-bs-expiry-one-week-email-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2"
+	"notification-bs-expiry-one-week-email-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2",
+	"bs-expiry-create-reminder-label": "建立提醒",
+	"bs-expiry-reminder-type-expiry": "期限"
 }

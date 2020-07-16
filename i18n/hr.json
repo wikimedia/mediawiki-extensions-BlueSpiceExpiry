@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"bs-expiry-create-reminder-label": "Stvori podsjetnik",
+	"bs-expiry-reminder-type-expiry": "Isteknuće"
+}
