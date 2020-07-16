@@ -116,7 +116,8 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					'expiry_date' => $row->exp_date,
 					'article_id' => $row->exp_page_id,
 					'exp_comment' => $row->exp_comment,
-					'user_can_expire' => $oTitle->userCan( 'expirearticle' )
+					'user_can_expire' => $oTitle->userCan( 'expirearticle' ),
+					'user_can_delete_expiration' => $oTitle->userCan( 'expiry-delete' ),
 				];
 				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;

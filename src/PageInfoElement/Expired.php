@@ -57,7 +57,10 @@ class Expired extends PageInfoElement {
 			return false;
 		}
 
-		if ( $context->getTitle()->userCan( 'expirearticle' ) ) {
+		// Currently there is only the deletion of the expiration in the pageInfo
+		// menu. This may change in the future, as we also could add a
+		// "update expiration date" menu item
+		if ( $context->getTitle()->userCan( 'expiry-delete' ) ) {
 			$this->showMenu = true;
 		}
 		$this->expId = $expiry['exp_id'];

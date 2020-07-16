@@ -59,6 +59,8 @@
 	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried",
 	"right-expirearticle": "Expire pages",
 	"action-expirearticle": "expire pages",
+	"right-expiry-delete": "Remove expiration from pages",
+	"action-expiry-delete": "remove expiration from pages",
 	"echo-category-title-bs-expiry-daily-cat": "Expiry - Daily",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Notfiy me when a page expires today",
 	"echo-category-title-bs-expiry-weekly-cat": "Expiry - Weekly",
