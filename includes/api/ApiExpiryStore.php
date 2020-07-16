@@ -113,6 +113,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					continue;
 				}
 				$canExpire = $pm->userCan( 'expirearticle', $this->getUser(), $oTitle );
+				$canDelete = $pm->userCan( 'expiry-delete', $this->getUser(), $oTitle );
 				$aResultSet = [
 					'id' => $row->exp_id,
 					'page_title' => $oTitle->getPrefixedText(),
@@ -120,7 +121,8 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					'expiry_date' => $row->exp_date,
 					'article_id' => $row->exp_page_id,
 					'exp_comment' => $row->exp_comment,
-					'user_can_expire' => $canExpire
+					'user_can_expire' => $canExpire,
+					'user_can_delete_expiration' => $canDelete,
 				];
 				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;

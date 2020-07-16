@@ -6,10 +6,12 @@ Ext.define( 'BS.Expiry.flyout.Base', {
 		'BS.Expiry.flyout.grid.ChangesSinceExpired'
 	],
 	userCanExpire: false,
+	userCanDeleteExpiration: false,
 	makeTopPanelItems: function() {
 		if( !this.nextExpiry ) {
 			this.nextExpiry = new BS.Expiry.flyout.dataview.NextExpiry( {
-				userCanExpire: this.userCanExpire
+				userCanExpire: this.userCanExpire,
+				userCanDeleteExpiration: this.userCanDeleteExpiration
 			} );
 			this.nextExpiry.on( 'expirationDataSet', this.onExpirationDataSet, this );
 		}

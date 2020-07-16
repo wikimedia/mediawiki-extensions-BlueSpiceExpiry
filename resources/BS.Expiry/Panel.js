@@ -217,11 +217,20 @@ Ext.define( 'BS.Expiry.Panel', {
 	makeRowActions: function() {
 		var actions = this.callParent( arguments );
 		for( var i = 0; i < actions.length; i++ ) {
-			actions[i].isDisabled = function( view, rowIndex, colIndex, item, record  ) {
-				return !record.get( 'user_can_expire' );
-			};
+			actions[i].isDisabled = function( view, rowIndex, colIndex, item, record ) {
+				var permission = false;
+				if ( this.index < 1 ) {
+					permission = record.get( 'user_can_expire' );
+				}
+				if ( this.index === 1 ) {
+					permission = record.get( 'user_can_delete_expiration' );
+				}
+				return !permission;
+				// bind the current item index to the function or we can not
+				// identify wich one it is. Unfortunately Ext.grid.column.Action
+				// items have no identifier at all
+			}.bind( { index: i } );
 		}
-
 		return actions;
 	},
 	onGrdMainSelectionChange: function( sender, records, opts ) {

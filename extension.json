@@ -35,6 +35,14 @@
 						"editor",
 						"maintenanceadmin"
 					]
+				},
+				"expiry-delete": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"editor",
+						"maintenanceadmin"
+					]
 				}
 			},
 			"@AlertProviderRegistry": {
@@ -69,17 +77,21 @@
 	],
 	"GroupPermissions": {
 		"*": {
-			"expirearticle": false
+			"expirearticle": false,
+			"expiry-delete": false
 		},
 		"user": {
-			"expirearticle": true
+			"expirearticle": true,
+			"expiry-delete": true
 		},
 		"sysop": {
-			"expirearticle": true
+			"expirearticle": true,
+			"expiry-delete": true
 		}
 	},
 	"AvailableRights": [
-		"expirearticle"
+		"expirearticle",
+		"expiry-delete"
 	],
 	"SpecialPages": {
 		"Expiry": "SpecialExpiry"
