@@ -43,5 +43,7 @@
 	"bs-expiry-flyout-body-hint-expires": "scade il $1",
 	"bs-expiry-alert-body-expired": "Questa pagina è scaduta il $1. Per favore, esamina il contenuto.",
 	"bs-expiry-pageinfoelement-expired-label": "scaduto",
-	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta"
+	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta",
+	"bs-expiry-create-reminder-label": "Crea promemoria",
+	"bs-expiry-reminder-type-expiry": "Scadenza"
 }
