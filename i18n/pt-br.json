@@ -69,5 +69,7 @@
 	"notification-bs-expiry-today-email-body": "A página \"$1\" expirou. Revise o conteúdo da página para decidir se ela precisa ser atualizada. Se o conteúdo da página ainda estiver atualizado, você pode simplesmente expirar a página.\n\nComentário de expiração:\n$2",
 	"notification-bs-expiry-one-week-subject": "A página \"$1\" expirará esta semana",
 	"notification-bs-expiry-one-week-web-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2",
-	"notification-bs-expiry-one-week-email-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2"
+	"notification-bs-expiry-one-week-email-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2",
+	"bs-expiry-create-reminder-label": "Criar lembrete",
+	"bs-expiry-reminder-type-expiry": "Expiração"
 }
