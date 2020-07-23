@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ferdinand0101",
 			"Killarnee",
 			"Mglaser"
 		]
@@ -71,5 +72,6 @@
 	"notification-bs-expiry-today-email-body": "Der Artikel \"$1\" ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
 	"notification-bs-expiry-one-week-subject": "Der Artikel \"$1\" wird diese Woche veralten",
 	"notification-bs-expiry-one-week-web-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
-	"notification-bs-expiry-one-week-email-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2"
+	"notification-bs-expiry-one-week-email-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
+	"bs-expiry-create-reminder-label": "Erinnerung erstellen"
 }
