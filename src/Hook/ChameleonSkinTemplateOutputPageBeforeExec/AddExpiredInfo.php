@@ -1,12 +1,12 @@
 <?php
 
-namespace BlueSpice\Expiry\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Expiry\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\Expiry\Panel\Flyout;
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddExpiredInfo extends SkinTemplateOutputPageBeforeExec {
+class AddExpiredInfo extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 	/**
 	 *

@@ -1,11 +1,11 @@
 <?php
 
-namespace BlueSpice\Expiry\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Expiry\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
+class AddToGlobalActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialExpiry = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()

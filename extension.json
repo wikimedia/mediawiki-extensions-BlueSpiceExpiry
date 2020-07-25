@@ -215,9 +215,9 @@
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback"
 		],
-		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Expiry\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
-			"\\BlueSpice\\Expiry\\Hook\\SkinTemplateOutputPageBeforeExec\\AddExpiredInfo::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
+			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddExpiredInfo::callback"
 		],
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
