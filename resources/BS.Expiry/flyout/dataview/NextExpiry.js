@@ -41,7 +41,7 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 				+ "</a>";
 		}
 		this.itemTpl = new Ext.XTemplate(
-			"<div class='bs-expiry-flyout-next-{expiration_status}'",
+			"<div class='bs-expiry-flyout-next-{expiration_status}'>",
 			"<span>{expiry_message}</span>&nbsp",
 			unexpire,
 			"<br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
