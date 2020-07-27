@@ -15,10 +15,11 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 			return true;
 		}
 
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $oSpecialExpiry->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$oSpecialExpiry->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return true;
 		}
 

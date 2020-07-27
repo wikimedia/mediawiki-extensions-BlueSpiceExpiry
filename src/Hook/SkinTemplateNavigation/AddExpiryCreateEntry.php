@@ -19,7 +19,11 @@ class AddExpiryCreateEntry extends SkinTemplateNavigation {
 		if ( !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
-		if ( !$user->isAllowed( 'expirearticle' ) ) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$user,
+			'expirearticle'
+		);
+		if ( !$isAllowed ) {
 			return true;
 		}
 		if ( !\MediaWiki\MediaWikiServices::getInstance()
