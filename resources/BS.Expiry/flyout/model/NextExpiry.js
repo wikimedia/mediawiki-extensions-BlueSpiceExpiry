@@ -33,6 +33,9 @@ Ext.define( 'BS.Expiry.flyout.model.NextExpiry', {
 		{ name: 'id', type: 'number' },
 		{ name: 'expiry_date', type: 'string' },
 		{ name: 'article_id', type: 'string' },
-		{ name: 'exp_comment', type: 'string' }
+		{ name: 'exp_comment', type: 'string' },
+		{ name: 'expiry_json', type: 'string', convert: function( val, record ) {
+			return JSON.stringify( record.data );
+		} }
 	]
 } );
