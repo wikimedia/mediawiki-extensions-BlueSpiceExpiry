@@ -9,6 +9,7 @@
 	"specialexpiry": "Voci scadute",
 	"prefs-expiry": "Scadenza",
 	"bs-expiry-unexpire-article": "La pagina è scaduta",
+	"bs-expiry-do-unexpire-article": "Cancella data di scadenza",
 	"bs-expiry-header-pagename": "Pagina",
 	"bs-expiry-header-date": "Scade il",
 	"bs-expiry-header-comment": "Commento",

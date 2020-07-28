@@ -4,6 +4,7 @@
 			"Bugoslav"
 		]
 	},
+	"bs-expiry-do-unexpire-article": "Izbriši datum isteka",
 	"bs-expiry-create-reminder-label": "Stvori podsjetnik",
 	"bs-expiry-reminder-type-expiry": "Isteknuće"
 }

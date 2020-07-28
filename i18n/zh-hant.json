@@ -11,7 +11,7 @@
 	"apihelp-bs-expiry-store-description": "服務用於 Special:Expiry 概述網格的資料",
 	"apihelp-bs-expiry-tasks-description": "執行像是更新與刪除用於 Special:Expiry 概述網格的任務",
 	"bs-expiry-unexpire-article": "頁面已逾期",
-	"bs-expiry-do-unexpire-article": "頁面內容仍為最新。（取消此頁面逾期）",
+	"bs-expiry-do-unexpire-article": "刪除逾期日期",
 	"bs_expiry-unexpire-success": "頁面取消逾期成功",
 	"bs_expiry-unexpire-unsuccess": "頁面無法被取消逾期",
 	"bs-expiry-header-pagename": "頁面",
@@ -60,6 +60,8 @@
 	"apihelp-bs-expiry-store-summary": "提供用於期限的可查詢貯存",
 	"right-expirearticle": "逾期頁面",
 	"action-expirearticle": "逾期頁面",
+	"right-expiry-delete": "從頁面移除逾期",
+	"action-expiry-delete": "從頁面移除逾期",
 	"echo-category-title-bs-expiry-daily-cat": "逾期 - 每日",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "當有頁面會在今天逾期時通知我",
 	"echo-category-title-bs-expiry-weekly-cat": "逾期 - 每週",
@@ -71,5 +73,6 @@
 	"notification-bs-expiry-one-week-web-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2",
 	"notification-bs-expiry-one-week-email-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2",
 	"bs-expiry-create-reminder-label": "建立提醒",
-	"bs-expiry-reminder-type-expiry": "期限"
+	"bs-expiry-reminder-type-expiry": "期限",
+	"bs-expiry-do-updateexpirydate-article": "更改逾期日期"
 }
