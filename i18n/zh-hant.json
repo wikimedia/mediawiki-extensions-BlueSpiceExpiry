@@ -74,5 +74,9 @@
 	"notification-bs-expiry-one-week-email-body": "頁面「$1」將會在這週逾期。請檢視頁面的內容來決定是否需要更新。\n\n逾期註釋：\n$2",
 	"bs-expiry-create-reminder-label": "建立提醒",
 	"bs-expiry-reminder-type-expiry": "期限",
-	"bs-expiry-do-updateexpirydate-article": "更改逾期日期"
+	"bs-expiry-do-updateexpirydate-article": "更改逾期日期",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "逾期/逾期日期",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "頁面逾期的日期",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "逾期/已逾期",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "告知頁面是否逾期"
 }

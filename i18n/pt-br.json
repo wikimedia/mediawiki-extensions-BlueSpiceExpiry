@@ -11,7 +11,7 @@
 	"apihelp-bs-expiry-store-description": "Serve os dados para a grade de visão geral  no Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Executa tarefas como atualização e exclusão da grade de visão geral do Special:Expiry",
 	"bs-expiry-unexpire-article": "A página expirou",
-	"bs-expiry-do-unexpire-article": "A página ainda está atualizada. (expire esta página)",
+	"bs-expiry-do-unexpire-article": "Excluir data de expiração",
 	"bs_expiry-unexpire-success": "A página não expirou com sucesso",
 	"bs_expiry-unexpire-unsuccess": "Não foi possível expirar a página",
 	"bs-expiry-header-pagename": "Página",
@@ -71,5 +71,8 @@
 	"notification-bs-expiry-one-week-web-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2",
 	"notification-bs-expiry-one-week-email-body": "A página \"$1\" expirará nesta semana. Revise o conteúdo da página para decidir se ela precisa ser atualizada.\n\nComentário de expiração:\n$2",
 	"bs-expiry-create-reminder-label": "Criar lembrete",
-	"bs-expiry-reminder-type-expiry": "Expiração"
+	"bs-expiry-reminder-type-expiry": "Expiração",
+	"bs-expiry-do-updateexpirydate-article": "Alterar data de expiração",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data em que a página expira",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Informa se a página expirou"
 }

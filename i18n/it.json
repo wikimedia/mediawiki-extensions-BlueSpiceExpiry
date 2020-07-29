@@ -46,5 +46,6 @@
 	"bs-expiry-pageinfoelement-expired-label": "scaduto",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
-	"bs-expiry-reminder-type-expiry": "Scadenza"
+	"bs-expiry-reminder-type-expiry": "Scadenza",
+	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza"
 }
