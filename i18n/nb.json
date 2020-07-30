@@ -11,7 +11,7 @@
 	"apihelp-bs-expiry-store-description": "Leverer dataene til oversiktstabellen i Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Utfører oppgaver som å oppdatere og slette for oversiktstabellen i Special:Expiry",
 	"bs-expiry-unexpire-article": "Siden har utløpt",
-	"bs-expiry-do-unexpire-article": "Siden or fortsatt ajour. (ikke merk denne siden som utløpt lenger)",
+	"bs-expiry-do-unexpire-article": "Slett utløpsdato",
 	"bs_expiry-unexpire-success": "Sidens merking som utløpt ble fjernet",
 	"bs_expiry-unexpire-unsuccess": "Sidens merking som utløpt kunne ikke fjernes",
 	"bs-expiry-header-pagename": "Side",
@@ -60,6 +60,8 @@
 	"apihelp-bs-expiry-store-summary": "Gir et lager for utløp som det kan spørres mot",
 	"right-expirearticle": "Merke sider som utløpt",
 	"action-expirearticle": "merke sider som utløpt",
+	"right-expiry-delete": "Fjerne utløpsdato fra sider",
+	"action-expiry-delete": "fjerne utløpsdato fra sider",
 	"echo-category-title-bs-expiry-daily-cat": "Utløp – daglig",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Varsle meg når en side utløper i dag",
 	"echo-category-title-bs-expiry-weekly-cat": "Utløp – ukentlig",
@@ -71,5 +73,10 @@
 	"notification-bs-expiry-one-week-web-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2",
 	"notification-bs-expiry-one-week-email-body": "Siden «$1» utløper denne uka. Sjekk sidens innhold for å bestemme om den må oppdateres.\n\nUtløpskommentar:\n$2",
 	"bs-expiry-create-reminder-label": "Opprett påminnelse",
-	"bs-expiry-reminder-type-expiry": "Utløp"
+	"bs-expiry-reminder-type-expiry": "Utløp",
+	"bs-expiry-do-updateexpirydate-article": "Endre utløpsdato",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Utløpsdato",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Dato for når siden utløper",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utløper/Har utløpt",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt"
 }
