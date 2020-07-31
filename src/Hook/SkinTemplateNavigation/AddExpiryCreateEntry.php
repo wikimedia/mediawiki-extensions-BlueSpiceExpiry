@@ -19,9 +19,10 @@ class AddExpiryCreateEntry extends SkinTemplateNavigation {
 		if ( !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
-		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+		$isAllowed = $this->getServices()->getPermissionManager()->userCan(
+			'expirearticle',
 			$user,
-			'expirearticle'
+			$title
 		);
 		if ( !$isAllowed ) {
 			return true;
