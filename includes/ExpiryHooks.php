@@ -17,10 +17,10 @@ class ExpiryHooks {
 		if ( $oTitle->exists() === false || $oTitle->isSpecialPage() ) {
 			return true;
 		}
-		if ( !$oUser->isAllowed( 'expirearticle' ) ) {
+		if ( !$oTitle->userCan( 'read', $oUser ) ) {
 			return true;
 		}
-		if ( !$oTitle->userCan( 'read' ) ) {
+		if ( !$oTitle->userCan( 'expirearticle', $oUser ) ) {
 			return true;
 		}
 
