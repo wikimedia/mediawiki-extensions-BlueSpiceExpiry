@@ -60,6 +60,8 @@
 	"apihelp-bs-expiry-store-summary": "Fornece uma loja para expirar, que pode ser consultada",
 	"right-expirearticle": "Expirar páginas",
 	"action-expirearticle": "expirar páginas",
+	"right-expiry-delete": "Remover expiração das páginas",
+	"action-expiry-delete": "remover a expiração das páginas",
 	"echo-category-title-bs-expiry-daily-cat": "Expiração - Diariamente",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Notificar-me quando uma página expirar hoje",
 	"echo-category-title-bs-expiry-weekly-cat": "Expiração - Semanal",
