@@ -134,8 +134,12 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				Hooks::run( 'BsExpiryOnSave', [
 					$oTaskData,
 					$iExpiryId,
+					// deprecated
 					$oTitle->getArticleID(),
-					$oUser->getId()
+					// deprecated
+					$oUser->getId(),
+					$oUser,
+					$oTitle,
 				] );
 			} catch ( Exception $e ) {
 				$oResult->message = $oResult->errors['createerror'] =
@@ -151,7 +155,12 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			}
 
 			try {
-				Hooks::run( 'BsExpiryOnUpdate', [ $oTaskData, $iExpiryId ] );
+				Hooks::run( 'BsExpiryOnUpdate', [
+					$oTaskData,
+					$iExpiryId,
+					$oUser,
+					$oTitle,
+				] );
 			} catch ( Exception $e ) {
 				$oResult->message = $oResult->errors['createerror'] =
 					$e->getMessage();
@@ -160,9 +169,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		$oResult->success = true;
-		if ( $setReminder ) {
-			$this->setReminders( $aData );
-		}
+		$this->setReminders( $aData, $setReminder );
 
 		$oTitle->invalidateCache();
 
@@ -178,9 +185,10 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	/**
 	 *
 	 * @param array $expiryData
+	 * @param bool|false $addNewReminders
 	 * @return bool
 	 */
-	private function setReminders( $expiryData ) {
+	private function setReminders( $expiryData, $addNewReminders = false ) {
 		if ( !$this->getServices()->hasService( 'BSReminderFactory' ) ) {
 			return false;
 		}
@@ -206,7 +214,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				[ 'rem_id' => $row->rem_id ]
 			);
 		}
-		if ( $userReminderUpdated ) {
+		if ( $userReminderUpdated || !$addNewReminders ) {
 			return true;
 		}
 		return $this->getDB( DB_MASTER )->insert(
