@@ -17,10 +17,10 @@ class AddExpiryCreateEntry extends SkinTemplateNavigation {
 			|| $this->sktemplate->getTitle()->isSpecialPage() ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->userCan( 'read' ), $this->sktemplate->getUser() ) {
+		if ( !$this->sktemplate->getTitle()->userCan( 'read', $this->sktemplate->getUser() ) ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->userCan( 'expirearticle' ), $this->sktemplate->getUser() ) {
+		if ( !$this->sktemplate->getTitle()->userCan( 'expirearticle', $this->sktemplate->getUser() ) ) {
 			return true;
 		}
 
