@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"bs-expiry-extension-description": "Sayfaların süresi dolmuş olarak işaretlenebilir.",
@@ -11,7 +12,7 @@
 	"apihelp-bs-expiry-store-description": "Special:Expiry sonu genel bakış ızgarası için veri sunar",
 	"apihelp-bs-expiry-tasks-description": "Special:Expiry genel bakış ızgarası için güncelleme ve silme gibi görevleri yürütür",
 	"bs-expiry-unexpire-article": "Sayfanın süresi doldu",
-	"bs-expiry-do-unexpire-article": "Sayfa hala güncel. (bu sayfanın dolmasını kaldır)",
+	"bs-expiry-do-unexpire-article": "Eski tarihini sil",
 	"bs_expiry-unexpire-success": "Sayfanın süresi başarıyla kaldırıldı",
 	"bs_expiry-unexpire-unsuccess": "Sayfanın süresi doldurulamadı",
 	"bs-expiry-header-pagename": "Sayfa",
@@ -69,5 +70,7 @@
 	"notification-bs-expiry-today-email-body": "\"$1\" sayfasının süresi doldu. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin. Sayfa içeriği hala güncelse, sayfanın kullanım ömrünü doldurabilirsiniz.\n\nSüre sonu yorumu:\n$2",
 	"notification-bs-expiry-one-week-subject": "\"$1\" sayfasının süresi bu hafta sona erecek",
 	"notification-bs-expiry-one-week-web-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
-	"notification-bs-expiry-one-week-email-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2"
+	"notification-bs-expiry-one-week-email-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
+	"bs-expiry-create-reminder-label": "Hatırlatıcı oluştur",
+	"bs-expiry-reminder-type-expiry": "Bitiş"
 }

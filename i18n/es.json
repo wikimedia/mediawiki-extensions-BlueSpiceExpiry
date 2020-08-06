@@ -3,7 +3,8 @@
 		"authors": [
 			"Agusbou2015",
 			"Fitoschido",
-			"Joanmp17"
+			"Joanmp17",
+			"Suecarmol"
 		]
 	},
 	"expiry": "Caducidad",
@@ -34,5 +35,7 @@
 	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades",
 	"bs-expiry-date-label": "Caduca el",
 	"bs-expiry-delete-error-unknown": "No se pudo eliminar la caducidad.",
-	"bs-expiry-update-error": "No se pudo actualizar la caducidad."
+	"bs-expiry-update-error": "No se pudo actualizar la caducidad.",
+	"bs-expiry-create-reminder-label": "Crear recordatorio",
+	"bs-expiry-reminder-type-expiry": "Caducidad"
 }
