@@ -12,7 +12,7 @@
 	"apihelp-bs-expiry-store-description": "Постачає дані для оглядової сітки на Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Виконує завдання на кшталт оновлення та вилучення в оглядовій сітці на Special:Expiry",
 	"bs-expiry-unexpire-article": "Сторінка застаріла",
-	"bs-expiry-do-unexpire-article": "Сторінка все ще актуальна (зняти позначку про застарілість)",
+	"bs-expiry-do-unexpire-article": "Вилучити дату застарівання",
 	"bs_expiry-unexpire-success": "Позначку про застарілість зі сторінки знято",
 	"bs_expiry-unexpire-unsuccess": "Позначку про застарілість зі сторінки зняти не вдалося",
 	"bs-expiry-header-pagename": "Сторінка",
@@ -61,6 +61,8 @@
 	"apihelp-bs-expiry-store-summary": "Забезпечує сховок для втрат актуальності, до якого можна надсилати запити",
 	"right-expirearticle": "Позначення сторінок як застарілих",
 	"action-expirearticle": "позначення сторінок як застарілих",
+	"right-expiry-delete": "Вилучення кінцевого терміну зі сторінок",
+	"action-expiry-delete": "вилучення кінцевого терміну зі сторінок",
 	"echo-category-title-bs-expiry-daily-cat": "Втрата актуальності — щоденно",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Повідомляти мені, якщо сторінка втратить актуальність сьогодні",
 	"echo-category-title-bs-expiry-weekly-cat": "Втрата актуальності — щотижня",
@@ -72,5 +74,6 @@
 	"notification-bs-expiry-one-week-web-body": "Сторінка «$1» втратить актуальність цього тижня. Будь ласка, перегляньте контент сторінки, щоб вирішити, чи її треба оновити.\n\nКоментар щодо втрати актуальності:\n$2",
 	"notification-bs-expiry-one-week-email-body": "Сторінка «$1» втратить актуальність цього тижня. Будь ласка, перегляньте контент сторінки, щоб вирішити, чи її треба оновити.\n\nКоментар щодо втрати актуальності:\n$2",
 	"bs-expiry-create-reminder-label": "Створити нагадування",
-	"bs-expiry-reminder-type-expiry": "Закінчення"
+	"bs-expiry-reminder-type-expiry": "Закінчення",
+	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання"
 }
