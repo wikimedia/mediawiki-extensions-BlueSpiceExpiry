@@ -5,6 +5,7 @@ namespace BlueSpice\Expiry\PageInfoElement;
 use BlueSpice\Expiry\Extension as Expiry;
 use BlueSpice\IPageInfoElement;
 use BlueSpice\PageInfoElement;
+use MediaWiki\MediaWikiServices;
 use Message;
 
 class Expired extends PageInfoElement {
@@ -47,7 +48,13 @@ class Expired extends PageInfoElement {
 	 * @return bool
 	 */
 	public function shouldShow( $context ) {
-		if ( !$context->getTitle()->userCan( 'read' ) ) {
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		$userCanRead = $pm->userCan(
+			'read',
+			$context->getUser(),
+			$context->getTitle()
+		);
+		if ( !$userCanRead ) {
 			return false;
 		}
 		$id = $context->getTitle()->getArticleID();
@@ -57,10 +64,15 @@ class Expired extends PageInfoElement {
 			return false;
 		}
 
+		$userCanDelete = $pm->userCan(
+			'expiry-delete',
+			$context->getUser(),
+			$context->getTitle()
+		);
 		// Currently there is only the deletion of the expiration in the pageInfo
 		// menu. This may change in the future, as we also could add a
 		// "update expiration date" menu item
-		if ( $context->getTitle()->userCan( 'expiry-delete' ) ) {
+		if ( $userCanDelete ) {
 			$this->showMenu = true;
 		}
 		$this->expId = $expiry['exp_id'];
