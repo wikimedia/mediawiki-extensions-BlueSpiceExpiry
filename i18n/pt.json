@@ -13,7 +13,7 @@
 	"apihelp-bs-expiry-store-description": "Serve os dados para a grelha que resume Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Executa tarefas como atualização e eliminação da grelha de resumo de Special:Expiry",
 	"bs-expiry-unexpire-article": "A página expirou",
-	"bs-expiry-do-unexpire-article": "A página continua atual (remover expiração desta página).",
+	"bs-expiry-do-unexpire-article": "Eliminar data de expiração",
 	"bs_expiry-unexpire-success": "Foi removida a expiração da página",
 	"bs_expiry-unexpire-unsuccess": "Não foi possível remover a expiração da página",
 	"bs-expiry-header-pagename": "Página",
@@ -67,5 +67,18 @@
 	"echo-category-title-bs-expiry-weekly-cat": "Expiração - Semanal",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Notificar-me quando uma página expira em uma semana",
 	"notification-bs-expiry-today-subject": "A página \"$1\" expirou",
-	"notification-bs-expiry-one-week-subject": "A página \"$1\" irá expirar esta semana"
+	"notification-bs-expiry-one-week-subject": "A página \"$1\" irá expirar esta semana",
+	"right-expiry-delete": "Remover a expiração de páginas",
+	"action-expiry-delete": "remover a expiração de páginas",
+	"notification-bs-expiry-today-web-body": "A página \"$1\" expirou. Reveja o conteúdo da página para decidir se esta precisa de ser atualizada, por favor. Se o conteúdo da página continuar atual, pode simplesmente eliminar a expiração da página.\n\nComentário da expiração:\n$2",
+	"notification-bs-expiry-today-email-body": "A página \"$1\" expirou. Reveja o conteúdo da página para decidir se esta precisa de ser atualizada, por favor. Se o conteúdo da página continuar atual, pode simplesmente eliminar a expiração da página.\n\nComentário da expiração:\n$2",
+	"notification-bs-expiry-one-week-web-body": "A página \"$1\" irá expirar esta semana. Reveja o conteúdo da página para decidir se esta precisa de ser atualizada, por favor. \n\nComentário da expiração:\n$2",
+	"notification-bs-expiry-one-week-email-body": "A página \"$1\" irá expirar esta semana. Reveja o conteúdo da página para decidir se esta precisa de ser atualizada, por favor. \n\nComentário da expiração:\n$2",
+	"bs-expiry-create-reminder-label": "Criar aviso",
+	"bs-expiry-reminder-type-expiry": "Expiração",
+	"bs-expiry-do-updateexpirydate-article": "Alterar data de expiração",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiração/ Data de expiração",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data de expiração da página",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiração/Está expirada",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se a página expirou"
 }
