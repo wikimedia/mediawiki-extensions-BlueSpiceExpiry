@@ -216,7 +216,7 @@
 		}
 	},
 	"Hooks": {
-		"SkinTemplateNavigation": "\\BlueSpice\\Expiry\\Hook\\SkinTemplateNavigation\\AddExpiryCreateEntry::callback",
+		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Expiry\\Hook\\SkinTemplateNavigationUniversal\\AddExpiryCreateEntry::callback",
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
