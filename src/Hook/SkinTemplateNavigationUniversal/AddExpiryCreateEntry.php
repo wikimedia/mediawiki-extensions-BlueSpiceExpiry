@@ -1,19 +1,18 @@
 <?php
 
-namespace BlueSpice\Expiry\Hook\SkinTemplateNavigation;
+namespace BlueSpice\Expiry\Hook\SkinTemplateNavigationUniversal;
 
-use BlueSpice\Hook\SkinTemplateNavigation;
+use BlueSpice\Hook\SkinTemplateNavigationUniversal;
 
-class AddExpiryCreateEntry extends SkinTemplateNavigation {
+class AddExpiryCreateEntry extends SkinTemplateNavigationUniversal {
 	/**
 	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		$user = $this->sktemplate->getUser();
 		$title = $this->sktemplate->getTitle();
 
-		if ( !$user->isLoggedIn() ) {
+		if ( !$this->sktemplate->getUser()->isLoggedIn() ) {
 			return true;
 		}
 		if ( !$title->exists() || $title->isSpecialPage() ) {
@@ -21,16 +20,10 @@ class AddExpiryCreateEntry extends SkinTemplateNavigation {
 		}
 		$isAllowed = $this->getServices()->getPermissionManager()->userCan(
 			'expirearticle',
-			$user,
+			$this->sktemplate->getUser(),
 			$title
 		);
 		if ( !$isAllowed ) {
-			return true;
-		}
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan( 'read', $user, $title )
-		) {
 			return true;
 		}
 
