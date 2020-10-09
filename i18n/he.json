@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"bs-expiry-edit-grid-header-username": "משתמש",
+	"bs-expiry-edit-grid-header-date": "תאריך",
+	"bs-expiry-edit-grid-header-comment": "הערה",
+	"bs-expiry-edit-grid-title": "עריכות מאז תפוגת העמוד",
+	"bs-expiry-edit-grid-empty": "אין עריכות מאז תפוגת העמוד"
+}
