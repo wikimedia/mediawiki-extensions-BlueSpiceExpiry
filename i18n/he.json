@@ -4,6 +4,18 @@
 			"YaronSh"
 		]
 	},
+	"bs-expiry-unknown-page-msg": "העמוד לא קיים.",
+	"bs-expiry-create-error": "לא ניתן ליצור את הרשומה.",
+	"bs-expiry-update-error": "לא ניתן לעדכן את מועד התפוגה.",
+	"bs-expiry-update-success": "מועד התפוגה עודכן",
+	"bs-expiry-save-success": "התפוגה נוצרה",
+	"bs-expiry-unexpire-success": "התפוגה נמחקה",
+	"bs-expiry-unexpire-unsuccess": "מזהה התפוגה לא נמצא",
+	"bs-expiry-menu-entry-create": "תפוגה",
+	"bs-expiry-title-delete": "הסרת תפוגה",
+	"bs-expiry-nav-link-title-expiry": "תפוגה",
+	"bs-expiry-flyout-title": "תפוגת דף",
+	"bs-expiry-flyout-manager-button-label": "מנהל תפוגה",
 	"bs-expiry-edit-grid-header-username": "משתמש",
 	"bs-expiry-edit-grid-header-date": "תאריך",
 	"bs-expiry-edit-grid-header-comment": "הערה",
