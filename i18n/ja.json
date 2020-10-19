@@ -9,6 +9,7 @@
 	"bs-expiry-article-label": "ページ",
 	"bs-expiry-comment-label": "コメント",
 	"bs-expiry-unknown-page-msg": "ページは存在しません。",
+	"bs-expiry-flyout-next-comment": "コメント: $1",
 	"bs-expiry-edit-grid-header-username": "利用者",
 	"bs-expiry-edit-grid-header-comment": "コメント"
 }
