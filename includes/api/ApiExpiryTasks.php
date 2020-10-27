@@ -208,6 +208,22 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				$userReminderUpdated = true;
 			}
 			$row->rem_date = $expiryData['exp_date'];
+			$row->rem_comment = $expiryData['exp_comment'];
+			if ( empty( $row->rem_comment ) ) {
+				$user = User::newFromId( $row->rem_user_id );
+				if ( !$user ) {
+					continue;
+				}
+				$date = DateTime::createFromFormat( "Y-m-d", $expiryData['exp_date'] );
+				$timestamp = $this->getContext()->getLanguage()->userTimeAndDate(
+					$date->format( 'YmdHis' ),
+					$user
+				);
+				$msg = $this->msg( 'bs-expiry-flyout-body-hint-expires' )
+					->params( [ $timestamp ] )
+					->inLanguage( $user->getOption( 'language' ) );
+				$row->rem_comment = $msg->parse();
+			}
 			$this->getDB( DB_MASTER )->update(
 				'bs_reminder',
 				(array)$row,
@@ -216,6 +232,16 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 		if ( $userReminderUpdated || !$addNewReminders ) {
 			return true;
+		}
+		if ( empty( $expiryData['exp_comment'] ) ) {
+			$date = DateTime::createFromFormat( "Y-m-d", $expiryData['exp_date'] );
+			$timestamp = $this->getContext()->getLanguage()->userTimeAndDate(
+				$date->format( 'YmdHis' ),
+				$this->getUser()
+			);
+			$msg = $this->msg( 'bs-expiry-flyout-body-hint-expires' )
+				->params( [ $timestamp ] );
+			$expiryData['exp_comment'] = $msg->parse();
 		}
 		return $this->getDB( DB_MASTER )->insert(
 			'bs_reminder',
