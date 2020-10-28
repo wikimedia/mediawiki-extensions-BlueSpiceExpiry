@@ -61,7 +61,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$setReminder = isset( $oTaskData->setReminder ) && $oTaskData->setReminder == true
 			? true
 			: false;
-		$sComment = addslashes( $oTaskData->comment );
+		$sComment = strip_tags( empty( $oTaskData->comment ) ? '' : (string)$oTaskData->comment );
 
 		$iDate = isset( $oTaskData->date )
 			? $oTaskData->date
@@ -224,6 +224,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 					->inLanguage( $user->getOption( 'language' ) );
 				$row->rem_comment = $msg->parse();
 			}
+			$row->rem_comment = addslashes( strip_tags( $row->rem_comment ) );
 			$this->getDB( DB_MASTER )->update(
 				'bs_reminder',
 				(array)$row,
@@ -249,7 +250,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				'rem_date' => $expiryData['exp_date'],
 				'rem_page_id' => $expiryData['exp_page_id'],
 				'rem_user_id' => $this->getUser()->getId(),
-				'rem_comment' => $expiryData['exp_comment'],
+				'rem_comment' => addslashes( strip_tags( $expiryData['exp_comment'] ) ),
 				'rem_type' => 'expiry',
 				'rem_is_repeating' => false,
 			]
