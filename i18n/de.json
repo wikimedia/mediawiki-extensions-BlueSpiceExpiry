@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ferdinand0101",
 			"Killarnee",
-			"Mglaser"
+			"Mglaser",
+			"Umherirrender"
 		]
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
@@ -12,7 +14,7 @@
 	"apihelp-bs-expiry-store-description": "Stellt die Daten für Spezial:Veraltete Seiten bereit",
 	"apihelp-bs-expiry-tasks-description": "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
 	"bs-expiry-unexpire-article": "Seite ist nicht mehr aktuell",
-	"bs-expiry-do-unexpire-article": "Aktualität neu bestätigen",
+	"bs-expiry-do-unexpire-article": "Ablaufdatum löschen",
 	"bs_expiry-unexpire-success": "Die Seite wurde als aktuell bestätigt",
 	"bs_expiry-unexpire-unsuccess": "Die Seite konnte nicht als aktuell bestätigt werden",
 	"bs-expiry-specialpage-subtitle": "← $1",
@@ -66,10 +68,19 @@
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Benachrichtige mich, wenn ein Artikel heute veraltet",
 	"echo-category-title-bs-expiry-weekly-cat": "Veraltung - wöchentlich",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Benachrichtige mich, wenn ein Artikel in einer Woche veraltet",
-	"notification-bs-expiry-today-subject": "Der Artikel \"$1\" ist veraltet",
-	"notification-bs-expiry-today-web-body": "Der Artikel \"$1\" ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
-	"notification-bs-expiry-today-email-body": "Der Artikel \"$1\" ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
-	"notification-bs-expiry-one-week-subject": "Der Artikel \"$1\" wird diese Woche veralten",
-	"notification-bs-expiry-one-week-web-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
-	"notification-bs-expiry-one-week-email-body": "Der Artikel \"$1\" wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2"
+	"notification-bs-expiry-today-subject": "Der Artikel „$1“ ist veraltet",
+	"notification-bs-expiry-today-web-body": "Der Artikel „$1“ ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-today-email-body": "Der Artikel „$1“ ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-one-week-subject": "Der Artikel „$1“ wird diese Woche veralten",
+	"notification-bs-expiry-one-week-web-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
+	"notification-bs-expiry-one-week-email-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
+	"right-expiry-delete": "Ablaufdatum von Seiten entfernen",
+	"action-expiry-delete": "das Ablaufdatum von Seiten zu entfernen",
+	"bs-expiry-create-reminder-label": "Erinnerung erstellen",
+	"bs-expiry-reminder-type-expiry": "Veraltete Seiten",
+	"bs-expiry-do-updateexpirydate-article": "Ablaufdatum ändern",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Veraltete Seiten/Ablaufdatum",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum, an dem eine Seite abläuft",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Veraltete Seiten/Ist abgelaufen",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Zeigt, ob eine Seite abgelaufen ist"
 }

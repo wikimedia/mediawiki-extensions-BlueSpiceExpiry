@@ -3,7 +3,8 @@
 		"authors": [
 			"Agusbou2015",
 			"Fitoschido",
-			"Joanmp17"
+			"Joanmp17",
+			"Suecarmol"
 		]
 	},
 	"expiry": "Caducidad",
@@ -34,5 +35,7 @@
 	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
 	"bs-expiry-pageinfoelement-expired-label": "expirado",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Esta página ha caducado",
-	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades"
+	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades",
+	"bs-expiry-create-reminder-label": "Crear recordatorio",
+	"bs-expiry-reminder-type-expiry": "Caducidad"
 }

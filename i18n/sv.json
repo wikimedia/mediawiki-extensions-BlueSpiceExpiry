@@ -40,5 +40,6 @@
 	"bs-expiry-edit-grid-header-comment": "Kommentar",
 	"bs-expiry-flyout-body-hint-expires": "upphör $1",
 	"bs-expiry-pageinfoelement-expired-label": "utgången",
-	"bs-expiry-pageinfoelement-expired-tooltip": "Denna sida har utgått"
+	"bs-expiry-pageinfoelement-expired-tooltip": "Denna sida har utgått",
+	"bs-expiry-create-reminder-label": "Skapa påminnelse"
 }
