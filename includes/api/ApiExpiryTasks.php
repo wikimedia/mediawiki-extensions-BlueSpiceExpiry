@@ -131,7 +131,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			$iExpiryId = $dbw->insertId();
 
 			try {
-				Hooks::run( 'BsExpiryOnSave', [
+				$this->getServices()->getHookContainer()->run( 'BsExpiryOnSave', [
 					$oTaskData,
 					$iExpiryId,
 					// deprecated
@@ -155,7 +155,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			}
 
 			try {
-				Hooks::run( 'BsExpiryOnUpdate', [
+				$this->getServices()->getHookContainer()->run( 'BsExpiryOnUpdate', [
 					$oTaskData,
 					$iExpiryId,
 					$oUser,

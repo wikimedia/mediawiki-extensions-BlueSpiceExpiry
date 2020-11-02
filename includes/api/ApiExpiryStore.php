@@ -75,7 +75,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		];
 
 		// give other extensions the opportunity to modify the query
-		Hooks::run(
+		$this->getServices()->getHookContainer()->run(
 			'BsExpiryBeforeBuildOverviewQuery',
 			[
 				$this,
@@ -124,7 +124,11 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					'user_can_expire' => $canExpire,
 					'user_can_delete_expiration' => $canDelete,
 				];
-				Hooks::run( 'BsExpiryBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
+				$this->getServices()->getHookContainer()->run( 'BsExpiryBuildOverviewResultSet', [
+					$this,
+					&$aResultSet,
+					$row
+				] );
 				$aData['results'][] = $aResultSet;
 			}
 		}
@@ -205,7 +209,9 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'sortable' => true
 		];
 
-		\Hooks::run( 'BsExpiryBuildOverviewMetadata', [ &$aMetadata ] );
+		$this->getServices()->getHookContainer()->run( 'BsExpiryBuildOverviewMetadata', [
+			&$aMetadata
+		] );
 
 		return $aMetadata;
 	}
