@@ -9,5 +9,10 @@
 	"bs-expiry-unknown-page-msg": "Siden findes ikke.",
 	"bs-expiry-edit-grid-header-username": "Bruger",
 	"bs-expiry-edit-grid-header-date": "Dato",
-	"bs-expiry-create-reminder-label": "Opret påmindelse"
+	"bs-expiry-create-reminder-label": "Opret påmindelse",
+	"bs-expiry-header-comment": "Kommentar",
+	"bs-expiry-comment-label": "Kommentar",
+	"bs-expiry-flyout-next-expired": "Denne side er udløbet!",
+	"bs-expiry-pageinfoelement-expired-label": "udløb",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Denne side er udløbet"
 }
