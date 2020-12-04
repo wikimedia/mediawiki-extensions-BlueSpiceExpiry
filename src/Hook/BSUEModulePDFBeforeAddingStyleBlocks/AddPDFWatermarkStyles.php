@@ -28,9 +28,10 @@ class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 		$this->styleBlocks[ 'Expiry' ] = <<<HEREDOC
 .bs-page-content.expired {
 	background-image: url('images/bg-expired-$lang.png');
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 17.5cm 23.7cm;
+	background-repeat: repeat;
+	background-position: top left;
+	background-size: auto 6cm;
+	min-height: 250px;
 }
 HEREDOC;
 		return true;
