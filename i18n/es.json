@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Agusbou2015",
+			"ArenaL5",
 			"Fitoschido",
 			"Joanmp17",
 			"Suecarmol"
@@ -10,7 +11,7 @@
 	"expiry": "Caducidad",
 	"prefs-expiry": "Caducidad",
 	"bs-expiry-unexpire-article": "La página caducó",
-	"bs-expiry-do-unexpire-article": "La página sigue estando actualizada. (quitar caducidad a esta página)",
+	"bs-expiry-do-unexpire-article": "Quitar fecha de caducidad",
 	"bs_expiry-unexpire-success": "Caducidad de la página quitada con éxito",
 	"bs-expiry-header-pagename": "Página",
 	"bs-expiry-header-date": "Caduca el",
