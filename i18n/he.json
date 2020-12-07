@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"YaronSh"
+			"YaronSh",
+			"ישראל קלר"
 		]
 	},
 	"expiry": "תפוגה",
@@ -27,6 +28,7 @@
 	"bs-expiry-nav-link-title-expiry": "תפוגה",
 	"bs-expiry-flyout-title": "תפוגת דף",
 	"bs-expiry-flyout-next-expired": "תוקף הדף פג!",
+	"bs-expiry-flyout-next-comment": "הערה: $1",
 	"bs-expiry-flyout-manager-button-label": "מנהל תפוגה",
 	"bs-expiry-edit-grid-header-username": "משתמש",
 	"bs-expiry-edit-grid-header-date": "תאריך",
