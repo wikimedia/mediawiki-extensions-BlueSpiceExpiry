@@ -36,11 +36,9 @@ class ExpiryHooks {
 
 	/**
 	 *
-	 * @param array &$wgQueryPages
-	 * @return bool
+	 * @param array &$queryPages
 	 */
-	public static function onQueryPages( &$wgQueryPages ) {
-		$wgQueryPages[] = [ 'SpecialExpiry', 'Expired_Articles' ];
-		return true;
+	public static function onQueryPages( &$queryPages ) {
+		$queryPages[] = [ 'SpecialExpiry', 'Expired_Articles' ];
 	}
 }
