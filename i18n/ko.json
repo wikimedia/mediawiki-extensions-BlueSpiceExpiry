@@ -13,6 +13,7 @@
 	"bs-expiry-unknown-page-msg": "문서가 존재하지 않습니다.",
 	"bs-expiry-flyout-next-expired": "이 문서는 만료되었습니다!",
 	"bs-expiry-flyout-expiry-not-set": "이 문서는 기한 만료가 설정되지 않았습니다!",
+	"bs-expiry-flyout-next-comment": "의견: $1",
 	"bs-expiry-edit-grid-header-username": "사용자",
 	"bs-expiry-edit-grid-header-date": "날짜",
 	"bs-expiry-edit-grid-header-comment": "댓글",
