@@ -10,6 +10,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpiceExpiry
  */
 class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
+	/** @inheritDoc */
 	protected $iFixtureTotal = 2;
 
 	protected function getStoreSchema() {

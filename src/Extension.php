@@ -3,12 +3,13 @@
 namespace BlueSpice\Expiry;
 
 class Extension extends \BlueSpice\Extension {
+	/** @var (\stdClass|false)[] */
 	public static $expirys = [];
 
 	/**
 	 *
 	 * @param int $articleId
-	 * @return bool | stdClass
+	 * @return \stdClass|false
 	 */
 	public static function getExpiryForPage( $articleId ) {
 		// basic caching, do not ask for an article id twice per call
