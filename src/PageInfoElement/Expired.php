@@ -9,7 +9,9 @@ use MediaWiki\MediaWikiServices;
 use Message;
 
 class Expired extends PageInfoElement {
+	/** @var string */
 	public $expire = 'undefined';
+	/** @var string */
 	public $expId = '';
 
 	/**
