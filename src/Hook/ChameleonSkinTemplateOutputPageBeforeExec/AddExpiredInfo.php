@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Expiry\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\Expiry\Panel\Flyout;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
 class AddExpiredInfo extends ChameleonSkinTemplateOutputPageBeforeExec {
