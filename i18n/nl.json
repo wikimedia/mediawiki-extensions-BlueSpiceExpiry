@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dutchy45",
 			"Mainframe98"
 		]
 	},
@@ -17,5 +18,7 @@
 	"bs-expiry-edit-grid-header-comment": "Opmerking",
 	"bs-expiry-flyout-body-hint-expired": "verviel op $1",
 	"bs-expiry-flyout-body-hint-expires": "vervalt op $1",
-	"bs-expiry-pageinfoelement-expired-label": "verlopen"
+	"bs-expiry-pageinfoelement-expired-label": "verlopen",
+	"bs-expiry-create-reminder-label": "Herinnering aanmaken",
+	"bs-expiry-reminder-type-expiry": "Vervalt"
 }
