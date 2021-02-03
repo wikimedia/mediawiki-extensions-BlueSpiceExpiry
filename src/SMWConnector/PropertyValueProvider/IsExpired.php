@@ -60,7 +60,6 @@ class IsExpired extends PropertyValueProvider {
 	 * @param AppFactory $appFactory
 	 * @param DIProperty $property
 	 * @param SemanticData $semanticData
-	 * @return null
 	 */
 	public function addAnnotation( $appFactory, $property, $semanticData ) {
 		$record = $this->getFactory()->newFromTitle( $semanticData->getSubject()->getTitle() );

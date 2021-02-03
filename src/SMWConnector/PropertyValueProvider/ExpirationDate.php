@@ -65,7 +65,7 @@ class ExpirationDate extends PropertyValueProvider {
 	public function addAnnotation( $appFactory, $property, $semanticData ) {
 		$record = $this->getFactory()->newFromTitle( $semanticData->getSubject()->getTitle() );
 		if ( !$record || !$record->get( Record::DATE, null ) ) {
-			return;
+			return null;
 		}
 		$expires = DateTime::createFromFormat(
 			'YmdHis',
