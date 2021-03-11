@@ -17,6 +17,7 @@
 	"bs-expiry-do-unexpire-article": "Supprimer la date d’expiration",
 	"bs_expiry-unexpire-success": "La page a bien été marquée comme non expirée",
 	"bs_expiry-unexpire-unsuccess": "La page n’a pas pu être marquée comme non expirée",
+	"bs-expiry-specialpage-subtitle": "← $1",
 	"bs-expiry-header-pagename": "Page",
 	"bs-expiry-header-date": "Expire le",
 	"bs-expiry-header-comment": "Commentaire",
