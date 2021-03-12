@@ -7,7 +7,7 @@ use User;
 
 class Daily extends Expiry {
 
-	public const TYPE = 'bs-expiry-daily';
+	const TYPE = 'bs-expiry-daily';
 
 	/**
 	 *

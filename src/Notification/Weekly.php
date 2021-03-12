@@ -7,7 +7,7 @@ use User;
 
 class Weekly extends Expiry {
 
-	public const TYPE = 'bs-expiry-weekly';
+	const TYPE = 'bs-expiry-weekly';
 
 	/**
 	 *
