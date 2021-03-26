@@ -43,7 +43,7 @@ abstract class Expiry extends BaseNotification {
 			'tooltip' => 'echo-pref-tooltip-bs-expiry-daily-cat'
 		] );
 		$echoNotifier->registerNotificationCategory( 'bs-expiry-weekly-cat', [
-			'tooltip' => 'echo-pref-tooltip-bs-expiry-daily-cat'
+			'tooltip' => 'echo-pref-tooltip-bs-expiry-weekly-cat'
 		] );
 
 		$manager->registerNotification( Daily::TYPE, [
