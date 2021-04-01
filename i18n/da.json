@@ -10,6 +10,7 @@
 	"bs-expiry-comment-label": "Kommentar",
 	"bs-expiry-unknown-page-msg": "Siden findes ikke.",
 	"bs-expiry-flyout-next-expired": "Denne side er udløbet!",
+	"bs-expiry-flyout-next-comment": "Kommentar: $1",
 	"bs-expiry-edit-grid-header-username": "Bruger",
 	"bs-expiry-edit-grid-header-date": "Dato",
 	"bs-expiry-pageinfoelement-expired-label": "udløb",
