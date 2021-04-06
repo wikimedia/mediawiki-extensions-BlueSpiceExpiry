@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Gerongfenh",
+			"Lakejason0",
 			"Shuiwater",
 			"VulpesVulpes825",
 			"列维劳德",
@@ -13,6 +14,7 @@
 	"expiry": "期限",
 	"specialexpiry": "过期条目",
 	"prefs-expiry": "期限",
+	"bs-expiry-unexpire-article": "页面已过期",
 	"bs-expiry-header-pagename": "页面",
 	"bs-expiry-header-date": "结束于",
 	"bs-expiry-header-comment": "评论",
@@ -37,6 +39,7 @@
 	"bs-expiry-alert-body-expired": "这个页面已于$1过期。请检查页面内容。",
 	"bs-expiry-pref-enablepagewatermark": "在过期的页面上显示水印",
 	"bs-expiry-pageinfoelement-expired-label": "已过期",
+	"notification-bs-expiry-today-subject": "页面“$1”已过期",
 	"bs-expiry-create-reminder-label": "创建提示",
 	"bs-expiry-reminder-type-expiry": "期限"
 }
