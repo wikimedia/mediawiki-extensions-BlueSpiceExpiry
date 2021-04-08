@@ -81,5 +81,6 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiration/Date d’expiration",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date d'expiration de la page",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiration/Est expiré",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indique si la page a expiré"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indique si la page a expiré",
+	"bs-expiry-specialpage-subtitle": "← $1"
 }

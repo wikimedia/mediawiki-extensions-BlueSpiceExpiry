@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Gerongfenh",
+			"Lakejason0",
 			"Shuiwater",
 			"VulpesVulpes825",
 			"列维劳德",
@@ -27,5 +29,17 @@
 	"bs-expiry-pref-enablepagewatermark": "在过期的页面上显示水印",
 	"bs-expiry-pageinfoelement-expired-label": "已过期",
 	"bs-expiry-create-reminder-label": "创建提示",
-	"bs-expiry-reminder-type-expiry": "期限"
+	"bs-expiry-reminder-type-expiry": "期限",
+	"bs-expiry-unexpire-article": "页面已过期",
+	"bs-expiry-menu-entry-create": "期限",
+	"bs-expiry-title-delete": "移除期限",
+	"bs-expiry-nav-link-title-expiry": "期限",
+	"bs-expiry-flyout-title": "页面期限",
+	"bs-expiry-flyout-next-expired": "这个页面已过期！",
+	"bs-expiry-flyout-next-comment": "评论：$1",
+	"bs-expiry-edit-grid-header-comment": "评论",
+	"bs-expiry-flyout-body-hint-expired": "在$1过期",
+	"bs-expiry-flyout-body-hint-expires": "于$1过期",
+	"bs-expiry-alert-body-expired": "这个页面已于$1过期。请检查页面内容。",
+	"notification-bs-expiry-today-subject": "页面“$1”已过期"
 }
