@@ -19,13 +19,13 @@
 				"BlueSpiceExpiry": {
 					"className": "\\BlueSpice\\Expiry\\Extension",
 					"extPath": "/BlueSpiceExpiry",
-					"package": "BlueSpice Pro",
-					"configDefinitions": {
-						"ExpiryEnablePDFWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePDFWatermark::getInstance",
-						"ExpiryEnablePageWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePageWatermark::getInstance",
-						"ExpiryEnablePrintWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePrintWatermark::getInstance"
-					}
+					"package": "BlueSpice Pro"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"ExpiryEnablePDFWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePDFWatermark::getInstance",
+				"ExpiryEnablePageWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePageWatermark::getInstance",
+				"ExpiryEnablePrintWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePrintWatermark::getInstance"
 			},
 			"PermissionRegistry": {
 				"expirearticle": {
