@@ -41,7 +41,7 @@ class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 		$aArticleIds[] = $this->insertPage( 'DummyPage' )['id'];
 		$aArticleIds[] = $this->insertPage( 'FakePage' )['id'];
 
-		$oDbw = wfGetDB( DB_MASTER );
+		$oDbw = wfGetDB( DB_PRIMARY );
 		// $oDbw->delete( 'bs_expiry', [ 'pa_page_id' => $oTitle->getArticleID() ] );
 		$aExpiryData = [
 				[

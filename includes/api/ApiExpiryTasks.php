@@ -119,7 +119,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			'exp_comment' => $sComment
 		];
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		if ( !$iExpiryId ) {
 			$res = $dbw->insert( 'bs_expiry', $aData, __METHOD__ );
 			if ( !$res ) {
@@ -225,7 +225,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				$row->rem_comment = $msg->parse();
 			}
 			$row->rem_comment = addslashes( strip_tags( $row->rem_comment ) );
-			$this->getDB( DB_MASTER )->update(
+			$this->getDB( DB_PRIMARY )->update(
 				'bs_reminder',
 				(array)$row,
 				[ 'rem_id' => $row->rem_id ]
@@ -244,7 +244,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				->params( [ $timestamp ] );
 			$expiryData['exp_comment'] = $msg->parse();
 		}
-		return $this->getDB( DB_MASTER )->insert(
+		return $this->getDB( DB_PRIMARY )->insert(
 			'bs_reminder',
 			[
 				'rem_date' => $expiryData['exp_date'],
@@ -297,7 +297,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		// All ok, do the actual deletion
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete(
 			'bs_expiry',
 			[

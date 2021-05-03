@@ -27,7 +27,7 @@ class AddExpiredInfo extends ChameleonSkinTemplateOutputPageBeforeExec {
 			[
 				'expiry' => [
 					'position' => 30,
-					'callback' => function ( $sktemplate ) use ( $fname ) {
+					'callback' => static function ( $sktemplate ) use ( $fname ) {
 						$currentPageId = $sktemplate->getSkin()->getTitle()->getArticleId();
 						// TODO: Caching? But when to invalidate?
 						$dbr = wfGetDB( DB_REPLICA );

@@ -4,7 +4,7 @@ use MediaWiki\MediaWikiServices;
 
 return [
 
-	'BSExpiryFactory' => function ( MediaWikiServices $services ) {
+	'BSExpiryFactory' => static function ( MediaWikiServices $services ) {
 		return new \BlueSpice\Expiry\Factory;
 	},
 
