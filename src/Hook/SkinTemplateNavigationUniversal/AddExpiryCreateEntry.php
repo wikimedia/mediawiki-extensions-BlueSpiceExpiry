@@ -12,7 +12,7 @@ class AddExpiryCreateEntry extends SkinTemplateNavigationUniversal {
 	protected function skipProcessing() {
 		$title = $this->sktemplate->getTitle();
 
-		if ( !$this->sktemplate->getUser()->isLoggedIn() ) {
+		if ( !$this->sktemplate->getUser()->isRegistered() ) {
 			return true;
 		}
 		if ( !$title->exists() || $title->isSpecialPage() ) {

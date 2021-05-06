@@ -99,7 +99,7 @@ class Flyout extends BasePanel implements IFlyout, IActiveStateProvider {
 	 * @return bool
 	 */
 	public function shouldRender( $context ) {
-		return $context->getUser()->isLoggedIn();
+		return $context->getUser()->isRegistered();
 	}
 
 	/**
