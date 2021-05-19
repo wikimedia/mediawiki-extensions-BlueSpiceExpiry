@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Joquliina",
 			"Mediawikitranslator"
 		]
 	},
 	"bs-expiry-header-pagename": "Sivu",
-	"bs-expiry-article-label": "Sivu"
+	"bs-expiry-article-label": "Sivu",
+	"bs-expiry-pageinfoelement-expired-label": "vanhentunut",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut"
 }
