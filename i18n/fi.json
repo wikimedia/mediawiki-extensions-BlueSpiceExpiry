@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-expiry-header-pagename": "Sivu",
+	"bs-expiry-date-label": "Vanhentuu",
 	"bs-expiry-article-label": "Sivu",
 	"bs-expiry-pageinfoelement-expired-label": "vanhentunut",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut"
