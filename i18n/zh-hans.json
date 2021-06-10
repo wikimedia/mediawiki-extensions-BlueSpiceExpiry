@@ -4,6 +4,7 @@
 			"A Chinese Wikipedian",
 			"Gerongfenh",
 			"Lakejason0",
+			"Shizhao",
 			"Shuiwater",
 			"VulpesVulpes825",
 			"列维劳德",
@@ -39,6 +40,8 @@
 	"bs-expiry-alert-body-expired": "这个页面已于$1过期。请检查页面内容。",
 	"bs-expiry-pref-enablepagewatermark": "在过期的页面上显示水印",
 	"bs-expiry-pageinfoelement-expired-label": "已过期",
+	"right-expirearticle": "过期页面",
+	"action-expirearticle": "过期页面",
 	"notification-bs-expiry-today-subject": "页面“$1”已过期",
 	"bs-expiry-create-reminder-label": "创建提示",
 	"bs-expiry-reminder-type-expiry": "期限"
