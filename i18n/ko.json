@@ -16,5 +16,7 @@
 	"bs-expiry-edit-grid-header-username": "사용자",
 	"bs-expiry-edit-grid-header-date": "날짜",
 	"bs-expiry-edit-grid-header-comment": "댓글",
-	"bs-expiry-alert-body-expired": "이 문서는 $1에 만료되었습니다. 내용을 확인해 주십시오."
+	"bs-expiry-alert-body-expired": "이 문서는 $1에 만료되었습니다. 내용을 확인해 주십시오.",
+	"bs-expiry-article-label": "문서",
+	"bs-expiry-flyout-next-comment": "의견: $1"
 }

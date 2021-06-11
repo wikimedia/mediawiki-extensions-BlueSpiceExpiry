@@ -14,5 +14,6 @@
 	"bs-expiry-flyout-next-expired": "Denne side er udløbet!",
 	"bs-expiry-pageinfoelement-expired-label": "udløb",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Denne side er udløbet",
-	"bs-expiry-create-reminder-label": "Opret påmindelse"
+	"bs-expiry-create-reminder-label": "Opret påmindelse",
+	"bs-expiry-flyout-next-comment": "Kommentar: $1"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"YaronSh"
+			"YaronSh",
+			"ישראל קלר"
 		]
 	},
 	"expiry": "תפוגה",
@@ -37,5 +38,6 @@
 	"bs-expiry-do-updateexpirydate-article": "החלפת תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "תפוגה/תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
+	"bs-expiry-flyout-next-comment": "הערה: $1"
 }
