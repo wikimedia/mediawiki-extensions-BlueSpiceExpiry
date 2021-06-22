@@ -24,4 +24,12 @@ class EnablePDFWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 		return 'bs-expiry-pref-enablepdfwatermark';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-expiry-pref-enablepdfwatermark-help';
+	}
+
 }

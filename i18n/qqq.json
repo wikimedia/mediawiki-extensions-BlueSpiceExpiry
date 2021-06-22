@@ -80,5 +80,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Label of _EXPIRATIONDATE semantic special property",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Description of _EXPIRATIONDATE semantic special property",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Label of _ISEXPIRED semantic special property",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property",
+	"bs-expiry-pref-enablepdfwatermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
+	"bs-expiry-pref-enableprintwatermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\"",
+	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\""
 }
