@@ -82,5 +82,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Veraltete Seiten/Ablaufdatum",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum, an dem eine Seite abläuft",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Veraltete Seiten/Ist abgelaufen",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Zeigt, ob eine Seite abgelaufen ist"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Zeigt, ob eine Seite abgelaufen ist",
+	"bs-expiry-pref-enablepdfwatermark-help": "Zeigt das Wasserzeichen für abgelaufene Seiten in PDFs an.",
+	"bs-expiry-pref-enableprintwatermark-help": "Zeigt das Wasserzeichen für abgelaufene Seiten an, wenn eine Seite gedruckt wird.",
+	"bs-expiry-pref-enablepagewatermark-help": "Zeigt ein Wasserzeichen auf der Seite selbst an."
 }
