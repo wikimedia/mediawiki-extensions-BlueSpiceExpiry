@@ -75,5 +75,7 @@
 	"notification-bs-expiry-one-week-email-body": "Сторінка «$1» втратить актуальність цього тижня. Будь ласка, перегляньте контент сторінки, щоб вирішити, чи її треба оновити.\n\nКоментар щодо втрати актуальності:\n$2",
 	"bs-expiry-create-reminder-label": "Створити нагадування",
 	"bs-expiry-reminder-type-expiry": "Закінчення",
-	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання"
+	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Кінцева дата",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Кінцева дата для сторінки"
 }
