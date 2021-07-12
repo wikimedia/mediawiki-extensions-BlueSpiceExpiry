@@ -4,6 +4,7 @@
 			"A Chinese Wikipedian",
 			"Gerongfenh",
 			"Lakejason0",
+			"Shizhao",
 			"Shuiwater",
 			"VulpesVulpes825",
 			"列维劳德",
@@ -41,5 +42,8 @@
 	"bs-expiry-flyout-body-hint-expired": "在$1过期",
 	"bs-expiry-flyout-body-hint-expires": "于$1过期",
 	"bs-expiry-alert-body-expired": "这个页面已于$1过期。请检查页面内容。",
-	"notification-bs-expiry-today-subject": "页面“$1”已过期"
+	"notification-bs-expiry-today-subject": "页面“$1”已过期",
+	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期",
+	"right-expirearticle": "过期页面",
+	"action-expirearticle": "过期页面"
 }
