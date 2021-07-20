@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion",
 			"Ата"
 		]
@@ -75,5 +76,9 @@
 	"action-expiry-delete": "вилучення кінцевого терміну зі сторінок",
 	"bs-expiry-create-reminder-label": "Створити нагадування",
 	"bs-expiry-reminder-type-expiry": "Закінчення",
-	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання"
+	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Кінцева дата",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Кінцева дата для сторінки",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Термін дії/закінчився",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Повідомляє, чи минув термін дії сторінки"
 }

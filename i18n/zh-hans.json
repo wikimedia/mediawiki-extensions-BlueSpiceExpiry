@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Dianliang233",
 			"Gerongfenh",
 			"Lakejason0",
 			"Shizhao",
@@ -44,5 +45,14 @@
 	"bs-expiry-alert-body-expired": "这个页面已于$1过期。请检查页面内容。",
 	"right-expirearticle": "过期页面",
 	"action-expirearticle": "过期页面",
-	"notification-bs-expiry-today-subject": "页面“$1”已过期"
+	"notification-bs-expiry-today-subject": "页面“$1”已过期",
+	"bs-expiry-extension-description": "页面可被标记为过期。",
+	"bs-expiry-do-unexpire-article": "删除到期日期",
+	"bs-expiry-dialog-title": "编辑到期时间",
+	"bs-expiry-delete-error-unknown": "无法删除过期信息。",
+	"bs-expiry-save-success": "已成功创建有效期",
+	"bs-expiry-unexpire-success": "已成功删除有效期",
+	"bs-expiry-unexpire-unsuccess": "未找到有效期ID",
+	"bs-expiry-flyout-manager-button-label": "到期管理",
+	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期"
 }
