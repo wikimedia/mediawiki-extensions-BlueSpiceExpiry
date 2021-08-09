@@ -16,6 +16,7 @@
 	"bs-expiry-do-unexpire-article": "Вилучити дату застарівання",
 	"bs_expiry-unexpire-success": "Позначку про застарілість зі сторінки знято",
 	"bs_expiry-unexpire-unsuccess": "Позначку про застарілість зі сторінки зняти не вдалося",
+	"bs-expiry-specialpage-subtitle": "← $1",
 	"bs-expiry-header-pagename": "Сторінка",
 	"bs-expiry-header-date": "Втрачає актуальність",
 	"bs-expiry-header-comment": "Коментар",
