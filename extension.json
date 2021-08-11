@@ -215,6 +215,11 @@
 			"public": true
 		}
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\Expiry\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Expiry\\Hook\\SkinTemplateNavigationUniversal\\AddExpiryCreateEntry::callback",
 		"BeforePageDisplay": [
@@ -229,7 +234,8 @@
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
-		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback"
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"manifest_version": 2
 }
