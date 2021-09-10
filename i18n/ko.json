@@ -18,5 +18,17 @@
 	"bs-expiry-alert-body-expired": "이 문서는 $1에 만료되었습니다. 내용을 확인해 주십시오.",
 	"bs-expiry-article-label": "문서",
 	"bs-expiry-unknown-page-msg": "문서가 존재하지 않습니다.",
-	"bs-expiry-flyout-next-comment": "의견: $1"
+	"bs-expiry-flyout-next-comment": "의견: $1",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "이 문서의 기간 만료를 취소합니다",
+	"echo-category-title-bs-expiry-daily-cat": "기간 만료 - 매일",
+	"echo-pref-tooltip-bs-expiry-daily-cat": "오늘 문서의 기간이 만료될 때 내게 알립니다",
+	"echo-category-title-bs-expiry-weekly-cat": "기간 만료 - 매주",
+	"echo-pref-tooltip-bs-expiry-weekly-cat": "문서가 1주일 뒤에 만료되면 내게 알립니다",
+	"notification-bs-expiry-today-subject": "\"$1\" 문서의 기간이 만료되었습니다",
+	"notification-bs-expiry-one-week-subject": "\"$1\" 문서는 이번 주에 기간이 만료됩니다",
+	"bs-expiry-reminder-type-expiry": "기간 만료",
+	"bs-expiry-do-updateexpirydate-article": "기간 만료일 변경",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "기간 만료일",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "이 문서의 기간이 만료되는 날짜입니다",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "문서의 기간 만료 여부를 구별합니다"
 }
