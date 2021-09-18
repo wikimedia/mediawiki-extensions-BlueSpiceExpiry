@@ -4,19 +4,20 @@ namespace BlueSpice\Expiry;
 
 use MediaWiki\MediaWikiServices;
 use Title;
-use Wikimedia\Rdbms\LoadBalancer;
+use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class Utils {
 
 	/**
 	 *
-	 * @var LoadBalancer
+	 * @var ILoadBalancer
 	 */
 	protected $loadBalancer = null;
 
 	/**
 	 *
-	 * @param LoadBalancer $loadBalancer
+	 * @param ILoadBalancer $loadBalancer
 	 */
 	public function __construct( $loadBalancer ) {
 		$this->loadBalancer = $loadBalancer;
@@ -25,7 +26,7 @@ class Utils {
 	/**
 	 *
 	 * @param int $type
-	 * @return \DatabaseBase
+	 * @return IDatabase
 	 */
 	protected function getDB( $type = DB_REPLICA ) {
 		return $this->loadBalancer->getConnection( $type );
