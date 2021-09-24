@@ -77,5 +77,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiry/Expiration date",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date for when the page expires",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiry/Is expired",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Tells if the page has expired"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Tells if the page has expired",
+	"bs-expiry-pref-enablepdfwatermark-help": "Shows a watermark for expired pages in the PDF.",
+	"bs-expiry-pref-enableprintwatermark-help": "Shows a watermark for expired pages when printed.",
+	"bs-expiry-pref-enablepagewatermark-help": "Shows a watermark on the page itself."
 }

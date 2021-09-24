@@ -24,4 +24,12 @@ class EnablePrintWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 		return 'bs-expiry-pref-enableprintwatermark';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-expiry-pref-enableprintwatermark-help';
+	}
+
 }
