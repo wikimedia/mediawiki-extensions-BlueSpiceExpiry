@@ -78,5 +78,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiration/Data de expiration",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data que indica quando le pagina expira",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiration/Es expirate",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica si le pagina ha expirate"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica si le pagina ha expirate",
+	"bs-expiry-pref-enablepdfwatermark-help": "Monstra un marca transparente pro paginas expirate in le PDF.",
+	"bs-expiry-pref-enableprintwatermark-help": "Monstra un marca transparente pro paginas expirate quando se imprime.",
+	"bs-expiry-pref-enablepagewatermark-help": "Monstra un marca transparente sur le pagina mesme."
 }
