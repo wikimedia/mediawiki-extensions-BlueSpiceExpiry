@@ -30,5 +30,10 @@
 	"bs-expiry-do-updateexpirydate-article": "기간 만료일 변경",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "기간 만료일",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "이 문서의 기간이 만료되는 날짜입니다",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "문서의 기간 만료 여부를 구별합니다"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "문서의 기간 만료 여부를 구별합니다",
+	"bs-expiry-extension-description": "문서를 기간 만료로 표시할 수 있습니다.",
+	"specialexpiry": "기간이 만료된 문서",
+	"prefs-expiry": "기간 만료",
+	"bs-expiry-pref-enablepdfwatermark-help": "PDF에서 기간이 만료된 문서의 워터마크를 표시합니다.",
+	"bs-expiry-pref-enablepagewatermark-help": "문서 자체에 워터마크를 표시합니다."
 }
