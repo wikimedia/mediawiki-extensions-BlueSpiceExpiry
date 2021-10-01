@@ -82,5 +82,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date d’expiration de la page",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiration / est expirée",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indique si la page a expiré",
-	"bs-expiry-specialpage-subtitle": "← $1"
+	"bs-expiry-specialpage-subtitle": "← $1",
+	"bs-expiry-pref-enablepdfwatermark-help": "Affiche un filigrane pour les pages expirées dans le PDF.",
+	"bs-expiry-pref-enableprintwatermark-help": "Affiche un filigrane pour les pages expirées quand elles sont imprimées.",
+	"bs-expiry-pref-enablepagewatermark-help": "Affiche un filigrane sur la page elle-même."
 }
