@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alexander Yukal",
+			"DDPAT",
 			"Meerrahtar",
 			"Okras"
 		]
@@ -22,5 +23,14 @@
 	"notification-bs-expiry-today-email-body": "Срок действия страницы \"$1\" истек. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять. Если содержимое страницы все еще обновлено, вы можете просто удалить страницу.\n\nКомментарий срока действия:\n$2",
 	"notification-bs-expiry-one-week-subject": "Страница \"$1\" истекает на этой неделе",
 	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2",
-	"bs-expiry-create-reminder-label": "Создать напоминание"
+	"bs-expiry-create-reminder-label": "Создать напоминание",
+	"expiry": "Срок действия",
+	"specialexpiry": "Просроченные статьи",
+	"prefs-expiry": "Срок действия",
+	"bs-expiry-menu-entry-create": "Срок действия",
+	"bs-expiry-nav-link-title-expiry": "Срок действия",
+	"bs-expiry-flyout-title": "Срок действия страницы",
+	"bs-expiry-pageinfoelement-expired-label": "истекло",
+	"bs-expiry-pageinfoelement-unexpire-label": "неистекший",
+	"bs-expiry-reminder-type-expiry": "Срок действия"
 }
