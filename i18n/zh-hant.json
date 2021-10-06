@@ -78,5 +78,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "逾期/逾期日期",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "頁面逾期的日期",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "逾期/已逾期",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "告知頁面是否逾期"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "告知頁面是否逾期",
+	"bs-expiry-pref-enablepdfwatermark-help": "顯示在 PDF 裡逾期頁面的浮水印。",
+	"bs-expiry-pref-enableprintwatermark-help": "當印出逾期頁面時顯示浮水印。",
+	"bs-expiry-pref-enablepagewatermark-help": "顯示頁面本身的浮水印。"
 }
