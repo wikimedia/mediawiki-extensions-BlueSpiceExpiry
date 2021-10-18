@@ -5,7 +5,8 @@
 			"ArenaL5",
 			"Fitoschido",
 			"Joanmp17",
-			"Suecarmol"
+			"Suecarmol",
+			"Whovian Biologist"
 		]
 	},
 	"expiry": "Caducidad",
@@ -28,7 +29,11 @@
 	"bs-expiry-nav-link-title-expiry": "Caducidad",
 	"bs-expiry-flyout-title": "Caducidad de página",
 	"bs-expiry-flyout-form-title": "Crear una caducidad nueva para esta página",
+	"bs-expiry-flyout-next-expired": "¡Esta página ha caducado!",
+	"bs-expiry-flyout-next-current": "Esta página caduca {{PLURAL:$1|tomorrow|in $1 days ($2)}}!",
+	"bs-expiry-flyout-expiry-not-set": "¡Esta página no está configurada para caducar!",
 	"bs-expiry-flyout-next-comment": "Comentario: $1",
+	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento",
 	"bs-expiry-edit-grid-header-username": "Usuario",
 	"bs-expiry-edit-grid-header-date": "Fecha",
 	"bs-expiry-edit-grid-header-comment": "Comentario",
