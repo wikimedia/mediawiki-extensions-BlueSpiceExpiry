@@ -216,6 +216,9 @@
 		}
 	},
 	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\Expiry\\HookHandler\\CommonUserInterface"
+		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\Expiry\\HookHandler\\DiscoverySkin"
 		}
@@ -235,7 +238,7 @@
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "discovery-skin",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
 	},
 	"manifest_version": 2
