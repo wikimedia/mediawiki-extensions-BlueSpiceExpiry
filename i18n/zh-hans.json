@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"AYZ04",
 			"Dianliang233",
 			"Gerongfenh",
 			"Lakejason0",
@@ -10,6 +11,7 @@
 			"VulpesVulpes825",
 			"列维劳德",
 			"沈澄心",
+			"落花有意12138",
 			"铁桶"
 		]
 	},
@@ -54,5 +56,24 @@
 	"bs-expiry-unexpire-success": "已成功删除有效期",
 	"bs-expiry-unexpire-unsuccess": "未找到有效期ID",
 	"bs-expiry-flyout-manager-button-label": "到期管理",
-	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期"
+	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期",
+	"bs_expiry-unexpire-success": "页面未过期成功",
+	"bs_expiry-unexpire-unsuccess": "此页面不可被未过期",
+	"bs-expiry-text-delete": "您真的想要删除这个{{PLURAL:$1|到期}}吗？",
+	"bs-expiry-flyout-intro": "此页面的到期概览",
+	"bs-expiry-flyout-form-title": "为此页面创建一个新的到期时间",
+	"bs-expiry-flyout-next-current": "此页面{{PLURAL:$1|明天|在$1天($2)}}到期！",
+	"bs-expiry-flyout-expiry-not-set": "此页面未设置为过期！",
+	"bs-expiry-edit-grid-title": "此页面过期后的编辑",
+	"bs-expiry-edit-grid-empty": "页面过期后没有任何编辑",
+	"bs-expiry-pref-enablepdfwatermark": "在PDF中显示过期页面的水印",
+	"bs-expiry-pref-enableprintwatermark": "在打印版本中显示过期页面的水印",
+	"bs-expiry-pageinfoelement-unexpire-label": "未过期",
+	"echo-category-title-bs-expiry-daily-cat": "到期 - 每日",
+	"echo-category-title-bs-expiry-weekly-cat": "到期 - 每周",
+	"notification-bs-expiry-one-week-subject": "页面$1本周将过期",
+	"bs-expiry-do-updateexpirydate-article": "更改到期日",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "到期/到期日期",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "页面过期的日期",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alexander Yukal",
+			"DDPAT",
 			"Meerrahtar",
 			"Okras"
 		]
@@ -21,5 +22,18 @@
 	"notification-bs-expiry-today-subject": "Срок действия страницы \"$1\" истек",
 	"notification-bs-expiry-today-email-body": "Срок действия страницы \"$1\" истек. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять. Если содержимое страницы все еще обновлено, вы можете просто удалить страницу.\n\nКомментарий срока действия:\n$2",
 	"notification-bs-expiry-one-week-subject": "Страница \"$1\" истекает на этой неделе",
-	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2"
+	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2",
+	"expiry": "Срок действия",
+	"specialexpiry": "Просроченные статьи",
+	"prefs-expiry": "Срок действия",
+	"bs-expiry-header-date": "Истекает",
+	"bs-expiry-date-label": "Истекает",
+	"bs-expiry-unknown-page-msg": "Страница не существует.",
+	"bs-expiry-menu-entry-create": "Срок действия",
+	"bs-expiry-nav-link-title-expiry": "Срок действия",
+	"bs-expiry-flyout-title": "Срок действия страницы",
+	"bs-expiry-pageinfoelement-expired-label": "истекло",
+	"bs-expiry-pageinfoelement-unexpire-label": "неистекший",
+	"bs-expiry-create-reminder-label": "Создать напоминание",
+	"bs-expiry-reminder-type-expiry": "Срок действия"
 }
