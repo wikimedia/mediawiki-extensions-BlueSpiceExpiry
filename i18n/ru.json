@@ -32,5 +32,8 @@
 	"bs-expiry-flyout-title": "Срок действия страницы",
 	"bs-expiry-pageinfoelement-expired-label": "истекло",
 	"bs-expiry-pageinfoelement-unexpire-label": "неистекший",
-	"bs-expiry-reminder-type-expiry": "Срок действия"
+	"bs-expiry-reminder-type-expiry": "Срок действия",
+	"bs-expiry-header-date": "Истекает",
+	"bs-expiry-date-label": "Истекает",
+	"bs-expiry-unknown-page-msg": "Страница не существует."
 }

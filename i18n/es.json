@@ -5,7 +5,8 @@
 			"ArenaL5",
 			"Fitoschido",
 			"Joanmp17",
-			"Suecarmol"
+			"Suecarmol",
+			"Whovian Biologist"
 		]
 	},
 	"expiry": "Caducidad",
@@ -38,5 +39,9 @@
 	"bs-expiry-delete-error-unknown": "No se pudo eliminar la caducidad.",
 	"bs-expiry-update-error": "No se pudo actualizar la caducidad.",
 	"bs-expiry-create-reminder-label": "Crear recordatorio",
-	"bs-expiry-reminder-type-expiry": "Caducidad"
+	"bs-expiry-reminder-type-expiry": "Caducidad",
+	"bs-expiry-flyout-next-expired": "¡Esta página ha caducado!",
+	"bs-expiry-flyout-next-current": "Esta página caduca {{PLURAL:$1|tomorrow|in $1 days ($2)}}!",
+	"bs-expiry-flyout-expiry-not-set": "¡Esta página no está configurada para caducar!",
+	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento"
 }
