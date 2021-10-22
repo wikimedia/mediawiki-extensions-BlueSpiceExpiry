@@ -1,4 +1,61 @@
 (function( mw, $, d, bs, undefined ){
+	bs.util.registerNamespace( 'bs.expiry.ui' );
+
+	bs.expiry.isReminderEnabled = function() {
+		var reminderTypes = mw.config.get( 'bsgReminderRegisteredTypes', null );
+		return reminderTypes && reminderTypes.hasOwnProperty( 'expiry' );
+	};
+
+	bs.expiry.getDialogPages = function( cfg, data ) {
+		var dfd = $.Deferred();
+
+		cfg = cfg || {};
+		data = data || {};
+
+		cfg.reminderEnabled = bs.expiry.isReminderEnabled();
+
+		var pages = [
+			new bs.expiry.ui.ExpiryPage( $.extend( {
+				data: data
+			}, cfg ) ),
+			new bs.expiry.ui.DeleteExpiryPage()
+		];
+
+		if ( bs.expiry.isReminderEnabled() && !data.hasOwnProperty( 'id' ) ) {
+			mw.loader.using( "ext.bluespice.reminder.dialog.pages", function() {
+				pages.push( new bs.expiry.ui.CreateReminderPromptPage() );
+				pages.push( new bs.reminder.ui.CreateReminderForPage() );
+				dfd.resolve( pages );
+			} );
+		} else {
+			dfd.resolve( pages );
+		}
+
+
+
+		return dfd.promise();
+	};
+
+	bs.expiry.getExpiryForPage = function( pageId ) {
+		var dfd = $.Deferred();
+		blueSpice.api.tasks.exec(
+			'expiry',
+			'getDetailsForExpiry',
+			{
+				articleId: pageId
+			}, {
+				success: function( response ) {
+					dfd.resolve( response.payload );
+				},
+				failure: function() {
+					dfd.reject();
+				}
+			}
+		);
+
+		return dfd.promise();
+	};
+
 	$( d ).on( 'click', 'a.bs-expiry-unexpire', function() {
 		var exp_id = $( this ).data( 'expid' );
 		bs.api.tasks.exec(
@@ -15,59 +72,65 @@
 	});
 
 	$( d ).on( 'click', 'a.bs-expiry-updateexpirydate', function() {
-		var me = this;
 		var expiry = $(this).data( 'expiry' ) || {};
-		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
-			Ext.onReady( function() {
-				if ( !me.dlgExpiry ) {
-					me.dlgExpiry = Ext.create( 'BS.Expiry.dialog.ChangeDate', {
-						id: 'bs-expiry-dlg-changedate-page'
-					} );
-					me.dlgExpiry.on( 'ok', function() {
-						expiry.date = me.dlgExpiry.getData().date;
-						expiry.comment = expiry.exp_comment;
-						bs.api.tasks.exec(
-							'expiry',
-							'saveExpiry',
-							expiry
-						).done( function(){
-							window.location.reload();
-						} );
-						$( d ).trigger( "BSExpiryEditOk", [ me, expiry ] );
-					}, me );
-				}
-				expiry.articleId = mw.config.get( 'wgArticleId' );
-				me.dlgExpiry.setData( expiry );
-				me.dlgExpiry.show( me );
-			});
-		});
+		var changeDateDialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-expiry-dlg-change-date',
+			pages: function() {
+				var dfd = $.Deferred();
+				mw.loader.using( "ext.bluespice.expiry.dialog.pages", function() {
+					dfd.resolve( [ new bs.expiry.ui.ChangeDatePage( { ids: [ expiry.id ] } ) ] );
+
+				}, function( e ) {
+					dfd.reject( e );
+				} );
+				return dfd.promise();
+			}
+		} );
+
+		changeDateDialog.show().closed.then( function( data ) {
+			if ( data.success ) {
+				window.location.reload();
+			}
+		}.bind( this ) );
 	});
 
 	$( d ).on( 'click', "#ca-expiryCreate, .ca-expiryCreate", function ( e ) {
 		e.preventDefault();
-		var me = this;
-		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
-			Ext.onReady( function() {
-				if ( !me.dlgExpiry ) {
-					me.dlgExpiry = Ext.create( 'BS.Expiry.Dialog', {
-						id: 'bs-expiry-dlg-page'
+		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-expiry-dialog-set',
+			pages: function() {
+				var dfd = $.Deferred();
+				mw.loader.using( "ext.bluespice.expiry.dialog.pages", function() {
+					bs.expiry.getExpiryForPage( mw.config.get( 'wgArticleId' ) )
+					.done( function( data ) {
+						bs.expiry.getDialogPages(
+							{ forcePage: true }, $.extend( { page: mw.config.get( 'wgPageName' ) }, data )
+						).done( function( pages ) {
+							dfd.resolve( pages );
+						} ).fail( function( e ) {
+							dfd.reject( e );
+						} );
+					} ).fail( function() {
+						bs.expiry.getDialogPages(
+							{ forcePage: true }, { page: mw.config.get( 'wgPageName' ) }
+						).done( function( pages ) {
+							dfd.resolve( pages );
+						} ).fail( function( e ) {
+							dfd.reject( e );
+						} );
 					} );
-					me.dlgExpiry.on( 'ok', function() {
-						var obj = me.dlgExpiry.getData();
-						bs.api.tasks.exec(
-							'expiry',
-							'saveExpiry',
-							obj
-						);
-						$( d ).trigger( "BSExpiryAddOk", [ me, obj ] );
-					}, me );
-				}
-				var obj = {
-					articleId: mw.config.get( 'wgArticleId' )
-				};
-				me.dlgExpiry.setData( obj );
-				me.dlgExpiry.show( me );
-			});
-		});
+
+				}, function( e ) {
+					dfd.reject( e );
+				} );
+				return dfd.promise();
+			}
+		} );
+
+		dialog.show().closed.then( function( data ) {
+			if( data.success ) {
+				window.location.reload();
+			}
+		} );
 	} );
 })( mediaWiki, jQuery, document, blueSpice );

@@ -125,7 +125,9 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice.expiry.special": {
-			"scripts": "bluespice.expiry.special.js",
+			"scripts": [
+				"bluespice.expiry.special.js"
+			],
 			"messages": [
 				"bs-expiry-header-pagename",
 				"bs-expiry-header-date",
@@ -133,7 +135,11 @@
 				"bs-expiry-title-delete",
 				"bs-expiry-header-comment"
 			],
-			"dependencies": "ext.bluespice.extjs"
+			"dependencies": [
+				"ext.bluespice.expiry.dialog.pages",
+				"ext.bluespice.extjs",
+				"ext.bluespice.Expiry"
+			]
 		},
 		"ext.bluespice.expiry.special.styles": {
 			"styles": "bluespice.expiry.less",
@@ -152,14 +158,6 @@
 		},
 		"ext.bluespice.Expiry": {
 			"scripts": "bluespice.expiry.js",
-			"messages": [
-				"bs-expiry-dialog-title",
-				"bs-expiry-date-label",
-				"bs-expiry-delete-error-unknown",
-				"bs-expiry-comment-label",
-				"bs-expiry-article-label",
-				"bs-expiry-create-reminder-label"
-			],
 			"dependencies": "ext.bluespice"
 		},
 		"ext.bluespice.expiry.flyout": {
@@ -209,6 +207,31 @@
 			],
 			"dependencies": [
 				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.expiry.dialog.pages": {
+			"scripts": [
+				"ui/page/CreateReminderPromptPage.js",
+				"ui/page/ChangeDatePage.js",
+				"ui/page/ExpiryPage.js",
+				"ui/page/DeleteExpiryPage.js"
+			],
+			"messages": [
+				"bs-expiry-dialog-title",
+				"bs-expiry-date-label",
+				"bs-expiry-delete-error-unknown",
+				"bs-expiry-comment-label",
+				"bs-expiry-article-label",
+				"bs-expiry-create-reminder-label",
+				"bs-expiry-dialog-delete-prompt",
+				"bs-expiry-dialog-create-reminder-prompt",
+				"bs-expiry-dialog-create-reminder-title",
+				"bs-expiry-dialog-action-no"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.dialogs",
+				"mediawiki.widgets.DateInputWidget",
+				"mediawiki.widgets"
 			]
 		}
 	},

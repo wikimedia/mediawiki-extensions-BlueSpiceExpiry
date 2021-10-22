@@ -7,7 +7,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 *
 	 * @var string[]
 	 */
-	protected $aTasks = [ 'saveExpiry', 'deleteExpiry', 'getDetailsForExpiry' ];
+	protected $aTasks = [ 'saveExpiry', 'changeDate', 'deleteExpiry', 'getDetailsForExpiry' ];
 
 	/**
 	 *
@@ -22,12 +22,10 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			? (int)$oTaskData->articleId
 			: 0;
 
-		$oTitle = Title::newFromID( $iArticleId );
-
-		$aExpiry = \BlueSpice\Expiry\Extension::getExpiryForPage( $iArticleId );
+		$aExpiry = \BlueSpice\Expiry\Extension::getExpiryForPage( $iArticleId, false );
 
 		if ( !$aExpiry ) {
-			$oResult->message = $oResult->errors['expiryId']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-expiry-unknown-page-msg' )->plain();
 			return $oResult;
 		}
@@ -48,74 +46,116 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
+	public function task_changeDate( $oTaskData, $aParams ) {
+		$oResult = $this->makeStandardReturn();
+
+		$expiryIds = $oTaskData->ids ?? [];
+		$expiryIds = array_map( static function ( $id ) {
+			return (int)$id;
+		}, $expiryIds );
+		$date = DateTime::createFromFormat( "Y-m-d", $oTaskData->date );
+		if ( !$date ) {
+			$oResult->message = $oResult->errors[]
+				= wfMessage( 'bs-expiry-error-invalid-date' )->plain();
+			return $oResult;
+		}
+
+		$dbw = wfGetDB( DB_PRIMARY );
+		$res = $dbw->update(
+			'bs_expiry',
+			[ 'exp_date' => $date->format( 'Y-m-d' ) ],
+			[ 'exp_id IN (' . $dbw->makeList( $expiryIds ) . ')' ],
+			__METHOD__
+		);
+
+		$oResult->success = $res;
+		return $oResult;
+	}
+
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_saveExpiry( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		$bIsUpdate = false;
 		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors['permissionError']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
 
-		$setReminder = isset( $oTaskData->setReminder ) && $oTaskData->setReminder == true
-			? true
-			: false;
 		$sComment = strip_tags( empty( $oTaskData->comment ) ? '' : (string)$oTaskData->comment );
 
-		$iDate = isset( $oTaskData->date )
-			? $oTaskData->date
-			: 0;
+		$oTitle = null;
+		if ( !empty( $oTaskData->pageName ) ) {
+			$oTitle = Title::newFromText( $oTaskData->pageName );
+		}
+		if ( !empty( $oTaskData->page ) ) {
+			$oTitle = Title::newFromText( $oTaskData->page );
+		}
+
 		$dbr = wfGetDB( DB_REPLICA );
 		// this is normally the case when clicking the expiry on a normal page
 		// (not the overview specialpage) or the edit button on the specialpage
 		// and data needs to be prefilled
-		if ( empty( $oTaskData->articleId ) && !empty( $oTaskData->id ) ) {
+		if ( !$oTitle && empty( $oTaskData->articleId ) && !empty( $oTaskData->id ) ) {
 			$res = $dbr->select( 'bs_expiry', 'exp_page_id', [ 'exp_id' => (int)$oTaskData->id ] );
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['noactions'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 			}
 			$row = $res->fetchRow();
 			if ( empty( $row['exp_page_id'] ) ) {
-				$oResult->message = $oResult->errors['noactions'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 				return $oResult;
 			}
 			$oTaskData->articleId = (int)$row['exp_page_id'];
 		}
-		if ( empty( $oTaskData->articleId ) && !empty( $oTaskData->pageName ) ) {
-			$oTitle = Title::newFromText( $oTaskData->pageName );
-		} else {
+
+		if ( !$oTitle && !empty( $oTaskData->articleId ) ) {
 			$oTitle = Title::newFromID( $oTaskData->articleId );
 		}
 
 		if ( !$oTitle instanceof Title || !$oTitle->exists() ) {
-			$oResult->message = $oResult->errors['unknown-page'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 			return $oResult;
 		}
-		// TODO: is valid date?
-		$sFormattedFieldValue = date( "Y-m-d", $iDate );
 
-		$res = $dbr->select(
-			'bs_expiry',
-			'*',
-			[
-				'exp_page_id' => (int)$oTitle->getArticleID()
-			],
-			__METHOD__
-		);
-		$iExpiryId = 0;
-		if ( $res && $res->numRows() ) {
-			$row = $res->fetchRow();
-			$iExpiryId = (int)$row['exp_id'];
+		$date = DateTime::createFromFormat( "Y-m-d", $oTaskData->date );
+		if ( !$date ) {
+			$oResult->message = $oResult->errors[]
+				= wfMessage( 'bs-expiry-error-invalid-date' )->plain();
+			return $oResult;
+		}
+
+		$iExpiryId = property_exists( $oTaskData, 'id' ) ? (int)$oTaskData->id : 0;
+		if ( !$iExpiryId ) {
+			$res = $dbr->select(
+				'bs_expiry',
+				'*',
+				[
+					'exp_page_id' => (int)$oTitle->getArticleID()
+				],
+				__METHOD__
+			);
+			if ( $res && $res->numRows() ) {
+				$row = $res->fetchRow();
+				$iExpiryId = (int)$row['exp_id'];
+			}
+		}
+		if ( $iExpiryId > 0 ) {
 			$bIsUpdate = true;
 		}
 
 		$aData = [
 			'exp_page_id' => (int)$oTitle->getArticleID(),
-			'exp_date' => $sFormattedFieldValue,
+			'exp_date' => $date->format( 'Y-m-d' ),
 			'exp_comment' => $sComment
 		];
 
@@ -123,7 +163,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		if ( !$iExpiryId ) {
 			$res = $dbw->insert( 'bs_expiry', $aData, __METHOD__ );
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-create-error' )->text();
 				return $oResult;
 			}
@@ -142,14 +182,14 @@ class ApiExpiryTasks extends BSApiTasksBase {
 					$oTitle,
 				] );
 			} catch ( Exception $e ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					$e->getMessage();
 				return $oResult;
 			}
 		} else {
 			$res = $dbw->update( 'bs_expiry', $aData, [ 'exp_id' => $iExpiryId ] );
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['updateerror'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-update-error' )->text();
 				return $oResult;
 			}
@@ -162,14 +202,13 @@ class ApiExpiryTasks extends BSApiTasksBase {
 					$oTitle,
 				] );
 			} catch ( Exception $e ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					$e->getMessage();
 				return $oResult;
 			}
 		}
 
 		$oResult->success = true;
-		$this->setReminders( $aData, $setReminder );
 
 		$oTitle->invalidateCache();
 
@@ -180,102 +219,6 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		return $oResult;
-	}
-
-	/**
-	 *
-	 * @param array $expiryData
-	 * @param bool|false $addNewReminders
-	 * @return bool
-	 */
-	private function setReminders( $expiryData, $addNewReminders = false ) {
-		if ( !$this->getServices()->hasService( 'BSReminderFactory' ) ) {
-			return false;
-		}
-		$types = $this->getServices()->getService( 'BSReminderFactory' )->getRegisteredTypes();
-		if ( !in_array( 'expiry', $types ) ) {
-			return false;
-		}
-		$res = $this->getDB( DB_REPLICA )->select(
-			'bs_reminder',
-			'*',
-			[ 'rem_page_id' => $expiryData['exp_page_id'],
-			'rem_type' => 'expiry'
-		] );
-		$userReminderUpdated = false;
-		foreach ( $res as $row ) {
-			if ( $row->rem_user_id === $this->getUser()->getId() ) {
-				$userReminderUpdated = true;
-			}
-			$row->rem_date = $expiryData['exp_date'];
-			$row->rem_comment = $expiryData['exp_comment'];
-			if ( empty( $row->rem_comment ) ) {
-				$user = User::newFromId( $row->rem_user_id );
-				if ( !$user ) {
-					continue;
-				}
-				$date = DateTime::createFromFormat( "Y-m-d", $expiryData['exp_date'] );
-				$timestamp = $this->getContext()->getLanguage()->userTimeAndDate(
-					$date->format( 'YmdHis' ),
-					$user
-				);
-				$msg = $this->msg( 'bs-expiry-flyout-body-hint-expires' )
-					->params( [ $timestamp ] )
-					->inLanguage( $user->getOption( 'language' ) );
-				$row->rem_comment = $msg->parse();
-			}
-			$row->rem_comment = addslashes( strip_tags( $row->rem_comment ) );
-			$this->getDB( DB_PRIMARY )->update(
-				'bs_reminder',
-				(array)$row,
-				[ 'rem_id' => $row->rem_id ]
-			);
-		}
-		if ( $userReminderUpdated || !$addNewReminders ) {
-			return true;
-		}
-		if ( empty( $expiryData['exp_comment'] ) ) {
-			$date = DateTime::createFromFormat( "Y-m-d", $expiryData['exp_date'] );
-			$timestamp = $this->getContext()->getLanguage()->userTimeAndDate(
-				$date->format( 'YmdHis' ),
-				$this->getUser()
-			);
-			$msg = $this->msg( 'bs-expiry-flyout-body-hint-expires' )
-				->params( [ $timestamp ] );
-			$expiryData['exp_comment'] = $msg->parse();
-		}
-		return $this->getDB( DB_PRIMARY )->insert(
-			'bs_reminder',
-			[
-				'rem_date' => $expiryData['exp_date'],
-				'rem_page_id' => $expiryData['exp_page_id'],
-				'rem_user_id' => $this->getUser()->getId(),
-				'rem_comment' => addslashes( strip_tags( $expiryData['exp_comment'] ) ),
-				'rem_type' => 'expiry',
-				'rem_is_repeating' => false,
-			]
-		);
-	}
-
-	/**
-	 *
-	 * @param array $expiryData
-	 * @return bool
-	 */
-	private function deleteReminders( $expiryData ) {
-		if ( !$this->getServices()->hasService( 'BSReminderFactory' ) ) {
-			return false;
-		}
-		$types = $this->getServices()->getService( 'BSReminderFactory' )->getRegisteredTypes();
-		if ( !in_array( 'expiry', $types ) ) {
-			return false;
-		}
-		return $this->getDB( DB_REPLICA )->delete(
-			'bs_reminder',
-			[ 'rem_page_id' => $expiryData['exp_page_id'],
-				'rem_type' => 'expiry'
-			]
-		);
 	}
 
 	/**
@@ -291,7 +234,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$iExpiryId = (int)$oTaskData->expiryId;
 		$iArticleId = (int)$oTaskData->articleId;
 		if ( !$iExpiryId ) {
-			$oResult->message = $oResult->errors['expiryId'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-expiry-unexpire-unsuccess' )->text();
 			return $oResult;
 		}
@@ -306,7 +249,6 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			__METHOD__
 		);
 
-		$this->deleteReminders( [ 'exp_page_id' => $iArticleId ] );
 		$oTitle = Title::newFromID( $iArticleId );
 		if ( !empty( $iArticleId ) && $oTitle ) {
 			$oTitle->invalidateCache();
@@ -325,6 +267,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		return [
 			'getDetailsForExpiry' => [ 'read' ],
 			'saveExpiry' => [ 'expirearticle' ],
+			'changeDate' => [ 'expirearticle' ],
 			'deleteExpiry' => [ 'expiry-delete' ]
 		];
 	}
