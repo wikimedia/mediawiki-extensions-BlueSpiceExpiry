@@ -13,7 +13,7 @@
 
 Ext.define( 'BS.Expiry.Panel', {
 	extend: 'BS.CRUDGridPanel',
-	requires: [ 'BS.store.BSApi', 'BS.Expiry.PanelDialog', 'BS.Expiry.dialog.ChangeDate' ],
+	requires: [ 'BS.store.BSApi' ],
 	initComponent: function() {
 
 		this.strMain = new BS.store.BSApi({
@@ -76,7 +76,7 @@ Ext.define( 'BS.Expiry.Panel', {
 		var today = new Date();
 		if ( today > expires ) {
 			return "<span style='color:red'>" + value + "</span>";
-		};
+		}
 		return value;
 	},
 	makeSelModel: function(){
@@ -104,106 +104,71 @@ Ext.define( 'BS.Expiry.Panel', {
 		);
 	},
 	onBtnEditClick: function () {
-		var me = this;
 		this.selectedRows = this.grdMain.getSelectionModel().getSelection();
 		if ( this.selectedRows.length > 1 ) {
-			if ( !this.dlgChangeDate ) {
-				this.dlgChangeDate = new BS.Expiry.dialog.ChangeDate( {
-					id: 'bs-expiry-dlg-changedate'
-				} );
-				this.dlgChangeDate.on( 'ok', me.onChangeDateOk, me );
+			var ids = [];
+			for ( var i = 0; i < this.selectedRows.length; i++ ) {
+				ids.push( this.selectedRows[i].get( 'id' ) );
 			}
-			this.dlgChangeDate.setData();
-			this.dlgChangeDate.show();
+			var changeDateDialog = new OOJSPlus.ui.dialog.BookletDialog( {
+				id: 'bs-expiry-dlg-change-date',
+				pages: [
+					new bs.expiry.ui.ChangeDatePage( { ids: ids } )
+				]
+			} );
+
+			changeDateDialog.show().closed.then( function( data ) {
+				if ( data.success ) {
+					this.reloadStore();
+				}
+			}.bind( this ) );
 			return;
 		}
 		var rowData = this.selectedRows[0].getData();
 		var obj = {
 			id: rowData.id,
 			date: rowData.expiry_date,
-			page_title: rowData.page_title,
+			page: rowData.page_title,
 			comment: rowData.exp_comment
 		};
-		if ( !this.dlgEdit ) {
-			this.dlgEdit = new BS.Expiry.PanelDialog({
-				id: 'bs-expiry-dlg-edit'
-			});
-			this.dlgEdit.on( 'ok', me.onEditExpiryOk, me );
-		}
-		this.dlgEdit.setData( obj );
-		this.dlgEdit.show();
+		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-expiry-dlg-add',
+			pages: function() {
+				return bs.expiry.getDialogPages( {}, obj );
+			}
+		} );
+
+		dialog.show().closed.then( function( data ) {
+			if ( data.success ) {
+				this.reloadStore();
+			}
+		}.bind( this ) );
 	},
 	onBtnAddClick: function () {
-		var obj = {};
-		var me = this;
-		if ( !this.dlgAdd ) {
-			this.dlgAdd = new BS.Expiry.PanelDialog({
-				id: 'bs-expiry-dlg-add'
-			});
-			this.dlgAdd.on( 'ok', me.onAddExpiryOk, me );
-		}
-		this.dlgAdd.setData( obj );
-		this.dlgAdd.show();
-	},
-	onAddExpiryOk: function( data ) {
-		var obj = this.dlgAdd.getData();
-		var me = this;
-		bs.api.tasks.exec(
-			'expiry',
-			'saveExpiry',
-			obj
-		).done(function(){
-			me.reloadStore();
-		});
-		$( document ).trigger( "BSExpiryAddOk", [ this, obj ] );
-	},
-	onChangeDateOk: function( data ) {
-		var selectedRow = this.grdMain.getSelectionModel().getSelection();
-		var me = this;
-		for ( var i = 0; i < selectedRow.length; i++ ){
-			var obj = selectedRow[i].getData();
-			if ( !obj.user_can_expire ) {
-				continue;
+		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-expiry-dlg-add',
+			pages: function() {
+				return bs.expiry.getDialogPages();
 			}
-			obj.date = this.dlgChangeDate.getData().date;
-			obj.comment = obj.exp_comment || '';
-			bs.api.tasks.exec(
-				'expiry',
-				'saveExpiry',
-				obj
-			)
-			.done( function() {
-				if ( selectedRow.length !== i ) {
-					return;
-				}
-				me.reloadStore();
-			} );
-			$( document ).trigger( "BSExpiryEditOk", [ this, obj ] );
-		}
-	},
-	onEditExpiryOk: function( data ) {
-		var obj = this.dlgEdit.getData();
-		var me = this;
-		bs.api.tasks.exec(
-			'expiry',
-			'saveExpiry',
-			obj
-		)
-		.done(function(){
-			me.reloadStore();
-		});
-		$( document ).trigger( "BSExpiryEditOk", [ this, obj ] );
+		} );
+
+		dialog.show().closed.then( function( data ) {
+			if ( data.success ) {
+				this.reloadStore();
+			}
+		}.bind( this ) );
+
 	},
 	onRemoveExpiryOk: function() {
 		var selectedRow = this.grdMain.getSelectionModel().getSelection();
 		for (var i = 0; i < selectedRow.length; i++){
-			var Id = selectedRow[i].get( 'id' );
 			var me = this;
 			bs.api.tasks.exec(
 				'expiry',
 				'deleteExpiry',
 				{
-					'expiryId': Id
+					'expiryId': selectedRow[i].get( 'id' ),
+					articleId: selectedRow[i].get( 'articleId' )
 				}
 			)
 			.done(function( response, xhr ){
