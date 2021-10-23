@@ -191,6 +191,25 @@
 		},
 		"ext.bluespice.expiry.watermark.styles": {
 			"styles": "bluespice.expiry.watermark.css"
+		},
+		"ext.bluespice.expiry.dialoginfo.pages": {
+			"scripts": [
+				"bluespice.expiry.ExpiryInformationPage.js"
+			],
+			"messages": [
+				"bs-expiry-info-dialog",
+				"bs-expiry-info-dialog-button-label",
+				"bs-expiry-flyout-title",
+				"bs-expiry-flyout-intro",
+				"bs-expiry-flyout-form-title",
+				"bs-expiry-flyout-next-expired",
+				"bs-expiry-flyout-next-current",
+				"bs-expiry-flyout-expiry-not-set",
+				"bs-expiry-flyout-next-comment"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -221,6 +240,9 @@
 		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\Expiry\\HookHandler\\DiscoverySkin"
+		},
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Expiry\\HookHandler\\StandardDialogs"
 		}
 	},
 	"Hooks": {
@@ -239,7 +261,8 @@
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
 	},
 	"manifest_version": 2
 }

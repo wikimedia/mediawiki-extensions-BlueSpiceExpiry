@@ -85,5 +85,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Zeigt, ob eine Seite abgelaufen ist",
 	"bs-expiry-pref-enablepdfwatermark-help": "Zeigt das Wasserzeichen für abgelaufene Seiten in PDFs an.",
 	"bs-expiry-pref-enableprintwatermark-help": "Zeigt das Wasserzeichen für abgelaufene Seiten an, wenn eine Seite gedruckt wird.",
-	"bs-expiry-pref-enablepagewatermark-help": "Zeigt ein Wasserzeichen auf der Seite selbst an."
+	"bs-expiry-pref-enablepagewatermark-help": "Zeigt ein Wasserzeichen auf der Seite selbst an.",
+	"bs-expiry-info-dialog": "Aktualität der Seite",
+	"bs-expiry-info-dialog-button-label": "Aktualitäten verwalten"
 }

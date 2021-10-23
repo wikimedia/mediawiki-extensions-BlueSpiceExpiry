@@ -83,5 +83,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property",
 	"bs-expiry-pref-enablepdfwatermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
 	"bs-expiry-pref-enableprintwatermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\"",
-	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\""
+	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
+	"bs-expiry-info-dialog": "Label for page information dialog",
+	"bs-expiry-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all pages with expiries"
 }
