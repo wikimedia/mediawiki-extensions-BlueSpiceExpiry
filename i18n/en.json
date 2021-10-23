@@ -80,5 +80,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Tells if the page has expired",
 	"bs-expiry-pref-enablepdfwatermark-help": "Shows a watermark for expired pages in the PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Shows a watermark for expired pages when printed.",
-	"bs-expiry-pref-enablepagewatermark-help": "Shows a watermark on the page itself."
+	"bs-expiry-pref-enablepagewatermark-help": "Shows a watermark on the page itself.",
+	"bs-expiry-info-dialog": "Expiry of page",
+	"bs-expiry-info-dialog-button-label": "Manage expiries"
 }
