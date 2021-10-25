@@ -28,7 +28,8 @@
 	"bs-expiry-save-success": "Expiry was created successfully",
 	"bs-expiry-unexpire-success": "Expiry was deleted successfully",
 	"bs-expiry-unexpire-unsuccess": "Expiry ID not found",
-	"bs-expiry-menu-entry-create": "Expiry",
+	"bs-expiry-menu-entry-create": "Set expiry",
+	"bs-expiry-menu-entry-manage": "Manage expiry",
 	"bs-expiry-text-delete": "Do you really want to delete {{PLURAL:$1|this expiry|these $1 expiries}}?",
 	"bs-expiry-title-delete": "Remove expiry",
 	"bs-expiry-nav-link-title-expiry": "Expiry",
@@ -82,5 +83,10 @@
 	"bs-expiry-pref-enableprintwatermark-help": "Shows a watermark for expired pages when printed.",
 	"bs-expiry-pref-enablepagewatermark-help": "Shows a watermark on the page itself.",
 	"bs-expiry-info-dialog": "Expiry of page",
-	"bs-expiry-info-dialog-button-label": "Manage expiries"
+	"bs-expiry-info-dialog-button-label": "Manage expiries",
+	"bs-expiry-dialog-delete-prompt": "Are you sure you want to delete expiry for this page?",
+	"bs-expiry-error-invalid-date": "Invalid date",
+	"bs-expiry-dialog-create-reminder-prompt": "Do you want to create a reminder for this page?",
+	"bs-expiry-dialog-create-reminder-title": "Create reminder",
+	"bs-expiry-dialog-action-no": "No"
 }

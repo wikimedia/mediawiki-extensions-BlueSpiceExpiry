@@ -32,6 +32,7 @@
 	"bs-expiry-unexpire-success": "Message to display when the expiry was deleted successfully",
 	"bs-expiry-unexpire-unsuccess": "Message to display when the expiry ID not found",
 	"bs-expiry-menu-entry-create": "More menu item for creating expiry",
+	"bs-expiry-menu-entry-manage": "Label for the action in page actions, if an expiry exists on the page",
 	"bs-expiry-text-delete": "Confirmation question to be displayed when user wants to delete one or more expiries.\n\n$1 number of expiries",
 	"bs-expiry-title-delete": "Title for dialog to remove expiry",
 	"bs-expiry-nav-link-title-expiry": "Text of the button in the right navigation that opens the flyout",
@@ -85,5 +86,10 @@
 	"bs-expiry-pref-enableprintwatermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\"",
 	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
 	"bs-expiry-info-dialog": "Label for page information dialog",
-	"bs-expiry-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all pages with expiries"
+	"bs-expiry-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all pages with expiries",
+	"bs-expiry-dialog-delete-prompt": "Confirmation prompt before user deletes expiry",
+	"bs-expiry-error-invalid-date": "Exception message when invalid date is specified",
+	"bs-expiry-dialog-create-reminder-prompt": "Prompt label for creating reminders after expiry",
+	"bs-expiry-dialog-create-reminder-title": "Prompt label for creating reminders after expiry",
+	"bs-expiry-dialog-action-no": "Label for the dialog action"
 }
