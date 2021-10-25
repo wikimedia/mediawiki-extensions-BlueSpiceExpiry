@@ -65,5 +65,7 @@
 	"bs-expiry-do-updateexpirydate-article": "تغییر تاریخ انقضا",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "تاریخ انقضا",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "تاریخی که صفحه در آن منقضی می‌شود",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "در صورت منقضی‌شدن صفحه خبر می‌دهد"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "در صورت منقضی‌شدن صفحه خبر می‌دهد",
+	"bs-expiry-info-dialog": "انقضای صفحه",
+	"bs-expiry-info-dialog-button-label": "مدیریت انقضاها"
 }
