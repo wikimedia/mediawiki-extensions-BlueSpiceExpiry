@@ -85,5 +85,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indique si la page a expiré",
 	"bs-expiry-pref-enablepdfwatermark-help": "Affiche un filigrane pour les pages expirées dans le PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Affiche un filigrane pour les pages expirées quand elles sont imprimées.",
-	"bs-expiry-pref-enablepagewatermark-help": "Affiche un filigrane sur la page elle-même."
+	"bs-expiry-pref-enablepagewatermark-help": "Affiche un filigrane sur la page elle-même.",
+	"bs-expiry-info-dialog": "Expiration de la page",
+	"bs-expiry-info-dialog-button-label": "Gérer les expirations"
 }

@@ -84,5 +84,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Повідомляє, чи минув термін дії сторінки",
 	"bs-expiry-pref-enablepdfwatermark-help": "Показує водяний знак для сторінок із закінченим терміном дії у PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Показує водяний знак для сторінок з простроченим терміном друку.",
-	"bs-expiry-pref-enablepagewatermark-help": "Показує водяний знак на самій сторінці."
+	"bs-expiry-pref-enablepagewatermark-help": "Показує водяний знак на самій сторінці.",
+	"bs-expiry-info-dialog": "Термін дії сторінки",
+	"bs-expiry-info-dialog-button-label": "Керування закінченням терміну дії"
 }
