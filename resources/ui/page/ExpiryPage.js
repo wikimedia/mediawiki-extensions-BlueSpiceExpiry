@@ -1,10 +1,9 @@
 bs.expiry.ui.ExpiryPage = function( cfg ) {
 	cfg = cfg || {};
 	this.reminderEnabled = cfg.reminderEnabled || false;
-	bs.expiry.ui.ExpiryPage.parent.call( this, 'set-expiry', cfg );
-
 	this.page = '';
 	this.forcePage = cfg.forcePage || false;
+	bs.expiry.ui.ExpiryPage.parent.call( this, 'set-expiry', cfg );
 };
 
 OO.inheritClass( bs.expiry.ui.ExpiryPage, OOJSPlus.ui.booklet.DialogBookletPage );
