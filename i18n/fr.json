@@ -33,7 +33,8 @@
 	"bs-expiry-save-success": "L’expiration a bien été créée",
 	"bs-expiry-unexpire-success": "L’expiration a bien été supprimée",
 	"bs-expiry-unexpire-unsuccess": "ID d’expiration non trouvé",
-	"bs-expiry-menu-entry-create": "Expiration",
+	"bs-expiry-menu-entry-create": "Définir l’expiration",
+	"bs-expiry-menu-entry-manage": "Gérer l’expiration",
 	"bs-expiry-text-delete": "Voulez-vous vraiment supprimer {{PLURAL:$1|cette expiration|ces $1 expirations}} ?",
 	"bs-expiry-title-delete": "Supprimer l’expiration",
 	"bs-expiry-nav-link-title-expiry": "Expiration",
@@ -87,5 +88,10 @@
 	"bs-expiry-pref-enableprintwatermark-help": "Affiche un filigrane pour les pages expirées quand elles sont imprimées.",
 	"bs-expiry-pref-enablepagewatermark-help": "Affiche un filigrane sur la page elle-même.",
 	"bs-expiry-info-dialog": "Expiration de la page",
-	"bs-expiry-info-dialog-button-label": "Gérer les expirations"
+	"bs-expiry-info-dialog-button-label": "Gérer les expirations",
+	"bs-expiry-dialog-delete-prompt": "Êtes-vous sûr de vouloir supprimer l’expiration pour cette page ?",
+	"bs-expiry-error-invalid-date": "Date non valide",
+	"bs-expiry-dialog-create-reminder-prompt": "Voulez-vous créer un rappel pour cette page ?",
+	"bs-expiry-dialog-create-reminder-title": "Créer un rappel",
+	"bs-expiry-dialog-action-no": "Non"
 }
