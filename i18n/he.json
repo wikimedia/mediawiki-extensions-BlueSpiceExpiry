@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"YaronSh",
 			"ישראל קלר"
 		]
@@ -23,7 +24,7 @@
 	"bs-expiry-save-success": "התפוגה נוצרה",
 	"bs-expiry-unexpire-success": "התפוגה נמחקה",
 	"bs-expiry-unexpire-unsuccess": "מזהה התפוגה לא נמצא",
-	"bs-expiry-menu-entry-create": "תפוגה",
+	"bs-expiry-menu-entry-create": "הגדרת תפוגה",
 	"bs-expiry-title-delete": "הסרת תפוגה",
 	"bs-expiry-nav-link-title-expiry": "תפוגה",
 	"bs-expiry-flyout-title": "תפוגת דף",

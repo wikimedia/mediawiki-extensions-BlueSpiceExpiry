@@ -79,5 +79,9 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Expiração/ Data de expiração",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data em que a página expira",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiração/Está expirado",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Informa se a página expirou"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Informa se a página expirou",
+	"bs-expiry-dialog-delete-prompt": "Tem certeza de que deseja excluir expiração para esta página?",
+	"bs-expiry-error-invalid-date": "Data inválida",
+	"bs-expiry-dialog-create-reminder-title": "Criar lembrete",
+	"bs-expiry-dialog-action-no": "Não"
 }
