@@ -3,6 +3,7 @@
 		"authors": [
 			"Agusbou2015",
 			"ArenaL5",
+			"Avengium",
 			"Fitoschido",
 			"Joanmp17",
 			"Suecarmol",
@@ -43,5 +44,7 @@
 	"bs-expiry-flyout-next-expired": "¡Esta página ha caducado!",
 	"bs-expiry-flyout-next-current": "Esta página caduca {{PLURAL:$1|tomorrow|in $1 days ($2)}}!",
 	"bs-expiry-flyout-expiry-not-set": "¡Esta página no está configurada para caducar!",
-	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento"
+	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento",
+	"bs-expiry-info-dialog": "Caducidad de la página",
+	"bs-expiry-info-dialog-button-label": "Gestionar vencimientos"
 }

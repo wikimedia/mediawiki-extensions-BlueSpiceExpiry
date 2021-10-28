@@ -24,7 +24,7 @@
 	"bs-expiry-save-success": "Scadenza creata con successo",
 	"bs-expiry-unexpire-success": "Scadenza cancellata con successo",
 	"bs-expiry-unexpire-unsuccess": "ID scadenza non trovato",
-	"bs-expiry-menu-entry-create": "Scadenza",
+	"bs-expiry-menu-entry-create": "Imposta scadenza",
 	"bs-expiry-text-delete": "Vuoi davvero cancellare {{PLURAL:$1|questa scadenza|queste $1 scadenze}}?",
 	"bs-expiry-title-delete": "Rimuovi scadenza",
 	"bs-expiry-nav-link-title-expiry": "Scadenza",
@@ -47,5 +47,9 @@
 	"bs-expiry-do-unexpire-article": "Cancella data di scadenza",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
 	"bs-expiry-reminder-type-expiry": "Scadenza",
-	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza"
+	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza",
+	"bs-expiry-menu-entry-manage": "Gestisci scadenza",
+	"bs-expiry-error-invalid-date": "Data non valida",
+	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
+	"bs-expiry-dialog-action-no": "No"
 }

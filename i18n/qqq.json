@@ -83,5 +83,13 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property",
 	"bs-expiry-pref-enablepdfwatermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
 	"bs-expiry-pref-enableprintwatermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\"",
-	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\""
+	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
+	"bs-expiry-menu-entry-manage": "Label for the action in page actions, if an expiry exists on the page",
+	"bs-expiry-info-dialog": "Label for page information dialog",
+	"bs-expiry-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all pages with expiries",
+	"bs-expiry-dialog-delete-prompt": "Confirmation prompt before user deletes expiry",
+	"bs-expiry-error-invalid-date": "Exception message when invalid date is specified",
+	"bs-expiry-dialog-create-reminder-prompt": "Prompt label for creating reminders after expiry",
+	"bs-expiry-dialog-create-reminder-title": "Prompt label for creating reminders after expiry",
+	"bs-expiry-dialog-action-no": "Label for the dialog action"
 }

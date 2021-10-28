@@ -37,5 +37,7 @@
 	"bs-expiry-pref-enablepdfwatermark-help": "PDF에서 기간이 만료된 문서의 워터마크를 표시합니다.",
 	"bs-expiry-pref-enablepagewatermark-help": "문서 자체에 워터마크를 표시합니다.",
 	"bs-expiry-pageinfoelement-expired-tooltip": "이 문서는 만료되었습니다",
-	"bs-expiry-pref-enableprintwatermark-help": "인쇄할 때 기간이 만료된 문서의 워터마크를 표시합니다."
+	"bs-expiry-pref-enableprintwatermark-help": "인쇄할 때 기간이 만료된 문서의 워터마크를 표시합니다.",
+	"bs-expiry-error-invalid-date": "잘못된 날짜",
+	"bs-expiry-dialog-action-no": "아니오"
 }
