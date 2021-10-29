@@ -3,6 +3,7 @@
 		"authors": [
 			"Alexander Yukal",
 			"DDPAT",
+			"Kareyac",
 			"Meerrahtar",
 			"Okras"
 		]
@@ -35,5 +36,6 @@
 	"notification-bs-expiry-one-week-subject": "Страница \"$1\" истекает на этой неделе",
 	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2",
 	"bs-expiry-create-reminder-label": "Создать напоминание",
-	"bs-expiry-reminder-type-expiry": "Срок действия"
+	"bs-expiry-reminder-type-expiry": "Срок действия",
+	"bs-expiry-dialog-action-no": "Нет"
 }

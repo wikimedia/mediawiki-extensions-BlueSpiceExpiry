@@ -32,7 +32,7 @@
 	"bs-expiry-save-success": "Vervaldatum is succesvol aangemaakt",
 	"bs-expiry-unexpire-success": "Vervaldatum is succesvol verwijderd",
 	"bs-expiry-unexpire-unsuccess": "Verval-ID niet gevonden",
-	"bs-expiry-menu-entry-create": "Vervaldatum",
+	"bs-expiry-menu-entry-create": "Vervaldatum instellen",
 	"bs-expiry-text-delete": "Weet u zeker dat u deze vervaldat{{PLURAL:$1|um|a}} wilt verwijderen?",
 	"bs-expiry-title-delete": "Vervaldatum verwijderen",
 	"bs-expiry-nav-link-title-expiry": "Verval",
