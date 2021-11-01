@@ -14,6 +14,7 @@
 	"bs-expiry-pageinfoelement-expired-label": "vanhentunut",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut",
 	"bs-expiry-error-invalid-date": "Virheellinen päiväys",
+	"bs-expiry-dialog-create-reminder-prompt": "Haluatko luoda muistutuksen tälle sivulle?",
 	"bs-expiry-dialog-create-reminder-title": "Luo muistutus",
 	"bs-expiry-dialog-action-no": "Ei"
 }
