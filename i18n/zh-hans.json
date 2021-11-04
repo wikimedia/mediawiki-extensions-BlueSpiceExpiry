@@ -76,5 +76,8 @@
 	"bs-expiry-do-updateexpirydate-article": "更改到期日",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "到期/到期日期",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "页面过期的日期",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期",
+	"bs-expiry-pref-enablepdfwatermark-help": "在PDF文档中为此过去页面显示水印",
+	"bs-expiry-error-invalid-date": "无效日期",
+	"bs-expiry-dialog-action-no": "否"
 }
