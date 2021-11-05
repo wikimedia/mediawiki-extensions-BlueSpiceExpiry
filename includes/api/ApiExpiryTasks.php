@@ -53,6 +53,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$expiryIds = array_map( static function ( $id ) {
 			return (int)$id;
 		}, $expiryIds );
+
 		$date = DateTime::createFromFormat( "Y-m-d", $oTaskData->date );
 		if ( !$date ) {
 			$oResult->message = $oResult->errors[]
@@ -127,7 +128,11 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$date = DateTime::createFromFormat( "Y-m-d", $oTaskData->date );
+		$dateRaw = $oTaskData->date;
+		if ( is_int( $dateRaw ) ) {
+			$dateRaw = date( 'Y-m-d', $dateRaw );
+		}
+		$date = DateTime::createFromFormat( "Y-m-d", $dateRaw );
 		if ( !$date ) {
 			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-expiry-error-invalid-date' )->plain();

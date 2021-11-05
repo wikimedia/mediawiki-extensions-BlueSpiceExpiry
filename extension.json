@@ -178,7 +178,8 @@
 				"bs-expiry-edit-grid-header-comment",
 				"bs-expiry-edit-grid-title",
 				"bs-expiry-edit-grid-empty",
-				"bs-expiry-do-updateexpirydate-article"
+				"bs-expiry-do-updateexpirydate-article",
+				"bs-expiry-comment-label"
 			],
 			"dependencies": [
 				"mediawiki.jqueryMsg",
