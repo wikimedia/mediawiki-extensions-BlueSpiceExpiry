@@ -46,7 +46,8 @@ class AddExpiryCreateEntry extends SkinTemplateNavigationUniversal {
 			"class" => '',
 			"text" => $label,
 			"href" => "#",
-			"bs-group" => "hidden"
+			"bs-group" => "hidden",
+			'position' => 20,
 		];
 		return true;
 	}
