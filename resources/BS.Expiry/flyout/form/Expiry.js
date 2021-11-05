@@ -55,12 +55,6 @@ Ext.define( 'BS.Expiry.flyout.form.Expiry', {
 		];
 
 		var items = this.items;
-		if ( mw.config.get( 'bsgReminderRegisteredTypes', null ) && mw.config.get( 'bsgReminderRegisteredTypes' ).expiry ) {
-			this.cbxCreateReminder = Ext.create( 'Ext.form.field.Checkbox', {
-				fieldLabel: mw.message( 'bs-expiry-create-reminder-label' ).plain()
-			});
-			this.items.push( this.cbxCreateReminder );
-		}
 		$( document ).trigger( "BSExpiryInitCreateForm", [ this, items ] );
 
 		this.callParent(arguments);
