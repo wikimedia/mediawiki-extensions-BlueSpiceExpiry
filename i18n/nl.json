@@ -81,5 +81,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Verval/Vervaldatum",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum waarop de pagina vervalt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Verval/Is vervallen",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is",
+	"bs-expiry-error-invalid-date": "Ongeldige datum",
+	"bs-expiry-dialog-create-reminder-title": "Herinnering aanmaken",
+	"bs-expiry-dialog-action-no": "Nee"
 }
