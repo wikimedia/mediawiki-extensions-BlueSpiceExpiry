@@ -12,6 +12,7 @@
 		]
 	},
 	"expiry": "Caducidad",
+	"specialexpiry": "Artículos caducados",
 	"prefs-expiry": "Caducidad",
 	"bs-expiry-unexpire-article": "La página caducó",
 	"bs-expiry-do-unexpire-article": "Quitar fecha de caducidad",
