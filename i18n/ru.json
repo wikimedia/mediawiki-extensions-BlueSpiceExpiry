@@ -3,8 +3,11 @@
 		"authors": [
 			"Alexander Yukal",
 			"DDPAT",
+			"Kareyac",
 			"Meerrahtar",
-			"Okras"
+			"Merrahtar",
+			"Okras",
+			"Pacha Tchernof"
 		]
 	},
 	"bs-expiry-header-pagename": "Страница",
@@ -27,7 +30,7 @@
 	"expiry": "Срок действия",
 	"specialexpiry": "Просроченные статьи",
 	"prefs-expiry": "Срок действия",
-	"bs-expiry-menu-entry-create": "Срок действия",
+	"bs-expiry-menu-entry-create": "Установить срок действия",
 	"bs-expiry-nav-link-title-expiry": "Срок действия",
 	"bs-expiry-flyout-title": "Срок действия страницы",
 	"bs-expiry-pageinfoelement-expired-label": "истекло",
@@ -35,5 +38,8 @@
 	"bs-expiry-reminder-type-expiry": "Срок действия",
 	"bs-expiry-header-date": "Истекает",
 	"bs-expiry-date-label": "Истекает",
-	"bs-expiry-unknown-page-msg": "Страница не существует."
+	"bs-expiry-unknown-page-msg": "Страница не существует.",
+	"bs-expiry-menu-entry-manage": "Управлять сроком действия",
+	"bs-expiry-dialog-create-reminder-title": "Создать напоминание",
+	"bs-expiry-dialog-action-no": "Нет"
 }

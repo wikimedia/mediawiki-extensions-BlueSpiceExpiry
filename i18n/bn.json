@@ -11,5 +11,6 @@
 	"bs-expiry-edit-grid-header-username": "ব্যবহারকারী",
 	"bs-expiry-edit-grid-header-date": "তারিখ",
 	"bs-expiry-edit-grid-header-comment": "মন্তব্য",
-	"bs-expiry-reminder-type-expiry": "মেয়াদোত্তীর্ণ"
+	"bs-expiry-reminder-type-expiry": "মেয়াদোত্তীর্ণ",
+	"bs-expiry-dialog-action-no": "না"
 }

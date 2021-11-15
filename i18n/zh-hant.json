@@ -29,7 +29,7 @@
 	"bs-expiry-save-success": "期限建立成功",
 	"bs-expiry-unexpire-success": "期限刪除成功",
 	"bs-expiry-unexpire-unsuccess": "找不到期限 ID",
-	"bs-expiry-menu-entry-create": "期限",
+	"bs-expiry-menu-entry-create": "設定期限",
 	"bs-expiry-text-delete": "您想要刪除{{PLURAL:$1|此期限|這些 $1 個期限}}？",
 	"bs-expiry-title-delete": "移除期限",
 	"bs-expiry-nav-link-title-expiry": "期限",
@@ -81,5 +81,13 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "告知頁面是否逾期",
 	"bs-expiry-pref-enablepdfwatermark-help": "顯示在 PDF 裡逾期頁面的浮水印。",
 	"bs-expiry-pref-enableprintwatermark-help": "當印出逾期頁面時顯示浮水印。",
-	"bs-expiry-pref-enablepagewatermark-help": "顯示頁面本身的浮水印。"
+	"bs-expiry-pref-enablepagewatermark-help": "顯示頁面本身的浮水印。",
+	"bs-expiry-menu-entry-manage": "管理期限",
+	"bs-expiry-info-dialog": "頁面期現",
+	"bs-expiry-info-dialog-button-label": "管理期限",
+	"bs-expiry-dialog-delete-prompt": "您確定要刪除用於此頁面的期限？",
+	"bs-expiry-error-invalid-date": "無效日期",
+	"bs-expiry-dialog-create-reminder-prompt": "您確定要建立用於此頁面的提醒？",
+	"bs-expiry-dialog-create-reminder-title": "建立提醒",
+	"bs-expiry-dialog-action-no": "否"
 }

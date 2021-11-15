@@ -30,7 +30,7 @@
 	"bs-expiry-update-success": "Vervaldatum is met succes bijgewerkt",
 	"bs-expiry-save-success": "Vervaldatum is succesvol aangemaakt",
 	"bs-expiry-unexpire-success": "Vervaldatum is succesvol verwijderd",
-	"bs-expiry-menu-entry-create": "Vervaldatum",
+	"bs-expiry-menu-entry-create": "Vervaldatum instellen",
 	"bs-expiry-extension-description": "Pagina's kunnen als vervallen worden aangemerkt.",
 	"expiry": "Verval",
 	"specialexpiry": "Vervallen artikelen",
@@ -81,5 +81,8 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Verval/Vervaldatum",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum waarop de pagina vervalt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Verval/Is vervallen",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is",
+	"bs-expiry-error-invalid-date": "Ongeldige datum",
+	"bs-expiry-dialog-create-reminder-title": "Herinnering aanmaken",
+	"bs-expiry-dialog-action-no": "Nee"
 }
