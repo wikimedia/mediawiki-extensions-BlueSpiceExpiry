@@ -151,7 +151,7 @@ class Expired extends PageInfoElement {
 				'a',
 				[
 					'href' => "#",
-					'class' => 'bs-expiry-unexpire',
+					'class' => 'bs-expiry-unexpire dropdown-item',
 					'data-expid' => $this->expId,
 					'title' => $tooltip->plain()
 				],
