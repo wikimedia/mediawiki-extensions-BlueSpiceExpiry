@@ -4,6 +4,7 @@
 			"Agusbou2015",
 			"ArenaL5",
 			"Avengium",
+			"Bruno44101",
 			"Fitoschido",
 			"Joanmp17",
 			"Suecarmol",
@@ -26,7 +27,7 @@
 	"bs-expiry-unknown-page-msg": "No existe la página.",
 	"bs-expiry-create-error": "No se pudo crear la caducidad.",
 	"bs-expiry-update-error": "No se pudo actualizar la caducidad.",
-	"bs-expiry-menu-entry-create": "Expiración",
+	"bs-expiry-menu-entry-create": "Establecer expiración",
 	"bs-expiry-nav-link-title-expiry": "Caducidad",
 	"bs-expiry-flyout-title": "Caducidad de página",
 	"bs-expiry-flyout-form-title": "Crear una caducidad nueva para esta página",
@@ -46,5 +47,9 @@
 	"bs-expiry-flyout-expiry-not-set": "¡Esta página no está configurada para caducar!",
 	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento",
 	"bs-expiry-info-dialog": "Caducidad de la página",
-	"bs-expiry-info-dialog-button-label": "Gestionar vencimientos"
+	"bs-expiry-info-dialog-button-label": "Gestionar vencimientos",
+	"specialexpiry": "Artículos caducados",
+	"bs-expiry-menu-entry-manage": "Gestionar expiración",
+	"bs-expiry-dialog-create-reminder-title": "Crear recordatorio",
+	"bs-expiry-dialog-action-no": "No"
 }

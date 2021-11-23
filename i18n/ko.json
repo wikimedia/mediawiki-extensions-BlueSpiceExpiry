@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"SeoJeongHo",
+			"Underbaaar",
 			"Ykhwong"
 		]
 	},
@@ -39,5 +40,13 @@
 	"bs-expiry-pref-enableprintwatermark-help": "인쇄할 때 기간이 만료된 문서의 워터마크를 표시합니다.",
 	"bs-expiry-pref-enablepagewatermark-help": "문서 자체에 워터마크를 표시합니다.",
 	"bs-expiry-error-invalid-date": "잘못된 날짜",
-	"bs-expiry-dialog-action-no": "아니오"
+	"bs-expiry-dialog-action-no": "아니오",
+	"bs-expiry-nav-link-title-expiry": "만료",
+	"bs-expiry-flyout-title": "페이지 만료",
+	"bs-expiry-flyout-body-hint-expired": "$1 에 만료됨",
+	"bs-expiry-flyout-body-hint-expires": "$1 에 만료함",
+	"bs-expiry-pageinfoelement-expired-label": "만료됨",
+	"bs-expiry-pageinfoelement-unexpire-label": "만료 해제",
+	"right-expirearticle": "문서 만료시키기",
+	"action-expirearticle": "문서 만료시키기"
 }
