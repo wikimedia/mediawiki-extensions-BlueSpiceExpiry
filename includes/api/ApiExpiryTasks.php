@@ -1,8 +1,22 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
+use BlueSpice\Expiry\SpecialLogLogger;
 
 class ApiExpiryTasks extends BSApiTasksBase {
+	/** @var SpecialLogLogger */
+	private $specialLogLogger;
+
+	/**
+	 * @param ApiMain $mainModule
+	 * @param string $moduleName
+	 * @param string $modulePrefix
+	 */
+	public function __construct( ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
+		$this->specialLogLogger = $this->getServices()->getService( 'BSExpirySpecialLogLogger' );
+	}
+
 	/**
 	 *
 	 * @var string[]
@@ -68,6 +82,26 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			[ 'exp_id IN (' . $dbw->makeList( $expiryIds ) . ')' ],
 			__METHOD__
 		);
+
+		$updated = $this->getDB()->select(
+			[ 'p' => 'page', 'exp' => 'bs_expiry' ],
+			[ 'p.page_title', 'p.page_namespace' ],
+			[ 'exp_id IN (' . $dbw->makeList( $expiryIds ) . ')' ],
+			__METHOD__,
+			[],
+			[
+				'p' => [
+					'INNER JOIN', 'page_id = exp_page_id'
+				]
+			]
+		);
+		foreach ( $updated as $row ) {
+			$this->specialLogLogger->log(
+				$this->getUser(),
+				Title::newFromRow( $row ),
+				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
+			);
+		}
 
 		$oResult->success = $res;
 		return $oResult;
@@ -218,6 +252,11 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$oTitle->invalidateCache();
 
 		if ( $bIsUpdate ) {
+			$this->specialLogLogger->log(
+				$this->getUser(),
+				$oTitle,
+				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
+			);
 			$oResult->message = wfMessage( "bs-expiry-update-success" )->plain();
 		} else {
 			$oResult->message = wfMessage( "bs-expiry-save-success" )->plain();
@@ -243,6 +282,9 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				wfMessage( 'bs-expiry-unexpire-unsuccess' )->text();
 			return $oResult;
 		}
+		if ( !$iArticleId ) {
+			$iArticleId = $this->retrieveArticleIdForExpiry( $iExpiryId );
+		}
 
 		// All ok, do the actual deletion
 		$dbw = wfGetDB( DB_PRIMARY );
@@ -254,9 +296,16 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			__METHOD__
 		);
 
-		$oTitle = Title::newFromID( $iArticleId );
-		if ( !empty( $iArticleId ) && $oTitle ) {
-			$oTitle->invalidateCache();
+		if ( $iArticleId ) {
+			$oTitle = Title::newFromID( $iArticleId );
+			if ( $oTitle ) {
+				$oTitle->invalidateCache();
+				$this->specialLogLogger->log(
+					$this->getUser(),
+					$oTitle,
+					SpecialLogLogger::LOC_ACTION_DELETE
+				);
+			}
 		}
 
 		$oResult->success = true;
@@ -275,5 +324,23 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			'changeDate' => [ 'expirearticle' ],
 			'deleteExpiry' => [ 'expiry-delete' ]
 		];
+	}
+
+	/**
+	 * @param int $iExpiryId
+	 * @return int|null
+	 */
+	private function retrieveArticleIdForExpiry( int $iExpiryId ) {
+		$res = $this->getDB()->selectRow(
+			'bs_expiry',
+			[ 'exp_page_id' ],
+			[ 'exp_id' => $iExpiryId ],
+			__METHOD__
+		);
+
+		if ( !$res ) {
+			return null;
+		}
+		return (int)$res->exp_page_id;
 	}
 }
