@@ -91,5 +91,11 @@
 	"bs-expiry-pref-enableprintwatermark-help": "Zeigt das Wasserzeichen für abgelaufene Seiten an, wenn eine Seite gedruckt wird.",
 	"bs-expiry-pref-enablepagewatermark-help": "Zeigt ein Wasserzeichen auf der Seite selbst an.",
 	"bs-expiry-info-dialog": "Aktualität der Seite",
-	"bs-expiry-info-dialog-button-label": "Aktualitäten verwalten"
+	"bs-expiry-info-dialog-button-label": "Aktualitäten verwalten",
+	"bs-expiry-menu-entry-manage": "Aktualität verwalten",
+	"bs-expiry-dialog-delete-prompt": "Möchtest du die Aktualität für diese Seite wirklich löschen?",
+	"bs-expiry-error-invalid-date": "Ungültiges Datum",
+	"bs-expiry-dialog-create-reminder-prompt": "Willst du eine Erinnerung für diese Seite erstellen?",
+	"bs-expiry-dialog-create-reminder-title": "Erinnerung erstellen",
+	"bs-expiry-dialog-action-no": "Nein"
 }
