@@ -56,7 +56,8 @@
 			],
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-expiry-send-daily": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Daily::factory",
-				"bs-expiry-send-weekly": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Weekly::factory"
+				"bs-expiry-send-weekly": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Weekly::factory",
+				"bs-expiry-log-expirations": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\LogExpirations::factory"
 			}
 		},
 		"BlueSpiceEchoConnector": {
@@ -287,6 +288,10 @@
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+	},
+	"LogTypes": [ "bs-expiry" ],
+	"LogActionsHandlers": {
+		"bs-expiry/*": "LogFormatter"
 	},
 	"manifest_version": 2
 }
