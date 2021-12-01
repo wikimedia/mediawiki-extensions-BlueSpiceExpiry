@@ -99,7 +99,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			$this->specialLogLogger->log(
 				$this->getUser(),
 				Title::newFromRow( $row ),
-				SpecialLogLogger::LOG_ACTION_CHANGE_DATE,
+				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
 			);
 		}
 
@@ -255,7 +255,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			$this->specialLogLogger->log(
 				$this->getUser(),
 				$oTitle,
-				SpecialLogLogger::LOG_ACTION_CHANGE_DATE,
+				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
 			);
 			$oResult->message = wfMessage( "bs-expiry-update-success" )->plain();
 		} else {
@@ -303,7 +303,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				$this->specialLogLogger->log(
 					$this->getUser(),
 					$oTitle,
-					SpecialLogLogger::LOC_ACTION_DELETE,
+					SpecialLogLogger::LOC_ACTION_DELETE
 				);
 			}
 		}
