@@ -51,5 +51,6 @@
 	"bs-expiry-menu-entry-manage": "Gestisci scadenza",
 	"bs-expiry-error-invalid-date": "Data non valida",
 	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
-	"bs-expiry-dialog-action-no": "No"
+	"bs-expiry-dialog-action-no": "No",
+	"log-name-bs-expiry": "Scadenza"
 }
