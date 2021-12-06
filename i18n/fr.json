@@ -96,6 +96,7 @@
 	"bs-expiry-dialog-create-reminder-title": "Créer un rappel",
 	"bs-expiry-dialog-action-no": "Non",
 	"log-name-bs-expiry": "Expiration",
+	"log-description-bs-expiry": "Trace des actions concernant l’expiration de la page",
 	"logentry-bs-expiry-expired": "La page $3 a expiré",
 	"logentry-bs-expiry-change-date": "$1 a {{GENDER:$2|modifié}} la date d'expiration à la page $3",
 	"logentry-bs-expiry-delete": "$1 a {{GENDER:$2|supprimé}} la date d'expiration à la page $3"
