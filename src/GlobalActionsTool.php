@@ -39,7 +39,7 @@ class GlobalActionsTool extends RestrictedTextLink {
 		$tool = \MediaWiki\MediaWikiServices::getInstance()
 		->getSpecialPageFactory()
 		->getPage( 'Expiry' );
-		return $tool->getPageTitle()->getFullURL();
+		return $tool->getPageTitle()->getLocalURL();
 	}
 
 	/**
