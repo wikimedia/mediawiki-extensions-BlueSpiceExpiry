@@ -48,5 +48,6 @@
 	"bs-expiry-pref-enableprintwatermark-help": "인쇄할 때 기간이 만료된 문서의 워터마크를 표시합니다.",
 	"bs-expiry-pref-enablepagewatermark-help": "문서 자체에 워터마크를 표시합니다.",
 	"bs-expiry-error-invalid-date": "잘못된 날짜",
-	"bs-expiry-dialog-action-no": "아니오"
+	"bs-expiry-dialog-action-no": "아니오",
+	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다"
 }
