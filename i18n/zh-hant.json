@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hydra",
 			"Kly"
 		]
 	},
@@ -83,7 +84,7 @@
 	"bs-expiry-pref-enablepdfwatermark-help": "顯示在 PDF 裡逾期頁面的浮水印。",
 	"bs-expiry-pref-enableprintwatermark-help": "當印出逾期頁面時顯示浮水印。",
 	"bs-expiry-pref-enablepagewatermark-help": "顯示頁面本身的浮水印。",
-	"bs-expiry-info-dialog": "頁面期現",
+	"bs-expiry-info-dialog": "頁面期限",
 	"bs-expiry-info-dialog-button-label": "管理期限",
 	"bs-expiry-dialog-delete-prompt": "您確定要刪除用於此頁面的期限？",
 	"bs-expiry-error-invalid-date": "無效日期",

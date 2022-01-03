@@ -6,6 +6,7 @@
 			"Dianliang233",
 			"Gerongfenh",
 			"GuoPC",
+			"Hydra",
 			"Lakejason0",
 			"Shizhao",
 			"Shuiwater",
@@ -40,6 +41,7 @@
 	"bs-expiry-unexpire-success": "已成功删除有效期",
 	"bs-expiry-unexpire-unsuccess": "未找到有效期ID",
 	"bs-expiry-menu-entry-create": "设置期限",
+	"bs-expiry-menu-entry-manage": "管理期限",
 	"bs-expiry-text-delete": "您真的想要删除这个{{PLURAL:$1|到期}}吗？",
 	"bs-expiry-title-delete": "移除期限",
 	"bs-expiry-nav-link-title-expiry": "期限",
@@ -65,6 +67,7 @@
 	"bs-expiry-pageinfoelement-expired-label": "已过期",
 	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期",
 	"bs-expiry-pageinfoelement-unexpire-label": "未过期",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "取消此页面期限",
 	"right-expirearticle": "过期页面",
 	"action-expirearticle": "过期页面",
 	"echo-category-title-bs-expiry-daily-cat": "到期 - 每日",
@@ -78,6 +81,13 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "页面过期的日期",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期",
 	"bs-expiry-pref-enablepdfwatermark-help": "在PDF文档中为此过去页面显示水印",
+	"bs-expiry-info-dialog": "页面期限",
+	"bs-expiry-info-dialog-button-label": "管理期限",
+	"bs-expiry-dialog-delete-prompt": "您确定要删除用于此页面的期限？",
 	"bs-expiry-error-invalid-date": "无效日期",
-	"bs-expiry-dialog-action-no": "否"
+	"bs-expiry-dialog-create-reminder-prompt": "您确定要创建用于此页面的提醒？",
+	"bs-expiry-dialog-create-reminder-title": "创建提示",
+	"bs-expiry-dialog-action-no": "否",
+	"log-name-bs-expiry": "期限",
+	"logentry-bs-expiry-expired": "$3页面已过期"
 }
