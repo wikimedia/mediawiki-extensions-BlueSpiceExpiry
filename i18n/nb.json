@@ -78,5 +78,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Utløpsdato",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Dato for når siden utløper",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utløper/Har utløpt",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt",
+	"bs-expiry-dialog-action-no": "Nei",
+	"log-name-bs-expiry": "Utløp"
 }
