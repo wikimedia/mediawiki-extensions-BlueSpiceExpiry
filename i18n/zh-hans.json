@@ -12,7 +12,9 @@
 			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"GuoPC",
+			"Hydra"
 		]
 	},
 	"bs-expiry-extension-description": "页面可被标记为过期。",
@@ -64,6 +66,7 @@
 	"bs-expiry-pageinfoelement-expired-label": "已过期",
 	"bs-expiry-pageinfoelement-expired-tooltip": "此页面已过期",
 	"bs-expiry-pageinfoelement-unexpire-label": "未过期",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "取消此页面期限",
 	"right-expirearticle": "过期页面",
 	"action-expirearticle": "过期页面",
 	"echo-category-title-bs-expiry-daily-cat": "到期 - 每日",
