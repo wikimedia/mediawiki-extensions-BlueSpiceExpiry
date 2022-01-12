@@ -3,13 +3,15 @@
 		"authors": [
 			"SeoJeongHo",
 			"Ykhwong",
-			"Underbaaar"
+			"Underbaaar",
+			"Yunbj"
 		]
 	},
 	"bs-expiry-extension-description": "문서를 기간 만료로 표시할 수 있습니다.",
 	"expiry": "기한",
 	"specialexpiry": "기간이 만료된 문서",
 	"prefs-expiry": "기간 만료",
+	"bs-expiry-unexpire-article": "페이지가 만료되었습니다.",
 	"bs-expiry-header-pagename": "문서",
 	"bs-expiry-header-date": "만료일:",
 	"bs-expiry-header-comment": "댓글",
