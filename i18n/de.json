@@ -4,6 +4,7 @@
 			"Ferdinand0101",
 			"Killarnee",
 			"Mglaser",
+			"Mschlindwein",
 			"Umherirrender"
 		]
 	},
@@ -93,5 +94,9 @@
 	"bs-expiry-error-invalid-date": "Ungültiges Datum",
 	"bs-expiry-dialog-create-reminder-prompt": "Willst du eine Erinnerung für diese Seite erstellen?",
 	"bs-expiry-dialog-create-reminder-title": "Erinnerung erstellen",
-	"bs-expiry-dialog-action-no": "Nein"
+	"bs-expiry-dialog-action-no": "Nein",
+	"log-name-bs-expiry": "Veraltete Seiten",
+	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
+	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3"
 }
