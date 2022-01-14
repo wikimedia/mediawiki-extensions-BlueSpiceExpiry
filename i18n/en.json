@@ -93,5 +93,5 @@
 	"log-description-bs-expiry": "Log of actions regarding page expiration",
 	"logentry-bs-expiry-expired": "Page $3 has expired",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|changed}} expiration date on page $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|changed}} has deleted expiration of page $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}} expiration of page $3"
 }
