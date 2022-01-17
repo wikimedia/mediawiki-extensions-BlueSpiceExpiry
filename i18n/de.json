@@ -4,7 +4,8 @@
 			"Ferdinand0101",
 			"Killarnee",
 			"Mglaser",
-			"Umherirrender"
+			"Umherirrender",
+			"Mschlindwein"
 		]
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
@@ -34,6 +35,7 @@
 	"bs-expiry-unexpire-success": "Angabe zur Aktualität wurde erfolgreich entfernt.",
 	"bs-expiry-unexpire-unsuccess": "Angabe zur Aktualität konnte nicht gefunden werden.",
 	"bs-expiry-menu-entry-create": "Aktualität festlegen",
+	"bs-expiry-menu-entry-manage": "Aktualität verwalten",
 	"bs-expiry-text-delete": "Bist du sicher, dass du {{PLURAL:$1|diese Angabe|diese $1 Angaben}} zur Aktualität löschen willst?",
 	"bs-expiry-title-delete": "Angaben zur Aktualität entfernen",
 	"bs-expiry-nav-link-title-expiry": "Aktualität",
@@ -64,6 +66,8 @@
 	"apihelp-bs-expiry-store-summary": "Stellt einen Suchspeicher für Veraltungen bereit, die abgefragt werden können",
 	"right-expirearticle": "Seiten als veraltet markieren",
 	"action-expirearticle": "Seiten als veraltet zu markieren",
+	"right-expiry-delete": "Ablaufdatum von Seiten entfernen",
+	"action-expiry-delete": "das Ablaufdatum von Seiten zu entfernen",
 	"echo-category-title-bs-expiry-daily-cat": "Veraltung - täglich",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Benachrichtige mich, wenn ein Artikel heute veraltet",
 	"echo-category-title-bs-expiry-weekly-cat": "Veraltung - wöchentlich",
@@ -74,8 +78,6 @@
 	"notification-bs-expiry-one-week-subject": "Der Artikel „$1“ wird diese Woche veralten",
 	"notification-bs-expiry-one-week-web-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
 	"notification-bs-expiry-one-week-email-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
-	"right-expiry-delete": "Ablaufdatum von Seiten entfernen",
-	"action-expiry-delete": "das Ablaufdatum von Seiten zu entfernen",
 	"bs-expiry-create-reminder-label": "Erinnerung erstellen",
 	"bs-expiry-reminder-type-expiry": "Veraltete Seiten",
 	"bs-expiry-do-updateexpirydate-article": "Ablaufdatum ändern",
@@ -88,10 +90,13 @@
 	"bs-expiry-pref-enablepagewatermark-help": "Zeigt ein Wasserzeichen auf der Seite selbst an.",
 	"bs-expiry-info-dialog": "Aktualität der Seite",
 	"bs-expiry-info-dialog-button-label": "Aktualitäten verwalten",
-	"bs-expiry-menu-entry-manage": "Aktualität verwalten",
 	"bs-expiry-dialog-delete-prompt": "Möchtest du die Aktualität für diese Seite wirklich löschen?",
 	"bs-expiry-error-invalid-date": "Ungültiges Datum",
 	"bs-expiry-dialog-create-reminder-prompt": "Willst du eine Erinnerung für diese Seite erstellen?",
 	"bs-expiry-dialog-create-reminder-title": "Erinnerung erstellen",
-	"bs-expiry-dialog-action-no": "Nein"
+	"bs-expiry-dialog-action-no": "Nein",
+	"log-name-bs-expiry": "Veraltete Seiten",
+	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
+	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3"
 }
