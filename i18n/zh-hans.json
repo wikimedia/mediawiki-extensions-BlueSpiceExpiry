@@ -5,7 +5,9 @@
 			"AYZ04",
 			"Dianliang233",
 			"Gerongfenh",
+			"GraceL",
 			"GuoPC",
+			"Hydra",
 			"Lakejason0",
 			"Shizhao",
 			"Shuiwater",
@@ -13,8 +15,7 @@
 			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶",
-			"Hydra"
+			"铁桶"
 		]
 	},
 	"bs-expiry-extension-description": "页面可被标记为过期。",
@@ -89,5 +90,6 @@
 	"bs-expiry-dialog-create-reminder-title": "创建提示",
 	"bs-expiry-dialog-action-no": "否",
 	"log-name-bs-expiry": "期限",
-	"logentry-bs-expiry-expired": "$3页面已过期"
+	"logentry-bs-expiry-expired": "$3页面已过期",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|删除}}截止到$3"
 }
