@@ -98,5 +98,6 @@
 	"log-name-bs-expiry": "Veraltete Seiten",
 	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
 	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
-	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3"
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|löschte}} das Ablaufdatum der Seite $3"
 }
