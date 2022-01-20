@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"MuratTheTurkish"
+			"Can",
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"bs-expiry-extension-description": "Sayfaların süresi dolmuş olarak işaretlenebilir.",
@@ -30,7 +32,7 @@
 	"bs-expiry-save-success": "Süre sonu başarıyla oluşturuldu",
 	"bs-expiry-unexpire-success": "Süre sonu başarıyla silindi",
 	"bs-expiry-unexpire-unsuccess": "Süre sonu kimliği bulunamadı",
-	"bs-expiry-menu-entry-create": "Bitiş",
+	"bs-expiry-menu-entry-create": "Bitiş tarihi ayarla",
 	"bs-expiry-text-delete": "Gerçekten {{PLURAL:$1|bu süre sonu|bu $1 sona erme süresi}} silmek istiyor musunuz?",
 	"bs-expiry-title-delete": "Son kullanma tarihini kaldır",
 	"bs-expiry-nav-link-title-expiry": "Bitiş",
@@ -79,5 +81,11 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Bitiş tarihi",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Sayfanın bitiş dolduğu tarih",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Bitiş",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Sayfanın süresinin dolup dolmadığını söyler"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Sayfanın süresinin dolup dolmadığını söyler",
+	"bs-expiry-error-invalid-date": "Geçersiz tarih",
+	"bs-expiry-dialog-create-reminder-prompt": "Bu sayfa için bir hatırlatıcı oluşturmak istiyor musunuz?",
+	"bs-expiry-dialog-create-reminder-title": "Hatırlatıcı oluştur",
+	"bs-expiry-dialog-action-no": "Hayır",
+	"log-name-bs-expiry": "Sona erme",
+	"logentry-bs-expiry-expired": "$3 sayfasının süresi doldu"
 }
