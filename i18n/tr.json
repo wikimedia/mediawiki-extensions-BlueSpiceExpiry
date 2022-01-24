@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"Can",
+			"SaldırganSincap"
 		]
 	},
 	"bs-expiry-extension-description": "Sayfaların süresi dolmuş olarak işaretlenebilir.",
@@ -30,7 +32,7 @@
 	"bs-expiry-save-success": "Süre sonu başarıyla oluşturuldu",
 	"bs-expiry-unexpire-success": "Süre sonu başarıyla silindi",
 	"bs-expiry-unexpire-unsuccess": "Süre sonu kimliği bulunamadı",
-	"bs-expiry-menu-entry-create": "Bitiş",
+	"bs-expiry-menu-entry-create": "Bitiş tarihi ayarla",
 	"bs-expiry-text-delete": "Gerçekten {{PLURAL:$1|bu süre sonu|bu $1 sona erme süresi}} silmek istiyor musunuz?",
 	"bs-expiry-title-delete": "Son kullanma tarihini kaldır",
 	"bs-expiry-nav-link-title-expiry": "Bitiş",
@@ -61,6 +63,8 @@
 	"apihelp-bs-expiry-store-summary": "Son kullanma tarihi için sorgulanabilecek bir mağaza sağlar",
 	"right-expirearticle": "Sayfaların süresini doldur",
 	"action-expirearticle": "sayfaların süresini doldur",
+	"right-expiry-delete": "Sayfalardan bitiş tarihini kaldır",
+	"action-expiry-delete": "sayfalardan bitiş tarihini kaldır",
 	"echo-category-title-bs-expiry-daily-cat": "Süre sonu - Günlük",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Bir sayfa bugün sona erdiğinde bana bildir",
 	"echo-category-title-bs-expiry-weekly-cat": "Süre sonu - Haftalık",
@@ -71,13 +75,17 @@
 	"notification-bs-expiry-one-week-subject": "\"$1\" sayfasının süresi bu hafta sona erecek",
 	"notification-bs-expiry-one-week-web-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
 	"notification-bs-expiry-one-week-email-body": "\"$1\" sayfasının süresi bu hafta dolacak. Güncellenmesi gerekip gerekmediğine karar vermek için lütfen sayfanın içeriğini inceleyin.\n\nSüre sonu yorumu:\n$2",
-	"right-expiry-delete": "Sayfalardan bitiş tarihini kaldır",
-	"action-expiry-delete": "sayfalardan bitiş tarihini kaldır",
 	"bs-expiry-create-reminder-label": "Hatırlatıcı oluştur",
 	"bs-expiry-reminder-type-expiry": "Bitiş",
 	"bs-expiry-do-updateexpirydate-article": "Bitiş tarihini değiştir",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Bitiş tarihi",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Sayfanın bitiş dolduğu tarih",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Bitiş",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Sayfanın süresinin dolup dolmadığını söyler"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Sayfanın süresinin dolup dolmadığını söyler",
+	"bs-expiry-error-invalid-date": "Geçersiz tarih",
+	"bs-expiry-dialog-create-reminder-prompt": "Bu sayfa için bir hatırlatıcı oluşturmak istiyor musunuz?",
+	"bs-expiry-dialog-create-reminder-title": "Hatırlatıcı oluştur",
+	"bs-expiry-dialog-action-no": "Hayır",
+	"log-name-bs-expiry": "Sona erme",
+	"logentry-bs-expiry-expired": "$3 sayfasının süresi doldu"
 }
