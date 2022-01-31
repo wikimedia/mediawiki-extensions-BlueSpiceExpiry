@@ -82,6 +82,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Sayfanın bitiş dolduğu tarih",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Bitiş",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Sayfanın süresinin dolup dolmadığını söyler",
+	"bs-expiry-dialog-delete-prompt": "Bu sayfa için sona ermeyi silmek istediğinizden emin misiniz?",
 	"bs-expiry-error-invalid-date": "Geçersiz tarih",
 	"bs-expiry-dialog-create-reminder-prompt": "Bu sayfa için bir hatırlatıcı oluşturmak istiyor musunuz?",
 	"bs-expiry-dialog-create-reminder-title": "Hatırlatıcı oluştur",
