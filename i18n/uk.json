@@ -92,5 +92,7 @@
 	"bs-expiry-error-invalid-date": "Недійсні дані",
 	"bs-expiry-dialog-create-reminder-prompt": "Ви хочете створити нагадування для цієї сторінки?",
 	"bs-expiry-dialog-create-reminder-title": "Створити нагадування",
-	"bs-expiry-dialog-action-no": "Ні"
+	"bs-expiry-dialog-action-no": "Ні",
+	"log-name-bs-expiry": "Закінчення",
+	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився"
 }

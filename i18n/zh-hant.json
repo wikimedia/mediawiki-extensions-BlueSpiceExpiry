@@ -90,5 +90,10 @@
 	"bs-expiry-error-invalid-date": "無效日期",
 	"bs-expiry-dialog-create-reminder-prompt": "您確定要建立用於此頁面的提醒？",
 	"bs-expiry-dialog-create-reminder-title": "建立提醒",
-	"bs-expiry-dialog-action-no": "否"
+	"bs-expiry-dialog-action-no": "否",
+	"log-name-bs-expiry": "期限",
+	"log-description-bs-expiry": "關於頁面逾期的操作日誌",
+	"logentry-bs-expiry-expired": "頁面$3已逾期",
+	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|更改了}}在頁面$3的逾期日期",
+	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期"
 }
