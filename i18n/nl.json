@@ -4,6 +4,7 @@
 			"Dutchy45",
 			"Mainframe98",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Romaine"
 		]
 	},
@@ -33,6 +34,7 @@
 	"bs-expiry-unexpire-success": "Vervaldatum is succesvol verwijderd",
 	"bs-expiry-unexpire-unsuccess": "Verval-ID niet gevonden",
 	"bs-expiry-menu-entry-create": "Vervaldatum instellen",
+	"bs-expiry-menu-entry-manage": "Beheer vervaldatum",
 	"bs-expiry-text-delete": "Weet u zeker dat u deze vervaldat{{PLURAL:$1|um|a}} wilt verwijderen?",
 	"bs-expiry-title-delete": "Vervaldatum verwijderen",
 	"bs-expiry-nav-link-title-expiry": "Verval",
@@ -82,6 +84,9 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum waarop de pagina vervalt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Verval/Is vervallen",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is",
+	"bs-expiry-pref-enablepdfwatermark-help": "Watermerk tonen voor vervallen pagina's in de PDF.",
+	"bs-expiry-info-dialog": "Vervaldatum van pagina",
+	"bs-expiry-info-dialog-button-label": "Beheer vervaldatums",
 	"bs-expiry-error-invalid-date": "Ongeldige datum",
 	"bs-expiry-dialog-create-reminder-title": "Herinnering aanmaken",
 	"bs-expiry-dialog-action-no": "Nee"
