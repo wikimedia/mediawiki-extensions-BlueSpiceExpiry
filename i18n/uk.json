@@ -3,6 +3,7 @@
 		"authors": [
 			"DDPAT",
 			"Piramidion",
+			"Samflint",
 			"Ата"
 		]
 	},
@@ -94,5 +95,7 @@
 	"bs-expiry-dialog-create-reminder-title": "Створити нагадування",
 	"bs-expiry-dialog-action-no": "Ні",
 	"log-name-bs-expiry": "Закінчення",
-	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився"
+	"log-description-bs-expiry": "Журнал дій, що відносяться до закінчення терміну дії сторінки",
+	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|змінив|змінила}} термін дії на сторінці $3"
 }
