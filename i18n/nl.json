@@ -89,5 +89,6 @@
 	"bs-expiry-info-dialog-button-label": "Beheer vervaldatums",
 	"bs-expiry-error-invalid-date": "Ongeldige datum",
 	"bs-expiry-dialog-create-reminder-title": "Herinnering aanmaken",
-	"bs-expiry-dialog-action-no": "Nee"
+	"bs-expiry-dialog-action-no": "Nee",
+	"log-name-bs-expiry": "Verloopt"
 }
