@@ -6,7 +6,6 @@ use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Factory;
 use BlueSpice\SMWConnector\PropertyValueProvider;
 use DateTime;
-use DateTimeZone;
 use MediaWiki\MediaWikiServices;
 use SESP\AppFactory;
 use SMW\DIProperty;
@@ -68,13 +67,17 @@ class ExpirationDate extends PropertyValueProvider {
 			return null;
 		}
 		$expires = DateTime::createFromFormat(
-			'YmdHis',
-			$record->get( Record::DATE ),
-			new DateTimeZone( 'UTC' )
+			'Y-m-d',
+			$record->get( Record::DATE )
 		);
+		if ( !$expires ) {
+			return null;
+		}
+		// Page expires as soon as the day starts
+		$expires->setTime( 0, 0 );
 		$semanticData->addPropertyObjectValue(
 			$property,
-			SMWDITime::newFromTimestamp( $expires )
+			SMWDITime::newFromTimestamp( $expires->format( 'YmdHis' ) )
 		);
 		return null;
 	}
