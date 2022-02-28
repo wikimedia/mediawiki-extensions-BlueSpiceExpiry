@@ -3,7 +3,9 @@
 		"authors": [
 			"DDPAT",
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"Ice bulldog",
+			"Samflint"
 		]
 	},
 	"bs-expiry-extension-description": "Сторінки можна позначати як застарілі.",
@@ -16,6 +18,7 @@
 	"bs-expiry-do-unexpire-article": "Вилучити дату застарівання",
 	"bs_expiry-unexpire-success": "Позначку про застарілість зі сторінки знято",
 	"bs_expiry-unexpire-unsuccess": "Позначку про застарілість зі сторінки зняти не вдалося",
+	"bs-expiry-specialpage-subtitle": "← $1",
 	"bs-expiry-header-pagename": "Сторінка",
 	"bs-expiry-header-date": "Втрачає актуальність",
 	"bs-expiry-header-comment": "Коментар",
@@ -32,6 +35,7 @@
 	"bs-expiry-unexpire-success": "Втрату актуальності успішно вилучено",
 	"bs-expiry-unexpire-unsuccess": "Ідентифікатора втрати актуальності не знайдено",
 	"bs-expiry-menu-entry-create": "Встановити термін дії",
+	"bs-expiry-menu-entry-manage": "Керувати терміном дії",
 	"bs-expiry-text-delete": "Ви справді хочете вилучити {{PLURAL:$1|цю втрату актуальності|ці $1 втрати актуальності|ці $1 втрат актуальності}}?",
 	"bs-expiry-title-delete": "Вилучити втрату актуальності",
 	"bs-expiry-nav-link-title-expiry": "Втрата актуальності",
@@ -62,6 +66,8 @@
 	"apihelp-bs-expiry-store-summary": "Забезпечує сховок для втрат актуальності, до якого можна надсилати запити",
 	"right-expirearticle": "Позначення сторінок як застарілих",
 	"action-expirearticle": "позначення сторінок як застарілих",
+	"right-expiry-delete": "Вилучення кінцевого терміну зі сторінок",
+	"action-expiry-delete": "вилучення кінцевого терміну зі сторінок",
 	"echo-category-title-bs-expiry-daily-cat": "Втрата актуальності — щоденно",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Повідомляти мені, якщо сторінка втратить актуальність сьогодні",
 	"echo-category-title-bs-expiry-weekly-cat": "Втрата актуальності — щотижня",
@@ -72,8 +78,6 @@
 	"notification-bs-expiry-one-week-subject": "Сторінка «$1» втратить актуальність цього тижня",
 	"notification-bs-expiry-one-week-web-body": "Сторінка «$1» втратить актуальність цього тижня. Будь ласка, перегляньте контент сторінки, щоб вирішити, чи її треба оновити.\n\nКоментар щодо втрати актуальності:\n$2",
 	"notification-bs-expiry-one-week-email-body": "Сторінка «$1» втратить актуальність цього тижня. Будь ласка, перегляньте контент сторінки, щоб вирішити, чи її треба оновити.\n\nКоментар щодо втрати актуальності:\n$2",
-	"right-expiry-delete": "Вилучення кінцевого терміну зі сторінок",
-	"action-expiry-delete": "вилучення кінцевого терміну зі сторінок",
 	"bs-expiry-create-reminder-label": "Створити нагадування",
 	"bs-expiry-reminder-type-expiry": "Закінчення",
 	"bs-expiry-do-updateexpirydate-article": "Змінити дату застарівання",
@@ -81,11 +85,9 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Кінцева дата для сторінки",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Термін дії/закінчився",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Повідомляє, чи минув термін дії сторінки",
-	"bs-expiry-specialpage-subtitle": "← $1",
 	"bs-expiry-pref-enablepdfwatermark-help": "Показує водяний знак для сторінок із закінченим терміном дії у PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Показує водяний знак для сторінок з простроченим терміном друку.",
 	"bs-expiry-pref-enablepagewatermark-help": "Показує водяний знак на самій сторінці.",
-	"bs-expiry-menu-entry-manage": "Керувати терміном дії",
 	"bs-expiry-info-dialog": "Термін дії сторінки",
 	"bs-expiry-info-dialog-button-label": "Керування закінченням терміну дії",
 	"bs-expiry-dialog-delete-prompt": "Ви впевнені, що хочете видалити термін дії для цієї сторінки?",
@@ -94,5 +96,7 @@
 	"bs-expiry-dialog-create-reminder-title": "Створити нагадування",
 	"bs-expiry-dialog-action-no": "Ні",
 	"log-name-bs-expiry": "Закінчення",
-	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився"
+	"log-description-bs-expiry": "Журнал дій, що відносяться до закінчення терміну дії сторінки",
+	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|змінив|змінила}} термін дії на сторінці $3"
 }
