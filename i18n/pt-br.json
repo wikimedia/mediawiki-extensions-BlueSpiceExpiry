@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Juan90264"
 		]
 	},
 	"bs-expiry-extension-description": "As páginas podem ser marcadas como expiradas.",
@@ -30,7 +31,8 @@
 	"bs-expiry-save-success": "A expiração foi criada com sucesso",
 	"bs-expiry-unexpire-success": "A expiração foi excluída com sucesso",
 	"bs-expiry-unexpire-unsuccess": "ID de expiração não encontrado",
-	"bs-expiry-menu-entry-create": "Expirar",
+	"bs-expiry-menu-entry-create": "Definir expiração",
+	"bs-expiry-menu-entry-manage": "Gerenciar expiração",
 	"bs-expiry-text-delete": "Deseja realmente excluir {{PLURAL:$1|essa expiração|essas $1 expirações}}?",
 	"bs-expiry-title-delete": "Remover expiração",
 	"bs-expiry-nav-link-title-expiry": "Expirar",
@@ -80,8 +82,19 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data em que a página expira",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiração/Está expirado",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Informa se a página expirou",
+	"bs-expiry-pref-enablepdfwatermark-help": "Mostra uma marca d'água para páginas expiradas no PDF.",
+	"bs-expiry-pref-enableprintwatermark-help": "Mostra uma marca d'água para páginas expiradas quando impressas.",
+	"bs-expiry-pref-enablepagewatermark-help": "Mostra uma marca d'água na própria página.",
+	"bs-expiry-info-dialog": "Expiração da página",
+	"bs-expiry-info-dialog-button-label": "Gerenciar expirações",
 	"bs-expiry-dialog-delete-prompt": "Tem certeza de que deseja excluir expiração para esta página?",
 	"bs-expiry-error-invalid-date": "Data inválida",
+	"bs-expiry-dialog-create-reminder-prompt": "Deseja criar um lembrete para esta página?",
 	"bs-expiry-dialog-create-reminder-title": "Criar lembrete",
-	"bs-expiry-dialog-action-no": "Não"
+	"bs-expiry-dialog-action-no": "Não",
+	"log-name-bs-expiry": "Expirar",
+	"log-description-bs-expiry": "Registro de ações relacionadas à expiração da página",
+	"logentry-bs-expiry-expired": "A página $3 expirou",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|mudado}} data de validade na página $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|eliminado}} expiração da página $3"
 }
