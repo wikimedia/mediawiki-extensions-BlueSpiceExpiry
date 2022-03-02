@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"YaronSh",
-			"ישראל קלר"
+			"ישראל קלר",
+			"Amire80",
+			"שוקו מוקה"
 		]
 	},
 	"expiry": "תפוגה",
@@ -16,7 +18,7 @@
 	"bs-expiry-article-label": "דף",
 	"bs-expiry-comment-label": "הערה",
 	"bs-expiry-delete-error-unknown": "לא ניתן למחוק את מועד התפוגה.",
-	"bs-expiry-unknown-page-msg": "העמוד לא קיים.",
+	"bs-expiry-unknown-page-msg": "הדף אינו קיים.",
 	"bs-expiry-create-error": "לא ניתן ליצור את הרשומה.",
 	"bs-expiry-update-error": "לא ניתן לעדכן את מועד התפוגה.",
 	"bs-expiry-update-success": "מועד התפוגה עודכן",
@@ -35,6 +37,7 @@
 	"bs-expiry-edit-grid-header-comment": "הערה",
 	"bs-expiry-edit-grid-title": "עריכות מאז תפוגת העמוד",
 	"bs-expiry-edit-grid-empty": "אין עריכות מאז תפוגת העמוד",
+	"bs-expiry-pageinfoelement-expired-label": "פג תוקף",
 	"bs-expiry-reminder-type-expiry": "תפוגה",
 	"bs-expiry-do-updateexpirydate-article": "החלפת תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "תפוגה/תאריך תפוגה",
