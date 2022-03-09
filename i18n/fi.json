@@ -2,14 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Joquliina",
-			"Mediawikitranslator"
+			"Mediawikitranslator",
+			"MITO",
+			"Markus Mikkonen"
 		]
 	},
+	"bs-expiry-unexpire-article": "Sivu on vanhentunut",
+	"bs-expiry-do-unexpire-article": "Poista vanhenemispäivämäärä",
 	"bs-expiry-header-pagename": "Sivu",
 	"bs-expiry-header-date": "Vanhentuu",
+	"bs-expiry-header-comment": "Kommentti",
 	"bs-expiry-date-label": "Vanhentuu",
 	"bs-expiry-article-label": "Sivu",
+	"bs-expiry-comment-label": "Kommentti",
+	"bs-expiry-flyout-next-comment": "Kommentti: $1",
 	"bs-expiry-edit-grid-header-username": "Käyttäjä",
 	"bs-expiry-pageinfoelement-expired-label": "vanhentunut",
-	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut"
+	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut",
+	"notification-bs-expiry-today-subject": "Sivu \"$1\" on vanhentunut"
 }
