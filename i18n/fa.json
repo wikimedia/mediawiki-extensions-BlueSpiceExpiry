@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"FarsiNevis",
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
 	"expiry": "انقضا",
@@ -13,7 +14,7 @@
 	"bs-expiry-date-label": "منقضی در",
 	"bs-expiry-article-label": "صفحه",
 	"bs-expiry-unknown-page-msg": "صفحه وجود ندارد.",
-	"bs-expiry-menu-entry-create": "انقضا",
+	"bs-expiry-menu-entry-create": "تنظیم انقضا",
 	"bs-expiry-nav-link-title-expiry": "انقضا",
 	"bs-expiry-flyout-title": "انقضای صفحه",
 	"bs-expiry-flyout-next-expired": "این صفحه منقضی شده است!",
@@ -67,5 +68,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "تاریخی که صفحه در آن منقضی می‌شود",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "در صورت منقضی‌شدن صفحه خبر می‌دهد",
 	"bs-expiry-info-dialog": "انقضای صفحه",
-	"bs-expiry-info-dialog-button-label": "مدیریت انقضاها"
+	"bs-expiry-info-dialog-button-label": "مدیریت انقضاها",
+	"bs-expiry-dialog-action-no": "خیر",
+	"log-name-bs-expiry": "انقضا"
 }

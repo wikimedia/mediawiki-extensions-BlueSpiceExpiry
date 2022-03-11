@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"YaronSh",
-			"ישראל קלר"
+			"ישראל קלר",
+			"שוקו מוקה"
 		]
 	},
 	"expiry": "תפוגה",
@@ -17,7 +18,7 @@
 	"bs-expiry-article-label": "דף",
 	"bs-expiry-comment-label": "הערה",
 	"bs-expiry-delete-error-unknown": "לא ניתן למחוק את מועד התפוגה.",
-	"bs-expiry-unknown-page-msg": "העמוד לא קיים.",
+	"bs-expiry-unknown-page-msg": "הדף אינו קיים.",
 	"bs-expiry-create-error": "לא ניתן ליצור את הרשומה.",
 	"bs-expiry-update-error": "לא ניתן לעדכן את מועד התפוגה.",
 	"bs-expiry-update-success": "מועד התפוגה עודכן",
@@ -40,5 +41,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "תפוגה/תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
-	"bs-expiry-flyout-next-comment": "הערה: $1"
+	"bs-expiry-flyout-next-comment": "הערה: $1",
+	"bs-expiry-pageinfoelement-expired-label": "פג תוקף",
+	"bs-expiry-dialog-action-no": "לא"
 }

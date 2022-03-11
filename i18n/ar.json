@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
 		]
@@ -61,5 +62,6 @@
 	"apihelp-bs-expiry-store-summary": "يوفر مخزنا لانتهاء الصلاحية، ويمكن الاستعلام عنه",
 	"right-expirearticle": "انتهاء صلاحية الصفحات",
 	"action-expirearticle": "انتهاء صلاحية الصفحات",
-	"bs-expiry-create-reminder-label": "أنشئ تذكيرًا"
+	"bs-expiry-create-reminder-label": "أنشئ تذكيرًا",
+	"bs-expiry-dialog-action-no": "لا"
 }
