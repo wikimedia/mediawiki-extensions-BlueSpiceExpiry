@@ -5,7 +5,9 @@
 			"AYZ04",
 			"Dianliang233",
 			"Gerongfenh",
+			"GraceL",
 			"GuoPC",
+			"Hydra",
 			"Lakejason0",
 			"Shizhao",
 			"Shuiwater",
@@ -79,5 +81,15 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期",
 	"bs-expiry-pref-enablepdfwatermark-help": "在PDF文档中为此过去页面显示水印",
 	"bs-expiry-error-invalid-date": "无效日期",
-	"bs-expiry-dialog-action-no": "否"
+	"bs-expiry-dialog-action-no": "否",
+	"bs-expiry-menu-entry-manage": "管理期限",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "取消此页面期限",
+	"bs-expiry-info-dialog": "页面期限",
+	"bs-expiry-info-dialog-button-label": "管理期限",
+	"bs-expiry-dialog-delete-prompt": "您确定要删除用于此页面的期限？",
+	"bs-expiry-dialog-create-reminder-prompt": "您确定要创建用于此页面的提醒？",
+	"bs-expiry-dialog-create-reminder-title": "创建提示",
+	"log-name-bs-expiry": "期限",
+	"logentry-bs-expiry-expired": "$3页面已过期",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|删除}}截止到$3"
 }

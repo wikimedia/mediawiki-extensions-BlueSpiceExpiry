@@ -92,5 +92,10 @@
 	"bs-expiry-error-invalid-date": "Exception message when invalid date is specified",
 	"bs-expiry-dialog-create-reminder-prompt": "Prompt label for creating reminders after expiry",
 	"bs-expiry-dialog-create-reminder-title": "Prompt label for creating reminders after expiry",
-	"bs-expiry-dialog-action-no": "Label for the dialog action\n{{identical|No}}"
+	"bs-expiry-dialog-action-no": "Label for the dialog action\n{{identical|No}}",
+	"log-name-bs-expiry": "Name of the log, used in [[Special:Log]]",
+	"log-description-bs-expiry": "Description of the log, used in [[Special:Log]]",
+	"logentry-bs-expiry-expired": "Log entry text when page is expired",
+	"logentry-bs-expiry-change-date": "Log entry text when expiration date is changed",
+	"logentry-bs-expiry-delete": "Log entry text when expiration is deleted"
 }

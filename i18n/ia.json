@@ -89,5 +89,10 @@
 	"bs-expiry-error-invalid-date": "Data invalide",
 	"bs-expiry-dialog-create-reminder-prompt": "Vole tu crear un rememoration pro iste pagina?",
 	"bs-expiry-dialog-create-reminder-title": "Crear rememoration",
-	"bs-expiry-dialog-action-no": "No"
+	"bs-expiry-dialog-action-no": "No",
+	"log-name-bs-expiry": "Expiration",
+	"log-description-bs-expiry": "Registro de actiones concernente le expiration de paginas",
+	"logentry-bs-expiry-expired": "Le pagina $3 ha expirate",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|ha modificate}} le data de expiration sur le pagina $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ha delite}} le expiration del pagina $3"
 }

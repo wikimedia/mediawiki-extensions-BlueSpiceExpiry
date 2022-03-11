@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Gomoko",
 			"Thibaut120094",
 			"Verdy p",
@@ -89,9 +90,14 @@
 	"bs-expiry-menu-entry-manage": "Gérer l’expiration",
 	"bs-expiry-info-dialog": "Expiration de la page",
 	"bs-expiry-info-dialog-button-label": "Gérer les expirations",
-	"bs-expiry-dialog-delete-prompt": "Êtes-vous sûr de vouloir supprimer l’expiration pour cette page ?",
+	"bs-expiry-dialog-delete-prompt": "Voulez-vous vraiment supprimer l’expiration pour cette page ?",
 	"bs-expiry-error-invalid-date": "Date non valide",
 	"bs-expiry-dialog-create-reminder-prompt": "Voulez-vous créer un rappel pour cette page ?",
 	"bs-expiry-dialog-create-reminder-title": "Créer un rappel",
-	"bs-expiry-dialog-action-no": "Non"
+	"bs-expiry-dialog-action-no": "Non",
+	"log-name-bs-expiry": "Expiration",
+	"log-description-bs-expiry": "Trace des actions concernant l’expiration de la page",
+	"logentry-bs-expiry-expired": "La page $3 a expiré",
+	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|}} a modifié la date d’expiration sur la page $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|}} a supprimé la date d’expiration de la page $3"
 }

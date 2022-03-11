@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hydra",
 			"Kly"
 		]
 	},
@@ -83,11 +84,16 @@
 	"bs-expiry-pref-enableprintwatermark-help": "當印出逾期頁面時顯示浮水印。",
 	"bs-expiry-pref-enablepagewatermark-help": "顯示頁面本身的浮水印。",
 	"bs-expiry-menu-entry-manage": "管理期限",
-	"bs-expiry-info-dialog": "頁面期現",
+	"bs-expiry-info-dialog": "頁面期限",
 	"bs-expiry-info-dialog-button-label": "管理期限",
 	"bs-expiry-dialog-delete-prompt": "您確定要刪除用於此頁面的期限？",
 	"bs-expiry-error-invalid-date": "無效日期",
 	"bs-expiry-dialog-create-reminder-prompt": "您確定要建立用於此頁面的提醒？",
 	"bs-expiry-dialog-create-reminder-title": "建立提醒",
-	"bs-expiry-dialog-action-no": "否"
+	"bs-expiry-dialog-action-no": "否",
+	"log-name-bs-expiry": "期限",
+	"log-description-bs-expiry": "關於頁面逾期的操作日誌",
+	"logentry-bs-expiry-expired": "頁面$3已逾期",
+	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|更改了}}在頁面$3的逾期日期",
+	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期"
 }

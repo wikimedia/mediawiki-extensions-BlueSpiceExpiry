@@ -3,7 +3,8 @@
 		"authors": [
 			"SeoJeongHo",
 			"Underbaaar",
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"expiry": "기한",
@@ -48,5 +49,7 @@
 	"bs-expiry-pageinfoelement-expired-label": "만료됨",
 	"bs-expiry-pageinfoelement-unexpire-label": "만료 해제",
 	"right-expirearticle": "문서 만료시키기",
-	"action-expirearticle": "문서 만료시키기"
+	"action-expirearticle": "문서 만료시키기",
+	"bs-expiry-unexpire-article": "페이지가 만료되었습니다.",
+	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다"
 }
