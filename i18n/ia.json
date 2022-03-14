@@ -30,6 +30,7 @@
 	"bs-expiry-unexpire-success": "Le expiration ha essite delite",
 	"bs-expiry-unexpire-unsuccess": "ID de expiration non trovate",
 	"bs-expiry-menu-entry-create": "Definir expiration",
+	"bs-expiry-menu-entry-manage": "Gerer expiration",
 	"bs-expiry-text-delete": "Es tu secur de voler deler iste {{PLURAL:$1|expiration|$1 expirationes}}?",
 	"bs-expiry-title-delete": "Remover expiration",
 	"bs-expiry-nav-link-title-expiry": "Expiration",
@@ -82,12 +83,16 @@
 	"bs-expiry-pref-enablepdfwatermark-help": "Monstra un marca transparente pro paginas expirate in le PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Monstra un marca transparente pro paginas expirate quando se imprime.",
 	"bs-expiry-pref-enablepagewatermark-help": "Monstra un marca transparente sur le pagina mesme.",
-	"bs-expiry-menu-entry-manage": "Gerer expiration",
 	"bs-expiry-info-dialog": "Expiration del pagina",
 	"bs-expiry-info-dialog-button-label": "Gerer expirationes",
 	"bs-expiry-dialog-delete-prompt": "Es tu secur de voler deler le expiration de iste pagina?",
 	"bs-expiry-error-invalid-date": "Data invalide",
 	"bs-expiry-dialog-create-reminder-prompt": "Vole tu crear un rememoration pro iste pagina?",
 	"bs-expiry-dialog-create-reminder-title": "Crear rememoration",
-	"bs-expiry-dialog-action-no": "No"
+	"bs-expiry-dialog-action-no": "No",
+	"log-name-bs-expiry": "Expiration",
+	"log-description-bs-expiry": "Registro de actiones concernente le expiration de paginas",
+	"logentry-bs-expiry-expired": "Le pagina $3 ha expirate",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|ha modificate}} le data de expiration sur le pagina $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ha delite}} le expiration del pagina $3"
 }
