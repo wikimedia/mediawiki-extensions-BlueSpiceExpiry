@@ -29,7 +29,7 @@
 	"bs-expiry-save-success": "انقضا با موفقیت ایجاد شد",
 	"bs-expiry-unexpire-success": "انقضا با موفقیت حذف شد",
 	"bs-expiry-unexpire-unsuccess": "شناسهٔ انقضا یافت نشد",
-	"bs-expiry-menu-entry-create": "تنظیم انقضا",
+	"bs-expiry-menu-entry-create": "تعیین انقضا",
 	"bs-expiry-text-delete": "آیا واقعاً می‌خواهید {{PLURAL:$1|این انقضا|این انقضاها}} را حذف کنید؟",
 	"bs-expiry-title-delete": "پاک‌کردن انقضا",
 	"bs-expiry-nav-link-title-expiry": "انقضا",
