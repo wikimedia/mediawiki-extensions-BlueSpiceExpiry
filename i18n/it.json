@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Dansita"
+			"Dansita",
+			"GpieroMW"
 		]
 	},
 	"expiry": "Scadenza",
@@ -45,7 +46,10 @@
 	"bs-expiry-alert-body-expired": "Questa pagina è scaduta il $1. Per favore, esamina il contenuto.",
 	"bs-expiry-pageinfoelement-expired-label": "scaduto",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta",
+	"notification-bs-expiry-today-subject": "La pagina \"$1\" è scaduta",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
 	"bs-expiry-reminder-type-expiry": "Scadenza",
-	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza"
+	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Scadenza/È scaduta",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se la pagina è scaduta"
 }
