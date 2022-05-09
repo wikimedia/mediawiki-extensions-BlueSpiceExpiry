@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Dansita"
+			"Dansita",
+			"GpieroMW"
 		]
 	},
 	"expiry": "Scadenza",
 	"specialexpiry": "Voci scadute",
 	"prefs-expiry": "Scadenza",
 	"bs-expiry-unexpire-article": "La pagina è scaduta",
+	"bs-expiry-do-unexpire-article": "Cancella data di scadenza",
 	"bs-expiry-header-pagename": "Pagina",
 	"bs-expiry-header-date": "Scade il",
 	"bs-expiry-header-comment": "Commento",
@@ -25,6 +27,7 @@
 	"bs-expiry-unexpire-success": "Scadenza cancellata con successo",
 	"bs-expiry-unexpire-unsuccess": "ID scadenza non trovato",
 	"bs-expiry-menu-entry-create": "Imposta scadenza",
+	"bs-expiry-menu-entry-manage": "Gestisci scadenza",
 	"bs-expiry-text-delete": "Vuoi davvero cancellare {{PLURAL:$1|questa scadenza|queste $1 scadenze}}?",
 	"bs-expiry-title-delete": "Rimuovi scadenza",
 	"bs-expiry-nav-link-title-expiry": "Scadenza",
@@ -44,13 +47,16 @@
 	"bs-expiry-alert-body-expired": "Questa pagina è scaduta il $1. Per favore, esamina il contenuto.",
 	"bs-expiry-pageinfoelement-expired-label": "scaduto",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta",
-	"bs-expiry-do-unexpire-article": "Cancella data di scadenza",
+	"notification-bs-expiry-today-subject": "La pagina \"$1\" è scaduta",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
 	"bs-expiry-reminder-type-expiry": "Scadenza",
 	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza",
-	"bs-expiry-menu-entry-manage": "Gestisci scadenza",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Scadenza/È scaduta",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se la pagina è scaduta",
+	"bs-expiry-info-dialog": "Scadenza della pagina",
 	"bs-expiry-error-invalid-date": "Data non valida",
 	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
 	"bs-expiry-dialog-action-no": "No",
-	"log-name-bs-expiry": "Scadenza"
+	"log-name-bs-expiry": "Scadenza",
+	"logentry-bs-expiry-expired": "La pagina $3 è scaduta"
 }
