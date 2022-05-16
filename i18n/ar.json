@@ -3,7 +3,9 @@
 		"authors": [
 			"ديفيد",
 			"محمد أحمد عبد الفتاح",
-			"FiberAhmed"
+			"FiberAhmed",
+			"Shbib Al-Subaie",
+			"أَحمد"
 		]
 	},
 	"bs-expiry-extension-description": "يمكن وسم الصفحات كمنتهية الصلاحية.",
@@ -13,7 +15,7 @@
 	"apihelp-bs-expiry-store-description": "يخدم البيانات لخاص:شبكة نظرة عامة على انتهاء الصلاحية",
 	"apihelp-bs-expiry-tasks-description": "ينفذ مهام مثل التحديث والحذف لخاص:شبكة نظرة عامة على انتهاء الصلاحية",
 	"bs-expiry-unexpire-article": "انتهت صلاحية الصفحة",
-	"bs-expiry-do-unexpire-article": "الصفحة لا تزال محدثة. (لم تنتهِ صلاحية هذه الصفحة)",
+	"bs-expiry-do-unexpire-article": "تاريخ انتهاء الحذف",
 	"bs_expiry-unexpire-success": "كانت الصفحة غير منتهية بنجاح",
 	"bs_expiry-unexpire-unsuccess": "لا يمكن أن تكون الصفحة غير منتهية الصلاحية",
 	"bs-expiry-header-pagename": "الصفحة",
