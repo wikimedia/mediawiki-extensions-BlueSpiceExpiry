@@ -6,6 +6,7 @@
 			"GpieroMW"
 		]
 	},
+	"bs-expiry-extension-description": "Le pagine possono essere segnate come scadute.",
 	"expiry": "Scadenza",
 	"specialexpiry": "Articoli scaduti",
 	"prefs-expiry": "Scadenza",
@@ -31,6 +32,7 @@
 	"bs-expiry-title-delete": "Rimuovi scadenza",
 	"bs-expiry-nav-link-title-expiry": "Scadenza",
 	"bs-expiry-flyout-title": "Scadenza della pagina",
+	"bs-expiry-flyout-form-title": "Creare una nuova scadenza per questa pagina",
 	"bs-expiry-flyout-next-expired": "Questa pagina è scaduta!",
 	"bs-expiry-flyout-next-current": "Questa pagina scade {{PLURAL:$1|domani|tra $1 giorni ($2)}}!",
 	"bs-expiry-flyout-expiry-not-set": "La scadenza di questa pagina non è stata impostata!",
@@ -46,6 +48,8 @@
 	"bs-expiry-alert-body-expired": "Questa pagina è scaduta il $1. Per favore, esamina il contenuto.",
 	"bs-expiry-pageinfoelement-expired-label": "scaduto",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Questa pagina è scaduta",
+	"right-expirearticle": "Fa scadere pagine",
+	"action-expirearticle": "far scadere pagine",
 	"notification-bs-expiry-today-subject": "La pagina \"$1\" è scaduta",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
 	"bs-expiry-reminder-type-expiry": "Scadenza",
