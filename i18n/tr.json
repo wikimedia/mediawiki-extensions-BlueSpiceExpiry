@@ -89,6 +89,6 @@
 	"bs-expiry-dialog-action-no": "Hayır",
 	"log-name-bs-expiry": "Sona erme",
 	"logentry-bs-expiry-expired": "$3 sayfasının süresi doldu",
-	"logentry-bs-expiry-change-date": "$1, $3 sayfasında bitiş tarihini değiştirdi",
+	"logentry-bs-expiry-change-date": "$1, $3 sayfasında bitiş tarihini {{GENDER:$2|değiştirdi}}",
 	"logentry-bs-expiry-delete": "$1, $3 sayfasının bitişi {{GENDER:$2|sildi}}"
 }
