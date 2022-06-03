@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Dansita"
+			"Dansita",
+			"GpieroMW"
 		]
 	},
 	"expiry": "Scadenza",
-	"specialexpiry": "Voci scadute",
+	"specialexpiry": "Articoli scaduti",
 	"prefs-expiry": "Scadenza",
 	"bs-expiry-unexpire-article": "La pagina è scaduta",
 	"bs-expiry-header-pagename": "Pagina",
@@ -52,5 +53,15 @@
 	"bs-expiry-error-invalid-date": "Data non valida",
 	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
 	"bs-expiry-dialog-action-no": "No",
-	"log-name-bs-expiry": "Scadenza"
+	"log-name-bs-expiry": "Scadenza",
+	"bs-expiry-extension-description": "Le pagine possono essere segnate come scadute.",
+	"bs-expiry-flyout-form-title": "Creare una nuova scadenza per questa pagina",
+	"right-expirearticle": "Fa scadere pagine",
+	"action-expirearticle": "far scadere pagine",
+	"notification-bs-expiry-today-subject": "La pagina \"$1\" è scaduta",
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Data di scadenza della pagina",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Scadenza/È scaduta",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se la pagina è scaduta",
+	"bs-expiry-info-dialog": "Scadenza della pagina",
+	"logentry-bs-expiry-expired": "La pagina $3 è scaduta"
 }
