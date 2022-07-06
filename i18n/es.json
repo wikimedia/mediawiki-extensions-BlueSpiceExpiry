@@ -9,13 +9,16 @@
 			"Joanmp17",
 			"Suecarmol",
 			"Whovian Biologist",
-			"DiegoAmbrocio"
+			"DiegoAmbrocio",
+			"Francodiaz7"
 		]
 	},
 	"bs-expiry-extension-description": "Las páginas pueden marcarse como caducadas.",
 	"expiry": "Caducidad",
 	"specialexpiry": "Artículos caducados",
 	"prefs-expiry": "Caducidad",
+	"apihelp-bs-expiry-store-description": "Serves the data for Special:Expiry overview grid",
+	"apihelp-bs-expiry-tasks-description": "Executes tasks like update and delete for Special:Expiry overview grid",
 	"bs-expiry-unexpire-article": "La página caducó",
 	"bs-expiry-do-unexpire-article": "Quitar fecha de caducidad",
 	"bs_expiry-unexpire-success": "Caducidad de la página quitada con éxito",
@@ -64,6 +67,7 @@
 	"bs-expiry-pageinfoelement-unexpire-label": "sin expirar",
 	"bs-expiry-pageinfoelement-unexpire-tooltip": "No expire esta página",
 	"apihelp-bs-expiry-tasks-summary": "Brinda tareas tales como editar o eliminar caducidades",
+	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried",
 	"right-expirearticle": "Páginas que caducan",
 	"action-expirearticle": "Páginas que caducan",
 	"right-expiry-delete": "Eliminar la caducidad de las páginas",
