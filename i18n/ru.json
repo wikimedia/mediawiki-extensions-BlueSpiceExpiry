@@ -42,5 +42,7 @@
 	"bs-expiry-reminder-type-expiry": "Срок действия",
 	"bs-expiry-menu-entry-manage": "Управлять сроком действия",
 	"bs-expiry-dialog-create-reminder-title": "Создать напоминание",
-	"bs-expiry-dialog-action-no": "Нет"
+	"bs-expiry-dialog-action-no": "Нет",
+	"apihelp-bs-expiry-store-description": "Обслуживает данные для обжорной таблицы на Special:Expiry",
+	"apihelp-bs-expiry-tasks-description": "Выполняет такие задачи, как обновление и удаление для обзорной таблицы на Special:Expiry"
 }

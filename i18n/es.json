@@ -7,6 +7,7 @@
 			"Bruno44101",
 			"DiegoAmbrocio",
 			"Fitoschido",
+			"Francodiaz7",
 			"Joanmp17",
 			"Suecarmol",
 			"Whovian Biologist"
@@ -99,5 +100,8 @@
 	"log-description-bs-expiry": "Registro de las acciones relativas a la caducidad de la página",
 	"logentry-bs-expiry-expired": "La página $3 ha expirado",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|changed}} fecha de caducidad en la página $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3",
+	"apihelp-bs-expiry-store-description": "Serves the data for Special:Expiry overview grid",
+	"apihelp-bs-expiry-tasks-description": "Executes tasks like update and delete for Special:Expiry overview grid",
+	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried"
 }
