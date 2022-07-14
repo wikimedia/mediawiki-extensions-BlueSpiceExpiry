@@ -9,11 +9,11 @@
 -- @filesource
 
 CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/bs_expiry (
-  `exp_id`      INT(10) NOT NULL AUTO_INCREMENT ,
+  `exp_id`      int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `exp_page_id` INT(10) NOT NULL ,
   `exp_date`    DATE NOT NULL,
-  `exp_comment` VARBINARY(255) ,
-  PRIMARY KEY `exp_id` (`exp_id`) ,
-  INDEX `exp_page_id_idx` (`exp_page_id` ASC) ,
-  INDEX `exp_date_idx` (`exp_date` ASC)
+  `exp_comment` VARBINARY(255)
 ) /*$wgDBTableOptions*/;
+
+CREATE INDEX /*i*/ `exp_page_id_idx` ON /*_*/bs_expiry (`exp_page_id` ASC) ,
+CREATE INDEX /*i*/ `exp_date_idx` ON /*_*/bs_expiry (`exp_date` ASC)
