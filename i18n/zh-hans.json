@@ -14,7 +14,8 @@
 			"落花有意12138",
 			"铁桶",
 			"GuoPC",
-			"Hydra"
+			"Hydra",
+			"GraceL"
 		]
 	},
 	"bs-expiry-extension-description": "页面可被标记为过期。",
@@ -73,7 +74,7 @@
 	"echo-category-title-bs-expiry-weekly-cat": "到期 - 每周",
 	"notification-bs-expiry-today-subject": "页面“$1”已过期",
 	"notification-bs-expiry-one-week-subject": "页面$1本周将过期",
-	"bs-expiry-create-reminder-label": "创建提示",
+	"bs-expiry-create-reminder-label": "创建提醒",
 	"bs-expiry-reminder-type-expiry": "期限",
 	"bs-expiry-do-updateexpirydate-article": "更改到期日",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "到期/到期日期",

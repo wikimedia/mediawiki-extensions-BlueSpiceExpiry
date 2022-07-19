@@ -32,6 +32,7 @@
 	"bs-expiry-title-delete": "Rimuovi scadenza",
 	"bs-expiry-nav-link-title-expiry": "Scadenza",
 	"bs-expiry-flyout-title": "Scadenza della pagina",
+	"bs-expiry-flyout-intro": "Panoramica delle scadenze per questa pagina",
 	"bs-expiry-flyout-form-title": "Creare una nuova scadenza per questa pagina",
 	"bs-expiry-flyout-next-expired": "Questa pagina è scaduta!",
 	"bs-expiry-flyout-next-current": "Questa pagina scade {{PLURAL:$1|domani|tra $1 giorni ($2)}}!",
