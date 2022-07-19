@@ -63,5 +63,7 @@
 	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
 	"bs-expiry-dialog-action-no": "No",
 	"log-name-bs-expiry": "Scadenza",
-	"logentry-bs-expiry-expired": "La pagina $3 è scaduta"
+	"logentry-bs-expiry-expired": "La pagina $3 è scaduta",
+	"bs-expiry-flyout-intro": "Panoramica delle scadenze per questa pagina",
+	"bs-expiry-dialog-create-reminder-prompt": "Vuoi creare un promemoria per questa pagina?"
 }
