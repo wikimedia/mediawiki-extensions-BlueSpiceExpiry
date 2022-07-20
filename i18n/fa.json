@@ -70,5 +70,11 @@
 	"bs-expiry-info-dialog": "انقضای صفحه",
 	"bs-expiry-info-dialog-button-label": "مدیریت انقضاها",
 	"bs-expiry-dialog-action-no": "خیر",
-	"log-name-bs-expiry": "انقضا"
+	"log-name-bs-expiry": "انقضا",
+	"bs-expiry-menu-entry-manage": "مدیریت انقضا",
+	"bs-expiry-error-invalid-date": "تاریخ نامعتبر",
+	"bs-expiry-dialog-create-reminder-title": "ایجاد یادآور",
+	"logentry-bs-expiry-expired": "صفحهٔ $3 منقضی شده‌است",
+	"logentry-bs-expiry-change-date": "$1 تاریخ منقضی‌شدن در صفحهحٔ $3 را {{GENDER:$2|تغییر داد}}",
+	"logentry-bs-expiry-delete": "$1 انقضای صفحهٔ $3 را {{GENDER:$2|تغییر داد}}"
 }
