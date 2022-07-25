@@ -53,6 +53,9 @@
 	"right-expirearticle": "Fa scadere pagine",
 	"action-expirearticle": "far scadere pagine",
 	"notification-bs-expiry-today-subject": "La pagina \"$1\" è scaduta",
+	"notification-bs-expiry-one-week-subject": "La pagina \" $1 \" scadrà questa settimana",
+	"notification-bs-expiry-one-week-web-body": "La pagina \" $1 \" scadrà questa settimana. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. \n\nCommento in scadenza:\n $2",
+	"notification-bs-expiry-one-week-email-body": "La pagina \" $1 \" scadrà questa settimana. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. \n\nCommento in scadenza:\n $2",
 	"bs-expiry-create-reminder-label": "Crea promemoria",
 	"bs-expiry-reminder-type-expiry": "Scadenza",
 	"bs-expiry-do-updateexpirydate-article": "Modifica data di scadenza",
@@ -60,10 +63,14 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Scadenza/È scaduta",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se la pagina è scaduta",
 	"bs-expiry-info-dialog": "Scadenza della pagina",
+	"bs-expiry-dialog-delete-prompt": "Sei sicuro di voler eliminare la scadenza per questa pagina?",
 	"bs-expiry-error-invalid-date": "Data non valida",
 	"bs-expiry-dialog-create-reminder-prompt": "Vuoi creare un promemoria per questa pagina?",
 	"bs-expiry-dialog-create-reminder-title": "Crea promemoria",
 	"bs-expiry-dialog-action-no": "No",
 	"log-name-bs-expiry": "Scadenza",
-	"logentry-bs-expiry-expired": "La pagina $3 è scaduta"
+	"log-description-bs-expiry": "Registro delle azioni relative alla scadenza della pagina",
+	"logentry-bs-expiry-expired": "La pagina $3 è scaduta",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|modificata}} data di scadenza sulla pagina $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3"
 }
