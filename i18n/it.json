@@ -65,5 +65,12 @@
 	"log-name-bs-expiry": "Scadenza",
 	"logentry-bs-expiry-expired": "La pagina $3 è scaduta",
 	"bs-expiry-flyout-intro": "Panoramica delle scadenze per questa pagina",
-	"bs-expiry-dialog-create-reminder-prompt": "Vuoi creare un promemoria per questa pagina?"
+	"bs-expiry-dialog-create-reminder-prompt": "Vuoi creare un promemoria per questa pagina?",
+	"notification-bs-expiry-one-week-subject": "La pagina \" $1 \" scadrà questa settimana",
+	"notification-bs-expiry-one-week-web-body": "La pagina \" $1 \" scadrà questa settimana. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. \n\nCommento in scadenza:\n $2",
+	"notification-bs-expiry-one-week-email-body": "La pagina \" $1 \" scadrà questa settimana. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. \n\nCommento in scadenza:\n $2",
+	"bs-expiry-dialog-delete-prompt": "Sei sicuro di voler eliminare la scadenza per questa pagina?",
+	"log-description-bs-expiry": "Registro delle azioni relative alla scadenza della pagina",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|modificata}} data di scadenza sulla pagina $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3"
 }
