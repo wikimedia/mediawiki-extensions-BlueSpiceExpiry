@@ -15,7 +15,8 @@
 			"铁桶",
 			"GuoPC",
 			"Hydra",
-			"GraceL"
+			"GraceL",
+			"Tr jason"
 		]
 	},
 	"bs-expiry-extension-description": "页面可被标记为过期。",
@@ -73,11 +74,16 @@
 	"echo-category-title-bs-expiry-daily-cat": "到期 - 每日",
 	"echo-category-title-bs-expiry-weekly-cat": "到期 - 每周",
 	"notification-bs-expiry-today-subject": "页面“$1”已过期",
+	"notification-bs-expiry-today-web-body": "页面“$1”已过期。请查看页面内容以决定是否需要更新。如果页面内容仍然是最新的，您可以仅仅将页面取消过期状态。\n\n有关此过期状态的注释：\n$2",
+	"notification-bs-expiry-today-email-body": "页面“$1”已过期。请查看页面内容以决定是否需要更新。如果页面内容仍然是最新的，您可以仅仅将页面取消过期状态。\n\n有关此过期状态的注释：\n$2",
 	"notification-bs-expiry-one-week-subject": "页面$1本周将过期",
+	"notification-bs-expiry-one-week-web-body": "页面“$1”将于本周过期。请查看页面内容以决定是否需要更新。\n\n关于此过期状态的注释：\n$2",
+	"notification-bs-expiry-one-week-email-body": "页面“$1”将于本周过期。请查看页面内容以决定是否需要更新。\n\n关于此过期状态的注释：\n$2",
 	"bs-expiry-create-reminder-label": "创建提醒",
 	"bs-expiry-reminder-type-expiry": "期限",
 	"bs-expiry-do-updateexpirydate-article": "更改到期日",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "到期/到期日期",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "页面过期的日期",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "过期/已过期",
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "页面是否过期"
 }
