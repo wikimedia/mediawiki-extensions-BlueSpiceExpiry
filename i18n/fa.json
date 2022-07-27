@@ -30,6 +30,7 @@
 	"bs-expiry-unexpire-success": "انقضا با موفقیت حذف شد",
 	"bs-expiry-unexpire-unsuccess": "شناسهٔ انقضا یافت نشد",
 	"bs-expiry-menu-entry-create": "تعیین انقضا",
+	"bs-expiry-menu-entry-manage": "مدیریت انقضا",
 	"bs-expiry-text-delete": "آیا واقعاً می‌خواهید {{PLURAL:$1|این انقضا|این انقضاها}} را حذف کنید؟",
 	"bs-expiry-title-delete": "پاک‌کردن انقضا",
 	"bs-expiry-nav-link-title-expiry": "انقضا",
@@ -69,6 +70,11 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "در صورت منقضی‌شدن صفحه خبر می‌دهد",
 	"bs-expiry-info-dialog": "انقضای صفحه",
 	"bs-expiry-info-dialog-button-label": "مدیریت انقضاها",
+	"bs-expiry-error-invalid-date": "تاریخ نامعتبر",
+	"bs-expiry-dialog-create-reminder-title": "ایجاد یادآور",
 	"bs-expiry-dialog-action-no": "خیر",
-	"log-name-bs-expiry": "انقضا"
+	"log-name-bs-expiry": "انقضا",
+	"logentry-bs-expiry-expired": "صفحهٔ $3 منقضی شده‌است",
+	"logentry-bs-expiry-change-date": "$1 تاریخ منقضی‌شدن در صفحهحٔ $3 را {{GENDER:$2|تغییر داد}}",
+	"logentry-bs-expiry-delete": "$1 انقضای صفحهٔ $3 را {{GENDER:$2|تغییر داد}}"
 }
