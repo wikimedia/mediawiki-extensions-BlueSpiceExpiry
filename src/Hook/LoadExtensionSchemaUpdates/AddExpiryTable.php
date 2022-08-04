@@ -5,11 +5,12 @@ namespace BlueSpice\Expiry\Hook\LoadExtensionSchemaUpdates;
 class AddExpiryTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
+		$dbType = $this->updater->getDB()->getType();
 		$dir = $this->getExtensionPath();
 
 		$this->updater->addExtensionTable(
 			'bs_expiry',
-			"$dir/maintenance/db/bs_expiry.sql"
+			"$dir/maintenance/db/sql/$dbType/bs_expiry-generated.sql"
 		);
 		// BS 2.23.3: Independence of Expiry from Reminder
 		// add additional columns
