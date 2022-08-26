@@ -3,6 +3,7 @@
 namespace BlueSpice\Expiry\Hook\BSUEModulePDFBeforeAddingStyleBlocks;
 
 use BlueSpice\UEModulePDF\Hook\BSUEModulePDFBeforeAddingStyleBlocks;
+use RequestContext;
 
 class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 
@@ -14,10 +15,9 @@ class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 	}
 
 	protected function doProcess() {
-		list( $lang ) = explode(
-			'-',
-			\RequestContext::getMain()->getUser()->getOption( 'language' )
-		);
+		$userLanguageSetting = $this->getServices()->getUserOptionsLookup()
+			->getOption( RequestContext::getMain()->getUser(), 'language' );
+		list( $lang ) = explode( '-', $userLanguageSetting );
 		$img = "{$GLOBALS['IP']}/extensions/BlueSpiceExpiry/resources/images/bg-expired-$lang.png";
 		if ( !file_exists( $img ) ) {
 			$lang = 'en';
