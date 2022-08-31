@@ -51,8 +51,9 @@ class Utils {
 		if ( !$target ) {
 			return $moderators;
 		}
+		$userFactory = $services()->getUserFactory();
 		foreach ( $target->getAssignedUserIDs() as $userID ) {
-			$assigneduser = \User::newFromId( $userID );
+			$assigneduser = $userFactory->newFromId( $userID );
 			if ( !$assigneduser ) {
 				continue;
 			}
@@ -80,8 +81,9 @@ class Utils {
 
 		$sysops = [];
 
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		foreach ( $res as $row ) {
-			$sysop = \User::newFromId( $row->ug_user );
+			$sysop = $userFactory->newFromId( $row->ug_user );
 			if ( $sysop instanceof \User ) {
 				$sysop->load();
 				if ( $sysop->isAnon() ) {
