@@ -16,7 +16,8 @@
 			"沈澄心",
 			"落花有意12138",
 			"铁桶",
-			"Tr jason"
+			"Tr jason",
+			"Qiyue2001"
 		]
 	},
 	"bs-expiry-extension-description": "页面可被标记为过期。",
@@ -98,6 +99,7 @@
 	"bs-expiry-dialog-create-reminder-title": "创建提醒",
 	"bs-expiry-dialog-action-no": "否",
 	"log-name-bs-expiry": "期限",
+	"log-description-bs-expiry": "关于页面过期的操作日志",
 	"logentry-bs-expiry-expired": "$3页面已过期",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|更改了}} 页面 $3 的过期时间",
 	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|删除}}截止到$3"
