@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"EdoAug",
+			"Jon Harald Søby",
+			"Telaneo"
 		]
 	},
 	"bs-expiry-extension-description": "Sider kan merkes som utløpte.",
@@ -80,5 +82,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utløper/Har utløpt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt",
 	"bs-expiry-dialog-action-no": "Nei",
-	"log-name-bs-expiry": "Utløp"
+	"log-name-bs-expiry": "Utløp",
+	"bs-expiry-error-invalid-date": "Ugyldig dato",
+	"bs-expiry-dialog-create-reminder-title": "Opprett påminnelse"
 }
