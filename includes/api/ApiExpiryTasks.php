@@ -14,7 +14,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 */
 	public function __construct( ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
 		parent::__construct( $mainModule, $moduleName, $modulePrefix );
-		$this->specialLogLogger = $this->getServices()->getService( 'BSExpirySpecialLogLogger' );
+		$this->specialLogLogger = $this->services->getService( 'BSExpirySpecialLogLogger' );
 	}
 
 	/**
@@ -210,7 +210,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			$iExpiryId = $dbw->insertId();
 
 			try {
-				$this->getServices()->getHookContainer()->run( 'BsExpiryOnSave', [
+				$this->services->getHookContainer()->run( 'BsExpiryOnSave', [
 					$oTaskData,
 					$iExpiryId,
 					// deprecated
@@ -234,7 +234,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			}
 
 			try {
-				$this->getServices()->getHookContainer()->run( 'BsExpiryOnUpdate', [
+				$this->services->getHookContainer()->run( 'BsExpiryOnUpdate', [
 					$oTaskData,
 					$iExpiryId,
 					$oUser,

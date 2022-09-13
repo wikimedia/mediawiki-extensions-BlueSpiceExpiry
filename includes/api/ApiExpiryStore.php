@@ -75,7 +75,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		];
 
 		// give other extensions the opportunity to modify the query
-		$this->getServices()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BsExpiryBeforeBuildOverviewQuery',
 			[
 				$this,
@@ -104,10 +104,9 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		);
 
 		if ( $res ) {
+			$pm = $this->services->getPermissionManager();
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->exp_page_id );
-				$pm = \MediaWiki\MediaWikiServices::getInstance()
-					->getPermissionManager();
 
 				if ( !$pm->userCan( 'read', $this->getUser(), $oTitle ) ) {
 					continue;
@@ -124,7 +123,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 					'user_can_expire' => $canExpire,
 					'user_can_delete_expiration' => $canDelete,
 				];
-				$this->getServices()->getHookContainer()->run( 'BsExpiryBuildOverviewResultSet', [
+				$this->services->getHookContainer()->run( 'BsExpiryBuildOverviewResultSet', [
 					$this,
 					&$aResultSet,
 					$row
@@ -209,7 +208,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'sortable' => true
 		];
 
-		$this->getServices()->getHookContainer()->run( 'BsExpiryBuildOverviewMetadata', [
+		$this->services->getHookContainer()->run( 'BsExpiryBuildOverviewMetadata', [
 			&$aMetadata
 		] );
 
