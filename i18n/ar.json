@@ -65,5 +65,6 @@
 	"right-expirearticle": "انتهاء صلاحية الصفحات",
 	"action-expirearticle": "انتهاء صلاحية الصفحات",
 	"bs-expiry-create-reminder-label": "أنشئ تذكيرًا",
-	"bs-expiry-dialog-action-no": "لا"
+	"bs-expiry-dialog-action-no": "لا",
+	"bs-expiry-error-invalid-date": "تاريخ غير صالح"
 }
