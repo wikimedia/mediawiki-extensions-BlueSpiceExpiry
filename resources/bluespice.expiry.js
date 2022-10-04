@@ -96,41 +96,38 @@
 
 	$( d ).on( 'click', "#ca-expiryCreate, .ca-expiryCreate", function ( e ) {
 		e.preventDefault();
-		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
-			id: 'bs-expiry-dialog-set',
-			pages: function() {
-				var dfd = $.Deferred();
-				mw.loader.using( "ext.bluespice.expiry.dialog.pages", function() {
+		mw.loader.using( [ "ext.bluespice.expiry.dialog.pages" ] ).done( function () {
+			var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+				id: 'bs-expiry-dialog-set',
+				pages: function() {
+					var dfd = $.Deferred();
 					bs.expiry.getExpiryForPage( mw.config.get( 'wgArticleId' ) )
-					.done( function( data ) {
-						bs.expiry.getDialogPages(
-							{ forcePage: true }, $.extend( { page: mw.config.get( 'wgPageName' ) }, data )
-						).done( function( pages ) {
-							dfd.resolve( pages );
-						} ).fail( function( e ) {
-							dfd.reject( e );
+						.done( function( data ) {
+							bs.expiry.getDialogPages(
+								{ forcePage: true }, $.extend( { page: mw.config.get( 'wgPageName' ) }, data )
+							).done( function( pages ) {
+								dfd.resolve( pages );
+							} ).fail( function( e ) {
+								dfd.reject( e );
+							} );
+						} ).fail( function() {
+							bs.expiry.getDialogPages(
+								{ forcePage: true }, { page: mw.config.get( 'wgPageName' ) }
+							).done( function( pages ) {
+								dfd.resolve( pages );
+							} ).fail( function( e ) {
+								dfd.reject( e );
+							} );
 						} );
-					} ).fail( function() {
-						bs.expiry.getDialogPages(
-							{ forcePage: true }, { page: mw.config.get( 'wgPageName' ) }
-						).done( function( pages ) {
-							dfd.resolve( pages );
-						} ).fail( function( e ) {
-							dfd.reject( e );
-						} );
-					} );
+					return dfd.promise();
+				}
+			} );
 
-				}, function( e ) {
-					dfd.reject( e );
-				} );
-				return dfd.promise();
-			}
-		} );
-
-		dialog.show().closed.then( function( data ) {
-			if( data.success ) {
-				window.location.reload();
-			}
+			dialog.show().closed.then( function( data ) {
+				if( data.success ) {
+					window.location.reload();
+				}
+			} );
 		} );
 	} );
 })( mediaWiki, jQuery, document, blueSpice );
