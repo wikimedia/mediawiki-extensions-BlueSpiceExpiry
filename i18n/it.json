@@ -72,5 +72,6 @@
 	"log-description-bs-expiry": "Registro delle azioni relative alla scadenza della pagina",
 	"logentry-bs-expiry-expired": "La pagina $3 è scaduta",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|modificata}} data di scadenza sulla pagina $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3",
+	"notification-bs-expiry-today-web-body": "La pagina \" $1 \" è scaduta. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. Se il contenuto della pagina è ancora aggiornato, è possibile annullare semplicemente la scadenza della pagina. \n\nCommento in scadenza:\n $2"
 }
