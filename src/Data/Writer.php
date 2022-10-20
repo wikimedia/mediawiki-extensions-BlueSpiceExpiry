@@ -2,7 +2,9 @@
 
 namespace BlueSpice\Expiry\Data;
 
-class Writer extends \BlueSpice\Data\DatabaseWriter {
+use MWStake\MediaWiki\Component\DataStore\DatabaseWriter;
+
+class Writer extends DatabaseWriter {
 
 	/**
 	 *
