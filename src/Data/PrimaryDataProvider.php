@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Expiry\Data;
 
-use BlueSpice\Data\PrimaryDatabaseDataProvider;
+use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 
 class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 

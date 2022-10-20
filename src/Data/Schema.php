@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Expiry\Data;
 
-use BlueSpice\Data\FieldType;
+use MWStake\MediaWiki\Component\DataStore\FieldType;
 
-class Schema extends \BlueSpice\Data\Schema {
+class Schema extends \MWStake\MediaWiki\Component\DataStore\Schema {
 	public const TABLE_NAME = 'bs_expiry';
 
 	public function __construct() {

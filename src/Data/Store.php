@@ -3,8 +3,9 @@
 namespace BlueSpice\Expiry\Data;
 
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\IStore;
 
-class Store implements \BlueSpice\Data\IStore {
+class Store implements IStore {
 
 	/**
 	 *

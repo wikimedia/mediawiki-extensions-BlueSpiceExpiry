@@ -2,15 +2,15 @@
 
 namespace BlueSpice\Expiry;
 
-use BlueSpice\Data\FieldType;
-use BlueSpice\Data\Filter\Date;
-use BlueSpice\Data\Filter\Numeric;
-use BlueSpice\Data\ReaderParams;
-use BlueSpice\Data\ResultSet;
 use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Data\Store;
 use DateTime;
 use DateTimeZone;
+use MWStake\MediaWiki\Component\DataStore\FieldType;
+use MWStake\MediaWiki\Component\DataStore\Filter\Date;
+use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\ResultSet;
 use Status;
 use Title;
 
