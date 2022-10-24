@@ -19,5 +19,8 @@
 	"bs-expiry-do-unexpire-article": "Slet udløbsdato",
 	"bs-expiry-error-invalid-date": "Ugyldig dato",
 	"bs-expiry-dialog-create-reminder-title": "Opret påmindelse",
-	"logentry-bs-expiry-expired": "Siden $3 er udløbet"
+	"logentry-bs-expiry-expired": "Siden $3 er udløbet",
+	"bs-expiry-unexpire-article": "Siden er udløbet",
+	"bs-expiry-header-date": "Udløber den",
+	"bs-expiry-edit-grid-header-comment": "Kommentar"
 }
