@@ -3,12 +3,12 @@
 namespace BlueSpice\Expiry\PageInfoElement;
 
 use BlueSpice\Expiry\Extension as Expiry;
-use BlueSpice\IPageInfoElement;
-use BlueSpice\PageInfoElement;
 use MediaWiki\MediaWikiServices;
 use Message;
+use PageHeader\IPageInfo;
+use PageHeader\PageInfo;
 
-class Expired extends PageInfoElement {
+class Expired extends PageInfo {
 	/** @var string */
 	public $expire = 'undefined';
 	/** @var string */
@@ -25,7 +25,7 @@ class Expired extends PageInfoElement {
 	 * @return Message
 	 */
 	public function getLabelMessage() {
-		return $this->msg( 'bs-expiry-pageinfoelement-expired-label' );
+		return $this->context->msg( 'bs-expiry-pageinfoelement-expired-label' );
 	}
 
 	/**
@@ -41,7 +41,7 @@ class Expired extends PageInfoElement {
 	 * @return Message
 	 */
 	public function getTooltipMessage() {
-		return $this->msg( 'bs-expiry-pageinfoelement-expired-tooltip' );
+		return $this->context->msg( 'bs-expiry-pageinfoelement-expired-tooltip' );
 	}
 
 	/**
@@ -89,7 +89,7 @@ class Expired extends PageInfoElement {
 	 * @return string
 	 */
 	public function getItemClass() {
-		return IPageInfoElement::ITEMCLASS_CONTRA;
+		return IPageInfo::ITEMCLASS_CONTRA;
 	}
 
 	/**
@@ -121,7 +121,7 @@ class Expired extends PageInfoElement {
 	 * @return string
 	 */
 	public function getType() {
-		return IPageInfoElement::TYPE_MENU;
+		return IPageInfo::TYPE_MENU;
 	}
 
 	/**
@@ -141,8 +141,8 @@ class Expired extends PageInfoElement {
 	 */
 	public function makeMenu() {
 		$html = '';
-		$label = $this->msg( 'bs-expiry-pageinfoelement-unexpire-label' );
-		$tooltip = $this->msg( 'bs-expiry-pageinfoelement-unexpire-tooltip' );
+		$label = $this->context->msg( 'bs-expiry-pageinfoelement-unexpire-label' );
+		$tooltip = $this->context->msg( 'bs-expiry-pageinfoelement-unexpire-tooltip' );
 
 		$html .= \Html::openElement( 'ul' );
 		$html .= \Html::openElement( 'li' );
