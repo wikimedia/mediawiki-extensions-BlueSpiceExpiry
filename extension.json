@@ -268,10 +268,13 @@
 		},
 		"standard-dialogs": {
 			"class": "\\BlueSpice\\Expiry\\HookHandler\\StandardDialogs"
+		},
+		"addExpiryCreateEntry": {
+			"class": "\\BlueSpice\\Expiry\\HookHandler\\AddExpiryCreateEntry"
 		}
 	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Expiry\\Hook\\SkinTemplateNavigationUniversal\\AddExpiryCreateEntry::callback",
+		"SkinTemplateNavigation::Universal": "addExpiryCreateEntry",
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
