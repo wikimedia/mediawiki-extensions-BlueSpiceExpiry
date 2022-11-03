@@ -64,6 +64,7 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Scadenza/È scaduta",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indica se la pagina è scaduta",
 	"bs-expiry-info-dialog": "Scadenza della pagina",
+	"bs-expiry-info-dialog-button-label": "Gestisci le scadenze",
 	"bs-expiry-dialog-delete-prompt": "Sei sicuro di voler eliminare la scadenza per questa pagina?",
 	"bs-expiry-error-invalid-date": "Data non valida",
 	"bs-expiry-dialog-create-reminder-prompt": "Vuoi creare un promemoria per questa pagina?",
