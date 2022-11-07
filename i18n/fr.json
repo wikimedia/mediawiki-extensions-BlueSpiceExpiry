@@ -42,7 +42,7 @@
 	"bs-expiry-flyout-title": "Expiration de la page",
 	"bs-expiry-flyout-intro": "Vue d’ensemble des expirations pour cette page",
 	"bs-expiry-flyout-form-title": "Créer une nouvelle date d’expiration pour cette page",
-	"bs-expiry-flyout-next-expired": "Cette page est expirée !",
+	"bs-expiry-flyout-next-expired": "Cette page a expiré !",
 	"bs-expiry-flyout-next-current": "Cette page expire {{PLURAL:$1|demain|dans $1 jours ($2)}} !",
 	"bs-expiry-flyout-expiry-not-set": "Cette page n’est pas paramétrée pour expirer !",
 	"bs-expiry-flyout-next-comment": "Commentaire : $1",
