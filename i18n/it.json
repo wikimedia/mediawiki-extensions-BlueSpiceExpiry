@@ -79,6 +79,6 @@
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Avvisami quando una pagina scade oggi",
 	"echo-category-title-bs-expiry-weekly-cat": "Scadenza - Settimanale",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Avvisami quando una pagina scade tra una settimana",
-	"notification-bs-expiry-today-email-body": "La pagina \" $1 \" è scaduta. Si prega di rivedere il contenuto della pagina per decidere se è necessario aggiornarla. Se il contenuto della pagina è ancora aggiornato, è possibile annullare semplicemente la scadenza della pagina. \n\nCommento in scadenza:\n $2",
+	"notification-bs-expiry-today-email-body": "La pagina \"$1\" è scaduta. Rivedi il contenuto della pagina per decidere se è necessario aggiornarla. Se il contenuto della pagina è ancora aggiornato, è possibile annullare semplicemente la scadenza della pagina. \n\nCommento della scadenza:\n$2",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Data di scadenza/scadenza"
 }
