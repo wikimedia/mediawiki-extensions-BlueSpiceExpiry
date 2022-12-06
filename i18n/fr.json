@@ -33,7 +33,7 @@
 	"bs-expiry-update-success": "L’expiration a bien été mise à jour",
 	"bs-expiry-save-success": "L’expiration a bien été créée",
 	"bs-expiry-unexpire-success": "L’expiration a bien été supprimée",
-	"bs-expiry-unexpire-unsuccess": "ID d’expiration non trouvé",
+	"bs-expiry-unexpire-unsuccess": "Identifiant d’expiration non trouvé",
 	"bs-expiry-menu-entry-create": "Définir l’expiration",
 	"bs-expiry-menu-entry-manage": "Gérer l’expiration",
 	"bs-expiry-text-delete": "Voulez-vous vraiment supprimer {{PLURAL:$1|cette expiration|ces $1 expirations}} ?",
