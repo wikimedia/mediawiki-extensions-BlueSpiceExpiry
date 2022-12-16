@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Milicevic01",
 			"Вукан Ц"
 		]
 	},
@@ -15,5 +16,6 @@
 	"right-expirearticle": "Извоз страница",
 	"right-expiry-delete": "уклањање истека са страница",
 	"bs-expiry-create-reminder-label": "Направи подсетник",
-	"bs-expiry-do-updateexpirydate-article": "Промените датум истека"
+	"bs-expiry-do-updateexpirydate-article": "Промените датум истека",
+	"bs-expiry-dialog-action-no": "Не"
 }
