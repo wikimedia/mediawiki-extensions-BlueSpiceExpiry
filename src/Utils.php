@@ -50,7 +50,7 @@ class Utils {
 		if ( !$target ) {
 			return $moderators;
 		}
-		$userFactory = $services()->getUserFactory();
+		$userFactory = $services->getUserFactory();
 		foreach ( $target->getAssignedUserIDs() as $userID ) {
 			$assigneduser = $userFactory->newFromId( $userID );
 			if ( !$assigneduser ) {
