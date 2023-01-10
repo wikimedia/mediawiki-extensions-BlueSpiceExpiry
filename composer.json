@@ -26,5 +26,10 @@
 	},
 	"extra": {
 		"installer-name": "BlueSpiceExpiry"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
