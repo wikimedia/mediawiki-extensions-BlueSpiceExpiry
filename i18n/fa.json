@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"0PAWN0",
 			"FarsiNevis",
 			"Jeeputer",
 			"LordProfo"
@@ -76,5 +77,9 @@
 	"log-name-bs-expiry": "انقضا",
 	"logentry-bs-expiry-expired": "صفحهٔ $3 منقضی شده‌است",
 	"logentry-bs-expiry-change-date": "$1 تاریخ منقضی‌شدن در صفحهحٔ $3 را {{GENDER:$2|تغییر داد}}",
-	"logentry-bs-expiry-delete": "$1 انقضای صفحهٔ $3 را {{GENDER:$2|تغییر داد}}"
+	"logentry-bs-expiry-delete": "$1 انقضای صفحهٔ $3 را {{GENDER:$2|تغییر داد}}",
+	"bs-expiry-pageinfoelement-unexpire-label": "منقضی نشده",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "منقضی نکردن این صفحه",
+	"right-expirearticle": "صفحات منقضی",
+	"action-expirearticle": "منقضی کردن صفحات"
 }
