@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"0PAWN0",
 			"FarsiNevis",
 			"Jeeputer",
 			"LordProfo"
@@ -52,6 +53,10 @@
 	"bs-expiry-alert-body-expired": "این صفحه در $1 منقضی شده‌است. لطفاً محتوا را بررسی کنید.",
 	"bs-expiry-pageinfoelement-expired-label": "منقضی",
 	"bs-expiry-pageinfoelement-expired-tooltip": "این صفحه منقضی شده است!",
+	"bs-expiry-pageinfoelement-unexpire-label": "منقضی نشده",
+	"bs-expiry-pageinfoelement-unexpire-tooltip": "منقضی نکردن این صفحه",
+	"right-expirearticle": "صفحات منقضی",
+	"action-expirearticle": "منقضی کردن صفحات",
 	"echo-category-title-bs-expiry-daily-cat": "انقضا - روزانه",
 	"echo-pref-tooltip-bs-expiry-daily-cat": "در صورت منقضی‌شدن یک صفحه در امروز، مرا آگاه کن",
 	"echo-category-title-bs-expiry-weekly-cat": "انقضا - هفتگی",
