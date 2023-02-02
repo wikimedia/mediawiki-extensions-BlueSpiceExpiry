@@ -51,11 +51,13 @@
 	"action-expirearticle": "לגרום לתפוגה של דפים",
 	"right-expiry-delete": "הסרת תפוגה של דפים",
 	"action-expiry-delete": "להסיר תפוגה של דפים",
+	"bs-expiry-create-reminder-label": "ליצור תזכורת",
 	"bs-expiry-reminder-type-expiry": "תפוגה",
 	"bs-expiry-do-updateexpirydate-article": "החלפת תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "תפוגה/תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
+	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
 	"bs-expiry-dialog-action-no": "לא",
 	"log-name-bs-expiry": "תפוגה"
 }
