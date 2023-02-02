@@ -57,5 +57,7 @@
 	"action-expirearticle": "לגרום לתפוגה של דפים",
 	"right-expiry-delete": "הסרת תפוגה של דפים",
 	"action-expiry-delete": "להסיר תפוגה של דפים",
-	"log-name-bs-expiry": "תפוגה"
+	"log-name-bs-expiry": "תפוגה",
+	"bs-expiry-create-reminder-label": "ליצור תזכורת",
+	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין"
 }
