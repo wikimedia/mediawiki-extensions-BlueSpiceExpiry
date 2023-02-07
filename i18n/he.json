@@ -45,6 +45,7 @@
 	"bs-expiry-flyout-body-hint-expired": "פג ב־$1",
 	"bs-expiry-flyout-body-hint-expires": "פג ב־$1",
 	"bs-expiry-pageinfoelement-expired-label": "פג תוקף",
+	"bs-expiry-pageinfoelement-expired-tooltip": "תוקף הדף פג",
 	"bs-expiry-pageinfoelement-unexpire-label": "לבטל תפוגה",
 	"bs-expiry-pageinfoelement-unexpire-tooltip": "לבטל את התפוגה של הדף הזה",
 	"right-expirearticle": "גרימת תפוגה של דפים",
@@ -58,6 +59,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
 	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
+	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת",
 	"bs-expiry-dialog-action-no": "לא",
 	"log-name-bs-expiry": "תפוגה"
 }
