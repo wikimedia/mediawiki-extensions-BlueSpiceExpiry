@@ -3,6 +3,7 @@
 		"authors": [
 			"A2y4",
 			"Ajeje Brazorf",
+			"Omotecho",
 			"背番号4のエース"
 		]
 	},
@@ -94,7 +95,7 @@
 	"bs-expiry-dialog-action-no": "いいえ",
 	"log-name-bs-expiry": "期限",
 	"log-description-bs-expiry": "ページの有効期限に関するアクションのログ",
-	"logentry-bs-expiry-expired": "ページ \" $1 \" は有効期限が切れています",
+	"logentry-bs-expiry-expired": "ページ$3は有効期限が切れています",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|$3ページの有効期限が変更されました}}",
 	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ページ$3の有効期限が切れました。}}"
 }
