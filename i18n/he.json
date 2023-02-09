@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Xnet1234",
 			"YaronSh",
 			"ישראל קלר",
 			"שוקו מוקה"
@@ -58,6 +59,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "תפוגה/תאריך תפוגה",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
+	"bs-expiry-info-dialog": "תפוגה של דף",
 	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
 	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת",
 	"bs-expiry-dialog-action-no": "לא",
