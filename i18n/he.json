@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Xnet1234",
 			"YaronSh",
 			"ישראל קלר",
 			"שוקו מוקה"
@@ -61,5 +62,6 @@
 	"bs-expiry-create-reminder-label": "ליצור תזכורת",
 	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
 	"bs-expiry-pageinfoelement-expired-tooltip": "תוקף הדף פג",
-	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת"
+	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת",
+	"bs-expiry-info-dialog": "תפוגה של דף"
 }
