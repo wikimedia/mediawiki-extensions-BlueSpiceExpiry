@@ -142,21 +142,6 @@
 				"ext.bluespice.Expiry"
 			]
 		},
-		"ext.bluespice.expiry.special.styles": {
-			"styles": "bluespice.expiry.less",
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
-		"ext.bluespice.Expiry.Highlight": {
-			"styles": "bluespice.expiry.highlight.less",
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
-		"ext.bluespice.expiry.pageinfo.flyout": {
-			"scripts": "bluespice.expiry.pageinfo.flyout.js",
-			"dependencies": [
-				"mediawiki.jqueryMsg",
-				"ext.bluespice"
-			]
-		},
 		"ext.bluespice.Expiry": {
 			"scripts": "bluespice.expiry.js",
 			"dependencies": "ext.bluespice"

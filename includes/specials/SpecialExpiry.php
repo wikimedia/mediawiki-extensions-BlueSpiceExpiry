@@ -42,8 +42,7 @@ class SpecialExpiry extends ManagerBase {
 	 */
 	protected function getModules() {
 		return [
-			'ext.bluespice.expiry.special',
-			'ext.bluespice.expiry.special.styles'
+			'ext.bluespice.expiry.special'
 		];
 	}
 }
