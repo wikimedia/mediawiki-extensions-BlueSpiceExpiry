@@ -2,7 +2,7 @@
 	"name": "BlueSpiceExpiry",
 	"version": "4.2.0-alpha",
 	"license-name": "GPL-3.0-only",
-	"url": "https://en.wiki.bluespice.com/wiki/Reference:Expiry",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceExpiry",
 	"author": [ "Sebastian Ulbricht", "Markus Glaser" ],
 	"descriptionmsg": "bs-expiry-extension-description",
 	"requires": {
