@@ -95,7 +95,7 @@
 	"bs-expiry-pref-enablepagewatermark-help": "Toont een watermerk op de pagina zelf.",
 	"bs-expiry-dialog-delete-prompt": "Weet u zeker dat u de vervaldatum voor deze pagina wilt verwijderen?",
 	"bs-expiry-dialog-create-reminder-prompt": "Wilt u een herinnering voor deze pagina aanmaken?",
-	"log-description-bs-expiry": "Logboek van acties met betrekking tot het vervallen van de pagina",
+	"log-description-bs-expiry": "Logboek van handelingen met betrekking tot het vervallen van pagina's",
 	"logentry-bs-expiry-expired": "Pagina $3 is vervallen",
 	"logentry-bs-expiry-change-date": "$1 heeft de vervaldatum op pagina $3 {{GENDER:$2|gewijzigd}}",
 	"logentry-bs-expiry-delete": "$1 heeft de vervaldatum op pagina $3 {{GENDER:$2|verwijderd}}"
