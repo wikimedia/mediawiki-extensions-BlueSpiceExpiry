@@ -84,5 +84,8 @@
 	"bs-expiry-error-invalid-date": "Ugyldig dato",
 	"bs-expiry-dialog-create-reminder-title": "Opprett påminnelse",
 	"bs-expiry-dialog-action-no": "Nei",
-	"log-name-bs-expiry": "Utløp"
+	"log-name-bs-expiry": "Utløp",
+	"bs-expiry-pref-enablepagewatermark-help": "Viser et vannmerke på selve siden.",
+	"logentry-bs-expiry-expired": "Siden $3 har utløpt",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|endra}} utløpsdatoen på siden $3"
 }
