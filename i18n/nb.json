@@ -81,8 +81,11 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Dato for når siden utløper",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utløper/Har utløpt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt",
+	"bs-expiry-pref-enablepagewatermark-help": "Viser et vannmerke på selve siden.",
 	"bs-expiry-error-invalid-date": "Ugyldig dato",
 	"bs-expiry-dialog-create-reminder-title": "Opprett påminnelse",
 	"bs-expiry-dialog-action-no": "Nei",
-	"log-name-bs-expiry": "Utløp"
+	"log-name-bs-expiry": "Utløp",
+	"logentry-bs-expiry-expired": "Siden $3 har utløpt",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|endra}} utløpsdatoen på siden $3"
 }
