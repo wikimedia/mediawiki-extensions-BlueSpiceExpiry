@@ -63,5 +63,10 @@
 	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
 	"bs-expiry-pageinfoelement-expired-tooltip": "תוקף הדף פג",
 	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת",
-	"bs-expiry-info-dialog": "תפוגה של דף"
+	"bs-expiry-info-dialog": "תפוגה של דף",
+	"bs-expiry-flyout-next-current": "הדף הזה יפוג {{PLURAL:$1|מחר|מוחרתיים|3=בעוד יומיים|בעוד $1 יום|בעוד $1 ימים}} ($2)!",
+	"log-description-bs-expiry": "יומן פעולות בנוגע לתפוגת דף",
+	"logentry-bs-expiry-expired": "פג תוקף הדף $3",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|שינה|שינתה}} את תאריך התפוגה בדף $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|מחק|מחקה}} את התפוגה של הדף $3"
 }
