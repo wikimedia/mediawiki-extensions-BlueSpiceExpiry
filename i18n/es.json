@@ -10,6 +10,7 @@
 			"Fitoschido",
 			"Francodiaz7",
 			"Joanmp17",
+			"MarcoAurelio",
 			"Suecarmol",
 			"Whovian Biologist"
 		]
@@ -48,7 +49,7 @@
 	"bs-expiry-flyout-intro": "Resumen de los vencimientos de esta página",
 	"bs-expiry-flyout-form-title": "Crear una caducidad nueva para esta página",
 	"bs-expiry-flyout-next-expired": "¡Esta página ha caducado!",
-	"bs-expiry-flyout-next-current": "Esta página caduca {{PLURAL:$1|tomorrow|in $1 days ($2)}}!",
+	"bs-expiry-flyout-next-current": "¡Esta página caduca {{PLURAL:$1|mañana|en $1 días ($2)}}!",
 	"bs-expiry-flyout-expiry-not-set": "¡Esta página no está configurada para caducar!",
 	"bs-expiry-flyout-next-comment": "Comentario: $1",
 	"bs-expiry-flyout-manager-button-label": "Gerente de vencimiento",
