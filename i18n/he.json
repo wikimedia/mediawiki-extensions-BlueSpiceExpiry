@@ -36,6 +36,7 @@
 	"bs-expiry-nav-link-title-expiry": "תפוגה",
 	"bs-expiry-flyout-title": "תפוגת דף",
 	"bs-expiry-flyout-next-expired": "תוקף הדף פג!",
+	"bs-expiry-flyout-next-current": "הדף הזה יפוג {{PLURAL:$1|מחר|מוחרתיים|3=בעוד יומיים|בעוד $1 יום|בעוד $1 ימים}} ($2)!",
 	"bs-expiry-flyout-next-comment": "הערה: $1",
 	"bs-expiry-flyout-manager-button-label": "מנהל תפוגה",
 	"bs-expiry-edit-grid-header-username": "משתמש",
@@ -63,5 +64,9 @@
 	"bs-expiry-error-invalid-date": "תאריך בלתי־תקין",
 	"bs-expiry-dialog-create-reminder-title": "ליצור תזכורת",
 	"bs-expiry-dialog-action-no": "לא",
-	"log-name-bs-expiry": "תפוגה"
+	"log-name-bs-expiry": "תפוגה",
+	"log-description-bs-expiry": "יומן פעולות בנוגע לתפוגת דף",
+	"logentry-bs-expiry-expired": "פג תוקף הדף $3",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|שינה|שינתה}} את תאריך התפוגה בדף $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|מחק|מחקה}} את התפוגה של הדף $3"
 }
