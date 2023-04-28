@@ -15,7 +15,7 @@ bs.expiry.ui.ExpiryPage.prototype.getItems = function() {
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
 	this.comment = new OO.ui.MultilineTextInputWidget();
-	this.pagePicker = new mw.widgets.TitleInputWidget( { required: true } );
+	this.pagePicker = new OOJSPlus.ui.widget.TitleInputWidget( { required: true, mustExist: true } );
 
 	var layouts = [
 		new OO.ui.FieldLayout( this.datePicker, {

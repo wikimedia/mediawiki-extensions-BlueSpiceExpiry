@@ -221,7 +221,8 @@
 			"dependencies": [
 				"ext.oOJSPlus.dialogs",
 				"mediawiki.widgets.DateInputWidget",
-				"mediawiki.widgets"
+				"mediawiki.widgets",
+				"ext.oOJSPlus.widgets"
 			]
 		}
 	},
