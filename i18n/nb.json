@@ -87,5 +87,6 @@
 	"bs-expiry-dialog-create-reminder-title": "Opprett påminnelse",
 	"bs-expiry-pref-enablepagewatermark-help": "Viser et vannmerke på selve siden.",
 	"logentry-bs-expiry-expired": "Siden $3 har utløpt",
-	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|endra}} utløpsdatoen på siden $3"
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|endra}} utløpsdatoen på siden $3",
+	"bs-expiry-pref-enablepdfwatermark-help": "Vis et vannmerke for utløpte sider i PDF-en."
 }
