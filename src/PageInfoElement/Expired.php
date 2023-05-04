@@ -105,7 +105,7 @@ class Expired extends PageInfo {
 	 * @return string
 	 */
 	public function getHtmlClass() {
-		return 'bs-expiry-pageinfo-page-' . $this->expire;
+		return $this->expire === 'expired' ? 'bs-destructive' : 'bs-progressive';
 	}
 
 	/**
@@ -162,5 +162,12 @@ class Expired extends PageInfo {
 		$html .= \Html::closeElement( 'ul' );
 
 		return $html;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getPosition() {
+		return 90;
 	}
 }
