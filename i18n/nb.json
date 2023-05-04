@@ -81,6 +81,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Dato for når siden utløper",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utløper/Har utløpt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Viser hvorvidt siden har utløpt",
+	"bs-expiry-pref-enablepdfwatermark-help": "Vis et vannmerke for utløpte sider i PDF-en.",
 	"bs-expiry-pref-enablepagewatermark-help": "Viser et vannmerke på selve siden.",
 	"bs-expiry-error-invalid-date": "Ugyldig dato",
 	"bs-expiry-dialog-create-reminder-title": "Opprett påminnelse",
