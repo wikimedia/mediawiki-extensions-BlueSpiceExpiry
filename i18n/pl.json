@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chrumps",
 			"Rail",
 			"WaldiSt"
 		]
@@ -13,5 +14,7 @@
 	"bs-expiry-edit-grid-header-comment": "Komentarz",
 	"bs-expiry-create-reminder-label": "Stwórz przypomnienie",
 	"bs-expiry-reminder-type-expiry": "Wygasa",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła",
+	"bs-expiry-unexpire-article": "Strona wygasła",
+	"bs-expiry-title-delete": "Usuń wygaśnięcie"
 }
