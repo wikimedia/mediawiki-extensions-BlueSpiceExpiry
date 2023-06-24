@@ -10,8 +10,6 @@
 	"expiry": "Page title for special page of expiry manager",
 	"specialexpiry": "Name of the special page for expiry",
 	"prefs-expiry": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for expiry section in preferences.",
-	"apihelp-bs-expiry-store-description": "{{doc-apihelp-description|bs-expiry-store}}\nDescribes the API endpoint that provides expiry data",
-	"apihelp-bs-expiry-tasks-description": "{{doc-apihelp-description|bs-expiry-tasks}}\nDescribes the API endpoint that handles expiry tasks",
 	"bs-expiry-unexpire-article": "Label in statebar to mark a page as expired",
 	"bs-expiry-do-unexpire-article": "Label for button that removes the expiration form a page",
 	"bs_expiry-unexpire-success": "Message to display when the page was unexpired successfully",
