@@ -12,8 +12,6 @@
 	"expiry": "Втрата актуальності",
 	"specialexpiry": "Застарілі статті",
 	"prefs-expiry": "Втрата актуальності",
-	"apihelp-bs-expiry-store-description": "Постачає дані для оглядової сітки на Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Виконує завдання на кшталт оновлення та вилучення в оглядовій сітці на Special:Expiry",
 	"bs-expiry-unexpire-article": "Сторінка застаріла",
 	"bs-expiry-do-unexpire-article": "Вилучити дату застарівання",
 	"bs_expiry-unexpire-success": "Позначку про застарілість зі сторінки знято",

@@ -24,8 +24,6 @@
 	"expiry": "期限",
 	"specialexpiry": "过期条目",
 	"prefs-expiry": "期限",
-	"apihelp-bs-expiry-store-description": "为 Special:Expiry 概览网格提供数据",
-	"apihelp-bs-expiry-tasks-description": "为 Special:Expiry 概览网格执行更新和删除等任务",
 	"bs-expiry-unexpire-article": "页面已过期",
 	"bs-expiry-do-unexpire-article": "删除到期日期",
 	"bs_expiry-unexpire-success": "页面未过期成功",

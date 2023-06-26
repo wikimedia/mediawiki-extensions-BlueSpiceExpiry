@@ -10,8 +10,6 @@
 	"expiry": "Expirar",
 	"specialexpiry": "Artigos expirados",
 	"prefs-expiry": "Expirar",
-	"apihelp-bs-expiry-store-description": "Serve os dados para a grade de visão geral  no Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Executa tarefas como atualização e exclusão da grade de visão geral do Special:Expiry",
 	"bs-expiry-unexpire-article": "A página expirou",
 	"bs-expiry-do-unexpire-article": "Excluir data de expiração",
 	"bs_expiry-unexpire-success": "A página não expirou com sucesso",

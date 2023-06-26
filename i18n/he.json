@@ -12,8 +12,6 @@
 	"expiry": "תפוגה",
 	"specialexpiry": "ערכים שתוקפם פג",
 	"prefs-expiry": "תפוגה",
-	"apihelp-bs-expiry-store-description": "הגשת הנתונים עבור רשת סקירה כללית של Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "ביצוע משימות כמו עדכון ומחיקה עבור רשת סקירה כללית של Special:Expiry",
 	"bs-expiry-unexpire-article": "תוקף הדף פג",
 	"bs-expiry-do-unexpire-article": "למחוק תאריך תפוגה",
 	"bs_expiry-unexpire-success": "תפוגת הדף הוסרה בהצלחה",

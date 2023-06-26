@@ -12,8 +12,6 @@
 	"expiry": "Veraltete Seiten",
 	"specialexpiry": "Veraltete Artikel",
 	"prefs-expiry": "Veraltete Seiten",
-	"apihelp-bs-expiry-store-description": "Stellt die Daten für Spezial:Veraltete Seiten bereit",
-	"apihelp-bs-expiry-tasks-description": "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",
 	"bs-expiry-unexpire-article": "Seite ist nicht mehr aktuell",
 	"bs-expiry-do-unexpire-article": "Ablaufdatum löschen",
 	"bs_expiry-unexpire-success": "Die Seite wurde als aktuell bestätigt",

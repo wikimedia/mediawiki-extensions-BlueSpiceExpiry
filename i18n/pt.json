@@ -10,8 +10,6 @@
 	"expiry": "Expiração",
 	"specialexpiry": "Artigos expirados",
 	"prefs-expiry": "Expiração",
-	"apihelp-bs-expiry-store-description": "Serve os dados para a grelha que resume Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Executa tarefas como atualização e eliminação da grelha de resumo de Special:Expiry",
 	"bs-expiry-unexpire-article": "A página expirou",
 	"bs-expiry-do-unexpire-article": "Eliminar data de expiração",
 	"bs_expiry-unexpire-success": "Foi removida a expiração da página",

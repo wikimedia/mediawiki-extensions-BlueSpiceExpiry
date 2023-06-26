@@ -8,8 +8,6 @@
 	"expiry": "Scadenze",
 	"specialexpiry": "Vôsce scadute",
 	"prefs-expiry": "Scadenze",
-	"apihelp-bs-expiry-store-description": "Serve le date pa griglie panorameche Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Esegue attivitate cumme aggiornamende e scangellazione pa griglie panorameche Special:Expiry",
 	"bs-expiry-unexpire-article": "'A pàgene ave sacadute",
 	"bs-expiry-do-unexpire-article": "Scangìlle 'a date de scadenze",
 	"bs-expiry-header-pagename": "Pàgene",

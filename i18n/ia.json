@@ -8,8 +8,6 @@
 	"expiry": "Expiration",
 	"specialexpiry": "Articulos expirate",
 	"prefs-expiry": "Expiration",
-	"apihelp-bs-expiry-store-description": "Forni le datos pro le grillia de vista general de Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Executa travalios como actualisation e deletion pro le grillia de vista general de Special:Expiry",
 	"bs-expiry-unexpire-article": "Le pagina es expirate",
 	"bs-expiry-do-unexpire-article": "Deler le data de expiration",
 	"bs_expiry-unexpire-success": "Le expiration del pagina ha essite disfacite",

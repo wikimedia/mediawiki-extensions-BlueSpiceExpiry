@@ -11,8 +11,6 @@
 	"expiry": "Utgångstid",
 	"specialexpiry": "Utgångna artiklar",
 	"prefs-expiry": "Utgångstid",
-	"apihelp-bs-expiry-store-description": "Levererar datan till översiktstabellen i Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Utför uppgifter som att uppdatera och radera för översiktstabellen i Special:Expiry",
 	"bs-expiry-unexpire-article": "Sidan har utgått",
 	"bs-expiry-do-unexpire-article": "Radera utgångsdatum",
 	"bs_expiry-unexpire-success": "Sidan markerades som inte utgången",

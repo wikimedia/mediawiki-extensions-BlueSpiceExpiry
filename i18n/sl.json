@@ -8,8 +8,6 @@
 	"expiry": "Pretek",
 	"specialexpiry": "Pretekli članki",
 	"prefs-expiry": "Pretek",
-	"apihelp-bs-expiry-store-description": "Zagotavlja podatke za pregledno mrežo Special:Expiry",
-	"apihelp-bs-expiry-tasks-description": "Za pregledno mrežo Special:Expiry izvaja naloge, kot sta posodabljanje in brisanje",
 	"bs-expiry-unexpire-article": "Stran je pretekla",
 	"bs-expiry-do-unexpire-article": "Izbriši datum preteka",
 	"bs_expiry-unexpire-success": "Pretek strani je bil uspešno preklican",

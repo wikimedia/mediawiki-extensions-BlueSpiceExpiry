@@ -11,8 +11,6 @@
 	"expiry": "Bitiş",
 	"specialexpiry": "Süresi dolmuş maddeler",
 	"prefs-expiry": "Bitiş",
-	"apihelp-bs-expiry-store-description": "Special:Expiry sonu genel bakış ızgarası için veri sunar",
-	"apihelp-bs-expiry-tasks-description": "Special:Expiry genel bakış ızgarası için güncelleme ve silme gibi görevleri yürütür",
 	"bs-expiry-unexpire-article": "Sayfanın süresi doldu",
 	"bs-expiry-do-unexpire-article": "Eski tarihini sil",
 	"bs_expiry-unexpire-success": "Sayfanın süresi başarıyla kaldırıldı",

@@ -12,8 +12,6 @@
 	"expiry": "期限",
 	"specialexpiry": "よく読まれている記事",
 	"prefs-expiry": "期限",
-	"apihelp-bs-expiry-store-description": "Special:Expiry概要グリッドのデータを提供します",
-	"apihelp-bs-expiry-tasks-description": "Special:Expiry概要グリッドの更新や削除などのタスクを実行します",
 	"bs-expiry-unexpire-article": "ページの有効期限が切れています",
 	"bs-expiry-do-unexpire-article": "有効期限を削除",
 	"bs_expiry-unexpire-success": "ページの有効期限が正常に解除されました",
