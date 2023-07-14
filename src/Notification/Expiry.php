@@ -19,10 +19,16 @@ abstract class Expiry extends BaseNotification {
 	 * @param string $comment
 	 */
 	public function __construct( $type, $agent, $title, $affectedUsers, $comment = '' ) {
+		if ( empty( $comment ) ) {
+			$comment = '-';
+		}
 		$params = [ 'comment' => $comment ];
 		parent::__construct( $type, $agent, $title, $params );
 
 		$audience = [];
+		if ( !is_array( $affectedUsers ) ) {
+			$affectedUsers = [ $affectedUsers ];
+		}
 		foreach ( $affectedUsers as $user ) {
 			if ( !$user instanceof User || $user->isAnon() ) {
 				return;
