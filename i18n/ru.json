@@ -45,5 +45,7 @@
 	"bs-expiry-dialog-action-no": "Нет",
 	"apihelp-bs-expiry-store-description": "Обслуживает данные для обжорной таблицы на Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Выполняет такие задачи, как обновление и удаление для обзорной таблицы на Special:Expiry",
-	"bs-expiry-error-invalid-date": "Недопустимая дата"
+	"bs-expiry-error-invalid-date": "Недопустимая дата",
+	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
+	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия"
 }
