@@ -98,5 +98,6 @@
 	"bs-expiry-pref-enablepagewatermark-help": "מציג סימן מים בדף עצמו.",
 	"bs-expiry-info-dialog-button-label": "ניהול תפוגות",
 	"bs-expiry-dialog-delete-prompt": "האם ברצונך באמת למחוק את התפוגה של הדף הזה?",
-	"bs-expiry-dialog-create-reminder-prompt": "האם ברצונך ליצור תזכורת עבור הדף הזה?"
+	"bs-expiry-dialog-create-reminder-prompt": "האם ברצונך ליצור תזכורת עבור הדף הזה?",
+	"bs-expiry-specialpage-subtitle": "→ $1"
 }
