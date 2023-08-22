@@ -16,6 +16,7 @@
 	"bs-expiry-do-unexpire-article": "למחוק תאריך תפוגה",
 	"bs_expiry-unexpire-success": "תפוגת הדף הוסרה בהצלחה",
 	"bs_expiry-unexpire-unsuccess": "חא היה אפשר להסיר את תפוגת הדף",
+	"bs-expiry-specialpage-subtitle": "→ $1",
 	"bs-expiry-header-pagename": "דף",
 	"bs-expiry-header-date": "פג בתאריך",
 	"bs-expiry-header-comment": "הערה",
