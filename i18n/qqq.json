@@ -3,7 +3,8 @@
 		"authors": [
 			"Markus Glaser",
 			"Robby",
-			"Umherirrender"
+			"Umherirrender",
+			"Amire80"
 		]
 	},
 	"bs-expiry-extension-description": "Describes the Expiry extension.",
@@ -16,7 +17,7 @@
 	"bs-expiry-do-unexpire-article": "Label for button that removes the expiration form a page",
 	"bs_expiry-unexpire-success": "Message to display when the page was unexpired successfully",
 	"bs_expiry-unexpire-unsuccess": "Message to display when the page could not be unexpired",
-	"bs-expiry-specialpage-subtitle": "{{optional}}\nBacklink to $1\n* $1 is the title of the to link back to",
+	"bs-expiry-specialpage-subtitle": "{{optional}}\nBacklink to $1. In right to left languages, consider using →.\n\n* $1 is the title of the to link back to",
 	"bs-expiry-header-pagename": "Label of the column for page",
 	"bs-expiry-header-date": "Label of the column for expiry date",
 	"bs-expiry-header-comment": "Label of the column for comment",
