@@ -8,7 +8,8 @@
 			"Meerrahtar",
 			"Merrahtar",
 			"Okras",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"Rich Flight22"
 		]
 	},
 	"expiry": "Срок действия",
@@ -47,5 +48,6 @@
 	"bs-expiry-dialog-action-no": "Нет",
 	"bs-expiry-error-invalid-date": "Недопустимая дата",
 	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
-	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия"
+	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
+	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие."
 }
