@@ -8,9 +8,11 @@
 			"Meerrahtar",
 			"Merrahtar",
 			"Okras",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"Rich Flight22"
 		]
 	},
+	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
 	"expiry": "Срок действия",
 	"specialexpiry": "Просроченные статьи",
 	"prefs-expiry": "Срок действия",
