@@ -4,7 +4,7 @@
 	},
 	"bs-expiry-extension-description": "Pages can be marked as expired.",
 	"expiry": "Expiry",
-	"specialexpiry": "Expired articles",
+	"specialexpiry": "Expired pages",
 	"prefs-expiry": "Expiry",
 	"bs-expiry-unexpire-article": "Page is expired",
 	"bs-expiry-do-unexpire-article": "Delete expiry date",

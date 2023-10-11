@@ -10,7 +10,7 @@
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
 	"expiry": "Veraltete Seiten",
-	"specialexpiry": "Veraltete Artikel",
+	"specialexpiry": "Veraltete Seiten",
 	"prefs-expiry": "Veraltete Seiten",
 	"bs-expiry-unexpire-article": "Seite ist nicht mehr aktuell",
 	"bs-expiry-do-unexpire-article": "Ablaufdatum löschen",

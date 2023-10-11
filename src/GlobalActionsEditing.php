@@ -5,7 +5,7 @@ namespace BlueSpice\Expiry;
 use Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
 
-class GlobalActionsTool extends RestrictedTextLink {
+class GlobalActionsEditing extends RestrictedTextLink {
 
 	public function __construct() {
 		parent::__construct( [] );
