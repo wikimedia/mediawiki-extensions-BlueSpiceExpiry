@@ -4,7 +4,7 @@
 	},
 	"bs-expiry-extension-description": "Pages can be marked as expired.",
 	"expiry": "Expiry",
-	"specialexpiry": "Expired articles",
+	"specialexpiry": "Expired pages",
 	"prefs-expiry": "Expiry",
 	"apihelp-bs-expiry-store-description": "Serves the data for Special:Expiry overview grid",
 	"apihelp-bs-expiry-tasks-description": "Executes tasks like update and delete for Special:Expiry overview grid",
