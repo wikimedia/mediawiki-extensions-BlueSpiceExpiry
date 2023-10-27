@@ -6,7 +6,7 @@
 	},
 	"bs-expiry-extension-description": "Strani lahko označite kot pretekle.",
 	"expiry": "Pretek",
-	"specialexpiry": "Pretekli članki",
+	"specialexpiry": "Pretečene strani",
 	"prefs-expiry": "Pretek",
 	"apihelp-bs-expiry-store-description": "Zagotavlja podatke za pregledno mrežo Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Za pregledno mrežo Special:Expiry izvaja naloge, kot sta posodabljanje in brisanje",
