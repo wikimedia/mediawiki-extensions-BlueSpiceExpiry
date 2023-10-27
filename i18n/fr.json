@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"BlueCamille",
 			"Gomoko",
 			"Thibaut120094",
 			"Verdy p",
@@ -10,7 +11,7 @@
 	},
 	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expirées.",
 	"expiry": "Expiration",
-	"specialexpiry": "Articles expirés",
+	"specialexpiry": "Pages expirés",
 	"prefs-expiry": "Expiration",
 	"apihelp-bs-expiry-store-description": "Fournit les données pour la grille d’aperçu général de Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Exécute les tâches comme la mise à jour et la suppression de la grille générale de Special:Expiry",
