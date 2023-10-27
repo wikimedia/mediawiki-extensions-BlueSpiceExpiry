@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"BlueCamille",
 			"Gomoko",
 			"Thibaut120094",
 			"Verdy p",
@@ -10,7 +11,7 @@
 	},
 	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expirées.",
 	"expiry": "Expiration",
-	"specialexpiry": "Articles expirés",
+	"specialexpiry": "Pages expirés",
 	"prefs-expiry": "Expiration",
 	"bs-expiry-unexpire-article": "La page est expirée",
 	"bs-expiry-do-unexpire-article": "Supprimer la date d’expiration",

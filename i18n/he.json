@@ -10,7 +10,7 @@
 	},
 	"bs-expiry-extension-description": "ניתן לסמן שהתוקף של הדפים פג.",
 	"expiry": "תפוגה",
-	"specialexpiry": "ערכים שתוקפם פג",
+	"specialexpiry": "דפים שתוקפם פג",
 	"prefs-expiry": "תפוגה",
 	"bs-expiry-unexpire-article": "תוקף הדף פג",
 	"bs-expiry-do-unexpire-article": "למחוק תאריך תפוגה",
