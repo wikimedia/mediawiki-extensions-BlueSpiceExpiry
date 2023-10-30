@@ -4,12 +4,13 @@
 			"0PAWN0",
 			"FarsiNevis",
 			"Jeeputer",
-			"LordProfo"
+			"LordProfo",
+			"Rulebased"
 		]
 	},
 	"bs-expiry-extension-description": "صفحه‌ها را می‌توان به‌عنوان منقضی علامت زد.",
 	"expiry": "انقضا",
-	"specialexpiry": "مقاله‌های منقضی",
+	"specialexpiry": "صفحات منقضی",
 	"prefs-expiry": "انقضا",
 	"bs-expiry-unexpire-article": "صفحه منقضی شده‌است",
 	"bs-expiry-do-unexpire-article": "حذف تاریخ انقضا",
