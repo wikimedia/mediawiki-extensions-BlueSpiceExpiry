@@ -3,6 +3,7 @@
 		"authors": [
 			"A2y4",
 			"Ajeje Brazorf",
+			"LaMagiaaa",
 			"Omotecho",
 			"Shirayuki",
 			"背番号4のエース"
@@ -10,7 +11,7 @@
 	},
 	"bs-expiry-extension-description": "ページに期限切れのマークを付けることができます。",
 	"expiry": "期限",
-	"specialexpiry": "よく読まれている記事",
+	"specialexpiry": "期限切れにしたページ",
 	"prefs-expiry": "期限",
 	"bs-expiry-unexpire-article": "ページの有効期限が切れています",
 	"bs-expiry-do-unexpire-article": "有効期限を削除",
@@ -61,8 +62,8 @@
 	"bs-expiry-pageinfoelement-unexpire-tooltip": "このページの有効期限を取り消す",
 	"apihelp-bs-expiry-tasks-summary": "有効期限の編集や削除などのタスクを提供します",
 	"apihelp-bs-expiry-store-summary": "クエリ可能な有効期限のストアを提供します",
-	"right-expirearticle": "ページの書き出し",
-	"action-expirearticle": "ページの書き出し",
+	"right-expirearticle": "ページを期限切れにする",
+	"action-expirearticle": "ページを期限切れにする",
 	"right-expiry-delete": "ページから有効期限を除去",
 	"action-expiry-delete": "ページからの有効期限の除去",
 	"echo-category-title-bs-expiry-daily-cat": "有効期限 - 毎日",
