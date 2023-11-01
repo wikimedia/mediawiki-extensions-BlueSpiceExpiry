@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
+	"specialexpiry": "Ofgelafe Säiten",
 	"bs-expiry-header-pagename": "Säit",
 	"bs-expiry-header-comment": "Bemierkung",
 	"bs-expiry-article-label": "Säit",
