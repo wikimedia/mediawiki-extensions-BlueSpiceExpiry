@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Borhan",
 			"Sibabrata Banerjee",
 			"আফতাবুজ্জামান"
 		]
 	},
+	"specialexpiry": "মেয়াদোত্তীর্ণ পাতাসমূহ",
 	"bs-expiry-header-pagename": "পাতা",
 	"bs-expiry-header-comment": "মন্তব্য",
 	"bs-expiry-comment-label": "মন্তব্য",
