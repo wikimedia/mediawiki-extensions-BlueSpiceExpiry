@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Hydra",
-			"Kly"
+			"Kly",
+			"Winston Sung"
 		]
 	},
 	"bs-expiry-extension-description": "可將頁面標記為逾期。",
 	"expiry": "期限",
-	"specialexpiry": "逾期條目",
+	"specialexpiry": "逾期頁面",
 	"prefs-expiry": "期限",
 	"apihelp-bs-expiry-store-description": "服務用於 Special:Expiry 概述網格的資料",
 	"apihelp-bs-expiry-tasks-description": "執行像是更新與刪除用於 Special:Expiry 概述網格的任務",
