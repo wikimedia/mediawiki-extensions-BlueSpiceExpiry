@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Hydra",
-			"Kly"
+			"Kly",
+			"Winston Sung"
 		]
 	},
 	"bs-expiry-extension-description": "可將頁面標記為逾期。",
 	"expiry": "期限",
-	"specialexpiry": "逾期條目",
+	"specialexpiry": "逾期頁面",
 	"prefs-expiry": "期限",
 	"bs-expiry-unexpire-article": "頁面已逾期",
 	"bs-expiry-do-unexpire-article": "刪除逾期日期",
