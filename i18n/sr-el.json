@@ -13,5 +13,9 @@
 	"right-expiry-delete": "uklanjanje isteka sa stranica",
 	"bs-expiry-create-reminder-label": "Napravi podsetnik",
 	"bs-expiry-do-updateexpirydate-article": "Promenite datum isteka",
-	"bs-expiry-dialog-action-no": "Ne"
+	"bs-expiry-dialog-action-no": "Ne",
+	"specialexpiry": "Istekle stranice",
+	"bs-expiry-header-pagename": "Stranica",
+	"bs-expiry-edit-grid-header-username": "Korisnik",
+	"bs-expiry-edit-grid-header-comment": "Komentar"
 }
