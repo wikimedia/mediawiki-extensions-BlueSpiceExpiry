@@ -11,14 +11,14 @@ Ext.define( 'BS.Expiry.flyout.form.Expiry', {
 		this.on( 'dirtychange', this.onDirtyChange, this );
 
 		this.dfDate = Ext.create( 'Ext.form.field.Date', {
-			emptyText: mw.message( 'bs-expiry-date-label' ).plain(),
+			emptyText: mw.message( 'bs-expiry-date-label' ).escaped(),
 			value: this.date,
 			minValue: new Date( ),
 			name: 'df-date',
 			format: "d.m.Y"
 		} );
 		this.taComment = Ext.create( 'Ext.form.field.TextArea', {
-			emptyText: mw.message( 'bs-expiry-comment-label' ).plain(),
+			emptyText: mw.message( 'bs-expiry-comment-label' ).escaped(),
 			value: '',
 			maxLength: 255
 		});
