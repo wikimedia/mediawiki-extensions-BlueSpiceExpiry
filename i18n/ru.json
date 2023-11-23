@@ -14,7 +14,7 @@
 	},
 	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
 	"expiry": "Срок действия",
-	"specialexpiry": "Просроченные статьи",
+	"specialexpiry": "Просроченные страницы",
 	"prefs-expiry": "Срок действия",
 	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
 	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
