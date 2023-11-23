@@ -13,7 +13,7 @@
 		]
 	},
 	"expiry": "Срок действия",
-	"specialexpiry": "Просроченные статьи",
+	"specialexpiry": "Просроченные страницы",
 	"prefs-expiry": "Срок действия",
 	"apihelp-bs-expiry-store-description": "Обслуживает данные для обжорной таблицы на Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Выполняет такие задачи, как обновление и удаление для обзорной таблицы на Special:Expiry",
