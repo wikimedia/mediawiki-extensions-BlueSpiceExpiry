@@ -88,5 +88,13 @@
 	"bs-expiry-pref-enablepagewatermark-help": "Viser et vannmerke på selve siden.",
 	"logentry-bs-expiry-expired": "Siden $3 har utløpt",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|endra}} utløpsdatoen på siden $3",
-	"bs-expiry-pref-enablepdfwatermark-help": "Vis et vannmerke for utløpte sider i PDF-en."
+	"bs-expiry-pref-enablepdfwatermark-help": "Vis et vannmerke for utløpte sider i PDF-en.",
+	"bs-expiry-menu-entry-manage": "Administrer utløp",
+	"bs-expiry-pref-enableprintwatermark-help": "Viser et vannmerke for utløpte sider når de skrives ut.",
+	"bs-expiry-info-dialog": "Sideutløp",
+	"bs-expiry-info-dialog-button-label": "Administrer utløp",
+	"bs-expiry-dialog-delete-prompt": "Er du sikker på at du vil slette utløpet for denne siden?",
+	"bs-expiry-dialog-create-reminder-prompt": "Vil du lage en påminnelse for denne siden?",
+	"log-description-bs-expiry": "Logg over handlinger angående sideutløp",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|slettet}} utløp for side $3"
 }

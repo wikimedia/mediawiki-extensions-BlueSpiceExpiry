@@ -8,11 +8,12 @@
 			"Meerrahtar",
 			"Merrahtar",
 			"Okras",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"Rich Flight22"
 		]
 	},
 	"expiry": "Срок действия",
-	"specialexpiry": "Просроченные статьи",
+	"specialexpiry": "Просроченные страницы",
 	"prefs-expiry": "Срок действия",
 	"apihelp-bs-expiry-store-description": "Обслуживает данные для обжорной таблицы на Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Выполняет такие задачи, как обновление и удаление для обзорной таблицы на Special:Expiry",
@@ -45,5 +46,8 @@
 	"bs-expiry-reminder-type-expiry": "Срок действия",
 	"bs-expiry-dialog-create-reminder-title": "Создать напоминание",
 	"bs-expiry-dialog-action-no": "Нет",
-	"bs-expiry-error-invalid-date": "Недопустимая дата"
+	"bs-expiry-error-invalid-date": "Недопустимая дата",
+	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
+	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
+	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия"
 }

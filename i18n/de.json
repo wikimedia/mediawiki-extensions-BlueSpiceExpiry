@@ -10,7 +10,7 @@
 	},
 	"bs-expiry-extension-description": "Seiten können als nicht aktuell markiert werden.",
 	"expiry": "Veraltete Seiten",
-	"specialexpiry": "Veraltete Artikel",
+	"specialexpiry": "Veraltete Seiten",
 	"prefs-expiry": "Veraltete Seiten",
 	"apihelp-bs-expiry-store-description": "Stellt die Daten für Spezial:Veraltete Seiten bereit",
 	"apihelp-bs-expiry-tasks-description": "Erledigt Aufgaben wie Aktualisieren und Löschen für Spezial:Veraltete Seiten",

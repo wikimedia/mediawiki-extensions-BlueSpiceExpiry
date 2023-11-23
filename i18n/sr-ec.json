@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Milicevic01",
 			"Вукан Ц"
 		]
@@ -17,5 +18,9 @@
 	"right-expiry-delete": "уклањање истека са страница",
 	"bs-expiry-create-reminder-label": "Направи подсетник",
 	"bs-expiry-do-updateexpirydate-article": "Промените датум истека",
-	"bs-expiry-dialog-action-no": "Не"
+	"bs-expiry-dialog-action-no": "Не",
+	"specialexpiry": "Истекле странице",
+	"bs-expiry-header-pagename": "Страница",
+	"bs-expiry-edit-grid-header-username": "Корисник",
+	"bs-expiry-edit-grid-header-comment": "Коментар"
 }
