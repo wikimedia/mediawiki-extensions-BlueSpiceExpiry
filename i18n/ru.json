@@ -12,11 +12,14 @@
 			"Rich Flight22"
 		]
 	},
+	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
 	"expiry": "Срок действия",
-	"specialexpiry": "Просроченные статьи",
+	"specialexpiry": "Просроченные страницы",
 	"prefs-expiry": "Срок действия",
 	"apihelp-bs-expiry-store-description": "Обслуживает данные для обжорной таблицы на Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Выполняет такие задачи, как обновление и удаление для обзорной таблицы на Special:Expiry",
+	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
+	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
 	"bs-expiry-header-pagename": "Страница",
 	"bs-expiry-header-date": "Истекает",
 	"bs-expiry-header-comment": "Комментарий",
@@ -44,10 +47,7 @@
 	"notification-bs-expiry-one-week-email-body": "Страница \"$1\" истекает на этой неделе. Пожалуйста, просмотрите содержимое страницы, чтобы решить, нужно ли ее обновлять.\n\nКомментарий срока действия:\n$2",
 	"bs-expiry-create-reminder-label": "Создать напоминание",
 	"bs-expiry-reminder-type-expiry": "Срок действия",
-	"bs-expiry-dialog-create-reminder-title": "Создать напоминание",
-	"bs-expiry-dialog-action-no": "Нет",
 	"bs-expiry-error-invalid-date": "Недопустимая дата",
-	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
-	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
-	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие."
+	"bs-expiry-dialog-create-reminder-title": "Создать напоминание",
+	"bs-expiry-dialog-action-no": "Нет"
 }
