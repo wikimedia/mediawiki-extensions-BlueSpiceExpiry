@@ -29,6 +29,9 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	 */
 	protected $util = null;
 
+	/** @var Title[] */
+	protected $expiredTitles = [];
+
 	/**
 	 *
 	 * @param Config $config
