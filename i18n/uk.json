@@ -10,7 +10,7 @@
 	},
 	"bs-expiry-extension-description": "Сторінки можна позначати як застарілі.",
 	"expiry": "Втрата актуальності",
-	"specialexpiry": "Застарілі статті",
+	"specialexpiry": "Застарілі сторінки",
 	"prefs-expiry": "Втрата актуальності",
 	"bs-expiry-unexpire-article": "Сторінка застаріла",
 	"bs-expiry-do-unexpire-article": "Вилучити дату застарівання",
