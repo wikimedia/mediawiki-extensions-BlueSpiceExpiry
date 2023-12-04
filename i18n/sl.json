@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"bs-expiry-extension-description": "Strani lahko označite kot pretekle.",
@@ -93,6 +94,6 @@
 	"log-name-bs-expiry": "Pretek",
 	"log-description-bs-expiry": "Dnevnik dejanj v zvezi s pretekom strani",
 	"logentry-bs-expiry-expired": "Stran $3 je pretekla",
-	"logentry-bs-expiry-change-date": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} datum preteka strani $3",
-	"logentry-bs-expiry-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} datum preteka strani $3"
+	"logentry-bs-expiry-change-date": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil/a}} datum preteka strani $3",
+	"logentry-bs-expiry-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal/a}} datum preteka strani $3"
 }
