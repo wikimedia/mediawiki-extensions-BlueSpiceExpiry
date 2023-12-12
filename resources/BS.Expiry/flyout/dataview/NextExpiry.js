@@ -58,7 +58,7 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 			"</ul>",
 			"<br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
 		);
-		this.emptyText = mw.message( 'bs-expiry-flyout-expiry-not-set' ).plain();
+		this.emptyText = mw.message( 'bs-expiry-flyout-expiry-not-set' ).escaped();
 		this.callParent( arguments );
 	},
 

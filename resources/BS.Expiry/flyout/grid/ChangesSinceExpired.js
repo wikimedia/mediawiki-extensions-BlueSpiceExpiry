@@ -4,7 +4,7 @@ Ext.define( 'BS.Expiry.flyout.grid.ChangesSinceExpired', {
 	pageSize: 10,
 	expirationDate: '',
 	title: mw.message( 'bs-expiry-edit-grid-title' ).plain(),
-	emptyText:  mw.message( 'bs-expiry-edit-grid-empty' ).plain(),
+	emptyText:  mw.message( 'bs-expiry-edit-grid-empty' ).escaped(),
 	initComponent: function() {
 		this.store = new BS.store.ApiRecentChanges({
 			pageSize: this.pageSize,
