@@ -25,7 +25,7 @@
 		if ( me.expiryGrid === null ){
 			mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
 				Ext.onReady( function( ) {
-					me.expiryGrid = Ext.create( 'BS.Expiry.flyout.dataview.NextExpiry', {
+					me.expiryGrid = Ext.create( 'BS.Expiry.dataview.NextExpiry', {
 						title: false,
 						renderTo: me.$element[0],
 						width: me.$element.width()
@@ -43,7 +43,7 @@
 	bs.expiry.info.ExpiryInformationPage.prototype.getData = function () {
 		var dfd = new $.Deferred();
 		mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
-			Ext.require( 'BS.Expiry.flyout.dataview.NextExpiry', function() {
+			Ext.require( 'BS.Expiry.dataview.NextExpiry', function() {
 				dfd.resolve();
 			});
 		});
