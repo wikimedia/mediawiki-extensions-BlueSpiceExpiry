@@ -1,6 +1,6 @@
-Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
+Ext.define( 'BS.Expiry.dataview.NextExpiry', {
 	extend: 'Ext.DataView',
-	requires: [ 'BS.store.BSApi', 'BS.Expiry.flyout.model.NextExpiry' ],
+	requires: [ 'BS.store.BSApi', 'BS.Expiry.model.NextExpiry' ],
 	articleId: mw.config.get( 'wgArticleId' ),
 	expirationStatus: '',
 	expirationDate: '',
@@ -11,7 +11,7 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 			apiAction: 'bs-expiry-store',
 			autoLoad: true,
 			remoteSort: true,
-			model: 'BS.Expiry.flyout.model.NextExpiry',
+			model: 'BS.Expiry.model.NextExpiry',
 			sorters: [{
 				property: 'expiry_date',
 				direction: 'ASC'
@@ -50,15 +50,15 @@ Ext.define( 'BS.Expiry.flyout.dataview.NextExpiry', {
 				+ "</a></li>";
 		}
 		this.itemTpl = new Ext.XTemplate(
-			"<div class='bs-expiry-flyout-next-{expiration_status}'>",
+			"<div class='bs-expiry-info-dialog-{expiration_status}'>",
 			"<span>{expiry_message}</span>&nbsp",
 			"<ul>",
 			unexpire,
 			updateexpiry,
 			"</ul>",
-			"<br/><span class='bs-expiry-flyout-next-comment'>{comment_message}</span></div>"
+			"<br/><span class='bs-expiry-info-dialog-comment'>{comment_message}</span></div>"
 		);
-		this.emptyText = mw.message( 'bs-expiry-flyout-expiry-not-set' ).escaped();
+		this.emptyText = mw.message( 'bs-expiry-info-dialog-expiry-not-set' ).escaped();
 		this.callParent( arguments );
 	},
 

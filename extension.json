@@ -149,34 +149,6 @@
 			"scripts": "bluespice.expiry.js",
 			"dependencies": "ext.bluespice"
 		},
-		"ext.bluespice.expiry.flyout": {
-			"scripts": "bluespice.expiry.flyout.js",
-			"messages": [
-				"bs-expiry-nav-link-title-expiry",
-				"bs-expiry-flyout-title",
-				"bs-expiry-flyout-intro",
-				"bs-expiry-flyout-form-title",
-				"bs-expiry-flyout-next-expired",
-				"bs-expiry-flyout-next-current",
-				"bs-expiry-flyout-expiry-not-set",
-				"bs-expiry-do-unexpire-article",
-				"bs-expiry-flyout-next-comment",
-				"bs-expiry-flyout-manager-button-label",
-				"bs-expiry-edit-grid-header-username",
-				"bs-expiry-edit-grid-header-date",
-				"bs-expiry-edit-grid-header-comment",
-				"bs-expiry-edit-grid-title",
-				"bs-expiry-edit-grid-empty",
-				"bs-expiry-do-updateexpirydate-article",
-				"bs-expiry-comment-label"
-			],
-			"dependencies": [
-				"mediawiki.jqueryMsg",
-				"ext.bluespice.Expiry",
-				"ext.bluespice.extjs",
-				"ext.bluespice"
-			]
-		},
 		"ext.bluespice.expiry.watermark.styles": {
 			"styles": "bluespice.expiry.watermark.css"
 		},
@@ -187,13 +159,10 @@
 			"messages": [
 				"bs-expiry-info-dialog",
 				"bs-expiry-info-dialog-button-label",
-				"bs-expiry-flyout-title",
-				"bs-expiry-flyout-intro",
-				"bs-expiry-flyout-form-title",
-				"bs-expiry-flyout-next-expired",
-				"bs-expiry-flyout-next-current",
-				"bs-expiry-flyout-expiry-not-set",
-				"bs-expiry-flyout-next-comment"
+				"bs-expiry-info-dialog-expired",
+				"bs-expiry-info-dialog-current",
+				"bs-expiry-info-dialog-expiry-not-set",
+				"bs-expiry-info-dialog-comment"
 			],
 			"dependencies": [
 				"ext.bluespice"
@@ -270,8 +239,7 @@
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback"
 		],
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
-			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddExpiredInfo::callback"
+			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
 		],
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",

@@ -1,4 +1,4 @@
-Ext.define( 'BS.Expiry.flyout.model.NextExpiry', {
+Ext.define( 'BS.Expiry.model.NextExpiry', {
 	extend: 'Ext.data.Model',
 	fields: [
 		{ name: 'days_remaining', type: 'string', convert: function( val, record ) {
@@ -16,17 +16,17 @@ Ext.define( 'BS.Expiry.flyout.model.NextExpiry', {
 		} },
 		{ name: 'expiry_message', type: 'string', convert: function( val, record ) {
 				if( record.data.expiration_status === 'expired' ) {
-					return mw.message( 'bs-expiry-flyout-next-expired' ).plain();
+					return mw.message( 'bs-expiry-info-dialog-expired' ).plain();
 				}
 				return mw.message(
-					'bs-expiry-flyout-next-current',
+					'bs-expiry-info-dialog-current',
 					record.data.days_remaining,
 					record.data.expiry_date
 				).parse();
 		} },
 		{ name: 'comment_message', type: 'string', convert: function( val, record ) {
 				return mw.message(
-					'bs-expiry-flyout-next-comment',
+					'bs-expiry-info-dialog-comment',
 					record.data.exp_comment
 				).plain();
 			} },
