@@ -98,5 +98,9 @@
 	"log-description-bs-expiry": "Description of the log, used in [[Special:Log]]",
 	"logentry-bs-expiry-expired": "Log entry text when page is expired",
 	"logentry-bs-expiry-change-date": "Log entry text when expiration date is changed",
-	"logentry-bs-expiry-delete": "Log entry text when expiration is deleted"
+	"logentry-bs-expiry-delete": "Log entry text when expiration is deleted",
+	"bs-expiry-info-dialog-expired": "Message when the page is currently expired",
+	"bs-expiry-info-dialog-current": "Message when the page is not yet expired, but has expiration set. $1 - number of days before page expires, $2 - date of expiration",
+	"bs-expiry-info-dialog-expiry-not-set": "Message when the page has no expiration set",
+	"bs-expiry-info-dialog-comment": "Text to show comment of the expiration. $1 - comment text"
 }
