@@ -101,5 +101,9 @@
 	"log-description-bs-expiry": "سجل الإجراءات المتعلقة بانتهاء صلاحية الصفحة",
 	"logentry-bs-expiry-expired": "انتهت صلاحية الصفحة $3",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| تم تغيير}} تاريخ انتهاء الصلاحية على الصفحة $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2| تم حذف}} انتهاء صلاحية الصفحة $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2| تم حذف}} انتهاء صلاحية الصفحة $3",
+	"bs-expiry-info-dialog-expired": "انتهت هذه الصفحة!",
+	"bs-expiry-info-dialog-current": "تنتهي هذه الصفحة {{PLURAL:$1|غدا|في $1 أيام ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "لم يتم ضبط هذه الصفحة على انتهاء الصلاحية!",
+	"bs-expiry-info-dialog-comment": "تعليق: $1."
 }

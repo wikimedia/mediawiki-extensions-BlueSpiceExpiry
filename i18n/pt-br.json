@@ -96,5 +96,9 @@
 	"log-description-bs-expiry": "Registro de ações relacionadas à expiração da página",
 	"logentry-bs-expiry-expired": "A página $3 expirou",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|mudado}} data de validade na página $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|eliminado}} expiração da página $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|eliminado}} expiração da página $3",
+	"bs-expiry-info-dialog-expired": "Esta página expirou!",
+	"bs-expiry-info-dialog-current": "Esta página expira {{PLURAL:$1|amanhã|em $1 dias ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Esta página não está configurada para expirar!",
+	"bs-expiry-info-dialog-comment": "Comentário: $1"
 }

@@ -94,5 +94,9 @@
 	"log-description-bs-expiry": "Registro de actiones concernente le expiration de paginas",
 	"logentry-bs-expiry-expired": "Le pagina $3 ha expirate",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|ha modificate}} le data de expiration sur le pagina $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ha delite}} le expiration del pagina $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ha delite}} le expiration del pagina $3",
+	"bs-expiry-info-dialog-expired": "Iste pagina es expirate!",
+	"bs-expiry-info-dialog-current": "Iste pagina expira {{PLURAL:$1|deman|in $1 dies ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Iste pagina non es configurate pro expirar!",
+	"bs-expiry-info-dialog-comment": "Commento: $1"
 }

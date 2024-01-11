@@ -105,5 +105,9 @@
 	"log-description-bs-expiry": "Registro de las acciones relativas a la caducidad de la página",
 	"logentry-bs-expiry-expired": "La página $3 ha expirado",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|changed}} fecha de caducidad en la página $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3",
+	"bs-expiry-info-dialog-expired": "¡Esta página ha caducado!",
+	"bs-expiry-info-dialog-current": "¡Esta página caduca {{PLURAL:$1|mañana|en $1 días ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "¡Esta página no está configurada para caducar!",
+	"bs-expiry-info-dialog-comment": "Comentario: $1"
 }

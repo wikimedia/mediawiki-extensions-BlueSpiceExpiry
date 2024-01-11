@@ -86,5 +86,9 @@
 	"log-description-bs-expiry": "Veiksmų, susijusių su puslapio galiojimo pabaiga, žurnalas",
 	"logentry-bs-expiry-expired": "$3 puslapio galiojimo laikas baigėsi",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|pakeitė}} galiojimo datą puslapyje $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|pakeitė}} puslapio $3 galiojimo laiką"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|pakeitė}} puslapio $3 galiojimo laiką",
+	"bs-expiry-info-dialog-expired": "Šio puslapio galiojimo laikas baigėsi!",
+	"bs-expiry-info-dialog-current": "Šio puslapio galiojimo laikas baigiasi {{PLURAL:$1|rytoj|po $1 dienų ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Šio puslapio galiojimo laikas nenustatytas!",
+	"bs-expiry-info-dialog-comment": "Komentaras: $1"
 }

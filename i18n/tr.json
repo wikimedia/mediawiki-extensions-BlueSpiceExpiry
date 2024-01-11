@@ -90,5 +90,9 @@
 	"log-name-bs-expiry": "Sona erme",
 	"logentry-bs-expiry-expired": "$3 sayfasının süresi doldu",
 	"logentry-bs-expiry-change-date": "$1, $3 sayfasında bitiş tarihini {{GENDER:$2|değiştirdi}}",
-	"logentry-bs-expiry-delete": "$1, $3 sayfasının bitişi {{GENDER:$2|sildi}}"
+	"logentry-bs-expiry-delete": "$1, $3 sayfasının bitişi {{GENDER:$2|sildi}}",
+	"bs-expiry-info-dialog-expired": "Bu sayfanın süresi doldu!",
+	"bs-expiry-info-dialog-current": "Bu sayfanın süresi {{PLURAL:$1|yarın|$1 gün içinde ($2)}} sona eriyor!",
+	"bs-expiry-info-dialog-expiry-not-set": "Bu sayfanın süresi dolmak üzere değil!",
+	"bs-expiry-info-dialog-comment": "Yorum: $1"
 }

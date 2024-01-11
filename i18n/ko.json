@@ -52,5 +52,8 @@
 	"bs-expiry-pref-enablepagewatermark-help": "문서 자체에 워터마크를 표시합니다.",
 	"bs-expiry-error-invalid-date": "잘못된 날짜",
 	"bs-expiry-dialog-action-no": "아니오",
-	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다"
+	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다",
+	"bs-expiry-info-dialog-expired": "이 문서는 만료되었습니다!",
+	"bs-expiry-info-dialog-expiry-not-set": "이 문서는 기한 만료가 설정되지 않았습니다!",
+	"bs-expiry-info-dialog-comment": "의견: $1"
 }
