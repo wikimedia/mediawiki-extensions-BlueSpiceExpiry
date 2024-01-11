@@ -100,5 +100,9 @@
 	"log-description-bs-expiry": "Trace des actions concernant l’expiration de la page",
 	"logentry-bs-expiry-expired": "La page $3 a expiré",
 	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|}} a modifié la date d’expiration sur la page $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|}} a supprimé la date d’expiration de la page $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|}} a supprimé la date d’expiration de la page $3",
+	"bs-expiry-info-dialog-expired": "Cette page a expiré !",
+	"bs-expiry-info-dialog-current": "Cette page expire {{PLURAL:$1|demain|dans $1 jours ($2)}} !",
+	"bs-expiry-info-dialog-expiry-not-set": "Cette page n’est pas paramétrée pour expirer !",
+	"bs-expiry-info-dialog-comment": "Commentaire : $1"
 }

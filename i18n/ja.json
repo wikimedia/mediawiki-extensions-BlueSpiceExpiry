@@ -99,5 +99,9 @@
 	"log-description-bs-expiry": "ページの有効期限に関する操作の記録",
 	"logentry-bs-expiry-expired": "ページ$3は有効期限が切れています",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|$3ページの有効期限が変更されました}}",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ページ$3の有効期限が切れました。}}"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|ページ$3の有効期限が切れました。}}",
+	"bs-expiry-info-dialog-expired": "このページは期限切れです！",
+	"bs-expiry-info-dialog-current": "このページの有効期限{{PLURAL:$1|明日|$1日後 ( $2 )}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "このページの有効期限は設定されていません。",
+	"bs-expiry-info-dialog-comment": "コメント: $1"
 }

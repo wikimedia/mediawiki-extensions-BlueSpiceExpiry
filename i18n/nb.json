@@ -96,5 +96,9 @@
 	"bs-expiry-dialog-delete-prompt": "Er du sikker på at du vil slette utløpet for denne siden?",
 	"bs-expiry-dialog-create-reminder-prompt": "Vil du lage en påminnelse for denne siden?",
 	"log-description-bs-expiry": "Logg over handlinger angående sideutløp",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|slettet}} utløp for side $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|slettet}} utløp for side $3",
+	"bs-expiry-info-dialog-expired": "Siden har utløpt!",
+	"bs-expiry-info-dialog-current": "Siden løper ut {{PLURAL:$1|i morgen|2=i overmorgen|om $1 dager ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Siden har ingen utløpsdato!",
+	"bs-expiry-info-dialog-comment": "Kommentar: $1"
 }

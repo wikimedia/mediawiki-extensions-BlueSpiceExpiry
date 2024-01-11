@@ -80,5 +80,9 @@
 	"echo-category-title-bs-expiry-weekly-cat": "Scadenza - Settimanale",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Avvisami quando una pagina scade tra una settimana",
 	"notification-bs-expiry-today-email-body": "La pagina \"$1\" è scaduta. Rivedi il contenuto della pagina per decidere se è necessario aggiornarla. Se il contenuto della pagina è ancora aggiornato, è possibile annullare semplicemente la scadenza della pagina. \n\nCommento della scadenza:\n$2",
-	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Data di scadenza/scadenza"
+	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Data di scadenza/scadenza",
+	"bs-expiry-info-dialog-expired": "Questa pagina è scaduta!",
+	"bs-expiry-info-dialog-current": "Questa pagina scade {{PLURAL:$1|domani|tra $1 giorni ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "La scadenza di questa pagina non è stata impostata!",
+	"bs-expiry-info-dialog-comment": "Commento: $1"
 }

@@ -22,5 +22,7 @@
 	"logentry-bs-expiry-expired": "Siden $3 er udløbet",
 	"bs-expiry-unexpire-article": "Siden er udløbet",
 	"bs-expiry-header-date": "Udløber den",
-	"bs-expiry-edit-grid-header-comment": "Kommentar"
+	"bs-expiry-edit-grid-header-comment": "Kommentar",
+	"bs-expiry-info-dialog-expired": "Denne side er udløbet!",
+	"bs-expiry-info-dialog-comment": "Kommentar: $1"
 }

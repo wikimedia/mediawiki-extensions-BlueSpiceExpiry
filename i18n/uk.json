@@ -99,5 +99,9 @@
 	"log-description-bs-expiry": "Журнал дій, що відносяться до закінчення терміну дії сторінки",
 	"logentry-bs-expiry-expired": "Термін дії сторінки $3 закінчився",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|змінив|змінила}} термін дії на сторінці $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|вилучив|вилучила}} термін дії сторінки $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|вилучив|вилучила}} термін дії сторінки $3",
+	"bs-expiry-info-dialog-expired": "Ця сторінка застаріла!",
+	"bs-expiry-info-dialog-current": "Ця сторінка втратить актуальність {{PLURAL:$1|через $1 день ($2)|через $1 дні ($2)|через $1 днів ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Втрата актуальності для цієї сторінки не передбачена!",
+	"bs-expiry-info-dialog-comment": "Коментар: $1"
 }

@@ -99,5 +99,9 @@
 	"bs-expiry-info-dialog-button-label": "ניהול תפוגות",
 	"bs-expiry-dialog-delete-prompt": "האם ברצונך באמת למחוק את התפוגה של הדף הזה?",
 	"bs-expiry-dialog-create-reminder-prompt": "האם ברצונך ליצור תזכורת עבור הדף הזה?",
-	"bs-expiry-specialpage-subtitle": "→ $1"
+	"bs-expiry-specialpage-subtitle": "→ $1",
+	"bs-expiry-info-dialog-expired": "תוקף הדף פג!",
+	"bs-expiry-info-dialog-current": "הדף הזה יפוג {{PLURAL:$1|מחר|מוחרתיים|3=בעוד יומיים|בעוד $1 יום|בעוד $1 ימים}} ($2)!",
+	"bs-expiry-info-dialog-expiry-not-set": "הדף הזה אינו מוגדר לפוג!",
+	"bs-expiry-info-dialog-comment": "הערה: $1"
 }
