@@ -24,5 +24,6 @@
 	"bs-expiry-dialog-create-reminder-prompt": "Haluatko luoda muistutuksen tälle sivulle?",
 	"bs-expiry-dialog-create-reminder-title": "Luo muistutus",
 	"bs-expiry-dialog-action-no": "Ei",
-	"logentry-bs-expiry-expired": "Sivu $3 on vanhentunut"
+	"logentry-bs-expiry-expired": "Sivu $3 on vanhentunut",
+	"bs-expiry-info-dialog-comment": "Kommentti: $1"
 }

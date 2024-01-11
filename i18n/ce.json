@@ -17,5 +17,6 @@
 	"bs-expiry-edit-grid-header-comment": "Коммент",
 	"bs-expiry-error-invalid-date": "Цамаго терахь",
 	"bs-expiry-dialog-create-reminder-title": "Кхолла дагадаийтар",
-	"bs-expiry-dialog-action-no": "ХӀан-хӀа"
+	"bs-expiry-dialog-action-no": "ХӀан-хӀа",
+	"bs-expiry-info-dialog-comment": "Коммент: $1"
 }

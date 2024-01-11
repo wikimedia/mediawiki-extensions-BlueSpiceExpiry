@@ -49,5 +49,6 @@
 	"bs-expiry-error-invalid-date": "Недопустимая дата",
 	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
 	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
-	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие."
+	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
+	"bs-expiry-info-dialog-comment": "Комментарий: $1"
 }

@@ -99,5 +99,9 @@
 	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
 	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|löschte}} das Ablaufdatum der Seite $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|löschte}} das Ablaufdatum der Seite $3",
+	"bs-expiry-info-dialog-expired": "Diese Seite ist nicht mehr aktuell",
+	"bs-expiry-info-dialog-current": "Diese Seite veraltet {{PLURAL:$1|morgen|in $1 Tagen ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Diese Seite hat keine Angaben zur Aktualität",
+	"bs-expiry-info-dialog-comment": "Kommentar: $1"
 }

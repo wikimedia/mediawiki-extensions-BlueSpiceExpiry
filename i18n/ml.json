@@ -28,5 +28,6 @@
 	"bs-expiry-flyout-body-hint-expired": "$1-നു കാലഹരണപ്പെട്ടു",
 	"bs-expiry-flyout-body-hint-expires": "$1-നു കാലഹരണപ്പെടുന്നു",
 	"bs-expiry-pageinfoelement-expired-label": "കാലഹരണപ്പെട്ടു",
-	"bs-expiry-pageinfoelement-expired-tooltip": "താൾ കാലഹരണപ്പെട്ടു"
+	"bs-expiry-pageinfoelement-expired-tooltip": "താൾ കാലഹരണപ്പെട്ടു",
+	"bs-expiry-info-dialog-expired": "താൾ കാലഹരണപ്പെട്ടു!"
 }
