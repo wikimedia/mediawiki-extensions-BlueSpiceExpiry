@@ -95,5 +95,9 @@
 	"log-description-bs-expiry": "Dnevnik dejanj v zvezi s pretekom strani",
 	"logentry-bs-expiry-expired": "Stran $3 je pretekla",
 	"logentry-bs-expiry-change-date": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} datum preteka strani $3",
-	"logentry-bs-expiry-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} datum preteka strani $3"
+	"logentry-bs-expiry-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} datum preteka strani $3",
+	"bs-expiry-info-dialog-expired": "Ta stran je pretekla!",
+	"bs-expiry-info-dialog-current": "Ta stran preteče {{PLURAL:$1|jutri|čez $1 dni ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Ta stran ni nastavljena za pretek!",
+	"bs-expiry-info-dialog-comment": "Komentar: $1"
 }

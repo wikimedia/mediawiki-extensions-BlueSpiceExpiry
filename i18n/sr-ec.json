@@ -22,5 +22,6 @@
 	"specialexpiry": "Истекле странице",
 	"bs-expiry-header-pagename": "Страница",
 	"bs-expiry-edit-grid-header-username": "Корисник",
-	"bs-expiry-edit-grid-header-comment": "Коментар"
+	"bs-expiry-edit-grid-header-comment": "Коментар",
+	"bs-expiry-info-dialog-comment": "Коментар: $1"
 }

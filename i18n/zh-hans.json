@@ -111,5 +111,9 @@
 	"apihelp-bs-expiry-tasks-summary": "提供编辑或删除到期等任务",
 	"apihelp-bs-expiry-store-summary": "提供用于期限的可查询存储",
 	"right-expiry-delete": "从页面中删除过期",
-	"action-expiry-delete": "从页面中删除过期"
+	"action-expiry-delete": "从页面中删除过期",
+	"bs-expiry-info-dialog-expired": "这个页面已过期！",
+	"bs-expiry-info-dialog-current": "此页面{{PLURAL:$1|明天|在$1天($2)}}到期！",
+	"bs-expiry-info-dialog-expiry-not-set": "此页面未设置为过期！",
+	"bs-expiry-info-dialog-comment": "评论：$1"
 }

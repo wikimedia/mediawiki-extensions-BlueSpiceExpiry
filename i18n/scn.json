@@ -12,5 +12,6 @@
 	"bs-expiry-flyout-next-comment": "Cummentu: $1",
 	"bs-expiry-edit-grid-header-username": "Utenti",
 	"bs-expiry-edit-grid-header-comment": "Cummentu",
-	"bs-expiry-dialog-action-no": "No"
+	"bs-expiry-dialog-action-no": "No",
+	"bs-expiry-info-dialog-comment": "Cummentu: $1"
 }

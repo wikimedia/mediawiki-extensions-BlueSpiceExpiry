@@ -82,5 +82,9 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-alias": "Utgångstid/-datum",
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum för när sidor utgår",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Utgångstid/Har utgått",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Berättar om sida har utgått"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Berättar om sida har utgått",
+	"bs-expiry-info-dialog-expired": "Sedan har har utgått!",
+	"bs-expiry-info-dialog-current": "Den här sidan utgår {{PLURAL:$1|imorgon|om $1 dagar ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "Den här sidan kommer utgå!",
+	"bs-expiry-info-dialog-comment": "Kommentar:  $1."
 }

@@ -17,5 +17,6 @@
 	"specialexpiry": "Istekle stranice",
 	"bs-expiry-header-pagename": "Stranica",
 	"bs-expiry-edit-grid-header-username": "Korisnik",
-	"bs-expiry-edit-grid-header-comment": "Komentar"
+	"bs-expiry-edit-grid-header-comment": "Komentar",
+	"bs-expiry-info-dialog-comment": "Komentar: $1"
 }

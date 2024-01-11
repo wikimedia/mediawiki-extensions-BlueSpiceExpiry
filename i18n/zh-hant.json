@@ -96,5 +96,9 @@
 	"log-description-bs-expiry": "關於頁面逾期的操作日誌",
 	"logentry-bs-expiry-expired": "頁面$3已逾期",
 	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|更改了}}在頁面$3的逾期日期",
-	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期"
+	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期",
+	"bs-expiry-info-dialog-expired": "此頁面已逾期！",
+	"bs-expiry-info-dialog-current": "此頁面{{PLURAL:$1|在明天|在 $1 天後（$2）}}逾期！",
+	"bs-expiry-info-dialog-expiry-not-set": "此頁面未設定期限！",
+	"bs-expiry-info-dialog-comment": "註釋：$1"
 }

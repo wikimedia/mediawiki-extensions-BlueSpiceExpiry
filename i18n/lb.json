@@ -16,5 +16,6 @@
 	"bs-expiry-edit-grid-header-comment": "Bemierkung",
 	"bs-expiry-error-invalid-date": "Net valabelen Datum",
 	"bs-expiry-dialog-action-no": "Neen",
-	"specialexpiry": "Ofgelafe Säiten"
+	"specialexpiry": "Ofgelafe Säiten",
+	"bs-expiry-info-dialog-comment": "Bemierkung: $1"
 }

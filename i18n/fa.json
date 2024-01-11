@@ -82,5 +82,9 @@
 	"bs-expiry-pageinfoelement-unexpire-label": "منقضی نشده",
 	"bs-expiry-pageinfoelement-unexpire-tooltip": "منقضی نکردن این صفحه",
 	"right-expirearticle": "صفحات منقضی",
-	"action-expirearticle": "منقضی کردن صفحات"
+	"action-expirearticle": "منقضی کردن صفحات",
+	"bs-expiry-info-dialog-expired": "این صفحه منقضی شده است!",
+	"bs-expiry-info-dialog-current": "این صفحه {{PLURAL:$1|فردا|$1 روز دیگر ($2)}} منقضی می‌شود!",
+	"bs-expiry-info-dialog-expiry-not-set": "انقضای این صفحه تنظیم نشده‌است!",
+	"bs-expiry-info-dialog-comment": "توضیح: $1"
 }

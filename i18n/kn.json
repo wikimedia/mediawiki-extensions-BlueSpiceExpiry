@@ -13,5 +13,6 @@
 	"bs-expiry-edit-grid-header-username": "ಬಳಕೆದಾರ",
 	"bs-expiry-edit-grid-header-date": "ದಿನಾಂಕ",
 	"bs-expiry-edit-grid-header-comment": "ಟಿಪ್ಪಣಿ",
-	"bs-expiry-dialog-action-no": "ಇಲ್ಲ"
+	"bs-expiry-dialog-action-no": "ಇಲ್ಲ",
+	"bs-expiry-info-dialog-comment": "ಟಿಪ್ಪಣಿ: $1"
 }

@@ -105,5 +105,9 @@
 	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3",
 	"apihelp-bs-expiry-store-description": "Serves the data for Special:Expiry overview grid",
 	"apihelp-bs-expiry-tasks-description": "Executes tasks like update and delete for Special:Expiry overview grid",
-	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried"
+	"apihelp-bs-expiry-store-summary": "Provides a store for expires, that can be queried",
+	"bs-expiry-info-dialog-expired": "¡Esta página ha caducado!",
+	"bs-expiry-info-dialog-current": "¡Esta página caduca {{PLURAL:$1|mañana|en $1 días ($2)}}!",
+	"bs-expiry-info-dialog-expiry-not-set": "¡Esta página no está configurada para caducar!",
+	"bs-expiry-info-dialog-comment": "Comentario: $1"
 }
