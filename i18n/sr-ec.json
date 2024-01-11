@@ -14,7 +14,7 @@
 	"bs-expiry-article-label": "Страница",
 	"bs-expiry-comment-label": "Коментар",
 	"bs-expiry-unknown-page-msg": "Страница не постоји",
-	"bs-expiry-flyout-next-comment": "Коментар: $1",
+	"bs-expiry-info-dialog-comment": "Коментар: $1",
 	"bs-expiry-edit-grid-header-username": "Корисник",
 	"bs-expiry-edit-grid-header-date": "Датум",
 	"bs-expiry-edit-grid-header-comment": "Коментар",

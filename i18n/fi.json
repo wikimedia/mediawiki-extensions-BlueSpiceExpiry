@@ -15,7 +15,7 @@
 	"bs-expiry-date-label": "Vanhentuu",
 	"bs-expiry-article-label": "Sivu",
 	"bs-expiry-comment-label": "Kommentti",
-	"bs-expiry-flyout-next-comment": "Kommentti: $1",
+	"bs-expiry-info-dialog-comment": "Kommentti: $1",
 	"bs-expiry-edit-grid-header-username": "Käyttäjä",
 	"bs-expiry-pageinfoelement-expired-label": "vanhentunut",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Tämä sivu on vanhentunut",
