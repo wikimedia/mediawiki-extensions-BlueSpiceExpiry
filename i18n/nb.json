@@ -8,7 +8,7 @@
 	},
 	"bs-expiry-extension-description": "Sider kan merkes som utløpte.",
 	"expiry": "Løper ut",
-	"specialexpiry": "Utløpte artikler",
+	"specialexpiry": "Utløpte sider",
 	"prefs-expiry": "Løper ut",
 	"apihelp-bs-expiry-store-description": "Leverer dataene til oversiktstabellen i Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Utfører oppgaver som å oppdatere og slette for oversiktstabellen i Special:Expiry",
