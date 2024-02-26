@@ -3,12 +3,13 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Juan90264"
+			"Juan90264",
+			"YuriNikolai"
 		]
 	},
 	"bs-expiry-extension-description": "As páginas podem ser marcadas como expiradas.",
 	"expiry": "Expirar",
-	"specialexpiry": "Artigos expirados",
+	"specialexpiry": "Páginas expiradas",
 	"prefs-expiry": "Expirar",
 	"bs-expiry-unexpire-article": "A página expirou",
 	"bs-expiry-do-unexpire-article": "Excluir data de expiração",
