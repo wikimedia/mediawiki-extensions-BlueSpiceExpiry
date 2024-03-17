@@ -46,9 +46,9 @@ class Factory {
 					Numeric::KEY_VALUE => $title->getArticleID(),
 					Numeric::KEY_TYPE => 'numeric'
 				]
-			] ], [
+				] ], [
 				ReaderParams::PARAM_LIMIT => ReaderParams::LIMIT_INFINITE
-			]
+				]
 		);
 		$res = $this->getStore()->getReader()->read( $readerParams );
 		$record = false;

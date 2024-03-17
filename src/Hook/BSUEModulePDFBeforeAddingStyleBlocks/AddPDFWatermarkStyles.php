@@ -17,7 +17,7 @@ class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 	protected function doProcess() {
 		$userLanguageSetting = $this->getServices()->getUserOptionsLookup()
 			->getOption( RequestContext::getMain()->getUser(), 'language' );
-		list( $lang ) = explode( '-', $userLanguageSetting );
+		[ $lang ] = explode( '-', $userLanguageSetting );
 		$img = "{$GLOBALS['IP']}/extensions/BlueSpiceExpiry/resources/images/bg-expired-$lang.png";
 		if ( !file_exists( $img ) ) {
 			$lang = 'en';
