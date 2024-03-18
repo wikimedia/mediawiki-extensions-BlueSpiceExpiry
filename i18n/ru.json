@@ -9,7 +9,8 @@
 			"Merrahtar",
 			"Okras",
 			"Pacha Tchernof",
-			"Rich Flight22"
+			"Rich Flight22",
+			"Yurina Tatiana"
 		]
 	},
 	"expiry": "Срок действия",
@@ -50,5 +51,6 @@
 	"bs-expiry-unexpire-article": "Срок действия страницы истёк",
 	"bs-expiry-do-unexpire-article": "Удалить дату истечения срока действия",
 	"bs-expiry-extension-description": "Страницы могут быть помечены как устаревшие.",
-	"bs-expiry-info-dialog-comment": "Комментарий: $1"
+	"bs-expiry-info-dialog-comment": "Комментарий: $1",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Срок действия этой страницы истёк"
 }
