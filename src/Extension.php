@@ -2,6 +2,8 @@
 
 namespace BlueSpice\Expiry;
 
+use MediaWiki\MediaWikiServices;
+
 class Extension extends \BlueSpice\Extension {
 	/** @var (\stdClass|false)[] */
 	public static $expirys = [
@@ -27,7 +29,8 @@ class Extension extends \BlueSpice\Extension {
 		if ( $onlyExpired ) {
 			$conds[] = 'exp_date <= CURDATE()';
 		}
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'bs_expiry' ],
 			'*',

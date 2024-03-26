@@ -3,6 +3,8 @@
 namespace BlueSpice\Expiry\Tests;
 
 use BlueSpice\Tests\BSApiTasksTestBase;
+use MediaWiki\MediaWikiServices;
+use Title;
 
 /**
  * @group Broken
@@ -118,7 +120,9 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	}
 
 	protected function getExpiryFromArticleID( $iArticleId ) {
-		$res = wfGetDB( DB_REPLICA )->select(
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
+		$res = $dbr->select(
 			'bs_expiry',
 			'exp_id',
 			[

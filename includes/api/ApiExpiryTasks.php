@@ -75,7 +75,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$res = $dbw->update(
 			'bs_expiry',
 			[ 'exp_date' => $date->format( 'Y-m-d' ) ],
@@ -133,7 +133,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			$oTitle = Title::newFromText( $oTaskData->page );
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		// this is normally the case when clicking the expiry on a normal page
 		// (not the overview specialpage) or the edit button on the specialpage
 		// and data needs to be prefilled
@@ -198,7 +198,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			'exp_comment' => $sComment
 		];
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		if ( !$iExpiryId ) {
 			$res = $dbw->insert( 'bs_expiry', $aData, __METHOD__ );
 			if ( !$res ) {
@@ -287,7 +287,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		// All ok, do the actual deletion
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->delete(
 			'bs_expiry',
 			[

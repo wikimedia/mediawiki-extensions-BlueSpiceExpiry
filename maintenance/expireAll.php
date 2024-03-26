@@ -40,7 +40,7 @@ class ExpireAll extends Maintenance {
 		}
 
 		$this->output( 'Search for needed pages ... ' );
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->getDB( DB_PRIMARY );
 		$res = $dbw->select(
 			'page',
 			'page_id',
