@@ -34,7 +34,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'total' => 0
 		];
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$sTblPrfx = $dbr->tablePrefix();
 
 		switch ( $sSortField ) {

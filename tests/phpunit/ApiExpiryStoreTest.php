@@ -3,6 +3,7 @@
 namespace BlueSpice\Expiry\Tests;
 
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group Broken
@@ -43,8 +44,9 @@ class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 		$aArticleIds[] = $this->insertPage( 'DummyPage' )['id'];
 		$aArticleIds[] = $this->insertPage( 'FakePage' )['id'];
 
-		$oDbw = wfGetDB( DB_PRIMARY );
-		// $oDbw->delete( 'bs_expiry', [ 'pa_page_id' => $oTitle->getArticleID() ] );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY );
+		// $dbw->delete( 'bs_expiry', [ 'pa_page_id' => $oTitle->getArticleID() ] );
 		$aExpiryData = [
 				[
 					'exp_page_id' => $aArticleIds[0],
@@ -57,7 +59,7 @@ class ApiExpiryStoreTest extends BSApiExtJSStoreTestBase {
 					'exp_date' => date( "Y-m-d", time() - ( 21 * 24 * 60 * 60 ) )
 				]
 			];
-		$oDbw->insert( 'bs_expiry', $aExpiryData, __METHOD__ );
+		$dbw->insert( 'bs_expiry', $aExpiryData, __METHOD__ );
 
 		return 2;
 	}
