@@ -5,6 +5,7 @@
 			"Killarnee",
 			"Mglaser",
 			"Mschlindwein",
+			"TomatoCake",
 			"Umherirrender"
 		]
 	},
@@ -63,10 +64,10 @@
 	"echo-pref-tooltip-bs-expiry-daily-cat": "Benachrichtige mich, wenn ein Artikel heute veraltet",
 	"echo-category-title-bs-expiry-weekly-cat": "Veraltung - wöchentlich",
 	"echo-pref-tooltip-bs-expiry-weekly-cat": "Benachrichtige mich, wenn ein Artikel in einer Woche veraltet",
-	"notification-bs-expiry-today-subject": "Der Artikel „$1“ ist veraltet",
+	"notification-bs-expiry-today-subject": "Seite „$1“ ist veraltet",
 	"notification-bs-expiry-today-web-body": "Der Artikel „$1“ ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
 	"notification-bs-expiry-today-email-body": "Der Artikel „$1“ ist veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss. Wenn der Artikelinhalt noch aktuell ist, kannst du einfach die Aktualität bestätigen.\n\nKommentar der Veraltung:\n$2",
-	"notification-bs-expiry-one-week-subject": "Der Artikel „$1“ wird diese Woche veralten",
+	"notification-bs-expiry-one-week-subject": "Die Seite „$1“ wird diese Woche veralten",
 	"notification-bs-expiry-one-week-web-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
 	"notification-bs-expiry-one-week-email-body": "Der Artikel „$1“ wird diese Woche veraltet. Bitte überprüfe den Inhalt des Artikels um zu entscheiden, ob er aktualisiert werden muss.\n\nKommentar der Veraltung:\n$2",
 	"bs-expiry-create-reminder-label": "Erinnerung erstellen",
@@ -89,6 +90,6 @@
 	"log-name-bs-expiry": "Veraltete Seiten",
 	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
 	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
-	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2| änderte}} das Ablaufdatum der Seite $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|löschte}} das Ablaufdatum der Seite $3"
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|änderte}} das Ablaufdatum der Seite $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|entfernte}} das Ablaufdatum der Seite $3"
 }
