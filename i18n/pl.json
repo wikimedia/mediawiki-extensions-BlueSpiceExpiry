@@ -17,5 +17,6 @@
 	"bs-expiry-edit-grid-header-comment": "Komentarz",
 	"bs-expiry-create-reminder-label": "Stwórz przypomnienie",
 	"bs-expiry-reminder-type-expiry": "Wygasa",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła"
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła",
+	"bs-expiry-dialog-action-no": "Nie"
 }
