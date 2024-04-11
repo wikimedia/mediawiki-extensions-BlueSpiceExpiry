@@ -4,13 +4,11 @@ namespace BlueSpice\Expiry\RunJobsTriggerHandler;
 
 use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Factory;
-use BlueSpice\Expiry\Utils;
-use BlueSpice\INotifier;
-use BlueSpice\IRunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\UtilityFactory;
 use Config;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\Events\Notifier;
 use Status;
 use Title;
 use Wikimedia\Rdbms\LoadBalancer;
@@ -36,12 +34,11 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	 *
 	 * @param Config $config
 	 * @param LoadBalancer $loadBalancer
-	 * @param INotifier $notifier
 	 * @param Factory $factory
 	 * @param UtilityFactory $util
 	 */
-	public function __construct( $config, $loadBalancer, $notifier, $factory, $util ) {
-		parent::__construct( $config, $loadBalancer, $notifier );
+	public function __construct( $config, $loadBalancer, $factory, $util ) {
+		parent::__construct( $config, $loadBalancer );
 		$this->factory = $factory;
 		$this->util = $util;
 	}
@@ -49,13 +46,10 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	/**
 	 * @param Config $config
 	 * @param LoadBalancer $loadBalancer
-	 * @param INotifier $notifier
-	 * @return IRunJobsTriggerHandler
 	 * @param Factory|null $factory
 	 * @param UtilityFactory|null $util
 	 */
-	public static function factory( $config, $loadBalancer, $notifier,
-		Factory $factory = null, UtilityFactory $util = null ) {
+	public static function factory( $config, $loadBalancer, Factory $factory = null, UtilityFactory $util = null ) {
 		if ( !$factory ) {
 			$factory = MediaWikiServices::getInstance()->getService(
 				'BSExpiryFactory'
@@ -66,7 +60,7 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 				'BSUtilityFactory'
 			);
 		}
-		return new static( $config, $loadBalancer, $notifier, $factory, $util );
+		return new static( $config, $loadBalancer, $factory, $util );
 	}
 
 	/**
@@ -75,7 +69,7 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	protected function doRun() {
 		$status = Status::newGood();
 
-		$utils = new Utils( $this->loadBalancer );
+		$notifier = $this->services->getService( 'MWStake.Notifier' );
 		$this->expiredTitles = $this->getExpiredTitles();
 		if ( empty( $this->expiredTitles ) ) {
 			return $status;
@@ -83,17 +77,7 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 
 		foreach ( $this->expiredTitles as $title ) {
 			$expiry = $this->factory->newFromTitle( $title );
-			$usersToNotify = $utils->getPageModerators( $title );
-			if ( empty( $usersToNotify ) ) {
-				// TODO: Use some kind of extended Data\User\Store and filter for
-				// group sysop!
-				$usersToNotify = $utils->getSysops();
-			}
-			if ( empty( $usersToNotify ) ) {
-				continue;
-			}
-
-			$this->sendNotifications( $title, $expiry, $usersToNotify );
+			$this->sendNotifications( $title, $expiry, $notifier );
 		}
 
 		return $status;
@@ -109,7 +93,7 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	/**
 	 * @param Title $title
 	 * @param Record $record
-	 * @param User[] $users
+	 * @param Notifier $notifier
 	 */
-	abstract protected function sendNotifications( Title $title, Record $record, array $users );
+	abstract protected function sendNotifications( Title $title, Record $record, Notifier $notifier );
 }

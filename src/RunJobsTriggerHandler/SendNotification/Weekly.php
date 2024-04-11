@@ -3,12 +3,13 @@
 namespace BlueSpice\Expiry\RunJobsTriggerHandler\SendNotification;
 
 use BlueSpice\Expiry\Data\Record;
-use BlueSpice\Expiry\Notification\Weekly as Notification;
+use BlueSpice\Expiry\Event\ExpiryInOneWeek;
 use BlueSpice\Expiry\RunJobsTriggerHandler\SendNotification;
 use BlueSpice\RunJobsTriggerHandler\Interval\OnceAWeek;
 use DateInterval;
 use DateTime;
 use DateTimeZone;
+use MWStake\MediaWiki\Component\Events\Notifier;
 use Title;
 
 class Weekly extends SendNotification {
@@ -24,15 +25,13 @@ class Weekly extends SendNotification {
 	/**
 	 * @param Title $title
 	 * @param Record $record
-	 * @param array $users
+	 * @param Notifier $notifier
+	 * @throws \Exception
 	 */
-	protected function sendNotifications( Title $title, Record $record, array $users ) {
-		$agent = $this->util->getMaintenanceUser()->getUser();
-		$comment = empty( $record->get( Record::COMMENT, '' ) )
-			? '-'
-			: $record->get( Record::COMMENT );
-		$notification = new Notification( $agent, $title, $users, $comment );
-		$this->notifier->notify( $notification );
+	protected function sendNotifications( Title $title, Record $record, Notifier $notifier ) {
+		$comment = $record->get( Record::COMMENT, '' );
+		$event = new ExpiryInOneWeek( $title, $comment );
+		$notifier->emit( $event );
 	}
 
 	/**

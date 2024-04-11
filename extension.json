@@ -51,9 +51,6 @@
 			"PageInfoElementRegistry": {
 				"bs-expiry-expired": "\\BlueSpice\\Expiry\\PageInfoElement\\Expired::factory"
 			},
-			"NotificationRegistrationFunctions": [
-				"\\BlueSpice\\Expiry\\Notification\\Expiry::registerNotifications"
-			],
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-expiry-send-daily": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Daily::factory",
 				"bs-expiry-send-weekly": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Weekly::factory",
@@ -77,7 +74,24 @@
 				"expirationdate": "BlueSpice\\Expiry\\SMWConnector\\PropertyValueProvider\\ExpirationDate::factory",
 				"isexpired": "BlueSpice\\Expiry\\SMWConnector\\PropertyValueProvider\\IsExpired::factory"
 			}
+		},
+		"Notifications": {
+			"Events": {
+				"bs-expiry-today": {
+					"spec": {
+						"class": "\\BlueSpice\\Expiry\\Event\\ExpiryToday"
+					},
+					"buckets": [ "qm" ]
+				},
+				"bs-expiry-one-week": {
+					"spec": {
+						"class": "\\BlueSpice\\Expiry\\Event\\ExpiryInOneWeek"
+					},
+					"buckets": [ "qm" ]
+				}
+			}
 		}
+
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
