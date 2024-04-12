@@ -5,7 +5,11 @@ namespace BlueSpice\Expiry\Hook\BeforePageDisplay;
 class AddPageWatermark extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function skipProcessing() {
-		if ( $this->out->getTitle()->getArticleID() < 1 ) {
+		$title = $this->out->getTitle();
+		if ( !$title ) {
+			return true;
+		}
+		if ( $title->getArticleID() < 1 ) {
 			return true;
 		}
 		$action = $this->out->getRequest()->getVal( 'action', 'view' );
@@ -19,7 +23,7 @@ class AddPageWatermark extends \BlueSpice\Hook\BeforePageDisplay {
 			return true;
 		}
 		$expiry = \BlueSpice\Expiry\Extension::getExpiryForPage(
-			$this->out->getTitle()->getArticleID()
+			$title->getArticleID()
 		);
 		if ( !$expiry ) {
 			return true;
