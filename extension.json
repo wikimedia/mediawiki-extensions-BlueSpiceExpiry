@@ -238,9 +238,6 @@
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback"
 		],
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Expiry\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback"
-		],
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
