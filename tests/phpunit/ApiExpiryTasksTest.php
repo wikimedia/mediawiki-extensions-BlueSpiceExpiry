@@ -7,7 +7,6 @@ use MediaWiki\MediaWikiServices;
 use Title;
 
 /**
- * @group Broken
  * @group medium
  * @group API
  * @group Database
@@ -30,7 +29,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	public function testSaveExpiry() {
 		// New expiry
 		$oTitle = Title::newFromText( 'Dummy' );
-		$iNextWeek = time() + ( 7 * 24 * 60 * 60 );
+		$iNextWeek = strtotime( '+7 days', strtotime( 'midnight', time() ) );
 		$oResponse = $this->executeTask(
 			'saveExpiry',
 			[
@@ -46,7 +45,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 			[ 'exp_date', 'exp_comment' ],
 			[ 'exp_page_id' => $oTitle->getArticleID() ],
 			[
-				[ date( "Y-m-d", $iNextWeek ), 'Test expiry' ]
+				[ date( 'Y-m-d H:i:s', $iNextWeek ), 'Test expiry' ]
 			]
 		);
 
@@ -55,7 +54,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 
 		$this->assertGreaterThan( 0, $iExpiryId, 'Failed to retrieve expiry from DB' );
 
-		$iLastWeek = time() - ( 7 * 24 * 60 * 60 );
+		$iLastWeek = strtotime( '-7 days', strtotime( 'midnight', time() ) );
 		$oResponse = $this->executeTask(
 			'saveExpiry',
 			[
@@ -71,7 +70,7 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 			[ 'exp_date', 'exp_comment' ],
 			[ 'exp_page_id' => $oTitle->getArticleID() ],
 			[
-				[ date( "Y-m-d", $iLastWeek ), 'Updated expiry' ]
+				[ date( 'Y-m-d H:i:s', $iLastWeek ), 'Updated expiry' ]
 			]
 		);
 	}
@@ -87,11 +86,12 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 				'articleId' => $oTitle->getArticleID()
 			]
 		);
+		$iLastWeek = strtotime( '-7 days', strtotime( 'midnight', time() ) );
 
 		$this->assertTrue( $oResponse->success, 'GetDetailsForExpiry task failed' );
 		$aPayload = $oResponse->payload;
 		$this->assertEquals(
-			date( "Y-m-d", time() - ( 7 * 24 * 60 * 60 ) ),
+			date( 'Y-m-d H:i:s', $iLastWeek ),
 			$aPayload['date'],
 			'Returned expiry has unexpected date'
 		);
