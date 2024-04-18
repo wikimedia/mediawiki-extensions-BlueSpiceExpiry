@@ -111,13 +111,14 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 				if ( !$pm->userCan( 'read', $this->getUser(), $oTitle ) ) {
 					continue;
 				}
+				$date = DateTime::createFromFormat( 'Y-m-d H:i:s', $row->exp_date );
 				$canExpire = $pm->userCan( 'expirearticle', $this->getUser(), $oTitle );
 				$canDelete = $pm->userCan( 'expiry-delete', $this->getUser(), $oTitle );
 				$aResultSet = [
 					'id' => $row->exp_id,
 					'page_title' => $oTitle->getPrefixedText(),
 					'page_link' => $oTitle->getLocalURL(),
-					'expiry_date' => $row->exp_date,
+					'expiry_date' => $date->format( 'Y-m-d' ),
 					'article_id' => $row->exp_page_id,
 					'exp_comment' => $row->exp_comment,
 					'user_can_expire' => $canExpire,
