@@ -4,12 +4,12 @@
 			"Veeven"
 		]
 	},
-	"bs-expiry-header-pagename": "పేజీ",
-	"bs-expiry-article-label": "పేజీ",
-	"bs-expiry-unknown-page-msg": "పేజీ ఉనికిలో లేదు.",
-	"bs-expiry-flyout-next-comment": "వ్యాఖ్య: $1",
-	"bs-expiry-edit-grid-header-username": "వాడుకరి",
-	"bs-expiry-edit-grid-header-date": "తేదీ",
-	"bs-expiry-error-invalid-date": "చెల్లని తేదీ",
-	"bs-expiry-info-dialog-comment": "వ్యాఖ్య: $1"
+	"bs-expiry-header-pagename": "\u0c2a\u0c47\u0c1c\u0c40",
+	"bs-expiry-article-label": "\u0c2a\u0c47\u0c1c\u0c40",
+	"bs-expiry-unknown-page-msg": "\u0c2a\u0c47\u0c1c\u0c40 \u0c09\u0c28\u0c3f\u0c15\u0c3f\u0c32\u0c4b \u0c32\u0c47\u0c26\u0c41.",
+	"bs-expiry-flyout-next-comment": "\u0c35\u0c4d\u0c2f\u0c3e\u0c16\u0c4d\u0c2f: $1",
+	"bs-expiry-edit-grid-header-username": "\u0c35\u0c3e\u0c21\u0c41\u0c15\u0c30\u0c3f",
+	"bs-expiry-edit-grid-header-date": "\u0c24\u0c47\u0c26\u0c40",
+	"bs-expiry-error-invalid-date": "\u0c1a\u0c46\u0c32\u0c4d\u0c32\u0c28\u0c3f \u0c24\u0c47\u0c26\u0c40",
+	"bs-expiry-info-dialog-comment": "\u0c35\u0c4d\u0c2f\u0c3e\u0c16\u0c4d\u0c2f: $1"
 }

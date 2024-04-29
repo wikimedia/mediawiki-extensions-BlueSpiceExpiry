@@ -6,10 +6,10 @@
 	},
 	"bs-expiry-header-pagename": "Seidd",
 	"bs-expiry-article-label": "Seidd",
-	"bs-expiry-edit-grid-header-date": "Peiʹvvmieʹrr",
-	"bs-expiry-header-comment": "Kommeʹntt",
-	"bs-expiry-comment-label": "Kommeʹntt",
-	"bs-expiry-flyout-next-comment": "Kommeʹntt: $1",
-	"bs-expiry-info-dialog-comment": "Kommeʹntt: $1",
-	"bs-expiry-edit-grid-header-username": "Õõʹnni"
+	"bs-expiry-edit-grid-header-date": "Pei\u02b9vvmie\u02b9rr",
+	"bs-expiry-header-comment": "Komme\u02b9ntt",
+	"bs-expiry-comment-label": "Komme\u02b9ntt",
+	"bs-expiry-flyout-next-comment": "Komme\u02b9ntt: $1",
+	"bs-expiry-info-dialog-comment": "Komme\u02b9ntt: $1",
+	"bs-expiry-edit-grid-header-username": "\u00d5\u00f5\u02b9nni"
 }

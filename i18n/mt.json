@@ -4,6 +4,6 @@
 			"ToniSant"
 		]
 	},
-	"bs-expiry-flyout-next-current": "Din il-paġna tiskadi {{PLURAL:$1|għada|f'$1 jiem ($2)}}",
-	"bs-expiry-info-dialog-current": "Din il-paġna tiskadi {{PLURAL:$1|għada|f'$1 jiem ($2)}}"
+	"bs-expiry-flyout-next-current": "Din il-pa\u0121na tiskadi {{PLURAL:$1|g\u0127ada|f'$1 jiem ($2)}}",
+	"bs-expiry-info-dialog-current": "Din il-pa\u0121na tiskadi {{PLURAL:$1|g\u0127ada|f'$1 jiem ($2)}}"
 }

@@ -4,16 +4,16 @@
 			"Saraiki"
 		]
 	},
-	"expiry": "مُکسی",
-	"prefs-expiry": "مُکسی",
-	"bs-expiry-header-pagename": "ورقہ",
-	"bs-expiry-header-comment": "تبصرہ",
-	"bs-expiry-article-label": "ورقہ",
-	"bs-expiry-comment-label": "رائے",
-	"bs-expiry-menu-entry-create": "مُکسی",
-	"bs-expiry-nav-link-title-expiry": "مُکسی",
-	"bs-expiry-edit-grid-header-username": "ورتݨ آلا",
-	"bs-expiry-edit-grid-header-date": "تریخ",
-	"bs-expiry-edit-grid-header-comment": "رائے",
-	"bs-expiry-pageinfoelement-expired-label": "مُک ڳیا"
+	"expiry": "\u0645\u064f\u06a9\u0633\u06cc",
+	"prefs-expiry": "\u0645\u064f\u06a9\u0633\u06cc",
+	"bs-expiry-header-pagename": "\u0648\u0631\u0642\u06c1",
+	"bs-expiry-header-comment": "\u062a\u0628\u0635\u0631\u06c1",
+	"bs-expiry-article-label": "\u0648\u0631\u0642\u06c1",
+	"bs-expiry-comment-label": "\u0631\u0627\u0626\u06d2",
+	"bs-expiry-menu-entry-create": "\u0645\u064f\u06a9\u0633\u06cc",
+	"bs-expiry-nav-link-title-expiry": "\u0645\u064f\u06a9\u0633\u06cc",
+	"bs-expiry-edit-grid-header-username": "\u0648\u0631\u062a\u0768 \u0622\u0644\u0627",
+	"bs-expiry-edit-grid-header-date": "\u062a\u0631\u06cc\u062e",
+	"bs-expiry-edit-grid-header-comment": "\u0631\u0627\u0626\u06d2",
+	"bs-expiry-pageinfoelement-expired-label": "\u0645\u064f\u06a9 \u06b3\u06cc\u0627"
 }
