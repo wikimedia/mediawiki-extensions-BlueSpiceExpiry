@@ -1,18 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+			"\u0cae\u0cb2\u0ccd\u0ca8\u0cbe\u0ca1\u0cbe\u0c9a\u0ccd \u0c95\u0cca\u0c82\u0c95\u0ccd\u0ca3\u0cca"
 		]
 	},
-	"bs-expiry-header-pagename": "ಪುಟ",
-	"bs-expiry-header-comment": "ಟಿಪ್ಪಣಿ",
-	"bs-expiry-article-label": "ಪುಟ",
-	"bs-expiry-comment-label": "ಟಿಪ್ಪಣಿ",
-	"bs-expiry-unknown-page-msg": "ಪುಟವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.",
-	"bs-expiry-flyout-next-comment": "ಟಿಪ್ಪಣಿ: $1",
-	"bs-expiry-edit-grid-header-username": "ಬಳಕೆದಾರ",
-	"bs-expiry-edit-grid-header-date": "ದಿನಾಂಕ",
-	"bs-expiry-edit-grid-header-comment": "ಟಿಪ್ಪಣಿ",
-	"bs-expiry-dialog-action-no": "ಇಲ್ಲ",
-	"bs-expiry-info-dialog-comment": "ಟಿಪ್ಪಣಿ: $1"
+	"bs-expiry-header-pagename": "\u0caa\u0cc1\u0c9f",
+	"bs-expiry-header-comment": "\u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf",
+	"bs-expiry-article-label": "\u0caa\u0cc1\u0c9f",
+	"bs-expiry-comment-label": "\u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf",
+	"bs-expiry-unknown-page-msg": "\u0caa\u0cc1\u0c9f\u0cb5\u0cc1 \u0c85\u0cb8\u0ccd\u0ca4\u0cbf\u0ca4\u0ccd\u0cb5\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2.",
+	"bs-expiry-flyout-next-comment": "\u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf: $1",
+	"bs-expiry-edit-grid-header-username": "\u0cac\u0cb3\u0c95\u0cc6\u0ca6\u0cbe\u0cb0",
+	"bs-expiry-edit-grid-header-date": "\u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95",
+	"bs-expiry-edit-grid-header-comment": "\u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf",
+	"bs-expiry-dialog-action-no": "\u0c87\u0cb2\u0ccd\u0cb2",
+	"bs-expiry-info-dialog-comment": "\u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf: $1"
 }

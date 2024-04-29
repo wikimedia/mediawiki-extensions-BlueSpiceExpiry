@@ -7,15 +7,16 @@
 		]
 	},
 	"bs-expiry-header-pagename": "Strona",
-	"bs-expiry-header-date": "Upływa w dniu",
+	"bs-expiry-header-date": "Up\u0142ywa w dniu",
 	"bs-expiry-article-label": "Strona",
-	"bs-expiry-edit-grid-header-username": "Użytkownik",
+	"bs-expiry-edit-grid-header-username": "U\u017cytkownik",
 	"bs-expiry-edit-grid-header-date": "Data",
 	"bs-expiry-edit-grid-header-comment": "Komentarz",
-	"bs-expiry-create-reminder-label": "Stwórz przypomnienie",
+	"bs-expiry-create-reminder-label": "Stw\u00f3rz przypomnienie",
 	"bs-expiry-reminder-type-expiry": "Wygasa",
-	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła",
-	"bs-expiry-unexpire-article": "Strona wygasła",
-	"bs-expiry-title-delete": "Usuń wygaśnięcie",
-	"bs-expiry-unknown-page-msg": "Strona nie istnieje."
+	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "M\u00f3wi, je\u015bli strona wygas\u0142a",
+	"bs-expiry-unexpire-article": "Strona wygas\u0142a",
+	"bs-expiry-title-delete": "Usu\u0144 wyga\u015bni\u0119cie",
+	"bs-expiry-unknown-page-msg": "Strona nie istnieje.",
+	"bs-expiry-dialog-action-no": "Nie"
 }
