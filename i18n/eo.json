@@ -4,11 +4,11 @@
 			"Jakub Fabijan"
 		]
 	},
-	"bs-expiry-header-pagename": "Pa\u011do",
+	"bs-expiry-header-pagename": "Paĝo",
 	"bs-expiry-header-comment": "Komento",
-	"bs-expiry-article-label": "Pa\u011do",
+	"bs-expiry-article-label": "Paĝo",
 	"bs-expiry-comment-label": "Komento",
-	"bs-expiry-unknown-page-msg": "Pa\u011do ne ekzistas.",
+	"bs-expiry-unknown-page-msg": "Paĝo ne ekzistas.",
 	"bs-expiry-flyout-next-comment": "Komento: $1",
 	"bs-expiry-edit-grid-header-username": "Uzanto",
 	"bs-expiry-edit-grid-header-date": "Dato",
