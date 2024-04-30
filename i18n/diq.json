@@ -5,13 +5,13 @@
 		]
 	},
 	"bs-expiry-header-pagename": "Pele",
-	"bs-expiry-header-comment": "M\u0131\u015fewre",
+	"bs-expiry-header-comment": "Mışewre",
 	"bs-expiry-article-label": "Pele",
-	"bs-expiry-comment-label": "M\u0131\u015fewre",
-	"bs-expiry-flyout-next-comment": "M\u0131\u015fewre: $1",
+	"bs-expiry-comment-label": "Mışewre",
+	"bs-expiry-flyout-next-comment": "Mışewre: $1",
 	"bs-expiry-edit-grid-header-username": "Karber",
 	"bs-expiry-edit-grid-header-date": "Tarix",
-	"bs-expiry-edit-grid-header-comment": "M\u0131\u015fewre",
-	"bs-expiry-dialog-action-no": "N\u00ea",
-	"bs-expiry-info-dialog-comment": "M\u0131\u015fewre: $1"
+	"bs-expiry-edit-grid-header-comment": "Mışewre",
+	"bs-expiry-dialog-action-no": "Nê",
+	"bs-expiry-info-dialog-comment": "Mışewre: $1"
 }
