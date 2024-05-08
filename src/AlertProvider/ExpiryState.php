@@ -49,7 +49,8 @@ class ExpiryState extends AlertProviderBase {
 	 * @return bool
 	 */
 	protected function skipForContextReasons() {
-		if ( !$this->skin->getTitle()->exists() ) {
+		$title = $this->skin->getTitle();
+		if ( !$title || !$title->exists() ) {
 			return true;
 		}
 

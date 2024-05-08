@@ -50,16 +50,20 @@ class Expired extends PageInfo {
 	 * @return bool
 	 */
 	public function shouldShow( $context ) {
+		$title = $context->getTitle();
+		if ( !$title ) {
+			return false;
+		}
 		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		$userCanRead = $pm->userCan(
 			'read',
 			$context->getUser(),
-			$context->getTitle()
+			$title
 		);
 		if ( !$userCanRead ) {
 			return false;
 		}
-		$id = $context->getTitle()->getArticleID();
+		$id = $title->getArticleID();
 		$expiry = Expiry::getExpiryForPage( $id );
 
 		if ( !$expiry || empty( $expiry['exp_date'] ) ) {
@@ -69,7 +73,7 @@ class Expired extends PageInfo {
 		$userCanDelete = $pm->userCan(
 			'expiry-delete',
 			$context->getUser(),
-			$context->getTitle()
+			$title
 		);
 		// Currently there is only the deletion of the expiration in the pageInfo
 		// menu. This may change in the future, as we also could add a

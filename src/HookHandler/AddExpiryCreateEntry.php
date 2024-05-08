@@ -15,7 +15,9 @@ class AddExpiryCreateEntry implements SkinTemplateNavigation__UniversalHook {
 	 */
 	protected function skipProcessing( SkinTemplate $sktemplate ) {
 		$title = $sktemplate->getTitle();
-
+		if ( !$title ) {
+			return true;
+		}
 		if ( !$sktemplate->getUser()->isRegistered() ) {
 			return true;
 		}
