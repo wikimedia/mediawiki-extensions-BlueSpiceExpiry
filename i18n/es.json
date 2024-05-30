@@ -3,6 +3,7 @@
 		"authors": [
 			"Agusbou2015",
 			"Amire80",
+			"AnupamM",
 			"ArenaL5",
 			"Avengium",
 			"Bruno44101",
@@ -86,5 +87,6 @@
 	"log-description-bs-expiry": "Registro de las acciones relativas a la caducidad de la página",
 	"logentry-bs-expiry-expired": "La página $3 ha expirado",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|changed}} fecha de caducidad en la página $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}}fecha de caducidad en la página $3",
+	"bs-expiry-event-one-week-desc": "La página expira en una semana"
 }
