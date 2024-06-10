@@ -5,6 +5,7 @@
 			"BlueCamille",
 			"Gomoko",
 			"Graineahumus",
+			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -84,6 +85,7 @@
 	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|}} a modifié la date d’expiration sur la page $3",
 	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|}} a supprimé la date d’expiration de la page $3",
 	"bs-expiry-event-today-desc": "La page expire aujourd'hui",
+	"bs-expiry-event-one-week-desc": "La page expire dans une semaine",
 	"bs-expiry-event-today": "La page $1 expire aujourd'hui.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.",
 	"bs-expiry-event-today-with-comment": "La page $1 expire aujourd'hui.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.<br><br> Commentaire de l'expiration :<br><b>$2</b>",
 	"bs-expiry-event-one-week": "La page $1 expire dans une semaine.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.",
