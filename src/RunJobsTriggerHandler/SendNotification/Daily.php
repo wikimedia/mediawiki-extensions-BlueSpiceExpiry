@@ -31,8 +31,8 @@ class Daily extends SendNotification {
 	protected function getExpiredTitles() {
 		$from = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
 		$to = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
-		$from->add( DateInterval::createFromDateString( '1 day' ) );
-		$to->add( DateInterval::createFromDateString( '-1 day' ) );
+		$from->add( DateInterval::createFromDateString( '-1 day' ) );
+		$to->add( DateInterval::createFromDateString( '1 day' ) );
 
 		return $this->factory->getExpiredTitles( $from, $to );
 	}
