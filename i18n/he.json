@@ -103,5 +103,11 @@
 	"bs-expiry-info-dialog-expired": "תוקף הדף פג!",
 	"bs-expiry-info-dialog-current": "הדף הזה יפוג {{PLURAL:$1|מחר|מוחרתיים|3=בעוד יומיים|בעוד $1 יום|בעוד $1 ימים}} ($2)!",
 	"bs-expiry-info-dialog-expiry-not-set": "הדף הזה אינו מוגדר לפוג!",
-	"bs-expiry-info-dialog-comment": "הערה: $1"
+	"bs-expiry-info-dialog-comment": "הערה: $1",
+	"bs-expiry-event-today-desc": "הדף פג היום",
+	"bs-expiry-event-one-week-desc": "הדף פג בעוד שבוע",
+	"bs-expiry-event-today": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
+	"bs-expiry-event-today-with-comment": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
+	"bs-expiry-event-one-week-with-comment": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>"
 }

@@ -17,5 +17,7 @@
 	"bs-expiry-error-invalid-date": "Net valabelen Datum",
 	"bs-expiry-dialog-action-no": "Neen",
 	"specialexpiry": "Ofgelafe Säiten",
-	"bs-expiry-info-dialog-comment": "Bemierkung: $1"
+	"bs-expiry-info-dialog-comment": "Bemierkung: $1",
+	"bs-expiry-event-today-desc": "Sàit leeft haut of",
+	"bs-expiry-event-one-week-desc": "Säit leeft an enger Woch of"
 }

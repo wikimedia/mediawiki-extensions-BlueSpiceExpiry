@@ -86,5 +86,11 @@
 	"log-description-bs-expiry": "Log of actions regarding page expiration",
 	"logentry-bs-expiry-expired": "Page $3 has expired",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|changed}} expiration date on page $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}} expiration of page $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|deleted}} expiration of page $3",
+	"bs-expiry-event-today-desc": "Page expires today",
+	"bs-expiry-event-one-week-desc": "Page expires in one week",
+	"bs-expiry-event-today": "Page $1 expires today.<br><br>Please check the content of the page to decide whether it needs to be updated.",
+	"bs-expiry-event-today-with-comment": "Page $1 expires today.<br><br>Please check the content of the page to decide whether it needs to be updated.<br><br>Comment from the expiry:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "Page $1 expires in one week.<br><br>Please check the content of the page to decide whether it needs to be updated.",
+	"bs-expiry-event-one-week-with-comment": "Page $1 expires in one week.<br><br>Please check the content of the page to decide whether it needs to be updated.<br><br>Comment from the expiry:<br><b>$2</b>"
 }

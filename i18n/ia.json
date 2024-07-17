@@ -98,5 +98,11 @@
 	"bs-expiry-info-dialog-expired": "Iste pagina es expirate!",
 	"bs-expiry-info-dialog-current": "Iste pagina expira {{PLURAL:$1|deman|in $1 dies ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "Iste pagina non es configurate pro expirar!",
-	"bs-expiry-info-dialog-comment": "Commento: $1"
+	"bs-expiry-info-dialog-comment": "Commento: $1",
+	"bs-expiry-event-today-desc": "Le pagina expira hodie",
+	"bs-expiry-event-one-week-desc": "Le pagina expira in un septimana",
+	"bs-expiry-event-today": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
+	"bs-expiry-event-today-with-comment": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
+	"bs-expiry-event-one-week-with-comment": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>"
 }

@@ -91,5 +91,11 @@
 	"log-description-bs-expiry": "Description of the log, used in [[Special:Log]]",
 	"logentry-bs-expiry-expired": "Log entry text when page is expired",
 	"logentry-bs-expiry-change-date": "Log entry text when expiration date is changed",
-	"logentry-bs-expiry-delete": "Log entry text when expiration is deleted"
+	"logentry-bs-expiry-delete": "Log entry text when expiration is deleted",
+	"bs-expiry-event-today-desc": "Description of the event type",
+	"bs-expiry-event-one-week-desc": "Description of the event type",
+	"bs-expiry-event-today": "Notification message when page expires today.\n$1 - page anchor",
+	"bs-expiry-event-today-with-comment": "Notification message when page expires today.\n$1 - page anchort\n$2 - comment",
+	"bs-expiry-event-one-week": "Notification message when page expires in one week.\n$1 - page anchor",
+	"bs-expiry-event-one-week-with-comment": "Notification message when page expires in one week.\n$1 - page anchor\n$2 - comment"
 }
