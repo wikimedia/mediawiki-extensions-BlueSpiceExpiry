@@ -3,6 +3,7 @@
 		"authors": [
 			"Agusbou2015",
 			"Amire80",
+			"AnupamM",
 			"ArenaL5",
 			"Avengium",
 			"Bruno44101",
@@ -109,5 +110,6 @@
 	"bs-expiry-info-dialog-expired": "¡Esta página ha caducado!",
 	"bs-expiry-info-dialog-current": "¡Esta página caduca {{PLURAL:$1|mañana|en $1 días ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "¡Esta página no está configurada para caducar!",
-	"bs-expiry-info-dialog-comment": "Comentario: $1"
+	"bs-expiry-info-dialog-comment": "Comentario: $1",
+	"bs-expiry-event-one-week-desc": "La página expira en una semana"
 }

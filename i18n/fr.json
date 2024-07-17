@@ -4,6 +4,8 @@
 			"Ajeje Brazorf",
 			"BlueCamille",
 			"Gomoko",
+			"Graineahumus",
+			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -104,5 +106,11 @@
 	"bs-expiry-info-dialog-expired": "Cette page a expiré !",
 	"bs-expiry-info-dialog-current": "Cette page expire {{PLURAL:$1|demain|dans $1 jours ($2)}} !",
 	"bs-expiry-info-dialog-expiry-not-set": "Cette page n’est pas paramétrée pour expirer !",
-	"bs-expiry-info-dialog-comment": "Commentaire : $1"
+	"bs-expiry-info-dialog-comment": "Commentaire : $1",
+	"bs-expiry-event-today-desc": "La page expire aujourd'hui",
+	"bs-expiry-event-one-week-desc": "La page expire dans une semaine",
+	"bs-expiry-event-today": "La page $1 expire aujourd'hui.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.",
+	"bs-expiry-event-today-with-comment": "La page $1 expire aujourd'hui.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.<br><br> Commentaire de l'expiration :<br><b>$2</b>",
+	"bs-expiry-event-one-week": "La page $1 expire dans une semaine.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.",
+	"bs-expiry-event-one-week-with-comment": "La page $1 expire dans une semaine.<br><br> Veuillez vérifier le contenu de la page pour décider si elle doit être mise à jour.<br><br> Commentaire de l'expiration :<br><b>$2</b>"
 }
