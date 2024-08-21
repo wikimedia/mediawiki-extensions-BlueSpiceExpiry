@@ -77,5 +77,11 @@
 	"log-description-bs-expiry": "關於頁面逾期的操作日誌",
 	"logentry-bs-expiry-expired": "頁面$3已逾期",
 	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|更改了}}在頁面$3的逾期日期",
-	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期"
+	"logentry-bs-expiry-delete": "$1{{GENDER:$2|刪除了}}在頁面$3的逾期日期",
+	"bs-expiry-event-today-desc": "頁面今天逾期",
+	"bs-expiry-event-one-week-desc": "頁面一週後逾期",
+	"bs-expiry-event-today": "頁面$1今天逾期。<br><br>請檢查頁面內容來決定是否需要更新。",
+	"bs-expiry-event-today-with-comment": "頁面$1今天逾期。<br><br>請檢查頁面內容來決定是否需要更新。<br><br>逾期的註釋：<br><b>$2</b>",
+	"bs-expiry-event-one-week": "頁面$1一週後逾期。<br><br>請檢查頁面內容來決定是否需要更新。",
+	"bs-expiry-event-one-week-with-comment": "頁面$1一週後逾期。<br><br>請檢查頁面內容來決定是否需要更新。<br><br>逾期的註釋：<br><b>$2</b>"
 }
