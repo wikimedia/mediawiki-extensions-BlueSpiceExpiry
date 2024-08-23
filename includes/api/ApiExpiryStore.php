@@ -15,7 +15,9 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 	/**
 	 *
 	 * @param string $sQuery
+	 *
 	 * @return array
+	 * @throws Exception
 	 */
 	protected function makeData( $sQuery = '' ) {
 		$oUser = RequestContext::getMain()->getUser();
@@ -111,7 +113,8 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 				if ( !$pm->userCan( 'read', $this->getUser(), $oTitle ) ) {
 					continue;
 				}
-				$date = DateTime::createFromFormat( 'Y-m-d H:i:s', $row->exp_date );
+
+				$date = new DateTime( $row->exp_date );
 				$canExpire = $pm->userCan( 'expirearticle', $this->getUser(), $oTitle );
 				$canDelete = $pm->userCan( 'expiry-delete', $this->getUser(), $oTitle );
 				$aResultSet = [
