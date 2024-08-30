@@ -75,7 +75,7 @@
 				"isexpired": "BlueSpice\\Expiry\\SMWConnector\\PropertyValueProvider\\IsExpired::factory"
 			}
 		},
-		"Notifications": {
+		"NotifyMe": {
 			"Events": {
 				"bs-expiry-today": {
 					"spec": {
