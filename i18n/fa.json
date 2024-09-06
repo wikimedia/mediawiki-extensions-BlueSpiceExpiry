@@ -36,7 +36,7 @@
 	"bs-expiry-menu-entry-create": "تعیین انقضا",
 	"bs-expiry-menu-entry-manage": "مدیریت انقضا",
 	"bs-expiry-text-delete": "آیا واقعاً می‌خواهید {{PLURAL:$1|این انقضا|این انقضاها}} را حذف کنید؟",
-	"bs-expiry-title-delete": "پاک‌کردن انقضا",
+	"bs-expiry-title-delete": "پاک کردن انقضا",
 	"bs-expiry-nav-link-title-expiry": "انقضا",
 	"bs-expiry-flyout-title": "انقضای صفحه",
 	"bs-expiry-flyout-intro": "نمای کلی انقضاهای این صفحه",
