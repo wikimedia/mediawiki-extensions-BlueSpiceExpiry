@@ -67,7 +67,7 @@ class ExpirationDate extends PropertyValueProvider {
 			return null;
 		}
 		$expires = DateTime::createFromFormat(
-			'Y-m-d',
+			'Y-m-d H:i:s',
 			$record->get( Record::DATE )
 		);
 		if ( !$expires ) {
