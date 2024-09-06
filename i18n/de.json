@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ferdinand0101",
+			"Justman10000",
 			"Killarnee",
 			"Mglaser",
 			"Mschlindwein",
@@ -93,5 +94,11 @@
 	"log-description-bs-expiry": "Logbuch der Aktionen zur Aktualität der Seite",
 	"logentry-bs-expiry-expired": "Seite $3 ist veraltet",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|änderte}} das Ablaufdatum der Seite $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|entfernte}} das Ablaufdatum der Seite $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|entfernte}} das Ablaufdatum der Seite $3",
+	"bs-expiry-event-today-desc": "Seite läuft heute ab",
+	"bs-expiry-event-one-week-desc": "Die Seite läuft in einer Woche ab",
+	"bs-expiry-event-today": "Seite $1 läuft heute ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.",
+	"bs-expiry-event-today-with-comment": "Seite $1 läuft heute ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.<br><br>Kommentar vom Ablauf:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "Seite $1 läuft in einer Woche ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.",
+	"bs-expiry-event-one-week-with-comment": "Seite $1 läuft in einer Woche ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.<br><br>Kommentar vom Ablauf:<br><b>$2</b>"
 }

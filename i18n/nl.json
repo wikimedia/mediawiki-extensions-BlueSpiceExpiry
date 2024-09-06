@@ -5,7 +5,8 @@
 			"Mainframe98",
 			"McDutchie",
 			"Nickthijssen1994",
-			"Romaine"
+			"Romaine",
+			"Siebrand"
 		]
 	},
 	"bs-expiry-extension-description": "Pagina's kunnen als vervallen worden aangemerkt.",
@@ -54,9 +55,9 @@
 	"bs-expiry-flyout-body-hint-expired": "verviel op $1",
 	"bs-expiry-flyout-body-hint-expires": "vervalt op $1",
 	"bs-expiry-alert-body-expired": "Deze pagina is op $1 vervallen. Controleer de inhoud.",
-	"bs-expiry-pref-enablepdfwatermark": "Watermerk tonen voor vervallen pagina's in PDF",
-	"bs-expiry-pref-enableprintwatermark": "Watermerk tonen voor vervallen pagina's in afdrukversie",
-	"bs-expiry-pref-enablepagewatermark": "Watermerk tonen voor vervallen pagina's",
+	"bs-expiry-pref-enablepdfwatermark": "Watermerk weergeven voor vervallen pagina's in PDF",
+	"bs-expiry-pref-enableprintwatermark": "Watermerk weergeven voor vervallen pagina's in afdrukversie",
+	"bs-expiry-pref-enablepagewatermark": "Watermerk weergeven voor vervallen pagina's",
 	"bs-expiry-pageinfoelement-expired-label": "verlopen",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Deze pagina is vervallen",
 	"bs-expiry-pageinfoelement-unexpire-label": "niet meer laten vervallen",
@@ -84,7 +85,7 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Datum waarop de pagina vervalt",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Verval/Is vervallen",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Geeft aan of de pagina vervallen is",
-	"bs-expiry-pref-enablepdfwatermark-help": "Watermerk tonen voor vervallen pagina's in de PDF.",
+	"bs-expiry-pref-enablepdfwatermark-help": "Watermerk weergeven voor vervallen pagina's in de PDF.",
 	"bs-expiry-pref-enableprintwatermark-help": "Toont een watermerk voor vervallen pagina's wanneer ze worden afgedrukt.",
 	"bs-expiry-pref-enablepagewatermark-help": "Toont een watermerk op de pagina zelf.",
 	"bs-expiry-info-dialog": "Vervaldatum van pagina",
