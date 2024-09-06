@@ -6,12 +6,17 @@ use BlueSpice\Config;
 use BlueSpice\Expiry\SpecialLogLogger;
 use BlueSpice\RunJobsTriggerHandler\Interval\OnceADay;
 use BlueSpice\UtilityFactory;
+use DeferredUpdates;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\WikiPageFactory;
+use MediaWiki\User\UserIdentity;
 use MWException;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Handler;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Interval;
 use Status;
+use Title;
 use TitleFactory;
+use User;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class LogExpirations extends Handler {
@@ -21,6 +26,9 @@ class LogExpirations extends Handler {
 	private $titleFactory;
 	/** @var UtilityFactory */
 	private $utilityFactory;
+
+	/** @var WikiPageFactory */
+	private $wikiPageFactory;
 
 	/**
 	 * @param Config $config
@@ -36,6 +44,7 @@ class LogExpirations extends Handler {
 			$services->getService( 'BSExpirySpecialLogLogger' ),
 			$services->getService( 'TitleFactory' ),
 			$services->getService( 'BSUtilityFactory' ),
+			$services->getWikiPageFactory(),
 			$config,
 			$loadBalancer
 		);
@@ -45,18 +54,20 @@ class LogExpirations extends Handler {
 	 * @param SpecialLogLogger $logger
 	 * @param TitleFactory $titleFactory
 	 * @param UtilityFactory $utilityFactory
+	 * @param WikiPageFactory $wpf
 	 * @param Config $config
 	 * @param LoadBalancer $loadBalancer
 	 */
 	public function __construct(
 		SpecialLogLogger $logger, TitleFactory $titleFactory,
-		UtilityFactory $utilityFactory, $config, $loadBalancer
+		UtilityFactory $utilityFactory, WikiPageFactory $wpf, $config, $loadBalancer
 	) {
 		parent::__construct( $config, $loadBalancer );
 
 		$this->specialLogLogger = $logger;
 		$this->titleFactory = $titleFactory;
 		$this->utilityFactory = $utilityFactory;
+		$this->wikiPageFactory = $wpf;
 	}
 
 	/**
@@ -79,9 +90,11 @@ class LogExpirations extends Handler {
 		);
 
 		foreach ( $expirations as $expiration ) {
+			$title = $this->titleFactory->newFromRow( $expiration );
+			$user = $this->utilityFactory->getMaintenanceUser()->getUser();
+			$this->updateCache( $title, $user );
 			$this->specialLogLogger->log(
-				$this->utilityFactory->getMaintenanceUser()->getUser(),
-				$this->titleFactory->newFromRow( $expiration ),
+				$user, $title,
 				SpecialLogLogger::LOG_ACTION_EXPIRED,
 				$expiration->comment || ''
 			);
@@ -95,5 +108,19 @@ class LogExpirations extends Handler {
 	 */
 	public function getInterval() {
 		return new OnceADay();
+	}
+
+	/**
+	 * @param Title $title
+	 * @param User $user
+	 * @return void
+	 */
+	private function updateCache( Title $title, UserIdentity $user ) {
+		$wikiPage = $this->wikiPageFactory->newFromTitle( $title );
+		$wikiPage->doSecondaryDataUpdates( [
+			'triggeringUser' => $user,
+			'defer' => DeferredUpdates::POSTSEND
+		] );
+		$title->invalidateCache();
 	}
 }
