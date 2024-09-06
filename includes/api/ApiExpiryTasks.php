@@ -2,6 +2,7 @@
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Expiry\SpecialLogLogger;
+use MediaWiki\User\UserIdentity;
 
 class ApiExpiryTasks extends BSApiTasksBase {
 	/** @var SpecialLogLogger */
@@ -96,9 +97,11 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			]
 		);
 		foreach ( $updated as $row ) {
+			$title = $this->services->getTitleFactory()->newFromRow( $row );
+			$this->updateCache( $title, $this->getUser() );
 			$this->specialLogLogger->log(
 				$this->getUser(),
-				Title::newFromRow( $row ),
+				$title,
 				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
 			);
 		}
@@ -112,6 +115,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param \stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
+	 * @throws MWException
 	 */
 	public function task_saveExpiry( $oTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
@@ -249,7 +253,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 
 		$oResult->success = true;
 
-		$oTitle->invalidateCache();
+		$this->updateCache( $oTitle, $this->getUser() );
 
 		if ( $bIsUpdate ) {
 			$this->specialLogLogger->log(
@@ -299,7 +303,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		if ( $iArticleId ) {
 			$oTitle = Title::newFromID( $iArticleId );
 			if ( $oTitle ) {
-				$oTitle->invalidateCache();
+				$this->updateCache( $oTitle, $this->getUser() );
 				$this->specialLogLogger->log(
 					$this->getUser(),
 					$oTitle,
@@ -342,5 +346,19 @@ class ApiExpiryTasks extends BSApiTasksBase {
 			return null;
 		}
 		return (int)$res->exp_page_id;
+	}
+
+	/**
+	 * @param Title $title
+	 * @param User $user
+	 * @return void
+	 */
+	private function updateCache( Title $title, UserIdentity $user ) {
+		$wikiPage = $this->services->getWikiPageFactory()->newFromTitle( $title );
+		$wikiPage->doSecondaryDataUpdates( [
+			'triggeringUser' => $user,
+			'defer' => DeferredUpdates::POSTSEND
+		] );
+		$title->invalidateCache();
 	}
 }
