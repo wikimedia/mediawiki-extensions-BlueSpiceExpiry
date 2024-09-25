@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Expiry;
 
+use MediaWiki\MediaWikiServices;
 use Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
 
@@ -24,11 +25,13 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	 * @return array
 	 */
 	public function getPermissions(): array {
-		$permissions = [
-			"expirearticle",
-			"expiry-delete"
-		];
-		return [ 'read' ];
+		$permissions = MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'Expiry' );
+		if ( !$permissions ) {
+			return [];
+		}
+		return [ $permissions->getRestriction() ];
 	}
 
 	/**
@@ -36,7 +39,7 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	 * @return string
 	 */
 	public function getHref(): string {
-		$tool = \MediaWiki\MediaWikiServices::getInstance()
+		$tool = MediaWikiServices::getInstance()
 		->getSpecialPageFactory()
 		->getPage( 'Expiry' );
 		if ( !$tool ) {
