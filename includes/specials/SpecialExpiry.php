@@ -27,7 +27,7 @@ class SpecialExpiry extends ManagerBase {
 	 * Constructor of SpecialReview class
 	 */
 	public function __construct() {
-		parent::__construct( 'Expiry', 'read' );
+		parent::__construct( 'Expiry', 'edit' );
 	}
 
 	/**
