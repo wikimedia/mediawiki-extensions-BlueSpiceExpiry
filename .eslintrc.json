@@ -10,7 +10,8 @@
 		"mediaWiki": "readonly"
 	},
 	"rules": {
-		"max-len": "off"
+		"max-len": "off",
+		"no-jquery/no-global-selector": "off"
 	},
 	"parserOptions": {
 		"ecmaVersion": 8

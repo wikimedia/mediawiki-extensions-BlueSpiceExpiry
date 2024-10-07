@@ -207,6 +207,12 @@
 				"mediawiki.widgets",
 				"ext.oOJSPlus.widgets"
 			]
+		},
+		"ext.bluespice.expiry.liveRegionStatusUpdater": {
+			"scripts": "bluespice.expiry.liveRegionStatusUpdater.js",
+			"messages": [
+				"bs-expiry-pageinfoelement-expired-tooltip"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -243,6 +249,9 @@
 		},
 		"addExpiryCreateEntry": {
 			"class": "\\BlueSpice\\Expiry\\HookHandler\\AddExpiryCreateEntry"
+		},
+		"liveRegionStatusUpdater": {
+			"class": "\\BlueSpice\\Expiry\\HookHandler\\LiveRegionStatusUpdater"
 		}
 	},
 	"Hooks": {
@@ -250,7 +259,8 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
-			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback"
+			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback",
+			"liveRegionStatusUpdater"
 		],
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
