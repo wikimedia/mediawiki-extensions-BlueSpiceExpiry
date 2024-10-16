@@ -9,7 +9,9 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink
 class GlobalActionsEditing extends RestrictedTextLink {
 
 	public function __construct() {
-		parent::__construct( [] );
+		parent::__construct( [
+			'role' => 'menuitem'
+		] );
 	}
 
 	/**
