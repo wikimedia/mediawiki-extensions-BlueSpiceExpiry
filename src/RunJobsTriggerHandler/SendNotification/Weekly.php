@@ -38,11 +38,18 @@ class Weekly extends SendNotification {
 	 * @return Title[]
 	 */
 	protected function getExpiredTitles() {
-		$from = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
+		$timezone = $this->config->get( 'Localtimezone' );
+		if ( !$timezone ) {
+			$timezone = 'UTC';
+		}
+
+		$from = new DateTime( 'now', new DateTimeZone( $timezone ) );
 		$from->add( DateInterval::createFromDateString( '1 week' ) );
-		$from->sub( DateInterval::createFromDateString( '1 day' ) );
+		$from->setTime( 0, 0, 0 );
 		$to = clone $from;
-		$to->add( DateInterval::createFromDateString( '2 day' ) );
+
+		$from->sub( DateInterval::createFromDateString( '1 day' ) );
+		$to->add( DateInterval::createFromDateString( '1 day' ) );
 
 		return $this->factory->getExpiredTitles( $from, $to );
 	}
