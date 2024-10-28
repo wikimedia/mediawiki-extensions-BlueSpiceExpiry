@@ -29,8 +29,15 @@ class Daily extends SendNotification {
 	 * @return Title[]
 	 */
 	protected function getExpiredTitles() {
-		$from = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
-		$to = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
+		$timezone = $this->config->get( 'Localtimezone' );
+		if ( !$timezone ) {
+			$timezone = 'UTC';
+		}
+
+		$from = new DateTime( 'now', new DateTimeZone( $timezone ) );
+		$from->setTime( 0, 0, 0 );
+		$to = clone $from;
+
 		$from->add( DateInterval::createFromDateString( '-1 day' ) );
 		$to->add( DateInterval::createFromDateString( '1 day' ) );
 
