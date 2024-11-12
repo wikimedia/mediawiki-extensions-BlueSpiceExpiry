@@ -97,5 +97,9 @@
 	"logentry-bs-expiry-change-date": "$1{{GENDER:$2|更改了}}页面$3的期限日期",
 	"logentry-bs-expiry-delete": "$1{{GENDER:$2|删除了}}页面$3的期限",
 	"bs-expiry-event-today-desc": "页面将于今日过期",
-	"bs-expiry-event-one-week": "第$1页将于一周后过期。<br><br>请检查页面内容以确定是否需要更新。"
+	"bs-expiry-event-one-week-desc": "页面一周后到期",
+	"bs-expiry-event-today": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。",
+	"bs-expiry-event-today-with-comment": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>",
+	"bs-expiry-event-one-week": "第$1页将于一周后过期。<br><br>请检查页面内容以确定是否需要更新。",
+	"bs-expiry-event-one-week-with-comment": "页面$1将于一周后到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>"
 }

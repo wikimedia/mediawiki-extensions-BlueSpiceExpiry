@@ -8,12 +8,13 @@
 			"Shbib Al-Subaie",
 			"أَحمد",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
 	"bs-expiry-extension-description": "يمكن وسم الصفحات كمنتهية الصلاحية.",
 	"expiry": "انتهاء",
-	"specialexpiry": "مقالات منتهية الصلاحية",
+	"specialexpiry": "الصفحات منتهية الصلاحية",
 	"prefs-expiry": "انتهاء",
 	"bs-expiry-unexpire-article": "انتهت صلاحية الصفحة",
 	"bs-expiry-do-unexpire-article": "تاريخ انتهاء الحذف",
