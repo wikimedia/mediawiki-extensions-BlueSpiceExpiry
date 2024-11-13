@@ -115,7 +115,7 @@
 		"expiry-delete"
 	],
 	"SpecialPages": {
-		"Expiry": "SpecialExpiry"
+		"Expiry": "\\BlueSpice\\Expiry\\Special\\Expiry"
 	},
 	"APIModules": {
 		"bs-expiry-tasks": "ApiExpiryTasks",
@@ -136,26 +136,32 @@
 		"BlueSpice\\Expiry\\Tests\\": "tests/phpunit"
 	},
 	"AutoloadClasses": {
-		"SpecialExpiry": "includes/specials/SpecialExpiry.php",
 		"ApiExpiryTasks": "includes/api/ApiExpiryTasks.php",
 		"ApiExpiryStore": "includes/api/ApiExpiryStore.php",
 		"ExpiryHooks": "includes/ExpiryHooks.php"
 	},
 	"ResourceModules": {
-		"ext.bluespice.expiry.special": {
+		"ext.bluespice.expiry.specialExpiry": {
 			"scripts": [
-				"bluespice.expiry.special.js"
+				"ext.bluespice.expiry.specialExpiry.js",
+				"ui/panel/SpecialExpiryPanel.js"
 			],
 			"messages": [
 				"bs-expiry-header-pagename",
 				"bs-expiry-header-date",
-				"bs-expiry-text-delete",
+				"bs-expiry-header-comment",
+				"bs-expiry-header-action-edit",
+				"bs-expiry-title-edit",
+				"bs-expiry-header-action-delete",
 				"bs-expiry-title-delete",
-				"bs-expiry-header-comment"
+				"bs-expiry-title-add",
+				"bs-expiry-text-delete"
 			],
 			"dependencies": [
-				"ext.bluespice.expiry.dialog.pages",
 				"ext.bluespice.extjs",
+				"oojs-ui",
+				"ext.oOJSPlus.data",
+				"ext.bluespice.expiry.dialog.pages",
 				"ext.bluespice.Expiry"
 			]
 		},
