@@ -80,5 +80,9 @@
 	"bs-expiry-event-today": "Page $1 expires today.<br><br>Please check the content of the page to decide whether it needs to be updated.",
 	"bs-expiry-event-today-with-comment": "Page $1 expires today.<br><br>Please check the content of the page to decide whether it needs to be updated.<br><br>Comment from the expiry:<br><b>$2</b>",
 	"bs-expiry-event-one-week": "Page $1 expires in one week.<br><br>Please check the content of the page to decide whether it needs to be updated.",
-	"bs-expiry-event-one-week-with-comment": "Page $1 expires in one week.<br><br>Please check the content of the page to decide whether it needs to be updated.<br><br>Comment from the expiry:<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "Page $1 expires in one week.<br><br>Please check the content of the page to decide whether it needs to be updated.<br><br>Comment from the expiry:<br><b>$2</b>",
+	"bs-expiry-title-edit": "Edit expiry",
+	"bs-expiry-title-add": "Add expiry",
+	"bs-expiry-header-action-edit": "Edit",
+	"bs-expiry-header-action-delete": "Delete"
 }

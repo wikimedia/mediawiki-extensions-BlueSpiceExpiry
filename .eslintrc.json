@@ -7,7 +7,11 @@
 	],
 	"globals": {
 		"blueSpice": "readonly",
-		"mediaWiki": "readonly"
+		"bs": "readonly",
+		"ext": "readonly",
+		"jQuery": "readonly",
+		"mediaWiki": "readonly",
+		"OOJSPlus": "readonly"
 	},
 	"rules": {
 		"max-len": "off",
