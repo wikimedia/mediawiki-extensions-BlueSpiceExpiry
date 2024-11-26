@@ -1,45 +1,23 @@
-ext.bluespice = ext.bluespice || {};
-ext.bluespice.expiry = ext.bluespice.expiry || {};
-ext.bluespice.expiry.ui = ext.bluespice.expiry.ui || {};
-ext.bluespice.expiry.ui.panel = ext.bluespice.expiry.ui.panel || {};
+bs.util.registerNamespace( 'ext.bluespice.expiry.ui.panel' );
 
 ext.bluespice.expiry.ui.panel.SpecialExpiryPanel = function ( cfg ) {
-	ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.super.apply( this, cfg );
-	this.$element = $( '<div>' );
+	cfg = cfg || {};
 
 	this.store = new OOJSPlus.ui.data.store.RemoteStore( {
 		action: 'bs-expiry-store',
 		pageSize: 25
 	} );
 
-	this.setup();
+	cfg.grid = this.setupGridConfig();
+
+	ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.parent.call( this, cfg );
 };
 
-OO.inheritClass( ext.bluespice.expiry.ui.panel.SpecialExpiryPanel, OO.ui.PanelLayout );
-
-ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setup = function () {
-	const addExpiryButton = new OO.ui.ButtonWidget( {
-		icon: 'add',
-		title: mw.message( 'bs-expiry-title-add' ).plain(),
-		framed: false
-	} );
-	addExpiryButton.connect( this, {
-		click: () => this.showExpiryDialog()
-	} );
-
-	this.tools = [ addExpiryButton ];
-
-	const gridCfg = this.setupGridConfig();
-	this.grid = new OOJSPlus.ui.data.GridWidget( gridCfg );
-	this.grid.connect( this, {
-		action: 'doActionOnRow'
-	} );
-
-	this.$element.append( this.grid.$element );
-};
+OO.inheritClass( ext.bluespice.expiry.ui.panel.SpecialExpiryPanel, OOJSPlus.ui.panel.ManagerGrid );
 
 ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = function () {
 	const gridCfg = {
+		multiSelect: false,
 		exportable: true,
 		style: 'differentiate-rows',
 		columns: {
@@ -75,8 +53,9 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				title: mw.message( 'bs-expiry-title-edit' ).text(),
 				type: 'action',
 				actionId: 'edit',
-				icon: 'settings',
+				icon: 'edit',
 				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			},
 			delete: {
@@ -86,11 +65,11 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				actionId: 'delete',
 				icon: 'trash',
 				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			}
 		},
 		store: this.store,
-		tools: this.tools,
 		provideExportData: () => {
 			const deferred = $.Deferred();
 
@@ -98,28 +77,28 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				try {
 					this.store.setPageSize( 99999 );
 					const response = await this.store.reload();
-
 					const $table = $( '<table>' );
-					let $row = $( '<tr>' );
 
-					$row.append( $( '<td>' ).text( mw.message( 'bs-expiry-header-pagename' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-expiry-header-date' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-expiry-header-comment' ).text() ) );
+					const $thead = $( '<thead>' )
+						.append( $( '<tr>' )
+							.append( $( '<th>' ).text( mw.message( 'bs-expiry-header-pagename' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-expiry-header-date' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-expiry-header-comment' ).text() ) )
+						);
 
-					$table.append( $row );
-
+					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
 						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
 							const record = response[ id ];
-							$row = $( '<tr>' );
-
-							$row.append( $( '<td>' ).text( record.page_title ) );
-							$row.append( $( '<td>' ).text( record.expiry_date ) );
-							$row.append( $( '<td>' ).text( record.exp_comment ) );
-
-							$table.append( $row );
+							$tbody.append( $( '<tr>' )
+								.append( $( '<td>' ).text( record.page_title ) )
+								.append( $( '<td>' ).text( record.expiry_date ) )
+								.append( $( '<td>' ).text( record.exp_comment ) )
+							);
 						}
 					}
+
+					$table.append( $thead, $tbody );
 
 					deferred.resolve( `<table>${$table.html()}</table>` );
 				} catch ( error ) {
@@ -134,7 +113,20 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 	return gridCfg;
 };
 
-ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.doActionOnRow = function ( action, row ) {
+ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.getToolbarActions = function () {
+	return [
+		this.getAddAction( {
+			icon: 'add',
+			title: mw.message( 'bs-expiry-title-add' ).plain(),
+			displayBothIconAndLabel: true
+		} )
+	];
+};
+
+ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.onAction = function ( action, row ) {
+	if ( action === 'add' ) {
+		this.showExpiryDialog();
+	}
 	if ( action === 'edit' ) {
 		const dialogData = {
 			id: row.id,
