@@ -63,5 +63,9 @@
 	"log-description-bs-expiry": "Registro delle azioni relative alla scadenza della pagina",
 	"logentry-bs-expiry-expired": "La pagina $3 è scaduta",
 	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|modificata}} data di scadenza sulla pagina $3",
-	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3"
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|cancellata}} scadenza di pagina $3",
+	"bs-expiry-title-edit": "Modifica scadenza",
+	"bs-expiry-title-add": "Aggiungi scadenza",
+	"bs-expiry-header-action-edit": "Modifica",
+	"bs-expiry-header-action-delete": "Cancella"
 }
