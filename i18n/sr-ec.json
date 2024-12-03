@@ -22,5 +22,7 @@
 	"right-expiry-delete": "уклањање истека са страница",
 	"bs-expiry-create-reminder-label": "Направи подсетник",
 	"bs-expiry-do-updateexpirydate-article": "Промените датум истека",
-	"bs-expiry-dialog-action-no": "Не"
+	"bs-expiry-dialog-action-no": "Не",
+	"bs-expiry-header-action-edit": "Уреди",
+	"bs-expiry-header-action-delete": "Обриши"
 }
