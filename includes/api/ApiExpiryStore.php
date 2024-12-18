@@ -119,7 +119,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 				$canDelete = $pm->userCan( 'expiry-delete', $this->getUser(), $oTitle );
 				$aResultSet = [
 					'id' => $row->exp_id,
-					'page_title' => $oTitle->getPrefixedText(),
+					'page_title' => $oTitle->getPrefixedDbKey(),
 					'page_link' => $oTitle->getLocalURL(),
 					'expiry_date' => $date->format( 'Y-m-d' ),
 					'article_id' => $row->exp_page_id,
