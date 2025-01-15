@@ -87,5 +87,9 @@
 	"bs-expiry-event-today": "Notification message when page expires today.\n$1 - page anchor",
 	"bs-expiry-event-today-with-comment": "Notification message when page expires today.\n$1 - page anchort\n$2 - comment",
 	"bs-expiry-event-one-week": "Notification message when page expires in one week.\n$1 - page anchor",
-	"bs-expiry-event-one-week-with-comment": "Notification message when page expires in one week.\n$1 - page anchor\n$2 - comment"
+	"bs-expiry-event-one-week-with-comment": "Notification message when page expires in one week.\n$1 - page anchor\n$2 - comment",
+	"bs-expiry-title-edit": "Title for 'Edit expiry' icon",
+	"bs-expiry-title-add": "Title for 'Add expiry' icon",
+	"bs-expiry-header-action-edit": "Header text for the column that allows editing an expiry\n{{Identical|Edit}}",
+	"bs-expiry-header-action-delete": "Header text for the column that allows deleting an expiry\n{{Identical|Delete}}"
 }

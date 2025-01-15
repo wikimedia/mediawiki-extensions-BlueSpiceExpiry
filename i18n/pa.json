@@ -57,5 +57,9 @@
 	"log-description-bs-expiry": "ਸਫ਼ੇ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਸਬੰਧੀ ਕਾਰਵਾਈਆਂ ਦਾ ਚਿੱਠਾ",
 	"logentry-bs-expiry-expired": "ਸਫ਼ਾ $3 ਦੀ ਮਿਆਦ ਪੁੱਗ ਗਈ ਹੈ",
 	"bs-expiry-event-today-desc": "ਸਫ਼ੇ ਦੀ ਮਿਆਦ ਅੱਜ ਪੁੱਗਦੀ ਹੈ",
-	"bs-expiry-event-one-week-desc": "ਸਫ਼ੇ ਦੀ ਮਿਆਦ ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ ਪੁੱਗਦੀ ਹੈ"
+	"bs-expiry-event-one-week-desc": "ਸਫ਼ੇ ਦੀ ਮਿਆਦ ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ ਪੁੱਗਦੀ ਹੈ",
+	"bs-expiry-title-edit": "ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਸੋਧ ਕਰੋ",
+	"bs-expiry-title-add": "ਮਿਆਦ ਪੁੱਗਣੀ ਸ਼ਾਮਲ ਕਰੋ",
+	"bs-expiry-header-action-edit": "ਸੋਧੋ",
+	"bs-expiry-header-action-delete": "ਮਿਟਾਓ"
 }
