@@ -109,5 +109,9 @@
 	"bs-expiry-event-today": "De pagina $1 verloopt vandaag.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.",
 	"bs-expiry-event-today-with-comment": "De pagina $1 verloopt vandaag.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.<br><br>Opmerking m.b.t. de vervaldatum:<br><b>$2</b>",
 	"bs-expiry-event-one-week": "De pagina $1 verloopt over één week.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.",
-	"bs-expiry-event-one-week-with-comment": "De pagina $1 verloopt over één week.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.<br><br>Opmerking m.b.t. de vervaldatum:<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "De pagina $1 verloopt over één week.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.<br><br>Opmerking m.b.t. de vervaldatum:<br><b>$2</b>",
+	"bs-expiry-title-edit": "Vervaldatum bewerken",
+	"bs-expiry-title-add": "Vervaldatum toevoegen",
+	"bs-expiry-header-action-edit": "Bewerken",
+	"bs-expiry-header-action-delete": "Verwijderen"
 }

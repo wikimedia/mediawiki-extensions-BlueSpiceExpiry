@@ -19,5 +19,7 @@
 	"specialexpiry": "Ofgelafe Säiten",
 	"bs-expiry-info-dialog-comment": "Bemierkung: $1",
 	"bs-expiry-event-today-desc": "Sàit leeft haut of",
-	"bs-expiry-event-one-week-desc": "Säit leeft an enger Woch of"
+	"bs-expiry-event-one-week-desc": "Säit leeft an enger Woch of",
+	"bs-expiry-header-action-edit": "Änneren",
+	"bs-expiry-header-action-delete": "Läschen"
 }

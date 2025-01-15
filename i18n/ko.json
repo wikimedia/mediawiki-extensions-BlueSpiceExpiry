@@ -55,5 +55,7 @@
 	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다",
 	"bs-expiry-info-dialog-expired": "이 문서는 만료되었습니다!",
 	"bs-expiry-info-dialog-expiry-not-set": "이 문서는 기한 만료가 설정되지 않았습니다!",
-	"bs-expiry-info-dialog-comment": "의견: $1"
+	"bs-expiry-info-dialog-comment": "의견: $1",
+	"bs-expiry-header-action-edit": "편집",
+	"bs-expiry-header-action-delete": "삭제"
 }

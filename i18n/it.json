@@ -84,5 +84,9 @@
 	"bs-expiry-info-dialog-expired": "Questa pagina è scaduta!",
 	"bs-expiry-info-dialog-current": "Questa pagina scade {{PLURAL:$1|domani|tra $1 giorni ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "La scadenza di questa pagina non è stata impostata!",
-	"bs-expiry-info-dialog-comment": "Commento: $1"
+	"bs-expiry-info-dialog-comment": "Commento: $1",
+	"bs-expiry-title-edit": "Modifica scadenza",
+	"bs-expiry-title-add": "Aggiungi scadenza",
+	"bs-expiry-header-action-edit": "Modifica",
+	"bs-expiry-header-action-delete": "Cancella"
 }

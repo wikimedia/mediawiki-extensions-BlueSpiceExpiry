@@ -23,5 +23,7 @@
 	"bs-expiry-header-pagename": "Страница",
 	"bs-expiry-edit-grid-header-username": "Корисник",
 	"bs-expiry-edit-grid-header-comment": "Коментар",
-	"bs-expiry-info-dialog-comment": "Коментар: $1"
+	"bs-expiry-info-dialog-comment": "Коментар: $1",
+	"bs-expiry-header-action-edit": "Уреди",
+	"bs-expiry-header-action-delete": "Обриши"
 }

@@ -18,6 +18,7 @@
 			"Shuiwater",
 			"Tr jason",
 			"VulpesVulpes825",
+			"WiiUf",
 			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
@@ -121,7 +122,7 @@
 	"bs-expiry-info-dialog-comment": "评论：$1",
 	"bs-expiry-event-today-desc": "页面将于今日过期",
 	"bs-expiry-event-one-week": "第$1页将于一周后过期。<br><br>请检查页面内容以确定是否需要更新。",
-	"bs-expiry-event-one-week-desc": "页面一周后到期",
+	"bs-expiry-event-one-week-desc": "页面将于一周后到期",
 	"bs-expiry-event-today": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。",
 	"bs-expiry-event-today-with-comment": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>",
 	"bs-expiry-event-one-week-with-comment": "页面$1将于一周后到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>"

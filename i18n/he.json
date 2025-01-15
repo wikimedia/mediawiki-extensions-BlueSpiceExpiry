@@ -109,5 +109,9 @@
 	"bs-expiry-event-today": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
 	"bs-expiry-event-today-with-comment": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>",
 	"bs-expiry-event-one-week": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
-	"bs-expiry-event-one-week-with-comment": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>",
+	"bs-expiry-title-edit": "עריכת תפוגה",
+	"bs-expiry-title-add": "הוספת תפוגה",
+	"bs-expiry-header-action-edit": "עריכה",
+	"bs-expiry-header-action-delete": "מחיקה"
 }
