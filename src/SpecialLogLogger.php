@@ -3,8 +3,8 @@
 namespace BlueSpice\Expiry;
 
 use ManualLogEntry;
+use MediaWiki\Title\Title;
 use MWException;
-use Title;
 use User;
 
 class SpecialLogLogger {
