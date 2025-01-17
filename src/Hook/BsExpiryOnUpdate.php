@@ -5,7 +5,7 @@ use BlueSpice\Hook;
 use Config;
 use IContextSource;
 use MediaWiki\Title\Title;
-use User;
+use MediaWiki\User\User;
 
 abstract class BsExpiryOnUpdate extends Hook {
 	/**
