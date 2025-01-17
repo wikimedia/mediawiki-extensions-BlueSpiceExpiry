@@ -2,6 +2,7 @@
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Expiry\SpecialLogLogger;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 
 class ApiExpiryTasks extends BSApiTasksBase {
