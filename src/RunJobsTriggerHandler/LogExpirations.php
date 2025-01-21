@@ -10,13 +10,13 @@ use DeferredUpdates;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MWException;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Handler;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Interval;
 use Status;
-use TitleFactory;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class LogExpirations extends Handler {
