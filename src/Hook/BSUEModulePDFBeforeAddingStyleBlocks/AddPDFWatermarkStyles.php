@@ -3,7 +3,7 @@
 namespace BlueSpice\Expiry\Hook\BSUEModulePDFBeforeAddingStyleBlocks;
 
 use BlueSpice\UEModulePDF\Hook\BSUEModulePDFBeforeAddingStyleBlocks;
-use RequestContext;
+use MediaWiki\Context\RequestContext;
 
 class AddPDFWatermarkStyles extends BSUEModulePDFBeforeAddingStyleBlocks {
 
