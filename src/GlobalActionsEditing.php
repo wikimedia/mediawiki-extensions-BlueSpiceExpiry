@@ -3,7 +3,7 @@
 namespace BlueSpice\Expiry;
 
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
 
 class GlobalActionsEditing extends RestrictedTextLink {

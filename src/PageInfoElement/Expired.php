@@ -4,7 +4,7 @@ namespace BlueSpice\Expiry\PageInfoElement;
 
 use BlueSpice\Expiry\Extension as Expiry;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use PageHeader\IPageInfo;
 use PageHeader\PageInfo;
 
