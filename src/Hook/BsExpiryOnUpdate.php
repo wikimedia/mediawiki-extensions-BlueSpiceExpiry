@@ -2,8 +2,8 @@
 namespace BlueSpice\Expiry\Hook;
 
 use BlueSpice\Hook;
-use Config;
 use IContextSource;
+use MediaWiki\Config\Config;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 

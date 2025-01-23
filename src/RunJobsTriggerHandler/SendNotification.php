@@ -6,7 +6,7 @@ use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Factory;
 use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\UtilityFactory;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Events\Notifier;
