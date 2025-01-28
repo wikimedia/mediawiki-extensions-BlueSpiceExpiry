@@ -8,9 +8,9 @@ use BlueSpice\RunJobsTriggerHandler;
 use BlueSpice\UtilityFactory;
 use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Events\Notifier;
-use Status;
 use Wikimedia\Rdbms\LoadBalancer;
 
 abstract class SendNotification extends RunJobsTriggerHandler {
