@@ -6,13 +6,13 @@ use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Data\Store;
 use DateTime;
 use DateTimeZone;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\FieldType;
 use MWStake\MediaWiki\Component\DataStore\Filter\Date;
 use MWStake\MediaWiki\Component\DataStore\Filter\Numeric;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\ResultSet;
-use Status;
 
 class Factory {
 
