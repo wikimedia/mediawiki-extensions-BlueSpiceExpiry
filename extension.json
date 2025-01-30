@@ -158,9 +158,9 @@
 				"bs-expiry-text-delete"
 			],
 			"dependencies": [
-				"ext.bluespice.extjs",
 				"oojs-ui",
 				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.managerPanel",
 				"ext.bluespice.expiry.dialog.pages",
 				"ext.bluespice.Expiry"
 			]
