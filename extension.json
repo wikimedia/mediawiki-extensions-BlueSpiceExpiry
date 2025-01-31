@@ -90,8 +90,21 @@
 					"buckets": [ "qm" ]
 				}
 			}
+		},
+		"PDFCreator": {
+			"StyleBlocksProvider": {
+				"WatermarkStyles": {
+					"class": "BlueSpice\\Expiry\\Integration\\PDFCreator\\StyleBlockProvider\\WatermarkStyles",
+					"services": [ "ConfigFactory", "UserOptionsLookup" ]
+				}
+			},
+			"PreProcessors": {
+				"WatermarkImage": {
+					"class": "BlueSpice\\Expiry\\Integration\\PDFCreator\\PreProcessors\\WatermarkImage",
+					"services": [ "ConfigFactory", "UserOptionsLookup", "TitleFactory" ]
+				}
+			}
 		}
-
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
@@ -269,7 +282,6 @@
 			"liveRegionStatusUpdater"
 		],
 		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
-		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddPDFWatermarkStyles::callback",
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
