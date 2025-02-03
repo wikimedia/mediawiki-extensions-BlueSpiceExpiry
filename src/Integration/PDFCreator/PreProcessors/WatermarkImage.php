@@ -5,7 +5,7 @@ namespace BlueSpice\Expiry\Integration\PDFCreator\PreProcessors;
 use DOMElement;
 use DOMXPath;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Extension\PDFCreator\Interface\IPreProcessor;
+use MediaWiki\Extension\PDFCreator\IPreProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Title\TitleFactory;

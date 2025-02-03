@@ -4,7 +4,7 @@ namespace BlueSpice\Expiry\Integration\PDFCreator\StyleBlockProvider;
 
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Extension\PDFCreator\Interface\IStyleBlocksProvider;
+use MediaWiki\Extension\PDFCreator\IStyleBlocksProvider;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\User\Options\UserOptionsLookup;
 
@@ -43,7 +43,7 @@ class WatermarkStyles implements IStyleBlocksProvider {
 		[ $lang ] = explode( '-', $userLanguageSetting );
 
 		$styles = <<<HEREDOC
-.bs-page-content.expired {
+.pdfcreator-type-page.expired {
 	background-image: url('images/bg-expired-$lang.png');
 	background-repeat: repeat;
 	background-position: top left;
