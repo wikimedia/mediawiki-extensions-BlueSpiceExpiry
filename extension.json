@@ -281,7 +281,6 @@
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback",
 			"liveRegionStatusUpdater"
 		],
-		"BSUEModulePDFgetPage": "\\BlueSpice\\Expiry\\Hook\\BSUEModulePDFgetPage\\AddPDFWatermarkClass::callback",
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Expiry\\Hook\\LoadExtensionSchemaUpdates\\AddExpiryTable::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",

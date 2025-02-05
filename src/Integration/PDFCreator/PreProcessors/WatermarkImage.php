@@ -78,12 +78,12 @@ class WatermarkImage implements IPreProcessor {
 					'class',
 					$element->getAttribute( 'class' ) . ' expired'
 				);
-		}
+			}
 		}
 	}
 
 	/**
-	 * @param array $images
+	 * @param array &$images
 	 * @param ExportContext $context
 	 * @return void
 	 */
