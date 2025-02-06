@@ -52,7 +52,7 @@ class WatermarkStyles implements IStyleBlocksProvider {
 }
 HEREDOC;
 		return [
-			'Expiry'  => $styles
+			'Expiry' => $styles
 		];
 	}
 }
