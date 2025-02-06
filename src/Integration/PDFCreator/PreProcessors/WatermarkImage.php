@@ -96,6 +96,6 @@ class WatermarkImage implements IPreProcessor {
 
 		$path = MW_INSTALL_PATH . '/extensions/BlueSpiceExpiry/resources/images';
 
-		$images['bg-expired-$lang.png'] = "$path/bg-expired-$lang.png";
+		$images['bg-expired-' . $lang . '.png'] = "$path/bg-expired-$lang.png";
 	}
 }
