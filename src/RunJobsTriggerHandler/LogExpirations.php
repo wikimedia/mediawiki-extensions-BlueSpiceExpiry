@@ -6,7 +6,7 @@ use BlueSpice\Config;
 use BlueSpice\Expiry\SpecialLogLogger;
 use BlueSpice\RunJobsTriggerHandler\Interval\OnceADay;
 use BlueSpice\UtilityFactory;
-use DeferredUpdates;
+use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Status\Status;

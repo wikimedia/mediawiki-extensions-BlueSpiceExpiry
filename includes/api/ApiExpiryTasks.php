@@ -3,6 +3,7 @@
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Expiry\SpecialLogLogger;
 use MediaWiki\Api\ApiMain;
+use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 
