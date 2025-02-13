@@ -40,9 +40,6 @@
 	"bs-expiry-edit-grid-title": "Edits since this page expired",
 	"bs-expiry-edit-grid-empty": "No edits since the page expired",
 	"bs-expiry-alert-body-expired": "This page expired on $1. Please check the content.",
-	"bs-expiry-pref-enablepdfwatermark": "Show watermark for expired pages in PDF",
-	"bs-expiry-pref-enableprintwatermark": "Show watermark for expired pages in print version",
-	"bs-expiry-pref-enablepagewatermark": "Show watermark for expired pages",
 	"bs-expiry-pageinfoelement-expired-label": "expired",
 	"bs-expiry-pageinfoelement-expired-tooltip": "This page is expired",
 	"bs-expiry-pageinfoelement-unexpire-label": "unexpire",
@@ -60,9 +57,6 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date for when the page expires",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiry/Is expired",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Tells if the page has expired",
-	"bs-expiry-pref-enablepdfwatermark-help": "Shows a watermark for expired pages in the PDF.",
-	"bs-expiry-pref-enableprintwatermark-help": "Shows a watermark for expired pages when printed.",
-	"bs-expiry-pref-enablepagewatermark-help": "Shows a watermark on the page itself.",
 	"bs-expiry-info-dialog": "Expiry of page",
 	"bs-expiry-info-dialog-button-label": "Manage expiries",
 	"bs-expiry-dialog-delete-prompt": "Are you sure you want to delete expiry for this page?",
@@ -84,5 +78,11 @@
 	"bs-expiry-title-edit": "Edit expiry",
 	"bs-expiry-title-add": "Add expiry",
 	"bs-expiry-header-action-edit": "Edit",
-	"bs-expiry-header-action-delete": "Delete"
+	"bs-expiry-header-action-delete": "Delete",
+	"bs-expiry-pref-enable-page-watermark": "Show watermark",
+	"bs-expiry-pref-enable-page-watermark-help": "Adds a watermark on an expired page",
+	"bs-expiry-pref-enable-pdf-watermark": "Show watermark in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Adds a watermark for expired pages in PDF output",
+	"bs-expiry-pref-enable-print-watermark": "Show watermark in print version",
+	"bs-expiry-pref-enable-print-watermark-help": "Adds a watermark for expired pages when printed"
 }

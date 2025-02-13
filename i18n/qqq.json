@@ -45,9 +45,6 @@
 	"bs-expiry-edit-grid-title": "Title for the flyout grid showing changes since page expired",
 	"bs-expiry-edit-grid-empty": "Text displayed if there are no edits since the page expired",
 	"bs-expiry-alert-body-expired": "Text displayed in alert provider when the article expired.\n*$1 - Expiry date",
-	"bs-expiry-pref-enablepdfwatermark": "Label for configuration of whether to show watermark for expired pages in PDF",
-	"bs-expiry-pref-enableprintwatermark": "Label for configuration of whether to show watermark for expired pages in print version of the page",
-	"bs-expiry-pref-enablepagewatermark": "Label for configuration of whether to show watermark for expired pages in normal wiki view mode",
 	"bs-expiry-pageinfoelement-expired-label": "Label for expiry information in page header for expired page",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Tooltip for expiry information in page header for expired page",
 	"bs-expiry-pageinfoelement-unexpire-label": "Label for expiry information in page header to unexpire page",
@@ -65,9 +62,6 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Description of _EXPIRATIONDATE semantic special property",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Label of _ISEXPIRED semantic special property",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Description of _ISEXPIRED semantic special property",
-	"bs-expiry-pref-enablepdfwatermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
-	"bs-expiry-pref-enableprintwatermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\"",
-	"bs-expiry-pref-enablepagewatermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
 	"bs-expiry-info-dialog": "Label for page information dialog",
 	"bs-expiry-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all pages with expiries",
 	"bs-expiry-dialog-delete-prompt": "Confirmation prompt before user deletes expiry",
@@ -89,5 +83,11 @@
 	"bs-expiry-title-edit": "Title for 'Edit expiry' icon",
 	"bs-expiry-title-add": "Title for 'Add expiry' icon",
 	"bs-expiry-header-action-edit": "Header text for the column that allows editing an expiry\n{{Identical|Edit}}",
-	"bs-expiry-header-action-delete": "Header text for the column that allows deleting an expiry\n{{Identical|Delete}}"
+	"bs-expiry-header-action-delete": "Header text for the column that allows deleting an expiry\n{{Identical|Delete}}",
+	"bs-expiry-pref-enable-page-watermark": "Label for configuration of whether to show watermark for expired pages in normal wiki view mode",
+	"bs-expiry-pref-enable-page-watermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
+	"bs-expiry-pref-enable-pdf-watermark": "Label for configuration of whether to show watermark for expired pages in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
+	"bs-expiry-pref-enable-print-watermark": "Label for configuration of whether to show watermark for expired pages in print version of the page",
+	"bs-expiry-pref-enable-print-watermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\""
 }

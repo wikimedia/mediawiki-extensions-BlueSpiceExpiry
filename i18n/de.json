@@ -88,5 +88,11 @@
 	"bs-expiry-event-today": "Seite $1 läuft heute ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.",
 	"bs-expiry-event-today-with-comment": "Seite $1 läuft heute ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.<br><br>Kommentar vom Ablauf:<br><b>$2</b>",
 	"bs-expiry-event-one-week": "Seite $1 läuft in einer Woche ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.",
-	"bs-expiry-event-one-week-with-comment": "Seite $1 läuft in einer Woche ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.<br><br>Kommentar vom Ablauf:<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "Seite $1 läuft in einer Woche ab.<br><br>Bitte überprüfe den Inhalt der Seite, um zu entscheiden, ob sie aktualisiert werden muss.<br><br>Kommentar vom Ablauf:<br><b>$2</b>",
+	"bs-expiry-pref-enable-page-watermark": "Wasserzeichen anzeigen",
+	"bs-expiry-pref-enable-page-watermark-help": "Fügt ein Wasserzeichen auf einer veralteten Seite ein",
+	"bs-expiry-pref-enable-pdf-watermark": "Wasserzeichen in PDF anzeigen",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der PDF-Ausgabe ein",
+	"bs-expiry-pref-enable-print-watermark": "Wasserzeichen in der Druckversion anzeigen",
+	"bs-expiry-pref-enable-print-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der gedruckten Seite ein"
 }
