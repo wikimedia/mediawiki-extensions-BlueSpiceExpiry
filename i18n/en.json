@@ -86,5 +86,11 @@
 	"bs-expiry-title-edit": "Edit expiry",
 	"bs-expiry-title-add": "Add expiry",
 	"bs-expiry-header-action-edit": "Edit",
-	"bs-expiry-header-action-delete": "Delete"
+	"bs-expiry-header-action-delete": "Delete",
+	"bs-expiry-pref-enable-page-watermark": "Show watermark",
+	"bs-expiry-pref-enable-page-watermark-help": "Adds a watermark on an expired page",
+	"bs-expiry-pref-enable-pdf-watermark": "Show watermark in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Adds a watermark for expired pages in PDF output",
+	"bs-expiry-pref-enable-print-watermark": "Show watermark in print version",
+	"bs-expiry-pref-enable-print-watermark-help": "Adds a watermark for expired pages when printed"
 }
