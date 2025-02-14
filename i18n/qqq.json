@@ -91,5 +91,11 @@
 	"bs-expiry-title-edit": "Title for 'Edit expiry' icon",
 	"bs-expiry-title-add": "Title for 'Add expiry' icon",
 	"bs-expiry-header-action-edit": "Header text for the column that allows editing an expiry\n{{Identical|Edit}}",
-	"bs-expiry-header-action-delete": "Header text for the column that allows deleting an expiry\n{{Identical|Delete}}"
+	"bs-expiry-header-action-delete": "Header text for the column that allows deleting an expiry\n{{Identical|Delete}}",
+	"bs-expiry-pref-enable-page-watermark": "Label for configuration of whether to show watermark for expired pages in normal wiki view mode",
+	"bs-expiry-pref-enable-page-watermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
+	"bs-expiry-pref-enable-pdf-watermark": "Label for configuration of whether to show watermark for expired pages in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
+	"bs-expiry-pref-enable-print-watermark": "Label for configuration of whether to show watermark for expired pages in print version of the page",
+	"bs-expiry-pref-enable-print-watermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\""
 }
