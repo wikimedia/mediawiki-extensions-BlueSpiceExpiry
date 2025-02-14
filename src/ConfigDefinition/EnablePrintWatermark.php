@@ -21,7 +21,7 @@ class EnablePrintWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
-		return 'bs-expiry-pref-enableprintwatermark';
+		return 'bs-expiry-pref-enable-print-watermark';
 	}
 
 	/**
@@ -29,7 +29,7 @@ class EnablePrintWatermark extends \BlueSpice\ConfigDefinition\BooleanSetting {
 	 * @return string
 	 */
 	public function getHelpMessageKey() {
-		return 'bs-expiry-pref-enableprintwatermark-help';
+		return 'bs-expiry-pref-enable-print-watermark-help';
 	}
 
 }
