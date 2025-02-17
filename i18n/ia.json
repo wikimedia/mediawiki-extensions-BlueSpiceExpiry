@@ -104,5 +104,15 @@
 	"bs-expiry-event-today": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
 	"bs-expiry-event-today-with-comment": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>",
 	"bs-expiry-event-one-week": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
-	"bs-expiry-event-one-week-with-comment": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>",
+	"bs-expiry-title-edit": "Modificar expiration",
+	"bs-expiry-title-add": "Adder expiration",
+	"bs-expiry-header-action-edit": "Modificar",
+	"bs-expiry-header-action-delete": "Deler",
+	"bs-expiry-pref-enable-page-watermark": "Monstrar marca de aqua",
+	"bs-expiry-pref-enable-page-watermark-help": "Adde un marca de aqua sur un pagina expirate",
+	"bs-expiry-pref-enable-pdf-watermark": "Monstrar marca de aqua in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Adde un marca de aqua pro paginas expirate in sortita PDF",
+	"bs-expiry-pref-enable-print-watermark": "Monstrar marca de aqua in version imprimite",
+	"bs-expiry-pref-enable-print-watermark-help": "Adde un marca de aqua pro paginas expirate quando se imprime"
 }

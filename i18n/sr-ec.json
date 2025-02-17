@@ -25,5 +25,6 @@
 	"bs-expiry-edit-grid-header-comment": "Коментар",
 	"bs-expiry-info-dialog-comment": "Коментар: $1",
 	"bs-expiry-header-action-edit": "Уреди",
-	"bs-expiry-header-action-delete": "Обриши"
+	"bs-expiry-header-action-delete": "Обриши",
+	"bs-expiry-pref-enable-page-watermark": "Прикажи водени жиг"
 }
