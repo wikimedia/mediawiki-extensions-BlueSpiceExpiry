@@ -50,9 +50,6 @@
 	"bs-expiry-edit-grid-title": "Modifications depuis que cette page a expiré",
 	"bs-expiry-edit-grid-empty": "Aucune modification depuis que la page a expiré",
 	"bs-expiry-alert-body-expired": "Cette page a expiré le $1. Veuillez en vérifier le contenu.",
-	"bs-expiry-pref-enablepdfwatermark": "Afficher le filigrane pour les pages expirées en PDF",
-	"bs-expiry-pref-enableprintwatermark": "Afficher le filigrane pour les pages expirées dans la version imprimée",
-	"bs-expiry-pref-enablepagewatermark": "Afficher le filigrane pour les pages expirées",
 	"bs-expiry-pageinfoelement-expired-label": "expiré",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Cette page a expiré",
 	"bs-expiry-pageinfoelement-unexpire-label": "ne plus faire expirer",
@@ -70,9 +67,6 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "Date d’expiration de la page",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "Expiration / est expirée",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Indique si la page a expiré",
-	"bs-expiry-pref-enablepdfwatermark-help": "Affiche un filigrane pour les pages expirées dans le PDF.",
-	"bs-expiry-pref-enableprintwatermark-help": "Affiche un filigrane pour les pages expirées quand elles sont imprimées.",
-	"bs-expiry-pref-enablepagewatermark-help": "Affiche un filigrane sur la page elle-même.",
 	"bs-expiry-info-dialog": "Expiration de la page",
 	"bs-expiry-info-dialog-button-label": "Gérer les expirations",
 	"bs-expiry-dialog-delete-prompt": "Voulez-vous vraiment supprimer l’expiration pour cette page ?",
@@ -94,5 +88,8 @@
 	"bs-expiry-title-edit": "Modifier la date d’expiration",
 	"bs-expiry-title-add": "Ajouter une date d'expiration",
 	"bs-expiry-header-action-edit": "Modifier",
-	"bs-expiry-header-action-delete": "Supprimer"
+	"bs-expiry-header-action-delete": "Supprimer",
+	"bs-expiry-pref-enable-page-watermark-help": "Ajoute un filigrane sur une page expirée",
+	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF",
+	"bs-expiry-pref-enable-print-watermark": "Afficher le filigrane dans la version imprimée"
 }

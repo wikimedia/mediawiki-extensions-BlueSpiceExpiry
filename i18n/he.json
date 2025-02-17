@@ -46,9 +46,6 @@
 	"bs-expiry-edit-grid-title": "עריכות מאז תפוגת הדף",
 	"bs-expiry-edit-grid-empty": "אין עריכות מאז תפוגת הדף",
 	"bs-expiry-alert-body-expired": "הדף הזה פג ב־$1. נא לבדוק את התוכן.",
-	"bs-expiry-pref-enablepdfwatermark": "להציג סימן מים בדפים שפג תוקפם ב־PDF",
-	"bs-expiry-pref-enableprintwatermark": "להציג סימן מים בדפים שפג תוקפם בגרסת ההדפסה",
-	"bs-expiry-pref-enablepagewatermark": "להציג סימן מים בדפים שפג תוקפם",
 	"bs-expiry-pageinfoelement-expired-label": "פג תוקף",
 	"bs-expiry-pageinfoelement-expired-tooltip": "תוקף הדף פג",
 	"bs-expiry-pageinfoelement-unexpire-label": "לבטל תפוגה",
@@ -66,9 +63,6 @@
 	"bs-expiry-smwpropertyvalueprovider-expirationdate-desc": "תאריך תפוגת הדף",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "תפוגה/האם התוקף פג",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "מודיע אם הדף פג",
-	"bs-expiry-pref-enablepdfwatermark-help": "מציג סימן מים בדפים שפג תוקפם ב־PDF.",
-	"bs-expiry-pref-enableprintwatermark-help": "מציג סימן מים עבור דפים שפג תוקפם בעת הדפסה.",
-	"bs-expiry-pref-enablepagewatermark-help": "מציג סימן מים בדף עצמו.",
 	"bs-expiry-info-dialog": "תפוגה של דף",
 	"bs-expiry-info-dialog-button-label": "ניהול תפוגות",
 	"bs-expiry-dialog-delete-prompt": "האם ברצונך באמת למחוק את התפוגה של הדף הזה?",
@@ -90,5 +84,11 @@
 	"bs-expiry-title-edit": "עריכת תפוגה",
 	"bs-expiry-title-add": "הוספת תפוגה",
 	"bs-expiry-header-action-edit": "עריכה",
-	"bs-expiry-header-action-delete": "מחיקה"
+	"bs-expiry-header-action-delete": "מחיקה",
+	"bs-expiry-pref-enable-page-watermark": "הצגת סימן מים",
+	"bs-expiry-pref-enable-page-watermark-help": "הוספת סימן מים בדף שפג תוקפו",
+	"bs-expiry-pref-enable-pdf-watermark": "הצגת סימן מים ב־PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בפלט PDF",
+	"bs-expiry-pref-enable-print-watermark": "הצגת סימן מים בגרסת הדפסה",
+	"bs-expiry-pref-enable-print-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בעת הדפסה"
 }
