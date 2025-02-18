@@ -57,5 +57,8 @@
 	"bs-expiry-info-dialog-expiry-not-set": "이 문서는 기한 만료가 설정되지 않았습니다!",
 	"bs-expiry-info-dialog-comment": "의견: $1",
 	"bs-expiry-header-action-edit": "편집",
-	"bs-expiry-header-action-delete": "삭제"
+	"bs-expiry-header-action-delete": "삭제",
+	"bs-expiry-pref-enable-page-watermark": "워터마크 표시",
+	"bs-expiry-pref-enable-pdf-watermark": "PDF에 워터마크 표시",
+	"bs-expiry-pref-enable-print-watermark": "인쇄판에 워터마크 표시"
 }
