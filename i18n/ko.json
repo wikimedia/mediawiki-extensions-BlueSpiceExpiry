@@ -44,5 +44,8 @@
 	"bs-expiry-dialog-action-no": "아니오",
 	"logentry-bs-expiry-expired": "$3 문서의 기간이 만료되었습니다",
 	"bs-expiry-header-action-edit": "편집",
-	"bs-expiry-header-action-delete": "삭제"
+	"bs-expiry-header-action-delete": "삭제",
+	"bs-expiry-pref-enable-page-watermark": "워터마크 표시",
+	"bs-expiry-pref-enable-pdf-watermark": "PDF에 워터마크 표시",
+	"bs-expiry-pref-enable-print-watermark": "인쇄판에 워터마크 표시"
 }
