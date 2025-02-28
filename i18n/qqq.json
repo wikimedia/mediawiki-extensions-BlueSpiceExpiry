@@ -87,7 +87,5 @@
 	"bs-expiry-pref-enable-page-watermark": "Label for configuration of whether to show watermark for expired pages in normal wiki view mode",
 	"bs-expiry-pref-enable-page-watermark-help": "Description for config variable \"ExpiryEnablePageWatermark\"",
 	"bs-expiry-pref-enable-pdf-watermark": "Label for configuration of whether to show watermark for expired pages in PDF",
-	"bs-expiry-pref-enable-pdf-watermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\"",
-	"bs-expiry-pref-enable-print-watermark": "Label for configuration of whether to show watermark for expired pages in print version of the page",
-	"bs-expiry-pref-enable-print-watermark-help": "Description for config variable \"ExpiryEnablePrintWatermark\""
+	"bs-expiry-pref-enable-pdf-watermark-help": "Description for config variable \"ExpiryEnablePDFWatermark\""
 }
