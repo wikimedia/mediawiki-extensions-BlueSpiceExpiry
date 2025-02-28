@@ -24,8 +24,7 @@
 			},
 			"ConfigDefinitionRegistry": {
 				"ExpiryEnablePDFWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePDFWatermark::getInstance",
-				"ExpiryEnablePageWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePageWatermark::getInstance",
-				"ExpiryEnablePrintWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePrintWatermark::getInstance"
+				"ExpiryEnablePageWatermark": "\\BlueSpice\\Expiry\\ConfigDefinition\\EnablePageWatermark::getInstance"
 			},
 			"PermissionRegistry": {
 				"expirearticle": {
@@ -249,11 +248,6 @@
 			"value": true,
 			"descriptionmsg": "bs-expiry-pref-enablepagewatermark",
 			"public": true
-		},
-		"ExpiryEnablePrintWatermark": {
-			"value": true,
-			"descriptionmsg": "bs-expiry-pref-enableprintwatermark",
-			"public": true
 		}
 	},
 	"HookHandlers": {
@@ -278,7 +272,6 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddResources::callback",
 			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPageWatermark::callback",
-			"\\BlueSpice\\Expiry\\Hook\\BeforePageDisplay\\AddPrintWatermark::callback",
 			"liveRegionStatusUpdater"
 		],
 		"wgQueryPages": "ExpiryHooks::onQueryPages",
