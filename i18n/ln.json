@@ -7,7 +7,5 @@
 	"bs-expiry-pref-enable-page-watermark": "Komonisa elembo ya mai",
 	"bs-expiry-pref-enable-page-watermark-help": "Ebakisi elembo ya mai na lokasa oyo esilaki",
 	"bs-expiry-pref-enable-pdf-watermark": "Tyá elembo ya mai na PDF",
-	"bs-expiry-pref-enable-pdf-watermark-help": "Ebakisi elembo ya mai mpo na nkasa oyo esilaki na PDF",
-	"bs-expiry-pref-enable-print-watermark": "Komonisa elembo ya mai na mokanda",
-	"bs-expiry-pref-enable-print-watermark-help": "Ebakisi elembo ya mai mpo na nkasa oyo esilaki ntango ebimisami"
+	"bs-expiry-pref-enable-pdf-watermark-help": "Ebakisi elembo ya mai mpo na nkasa oyo esilaki na PDF"
 }

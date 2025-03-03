@@ -88,7 +88,5 @@
 	"bs-expiry-pref-enable-page-watermark": "הצגת סימן מים",
 	"bs-expiry-pref-enable-page-watermark-help": "הוספת סימן מים בדף שפג תוקפו",
 	"bs-expiry-pref-enable-pdf-watermark": "הצגת סימן מים ב־PDF",
-	"bs-expiry-pref-enable-pdf-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בפלט PDF",
-	"bs-expiry-pref-enable-print-watermark": "הצגת סימן מים בגרסת הדפסה",
-	"bs-expiry-pref-enable-print-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בעת הדפסה"
+	"bs-expiry-pref-enable-pdf-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בפלט PDF"
 }

@@ -83,7 +83,5 @@
 	"bs-expiry-pref-enable-page-watermark": "Monstrar marca de aqua",
 	"bs-expiry-pref-enable-page-watermark-help": "Adde un marca de aqua sur un pagina expirate",
 	"bs-expiry-pref-enable-pdf-watermark": "Monstrar marca de aqua in PDF",
-	"bs-expiry-pref-enable-pdf-watermark-help": "Adde un marca de aqua pro paginas expirate in sortita PDF",
-	"bs-expiry-pref-enable-print-watermark": "Monstrar marca de aqua in version imprimite",
-	"bs-expiry-pref-enable-print-watermark-help": "Adde un marca de aqua pro paginas expirate quando se imprime"
+	"bs-expiry-pref-enable-pdf-watermark-help": "Adde un marca de aqua pro paginas expirate in sortita PDF"
 }
