@@ -90,6 +90,5 @@
 	"bs-expiry-header-action-edit": "Modifier",
 	"bs-expiry-header-action-delete": "Supprimer",
 	"bs-expiry-pref-enable-page-watermark-help": "Ajoute un filigrane sur une page expirée",
-	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF",
-	"bs-expiry-pref-enable-print-watermark": "Afficher le filigrane dans la version imprimée"
+	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF"
 }
