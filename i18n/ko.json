@@ -46,6 +46,7 @@
 	"bs-expiry-header-action-edit": "편집",
 	"bs-expiry-header-action-delete": "삭제",
 	"bs-expiry-pref-enable-page-watermark": "워터마크 표시",
+	"bs-expiry-pref-enable-page-watermark-help": "만료된 문서에 워터마크를 추가합니다",
 	"bs-expiry-pref-enable-pdf-watermark": "PDF에 워터마크 표시",
 	"bs-expiry-pref-enable-print-watermark": "인쇄판에 워터마크 표시"
 }
