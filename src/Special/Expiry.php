@@ -3,9 +3,9 @@
 namespace BlueSpice\Expiry\Special;
 
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class Expiry extends SpecialPage {
+class Expiry extends OOJSGridSpecialPage {
 
 	/**
 	 * @inheritDoc
@@ -17,9 +17,7 @@ class Expiry extends SpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
-
+	public function doExecute( $subPage ) {
 		$out = $this->getOutput();
 		$out->addModules( [ 'ext.bluespice.expiry.specialExpiry' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-expiry-special-expiry-container' ] ) );

@@ -9,7 +9,8 @@
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.0.0",
-			"BlueSpiceReminder": ">= 5.0.0"
+			"BlueSpiceReminder": ">= 5.0.0",
+			"OOJSPlus": ">= 3.0.0"
 		}
 	},
 	"type": "bluespice",
