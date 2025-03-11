@@ -84,5 +84,9 @@
 	"bs-expiry-title-edit": "Vervaldatum bewerken",
 	"bs-expiry-title-add": "Vervaldatum toevoegen",
 	"bs-expiry-header-action-edit": "Bewerken",
-	"bs-expiry-header-action-delete": "Verwijderen"
+	"bs-expiry-header-action-delete": "Verwijderen",
+	"bs-expiry-pref-enable-page-watermark": "Watermerk weergeven",
+	"bs-expiry-pref-enable-page-watermark-help": "Voegt een watermerk toe aan een verlopen pagina",
+	"bs-expiry-pref-enable-pdf-watermark": "Watermerk weergeven in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Voegt een watermerk toe aan verlopen pagina’s in PDF-uitvoer"
 }
