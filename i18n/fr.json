@@ -9,7 +9,8 @@
 			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"JLTRY"
 		]
 	},
 	"bs-expiry-extension-description": "Les pages peuvent être marquées comme expirées.",
@@ -97,7 +98,9 @@
 	"bs-expiry-title-add": "Ajouter une date d'expiration",
 	"bs-expiry-header-action-edit": "Modifier",
 	"bs-expiry-header-action-delete": "Supprimer",
+	"bs-expiry-pref-enable-page-watermark": "Afficher le filigrane",
 	"bs-expiry-pref-enable-page-watermark-help": "Ajoute un filigrane sur une page expirée",
 	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Ajoute un filigrane pour les pages expirées dans la sortie PDF",
 	"bs-expiry-pref-enable-print-watermark": "Afficher le filigrane dans la version imprimée"
 }
