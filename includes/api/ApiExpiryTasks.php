@@ -145,7 +145,12 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		// (not the overview specialpage) or the edit button on the specialpage
 		// and data needs to be prefilled
 		if ( !$oTitle && empty( $oTaskData->articleId ) && !empty( $oTaskData->id ) ) {
-			$res = $dbr->select( 'bs_expiry', 'exp_page_id', [ 'exp_id' => (int)$oTaskData->id ] );
+			$res = $dbr->select(
+				'bs_expiry',
+				'exp_page_id',
+				[ 'exp_id' => (int)$oTaskData->id ],
+				__METHOD__
+			);
 			if ( !$res ) {
 				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-unknown-page-msg' )->text();
