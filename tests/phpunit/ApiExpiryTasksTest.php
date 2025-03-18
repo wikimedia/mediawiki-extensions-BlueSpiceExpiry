@@ -127,7 +127,8 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 			'exp_id',
 			[
 				'exp_page_id' => $iArticleId
-			]
+			],
+			__METHOD__
 		);
 		$iExpiryId = 0;
 		if ( $res && $res->numRows() ) {
