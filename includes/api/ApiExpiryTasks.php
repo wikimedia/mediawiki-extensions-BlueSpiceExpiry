@@ -238,7 +238,12 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				return $oResult;
 			}
 		} else {
-			$res = $dbw->update( 'bs_expiry', $aData, [ 'exp_id' => $iExpiryId ] );
+			$res = $dbw->update(
+				'bs_expiry',
+				$aData,
+				[ 'exp_id' => $iExpiryId ],
+				__METHOD__
+			);
 			if ( !$res ) {
 				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-expiry-update-error' )->text();
