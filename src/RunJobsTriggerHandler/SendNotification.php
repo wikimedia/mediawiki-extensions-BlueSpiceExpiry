@@ -50,7 +50,7 @@ abstract class SendNotification extends RunJobsTriggerHandler {
 	 * @param UtilityFactory|null $util
 	 * @return RunJobsTriggerHandler
 	 */
-	public static function factory( $config, $loadBalancer, Factory $factory = null, UtilityFactory $util = null ) {
+	public static function factory( $config, $loadBalancer, ?Factory $factory = null, ?UtilityFactory $util = null ) {
 		if ( !$factory ) {
 			$factory = MediaWikiServices::getInstance()->getService(
 				'BSExpiryFactory'

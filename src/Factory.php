@@ -94,7 +94,7 @@ class Factory {
 	 * @param DateTime|null $to
 	 * @return Title[]
 	 */
-	public function getExpiredTitles( DateTime $from = null, DateTime $to = null ) {
+	public function getExpiredTitles( ?DateTime $from = null, ?DateTime $to = null ) {
 		if ( !$from ) {
 			$from = new DateTime( 'now', new DateTimeZone( 'UTC' ) );
 		}
