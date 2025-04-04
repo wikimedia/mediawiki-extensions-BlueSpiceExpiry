@@ -33,7 +33,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
-	public function task_getDetailsForExpiry( $oTaskData, $aParams ) {
+	public function task_getDetailsForExpiry( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 
 		$iArticleId = isset( $oTaskData->articleId )
@@ -64,7 +64,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
-	public function task_changeDate( $oTaskData, $aParams ) {
+	public function task_changeDate( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 
 		$expiryIds = $oTaskData->ids ?? [];
@@ -120,7 +120,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @return Standard
 	 * @throws MWException
 	 */
-	public function task_saveExpiry( $oTaskData, $aParams ) {
+	public function task_saveExpiry( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		$bIsUpdate = false;
@@ -288,7 +288,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
-	public function task_deleteExpiry( $oTaskData, $aParams ) {
+	public function task_deleteExpiry( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 
 		// Check if there is a expiryId
