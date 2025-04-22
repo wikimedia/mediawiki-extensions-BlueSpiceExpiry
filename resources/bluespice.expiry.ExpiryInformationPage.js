@@ -56,7 +56,7 @@
 			this.$element.append( expiryDataLayout.$element );
 
 			const rights = await mw.user.getRights();
-			if ( rights.includes( 'edit' ) ) { // eslint-disable-line no-restricted-syntax
+			if ( rights.includes( 'edit' ) ) {
 				const specialPageButton = new OO.ui.ButtonWidget( {
 					label: mw.message( 'bs-expiry-info-dialog-button-label' ).text(),
 					href: mw.util.getUrl( 'Special:Expiry' )

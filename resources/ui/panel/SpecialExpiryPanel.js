@@ -26,15 +26,13 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return new OO.ui.HtmlSnippet( mw.html.element(
-						'a',
-						{
-							href: mw.util.getUrl( value )
-						},
-						value
-					) );
-				}
+				valueParser: ( value ) => new OO.ui.HtmlSnippet( mw.html.element(
+					'a',
+					{
+						href: mw.util.getUrl( value )
+					},
+					value
+				) )
 			},
 			expiry_date: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-expiry-header-date' ).plain(),
@@ -88,7 +86,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 
 					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
-						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
+						if ( response.hasOwnProperty( id ) ) {
 							const record = response[ id ];
 							$tbody.append( $( '<tr>' )
 								.append( $( '<td>' ).text( record.page_title ) )
@@ -100,7 +98,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}
@@ -145,7 +143,9 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.onAction = function (
 				text: mw.message( 'bs-expiry-text-delete', 1 ).text()
 			},
 			{
-				ok: () => { this.onRemoveExpiryOk( row.id ); }
+				ok: () => {
+					this.onRemoveExpiryOk( row.id );
+				}
 			}
 		);
 	}
