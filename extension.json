@@ -81,13 +81,15 @@
 					"spec": {
 						"class": "\\BlueSpice\\Expiry\\Event\\ExpiryToday"
 					},
-					"buckets": [ "qm" ]
+					"buckets": [ "qm" ],
+					"description": "bs-expiry-event-expiry-today-desc"
 				},
 				"bs-expiry-one-week": {
 					"spec": {
 						"class": "\\BlueSpice\\Expiry\\Event\\ExpiryInOneWeek"
 					},
-					"buckets": [ "qm" ]
+					"buckets": [ "qm" ],
+					"description": "bs-expiry-event-expiry-one-week-desc"
 				}
 			}
 		},
