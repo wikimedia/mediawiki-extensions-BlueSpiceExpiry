@@ -5,6 +5,7 @@
 			"BlueCamille",
 			"Gomoko",
 			"Graineahumus",
+			"JLTRY",
 			"Mahabarata",
 			"SleaY",
 			"Thibaut120094",
@@ -120,5 +121,7 @@
 	"bs-expiry-header-action-delete": "Supprimer",
 	"bs-expiry-pref-enable-page-watermark-help": "Ajoute un filigrane sur une page expirée",
 	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF",
-	"bs-expiry-pref-enable-print-watermark": "Afficher le filigrane dans la version imprimée"
+	"bs-expiry-pref-enable-print-watermark": "Afficher le filigrane dans la version imprimée",
+	"bs-expiry-pref-enable-page-watermark": "Afficher le filigrane",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Ajoute un filigrane pour les pages expirées dans la sortie PDF"
 }

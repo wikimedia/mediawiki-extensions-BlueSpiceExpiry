@@ -106,5 +106,9 @@
 	"bs-expiry-pref-enable-pdf-watermark": "Wasserzeichen in PDF anzeigen",
 	"bs-expiry-pref-enable-pdf-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der PDF-Ausgabe ein",
 	"bs-expiry-pref-enable-print-watermark": "Wasserzeichen in der Druckversion anzeigen",
-	"bs-expiry-pref-enable-print-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der gedruckten Seite ein"
+	"bs-expiry-pref-enable-print-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der gedruckten Seite ein",
+	"bs-expiry-title-edit": "Ablauf bearbeiten",
+	"bs-expiry-title-add": "Ablauf hinzufügen",
+	"bs-expiry-header-action-edit": "Bearbeiten",
+	"bs-expiry-header-action-delete": "Löschen"
 }
