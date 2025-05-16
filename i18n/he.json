@@ -96,5 +96,7 @@
 	"bs-expiry-pref-enable-pdf-watermark": "הצגת סימן מים ב־PDF",
 	"bs-expiry-pref-enable-pdf-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בפלט PDF",
 	"bs-expiry-pref-enable-print-watermark": "הצגת סימן מים בגרסת הדפסה",
-	"bs-expiry-pref-enable-print-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בעת הדפסה"
+	"bs-expiry-pref-enable-print-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בעת הדפסה",
+	"bs-expiry-event-expiry-today-desc": "הדף הזה מסומן בתור פג־תוקף היום",
+	"bs-expiry-event-expiry-one-week-desc": "הדף הזה ייחשב לפג־תוקף בעוד שבוע"
 }

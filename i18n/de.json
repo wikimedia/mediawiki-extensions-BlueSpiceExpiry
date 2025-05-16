@@ -90,5 +90,7 @@
 	"bs-expiry-pref-enable-page-watermark": "Wasserzeichen anzeigen",
 	"bs-expiry-pref-enable-page-watermark-help": "Fügt ein Wasserzeichen auf einer veralteten Seite ein",
 	"bs-expiry-pref-enable-pdf-watermark": "Wasserzeichen in PDF anzeigen",
-	"bs-expiry-pref-enable-pdf-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der PDF-Ausgabe ein"
+	"bs-expiry-pref-enable-pdf-watermark-help": "Fügt ein Wasserzeichen für veraltete Seiten in der PDF-Ausgabe ein",
+	"bs-expiry-event-expiry-today-desc": "Die Seite zählt ab heute als veraltet",
+	"bs-expiry-event-expiry-one-week-desc": "Die Seite zählt in einer Woche als veraltet"
 }
