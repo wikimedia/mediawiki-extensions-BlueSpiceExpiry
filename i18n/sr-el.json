@@ -17,5 +17,8 @@
 	"right-expiry-delete": "uklanjanje isteka sa stranica",
 	"bs-expiry-create-reminder-label": "Napravi podsetnik",
 	"bs-expiry-do-updateexpirydate-article": "Promenite datum isteka",
-	"bs-expiry-dialog-action-no": "Ne"
+	"bs-expiry-dialog-action-no": "Ne",
+	"bs-expiry-header-action-edit": "Uredi",
+	"bs-expiry-header-action-delete": "Obriši",
+	"bs-expiry-pref-enable-page-watermark": "Prikaži vodeni žig"
 }
