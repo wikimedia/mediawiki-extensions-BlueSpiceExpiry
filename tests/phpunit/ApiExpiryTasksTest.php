@@ -3,7 +3,6 @@
 namespace BlueSpice\Expiry\Tests;
 
 use BlueSpice\Tests\BSApiTasksTestBase;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
 /**
@@ -14,6 +13,7 @@ use MediaWiki\Title\Title;
  * @group BlueSpiceExpiry
  */
 class ApiExpiryTasksTest extends BSApiTasksTestBase {
+
 	protected function getModuleName() {
 		return 'bs-expiry-tasks';
 	}
@@ -27,50 +27,53 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	 * @covers \ApiExpiryTasks::task_saveExpiry
 	 */
 	public function testSaveExpiry() {
-		// New expiry
-		$oTitle = Title::newFromText( 'Dummy' );
-		$iNextWeek = strtotime( '+7 days', strtotime( 'midnight', time() ) );
-		$oResponse = $this->executeTask(
+		$title = Title::newFromText( 'Dummy' );
+		$articleId = $title->getArticleID();
+		$nextWeek = strtotime( '+7 days', strtotime( 'midnight', time() ) );
+
+		// Create new expiry
+		$response = $this->executeTask(
 			'saveExpiry',
 			[
-				'articleId' => $oTitle->getArticleID(),
-				'date' => $iNextWeek,
+				'articleId' => $articleId,
+				'date' => $nextWeek,
 				'comment' => 'Test expiry'
 			]
 		);
 
-		$this->assertTrue( $oResponse->success, 'SaveExpiry (create) task failed' );
+		$this->assertTrue( $response->success, 'SaveExpiry (create) task failed' );
 		$this->assertSelect(
 			'bs_expiry',
 			[ 'exp_date', 'exp_comment' ],
-			[ 'exp_page_id' => $oTitle->getArticleID() ],
+			[ 'exp_page_id' => $articleId ],
 			[
-				[ date( 'Y-m-d H:i:s', $iNextWeek ), 'Test expiry' ]
+				[ date( 'Y-m-d H:i:s', $nextWeek ), 'Test expiry' ]
 			]
 		);
 
 		// Update expiry
-		$iExpiryId = $this->getExpiryFromArticleID( $oTitle->getArticleID() );
+		$lastWeek = strtotime( 'midnight -7 days' );
+		$expiryId = $this->getExpiryFromArticleID( $articleId );
 
-		$this->assertGreaterThan( 0, $iExpiryId, 'Failed to retrieve expiry from DB' );
+		$this->assertGreaterThan( 0, $expiryId, 'Failed to retrieve expiry from DB' );
 
-		$iLastWeek = strtotime( '-7 days', strtotime( 'midnight', time() ) );
-		$oResponse = $this->executeTask(
+		$response = $this->executeTask(
 			'saveExpiry',
 			[
-				'articleId' => $oTitle->getArticleID(),
-				'date' => $iLastWeek,
+				'articleId' => $articleId,
+				'date' => $lastWeek,
 				'comment' => 'Updated expiry',
-				'id' => $iExpiryId
+				'id' => $expiryId
 			]
 		);
-		$this->assertTrue( $oResponse->success, 'SaveExpiry (update) task failed' );
+
+		$this->assertTrue( $response->success, 'SaveExpiry (update) task failed' );
 		$this->assertSelect(
 			'bs_expiry',
 			[ 'exp_date', 'exp_comment' ],
-			[ 'exp_page_id' => $oTitle->getArticleID() ],
+			[ 'exp_page_id' => $articleId ],
 			[
-				[ date( 'Y-m-d H:i:s', $iLastWeek ), 'Updated expiry' ]
+				[ date( 'Y-m-d H:i:s', $lastWeek ), 'Updated expiry' ]
 			]
 		);
 	}
@@ -79,20 +82,21 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	 * @covers \ApiExpiryTasks::task_getDetailsForExpiry
 	 */
 	public function testGetDetailsForExpiry() {
-		$oTitle = Title::newFromText( 'Dummy' );
-		$oResponse = $this->executeTask(
-			'getDetailsForExpiry',
-			[
-				'articleId' => $oTitle->getArticleID()
-			]
-		);
-		$iLastWeek = strtotime( '-7 days', strtotime( 'midnight', time() ) );
+		$title = Title::newFromText( 'Dummy' );
+		$lastWeek = strtotime( 'midnight -7 days' );
+		$this->insertExpiryIntoDb( $title, 'Expiry to delete', $lastWeek );
 
-		$this->assertTrue( $oResponse->success, 'GetDetailsForExpiry task failed' );
-		$aPayload = $oResponse->payload;
+		$response = $this->executeTask(
+			'getDetailsForExpiry',
+			[ 'articleId' => $title->getArticleID() ]
+		);
+
+		$this->assertTrue( $response->success, 'GetDetailsForExpiry task failed' );
+		$payload = $response->payload;
+
 		$this->assertEquals(
-			date( 'Y-m-d H:i:s', $iLastWeek ),
-			$aPayload['date'],
+			date( 'Y-m-d H:i:s', $lastWeek ),
+			$payload['date'],
 			'Returned expiry has unexpected date'
 		);
 	}
@@ -101,40 +105,71 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 	 * @covers \ApiExpiryTasks::task_deleteExpiry
 	 */
 	public function testDeleteExpiry() {
-		$oTitle = Title::newFromText( 'Dummy' );
-		$iArticleId = $oTitle->getArticleID();
-		$oResponse = $this->executeTask(
+		$title = Title::newFromText( 'Dummy' );
+		$articleId = $title->getArticleID();
+		$lastWeek = strtotime( 'midnight -7 days' );
+		$expiryId = $this->insertExpiryIntoDb( $title, 'Expiry to delete', $lastWeek );
+
+		$response = $this->executeTask(
 			'deleteExpiry',
 			[
-				'articleId' => $iArticleId,
-				'expiryId' => $this->getExpiryFromArticleID( $iArticleId )
+				'articleId' => $articleId,
+				'expiryId' => $expiryId
 			]
 		);
 
-		$this->assertTrue( $oResponse->success, 'DeleteExpiry task failed' );
+		$this->assertTrue( $response->success, 'DeleteExpiry task failed' );
 		$this->assertSame(
 			0,
-			$this->getExpiryFromArticleID( $iArticleId ),
-			'DeleteExpiry task succeded, but expiry is not deleted'
+			$this->getExpiryFromArticleID( $articleId ),
+			'Expiry still exists after deletion'
 		);
 	}
 
-	protected function getExpiryFromArticleID( $iArticleId ) {
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
-			->getConnection( DB_REPLICA );
-		$res = $dbr->select(
+	/**
+	 * Get the expiry ID for a given article.
+	 *
+	 * @param int $articleId
+	 * @return int Expiry ID or 0 if none
+	 */
+	protected function getExpiryFromArticleID( int $articleId ): int {
+		$res = $this->getDb()->select(
 			'bs_expiry',
 			'exp_id',
 			[
-				'exp_page_id' => $iArticleId
+				'exp_page_id' => $articleId
 			],
 			__METHOD__
 		);
-		$iExpiryId = 0;
-		if ( $res && $res->numRows() ) {
-			$row = $res->fetchRow();
-			$iExpiryId = (int)$row['exp_id'];
+
+		if ( !$res || !$res->numRows() ) {
+			return 0;
 		}
-		return $iExpiryId;
+
+		$row = $res->fetchRow();
+		return (int)$row['exp_id'];
 	}
+
+	/**
+	 * Inserts a row into the bs_expiry table for the given article.
+	 *
+	 * @param Title $title
+	 * @param string $comment
+	 * @param int $timestamp
+	 * @return int The ID of the inserted row
+	 */
+	protected function insertExpiryIntoDb( Title $title, string $comment, int $timestamp ): int {
+		$db = $this->getDb();
+
+		$row = [
+			'exp_page_id' => $title->getArticleID(),
+			'exp_date' => $db->timestamp( $timestamp ),
+			'exp_comment' => $comment
+		];
+
+		$db->insert( 'bs_expiry', $row, __METHOD__ );
+
+		return (int)$db->insertId();
+	}
+
 }
