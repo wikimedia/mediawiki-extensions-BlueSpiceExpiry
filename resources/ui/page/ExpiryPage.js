@@ -61,20 +61,28 @@ bs.expiry.ui.ExpiryPage.prototype.setData = function ( value ) {
 		this.pagePicker.setValue( value.page );
 	}
 
+	this.datePicker.calendar.toggle( false );
 	this.updateDialogSize();
 };
 
 bs.expiry.ui.ExpiryPage.prototype.getActionKeys = function () {
 	const actions = [ 'cancel', 'done' ];
 	if ( this.id ) {
-		actions.push( 'delete' );
+		actions.push( 'toDelete' );
 	}
 
 	return actions;
 };
 
 bs.expiry.ui.ExpiryPage.prototype.getAbilities = function () {
-	return { cancel: true, done: true, delete: true };
+	return { cancel: true, done: true, toDelete: true };
+};
+
+bs.expiry.ui.ExpiryPage.prototype.getActionDefinitions = function () {
+	return {
+		toDelete: { action: 'toDelete', label: mw.message( 'oojsplus-dialog-action-delete' ).plain(),
+			flags: [ 'destructive' ] }
+	};
 };
 
 bs.expiry.ui.ExpiryPage.prototype.onAction = function ( action ) {
@@ -102,7 +110,7 @@ bs.expiry.ui.ExpiryPage.prototype.onAction = function ( action ) {
 			// Do nothing
 			dfd.resolve( {} );
 		} );
-	} else if ( action === 'delete' ) {
+	} else if ( action === 'toDelete' ) {
 		dfd.resolve( {
 			action: 'switchPanel', page: 'delete-expiry',
 			data: { id: this.id, page: this.page, reminderEnabled: this.reminderEnabled }
