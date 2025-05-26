@@ -28,11 +28,11 @@ bs.expiry.ui.DeleteExpiryPage.prototype.setData = function ( data ) {
 };
 
 bs.expiry.ui.DeleteExpiryPage.prototype.getActionKeys = function () {
-	return [ 'cancel', 'delete' ];
+	return [ 'cancel', 'delete', 'back' ];
 };
 
 bs.expiry.ui.DeleteExpiryPage.prototype.getAbilities = function () {
-	return { cancel: true, delete: true };
+	return { cancel: true, delete: true, back: true };
 };
 
 bs.expiry.ui.DeleteExpiryPage.prototype.onAction = function ( action ) {
@@ -43,6 +43,11 @@ bs.expiry.ui.DeleteExpiryPage.prototype.onAction = function ( action ) {
 			dfd.resolve( { action: 'close', data: { success: true } } );
 		} ).fail( ( error ) => {
 			dfd.reject( error );
+		} );
+	} else if ( action === 'back' ) {
+		dfd.resolve( {
+			action: 'switchPanel', page: 'set-expiry',
+			data: { id: this.id, page: this.page, reminderEnabled: this.reminderEnabled }
 		} );
 	} else {
 		return bs.expiry.ui.DeleteExpiryPage.parent.prototype.onAction.call( this, action );
