@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-expiry-extension-description": "A lapokat elévültnek lehet jelölni.",
+	"expiry": "Elévülés",
+	"specialexpiry": "Elévült lapok",
+	"prefs-expiry": "Elévülés",
+	"bs-expiry-unexpire-article": "Elévült lap",
+	"bs-expiry-do-unexpire-article": "Elévülési dátum törlése",
+	"bs_expiry-unexpire-success": "A lap elévülése sikeresen visszavonva",
+	"bs_expiry-unexpire-unsuccess": "A lap elévülését nem sikerült visszavonni",
+	"bs-expiry-header-pagename": "Lap",
+	"bs-expiry-header-date": "Elévül ekkor",
+	"bs-expiry-header-comment": "Hozzászólás",
+	"bs-expiry-dialog-title": "Elévülés szerkesztése",
+	"bs-expiry-date-label": "Elévül ekkor",
+	"bs-expiry-article-label": "Lap",
+	"bs-expiry-comment-label": "Hozzászólás"
+}
