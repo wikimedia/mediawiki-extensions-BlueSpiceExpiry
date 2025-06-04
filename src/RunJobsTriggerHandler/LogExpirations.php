@@ -14,7 +14,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
-use MWException;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Handler;
 use MWStake\MediaWiki\Component\RunJobsTrigger\Interval;
 use Wikimedia\Rdbms\LoadBalancer;
@@ -72,7 +71,6 @@ class LogExpirations extends Handler {
 
 	/**
 	 * @return Status
-	 * @throws MWException
 	 */
 	protected function doRun() {
 		$db = $this->loadBalancer->getConnection( DB_REPLICA );
