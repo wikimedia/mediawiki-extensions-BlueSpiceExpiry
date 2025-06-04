@@ -118,7 +118,6 @@ class ApiExpiryTasks extends BSApiTasksBase {
 	 * @param \stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
-	 * @throws MWException
 	 */
 	public function task_saveExpiry( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();

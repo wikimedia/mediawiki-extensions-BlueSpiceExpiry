@@ -5,7 +5,6 @@ namespace BlueSpice\Expiry;
 use ManualLogEntry;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use MWException;
 
 class SpecialLogLogger {
 	public const LOG_ACTION_EXPIRED = 'expired';
@@ -17,7 +16,6 @@ class SpecialLogLogger {
 	 * @param Title $title
 	 * @param string $action
 	 * @param string $comment
-	 * @throws MWException
 	 */
 	public function log( User $user, Title $title, $action, $comment = '' ) {
 		$logEntry = new ManualLogEntry( 'bs-expiry', $action );
