@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-expiry-text-delete": "Tényleg törölni akarja {{PLURAL:$1|ezt az elévülést|ezeket az $1 elévüléseket}}?",
+	"bs-expiry-alert-body-expired": "Ez a lap $1 elévült. Kérjük, ellenőrizze a tartalmát."
+}
