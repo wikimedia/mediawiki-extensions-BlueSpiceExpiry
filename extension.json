@@ -148,7 +148,7 @@
 		"BlueSpice\\Expiry\\": "src/"
 	},
 	"TestAutoloadNamespaces": {
-		"BlueSpice\\Expiry\\Tests\\": "tests/phpunit"
+		"BlueSpice\\Expiry\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
 		"ApiExpiryTasks": "includes/api/ApiExpiryTasks.php",
