@@ -25,5 +25,6 @@
 	"bs-expiry-reminder-type-expiry": "Ардаман хан",
 	"log-name-bs-expiry": "Ардаман хан",
 	"bs-expiry-header-action-edit": "Нисйан",
-	"bs-expiry-header-action-delete": "ДӀайаккха"
+	"bs-expiry-header-action-delete": "ДӀайаккха",
+	"bs-expiry-create-reminder-label": "Кхолла дагадаийтар"
 }
