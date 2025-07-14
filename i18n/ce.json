@@ -4,7 +4,9 @@
 			"Умар"
 		]
 	},
-	"specialexpiry": "Ширбелла йаззамаш",
+	"expiry": "Ардаман хан",
+	"specialexpiry": "Ширйелла агӀонаш",
+	"prefs-expiry": "Ардаман хан",
 	"bs-expiry-header-pagename": "АгӀо",
 	"bs-expiry-header-date": "Чекхйолу",
 	"bs-expiry-header-comment": "Коммент",
@@ -15,7 +17,13 @@
 	"bs-expiry-edit-grid-header-username": "Декъашхо",
 	"bs-expiry-edit-grid-header-date": "Терахь",
 	"bs-expiry-edit-grid-header-comment": "Коммент",
+	"bs-expiry-pageinfoelement-expired-label": "чекхйаьлла",
+	"bs-expiry-pageinfoelement-unexpire-label": "хан чекхйаьлла йоцу",
+	"bs-expiry-reminder-type-expiry": "Ардаман хан",
 	"bs-expiry-error-invalid-date": "Цамаго терахь",
 	"bs-expiry-dialog-create-reminder-title": "Кхолла дагадаийтар",
-	"bs-expiry-dialog-action-no": "ХӀан-хӀа"
+	"bs-expiry-dialog-action-no": "ХӀан-хӀа",
+	"log-name-bs-expiry": "Ардаман хан",
+	"bs-expiry-header-action-edit": "Нисйан",
+	"bs-expiry-header-action-delete": "ДӀайаккха"
 }
