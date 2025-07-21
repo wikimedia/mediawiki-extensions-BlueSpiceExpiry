@@ -19,6 +19,7 @@
 	"bs-expiry-edit-grid-header-comment": "Коммент",
 	"bs-expiry-pageinfoelement-expired-label": "чекхйаьлла",
 	"bs-expiry-pageinfoelement-unexpire-label": "хан чекхйаьлла йоцу",
+	"bs-expiry-create-reminder-label": "Кхолла дагадаийтар",
 	"bs-expiry-reminder-type-expiry": "Ардаман хан",
 	"bs-expiry-error-invalid-date": "Цамаго терахь",
 	"bs-expiry-dialog-create-reminder-title": "Кхолла дагадаийтар",
