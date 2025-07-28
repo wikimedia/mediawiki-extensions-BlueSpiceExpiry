@@ -117,5 +117,7 @@
 	"bs-expiry-pref-enable-page-watermark": "Watermerk weergeven",
 	"bs-expiry-pref-enable-page-watermark-help": "Voegt een watermerk toe aan een verlopen pagina",
 	"bs-expiry-pref-enable-pdf-watermark": "Watermerk weergeven in PDF",
-	"bs-expiry-pref-enable-pdf-watermark-help": "Voegt een watermerk toe aan verlopen pagina’s in PDF-uitvoer"
+	"bs-expiry-pref-enable-pdf-watermark-help": "Voegt een watermerk toe aan verlopen pagina’s in PDF-uitvoer",
+	"bs-expiry-event-expiry-today-desc": "De pagina is gemarkeerd als vandaag verlopen",
+	"bs-expiry-event-expiry-one-week-desc": "De pagina wordt over één week als verlopen beschouwd"
 }

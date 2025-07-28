@@ -110,5 +110,7 @@
 	"bs-expiry-title-edit": "Ablauf bearbeiten",
 	"bs-expiry-title-add": "Ablauf hinzufügen",
 	"bs-expiry-header-action-edit": "Bearbeiten",
-	"bs-expiry-header-action-delete": "Löschen"
+	"bs-expiry-header-action-delete": "Löschen",
+	"bs-expiry-event-expiry-today-desc": "Die Seite zählt ab heute als veraltet",
+	"bs-expiry-event-expiry-one-week-desc": "Die Seite zählt in einer Woche als veraltet"
 }

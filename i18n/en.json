@@ -92,5 +92,7 @@
 	"bs-expiry-pref-enable-pdf-watermark": "Show watermark in PDF",
 	"bs-expiry-pref-enable-pdf-watermark-help": "Adds a watermark for expired pages in PDF output",
 	"bs-expiry-pref-enable-print-watermark": "Show watermark in print version",
-	"bs-expiry-pref-enable-print-watermark-help": "Adds a watermark for expired pages when printed"
+	"bs-expiry-pref-enable-print-watermark-help": "Adds a watermark for expired pages when printed",
+	"bs-expiry-event-expiry-today-desc": "The page is marked as expired today",
+	"bs-expiry-event-expiry-one-week-desc": "The page counts as expired in one week"
 }

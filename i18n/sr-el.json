@@ -18,5 +18,8 @@
 	"bs-expiry-header-pagename": "Stranica",
 	"bs-expiry-edit-grid-header-username": "Korisnik",
 	"bs-expiry-edit-grid-header-comment": "Komentar",
-	"bs-expiry-info-dialog-comment": "Komentar: $1"
+	"bs-expiry-info-dialog-comment": "Komentar: $1",
+	"bs-expiry-header-action-edit": "Uredi",
+	"bs-expiry-header-action-delete": "Obriši",
+	"bs-expiry-pref-enable-page-watermark": "Prikaži vodeni žig"
 }
