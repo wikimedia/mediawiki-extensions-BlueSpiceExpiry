@@ -161,6 +161,9 @@
 				"ext.bluespice.expiry.specialExpiry.js",
 				"ui/panel/SpecialExpiryPanel.js"
 			],
+			"styles": [
+				"bluespice.expiry.panel.css"
+			],
 			"messages": [
 				"bs-expiry-header-pagename",
 				"bs-expiry-header-date",
