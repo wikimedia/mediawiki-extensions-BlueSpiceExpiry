@@ -38,7 +38,21 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				headerText: mw.message( 'bs-expiry-header-date' ).plain(),
 				type: 'text',
 				sortable: true,
-				filter: { type: 'date' }
+				filter: { type: 'date' },
+				valueParser: ( value ) => {
+					const today = new Date();
+					const expiryDate = new Date( value );
+					if ( today > expiryDate ) {
+						return new OO.ui.HtmlSnippet( mw.html.element(
+							'span',
+							{
+								class: 'bs-expiry-date-column-expired'
+							},
+							value
+						) );
+					}
+					return new OO.ui.HtmlSnippet( mw.html.element( 'span', {}, value ) );
+				}
 			},
 			exp_comment: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-expiry-header-comment' ).plain(),
