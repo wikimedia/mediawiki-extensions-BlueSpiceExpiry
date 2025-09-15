@@ -60,7 +60,7 @@
 	"bs-expiry-edit-grid-empty": "No hay ediciones desde que la página expiró",
 	"bs-expiry-flyout-body-hint-expired": "Expiró en $1",
 	"bs-expiry-flyout-body-hint-expires": "caduca el $1",
-	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
+	"bs-expiry-alert-body-expired": "Esta página caducó el $1. {{#FORMAL:Revisa|Revise}} el contenido.",
 	"bs-expiry-pref-enablepdfwatermark": "Mostrar la marca de agua de las páginas vencidas en el PDF",
 	"bs-expiry-pref-enableprintwatermark": "Mostrar la marca de agua de las páginas vencidas en la versión impresa",
 	"bs-expiry-pref-enablepagewatermark": "Mostrar la marca de agua de las páginas vencidas",
