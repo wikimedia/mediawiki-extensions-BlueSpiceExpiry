@@ -85,5 +85,13 @@
 	"bs-expiry-event-today": "頁面$1今天逾期。<br><br>請檢查頁面內容來決定是否需要更新。",
 	"bs-expiry-event-today-with-comment": "頁面$1今天逾期。<br><br>請檢查頁面內容來決定是否需要更新。<br><br>逾期的註釋：<br><b>$2</b>",
 	"bs-expiry-event-one-week": "頁面$1一週後逾期。<br><br>請檢查頁面內容來決定是否需要更新。",
-	"bs-expiry-event-one-week-with-comment": "頁面$1一週後逾期。<br><br>請檢查頁面內容來決定是否需要更新。<br><br>逾期的註釋：<br><b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "頁面$1一週後逾期。<br><br>請檢查頁面內容來決定是否需要更新。<br><br>逾期的註釋：<br><b>$2</b>",
+	"bs-expiry-title-edit": "編輯期限",
+	"bs-expiry-title-add": "新增期限",
+	"bs-expiry-header-action-edit": "編輯",
+	"bs-expiry-header-action-delete": "刪除",
+	"bs-expiry-pref-enable-page-watermark": "顯示浮水印",
+	"bs-expiry-pref-enable-page-watermark-help": "在逾期頁面上添加浮水印",
+	"bs-expiry-pref-enable-pdf-watermark": "在 PDF 中顯示浮水印",
+	"bs-expiry-pref-enable-pdf-watermark-help": "在 PDF 輸出中為逾期頁面添加浮水印"
 }
