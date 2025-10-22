@@ -203,13 +203,13 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		];
 
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-expiry-header-pagename' )->plain(),
+			'header' => wfMessage( 'bs-expiry-header-pagename' )->text(),
 			'dataIndex' => 'page_title',
 			'render' => 'page',
 			'sortable' => true
 		];
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-expiry-header-date' )->plain(),
+			'header' => wfMessage( 'bs-expiry-header-date' )->text(),
 			'dataIndex' => 'exp_date',
 			'render' => 'date',
 			'sortable' => true

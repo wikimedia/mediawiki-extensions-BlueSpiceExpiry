@@ -44,7 +44,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 
 		if ( !$aExpiry ) {
 			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-expiry-unknown-page-msg' )->plain();
+				= wfMessage( 'bs-expiry-unknown-page-msg' )->text();
 			return $oResult;
 		}
 
@@ -75,7 +75,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$date = DateTime::createFromFormat( "Y-m-d", $oTaskData->date );
 		if ( !$date ) {
 			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-expiry-error-invalid-date' )->plain();
+				= wfMessage( 'bs-expiry-error-invalid-date' )->text();
 			return $oResult;
 		}
 
@@ -126,7 +126,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$bIsUpdate = false;
 		if ( $oUser->isAnon() ) {
 			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-permissionerror' )->plain();
+				= wfMessage( 'bs-permissionerror' )->text();
 			return $oResult;
 		}
 
@@ -181,7 +181,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		$date = DateTime::createFromFormat( "Y-m-d", $dateRaw );
 		if ( !$date ) {
 			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-expiry-error-invalid-date' )->plain();
+				= wfMessage( 'bs-expiry-error-invalid-date' )->text();
 			return $oResult;
 		}
 
@@ -274,9 +274,9 @@ class ApiExpiryTasks extends BSApiTasksBase {
 				$oTitle,
 				SpecialLogLogger::LOG_ACTION_CHANGE_DATE
 			);
-			$oResult->message = wfMessage( "bs-expiry-update-success" )->plain();
+			$oResult->message = wfMessage( "bs-expiry-update-success" )->text();
 		} else {
-			$oResult->message = wfMessage( "bs-expiry-save-success" )->plain();
+			$oResult->message = wfMessage( "bs-expiry-save-success" )->text();
 		}
 
 		return $oResult;
@@ -326,7 +326,7 @@ class ApiExpiryTasks extends BSApiTasksBase {
 		}
 
 		$oResult->success = true;
-		$oResult->message = wfMessage( 'bs-expiry-unexpire-success' )->plain();
+		$oResult->message = wfMessage( 'bs-expiry-unexpire-success' )->text();
 		return $oResult;
 	}
 

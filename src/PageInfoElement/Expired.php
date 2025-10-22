@@ -154,9 +154,9 @@ class Expired extends PageInfo {
 					'href' => "#",
 					'class' => 'bs-expiry-unexpire dropdown-item',
 					'data-expid' => $this->expId,
-					'title' => $tooltip->plain()
+					'title' => $tooltip->text()
 				],
-				$label->plain()
+				$label->text()
 			);
 
 		$html .= Html::closeElement( 'li' );
