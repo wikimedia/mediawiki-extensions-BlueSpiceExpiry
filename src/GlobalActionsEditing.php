@@ -20,18 +20,9 @@ class GlobalActionsEditing extends RestrictedTextLink {
 		return 'ga-special-expiry';
 	}
 
-	/**
-	 *
-	 * @return array
-	 */
+	/** @inheritDoc */
 	public function getPermissions(): array {
-		$permissions = MediaWikiServices::getInstance()
-			->getSpecialPageFactory()
-			->getPage( 'Expiry' );
-		if ( !$permissions ) {
-			return [];
-		}
-		return [ $permissions->getRestriction() ];
+		return [ 'edit' ];
 	}
 
 	/**
