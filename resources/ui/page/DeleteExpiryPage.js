@@ -14,7 +14,7 @@ bs.expiry.ui.DeleteExpiryPage.prototype.getItems = function () {
 };
 
 bs.expiry.ui.DeleteExpiryPage.prototype.getTitle = function () {
-	return mw.message( 'bs-expiry-dialog-title' ).plain();
+	return mw.message( 'bs-expiry-dialog-title' ).text();
 };
 
 bs.expiry.ui.DeleteExpiryPage.prototype.getSize = function () {

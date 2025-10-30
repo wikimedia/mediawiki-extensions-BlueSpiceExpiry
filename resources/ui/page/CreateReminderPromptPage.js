@@ -15,7 +15,7 @@ bs.expiry.ui.CreateReminderPromptPage.prototype.getItems = function () {
 };
 
 bs.expiry.ui.CreateReminderPromptPage.prototype.getTitle = function () {
-	return mw.message( 'bs-expiry-dialog-create-reminder-title' ).plain();
+	return mw.message( 'bs-expiry-dialog-create-reminder-title' ).text();
 };
 
 bs.expiry.ui.CreateReminderPromptPage.prototype.getSize = function () {
