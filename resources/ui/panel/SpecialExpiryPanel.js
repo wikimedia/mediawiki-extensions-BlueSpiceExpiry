@@ -22,7 +22,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 		style: 'differentiate-rows',
 		columns: {
 			page_title: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-expiry-header-pagename' ).plain(),
+				headerText: mw.message( 'bs-expiry-header-pagename' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
@@ -35,7 +35,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				) )
 			},
 			expiry_date: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-expiry-header-date' ).plain(),
+				headerText: mw.message( 'bs-expiry-header-date' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'date' },
@@ -55,7 +55,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.setupGridConfig = fun
 				}
 			},
 			exp_comment: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-expiry-header-comment' ).plain(),
+				headerText: mw.message( 'bs-expiry-header-comment' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' }
@@ -129,7 +129,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.getToolbarActions = f
 	return [
 		this.getAddAction( {
 			icon: 'add',
-			title: mw.message( 'bs-expiry-title-add' ).plain(),
+			title: mw.message( 'bs-expiry-title-add' ).text(),
 			displayBothIconAndLabel: true
 		} )
 	];
@@ -153,7 +153,7 @@ ext.bluespice.expiry.ui.panel.SpecialExpiryPanel.prototype.onAction = function (
 		bs.util.confirm(
 			'REremove',
 			{
-				title: mw.message( 'bs-expiry-title-delete' ).plain(),
+				title: mw.message( 'bs-expiry-title-delete' ).text(),
 				text: mw.message( 'bs-expiry-text-delete', 1 ).text()
 			},
 			{

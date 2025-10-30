@@ -15,14 +15,14 @@ bs.expiry.ui.ChangeDatePage.prototype.getItems = function () {
 
 	return [
 		new OO.ui.FieldLayout( this.datePicker, {
-			label: mw.message( 'bs-expiry-date-label' ).plain(),
+			label: mw.message( 'bs-expiry-date-label' ).text(),
 			align: 'top'
 		} )
 	];
 };
 
 bs.expiry.ui.ChangeDatePage.prototype.getTitle = function () {
-	return mw.message( 'bs-expiry-dialog-title' ).plain();
+	return mw.message( 'bs-expiry-dialog-title' ).text();
 };
 
 bs.expiry.ui.ChangeDatePage.prototype.getSize = function () {

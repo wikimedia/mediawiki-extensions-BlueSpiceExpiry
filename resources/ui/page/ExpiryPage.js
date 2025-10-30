@@ -19,17 +19,17 @@ bs.expiry.ui.ExpiryPage.prototype.getItems = function () {
 
 	const layouts = [
 		new OO.ui.FieldLayout( this.datePicker, {
-			label: mw.message( 'bs-expiry-date-label' ).plain(),
+			label: mw.message( 'bs-expiry-date-label' ).text(),
 			align: 'top'
 		} ),
 		new OO.ui.FieldLayout( this.comment, {
-			label: mw.message( 'bs-expiry-comment-label' ).plain(),
+			label: mw.message( 'bs-expiry-comment-label' ).text(),
 			align: 'top'
 		} )
 	];
 	if ( !this.forcePage ) {
 		layouts.unshift( new OO.ui.FieldLayout( this.pagePicker, {
-			label: mw.message( 'bs-expiry-article-label' ).plain(),
+			label: mw.message( 'bs-expiry-article-label' ).text(),
 			align: 'top'
 		} ) );
 	}
@@ -38,7 +38,7 @@ bs.expiry.ui.ExpiryPage.prototype.getItems = function () {
 };
 
 bs.expiry.ui.ExpiryPage.prototype.getTitle = function () {
-	return mw.message( 'bs-expiry-dialog-title' ).plain();
+	return mw.message( 'bs-expiry-dialog-title' ).text();
 };
 
 bs.expiry.ui.ExpiryPage.prototype.getSize = function () {

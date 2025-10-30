@@ -12,7 +12,7 @@
 		bs.expiry.info.ExpiryInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
 
 		if ( this.outlineItem ) {
-			this.outlineItem.setLabel( mw.message( 'bs-expiry-info-dialog' ).plain() );
+			this.outlineItem.setLabel( mw.message( 'bs-expiry-info-dialog' ).text() );
 		}
 	};
 
@@ -48,7 +48,7 @@
 
 			if ( pageData && pageData.exp_comment ) {
 				const expiryCommentLabel = new OO.ui.LabelWidget( {
-					label: mw.message( 'bs-expiry-info-dialog-comment', pageData.exp_comment ).plain()
+					label: mw.message( 'bs-expiry-info-dialog-comment', pageData.exp_comment ).text()
 				} );
 				expiryDataLayout.$element.append( expiryCommentLabel.$element );
 			}
