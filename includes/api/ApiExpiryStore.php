@@ -40,14 +40,13 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		];
 
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
-		$sTblPrfx = $dbr->tablePrefix();
 
 		switch ( $sSortField ) {
 			case 'rem_date':
-				$sSortField = "{$sTblPrfx}bs_expiry.exp_date";
+				$sSortField = "bs_expiry.exp_date";
 				break;
 			case 'page_title':
-				$sSortField = "{$sTblPrfx}page.page_title";
+				$sSortField = "page.page_title";
 				break;
 		}
 
@@ -55,16 +54,16 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 			'bs_expiry', 'page'
 		];
 		$aFields = [
-			"{$sTblPrfx}bs_expiry.exp_id",
-			"{$sTblPrfx}bs_expiry.exp_page_id",
-			"{$sTblPrfx}bs_expiry.exp_date",
-			"{$sTblPrfx}page.page_title",
-			"{$sTblPrfx}bs_expiry.exp_comment",
+			"bs_expiry.exp_id",
+			"bs_expiry.exp_page_id",
+			"bs_expiry.exp_date",
+			"page.page_title",
+			"bs_expiry.exp_comment",
 		];
 		$aConditions = [];
 		$aOptions = [
 			'ORDER BY' => "{$sSortField} {$sSortDirection}",
-			'GROUP BY' => "{$sTblPrfx}bs_expiry.exp_id"
+			'GROUP BY' => "bs_expiry.exp_id"
 		];
 
 		if ( $iOffset === null ) {
@@ -76,7 +75,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		}
 
 		$aJoinConditions = [
-			"page" => [ 'JOIN', "{$sTblPrfx}bs_expiry.exp_page_id = {$sTblPrfx}page.page_id" ]
+			"page" => [ 'JOIN', "bs_expiry.exp_page_id = page.page_id" ]
 		];
 
 		// give other extensions the opportunity to modify the query
@@ -97,11 +96,11 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		/*
 		$iUserId = $oUser->getId();
 		if ( $iUserId && !$oUser->getOption( "MW::Reminder::ShowAllReminders" ) ) {
-			$aConditions["{$sTblPrfx}bs_reminder.rem_user_id"] = $iUserId;
+			$aConditions["bs_reminder.rem_user_id"] = $iUserId;
 		}
 		*/
 		if ( $iDate !== 0 ) {
-			$aConditions[] = "{$sTblPrfx}bs_expiry.exp_date <= '" . $iDate . "'";
+			$aConditions[] = "bs_expiry.exp_date <= '" . $iDate . "'";
 		}
 
 		$res = $dbr->select(
@@ -142,7 +141,7 @@ class ApiExpiryStore extends BSApiExtJSStoreBase {
 		unset( $aOptions['LIMIT'], $aOptions['OFFSET'] );
 		$res = $dbr->select(
 			$aTables,
-			"COUNT({$sTblPrfx}bs_expiry.exp_id) AS total",
+			"COUNT(bs_expiry.exp_id) AS total",
 			$aConditions,
 			__METHOD__,
 			[],
