@@ -79,5 +79,12 @@
 	"log-description-bs-expiry": "Registo de operações relacionadas com expiração de páginas",
 	"logentry-bs-expiry-expired": "A página $3 expirou",
 	"logentry-bs-expiry-change-date": "$1 alterou a data de expiração da página $3{{GENDER:$2|}}",
-	"logentry-bs-expiry-delete": "$1 eliminou a data de expiração da página $3{{GENDER:$2|}}"
+	"logentry-bs-expiry-delete": "$1 eliminou a data de expiração da página $3{{GENDER:$2|}}",
+	"bs-expiry-event-today-desc": "A página expira hoje",
+	"bs-expiry-event-one-week-desc": "A página expira numa semana",
+	"bs-expiry-title-edit": "Editar expiração",
+	"bs-expiry-title-add": "Adicionar expiração",
+	"bs-expiry-header-action-edit": "Editar",
+	"bs-expiry-header-action-delete": "Eliminar",
+	"bs-expiry-pref-enable-page-watermark": "Mostrar a marca de água"
 }
