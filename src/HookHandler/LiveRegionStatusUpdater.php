@@ -21,6 +21,7 @@ class LiveRegionStatusUpdater implements BeforePageDisplayHook {
 			return;
 		}
 
+		$out->addElement( 'div', [ 'id' => 'bs-expiry-status-cnt', 'role' => 'status' ] );
 		$out->addModules( 'ext.bluespice.expiry.liveRegionStatusUpdater' );
 	}
 }

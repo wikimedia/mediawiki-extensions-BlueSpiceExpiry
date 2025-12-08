@@ -38,9 +38,6 @@
 				message = mw.message( 'bs-expiry-info-dialog-expiry-not-set' ).text();
 			}
 
-			const $liveRegion = $( '#mws-wcag-generic-status-container' );
-			$liveRegion.text( message );
-
 			this.expiryLabel = new OO.ui.LabelWidget( {
 				label: message
 			} );
