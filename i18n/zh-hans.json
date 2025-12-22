@@ -22,7 +22,8 @@
 			"列维劳德",
 			"沈澄心",
 			"落花有意12138",
-			"铁桶"
+			"铁桶",
+			"Peterxy12"
 		]
 	},
 	"bs-expiry-extension-description": "页面可以标记为到期。",
@@ -104,5 +105,13 @@
 	"bs-expiry-event-today": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。",
 	"bs-expiry-event-today-with-comment": "页面$1今天到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>",
 	"bs-expiry-event-one-week": "第$1页将于一周后过期。<br><br>请检查页面内容以确定是否需要更新。",
-	"bs-expiry-event-one-week-with-comment": "页面$1将于一周后到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>"
+	"bs-expiry-event-one-week-with-comment": "页面$1将于一周后到期。<br><br>请检查页面内容以确定是否需要更新。<br><br>到期的注释：<br> <b>$2</b>",
+	"bs-expiry-title-edit": "编辑期限",
+	"bs-expiry-title-add": "添加期限",
+	"bs-expiry-header-action-edit": "编辑",
+	"bs-expiry-header-action-delete": "删除",
+	"bs-expiry-pref-enable-page-watermark": "显示水印",
+	"bs-expiry-pref-enable-page-watermark-help": "在过期页面上添加水印",
+	"bs-expiry-pref-enable-pdf-watermark": "在PDF中显示水印",
+	"bs-expiry-pref-enable-pdf-watermark-help": "在PDF输出中为过期页面添加水印"
 }
