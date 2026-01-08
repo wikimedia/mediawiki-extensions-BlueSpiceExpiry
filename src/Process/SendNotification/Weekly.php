@@ -1,34 +1,29 @@
 <?php
 
-namespace BlueSpice\Expiry\RunJobsTriggerHandler\SendNotification;
+namespace BlueSpice\Expiry\Process\SendNotification;
 
 use BlueSpice\Expiry\Data\Record;
 use BlueSpice\Expiry\Event\ExpiryInOneWeek;
-use BlueSpice\Expiry\RunJobsTriggerHandler\SendNotification;
-use BlueSpice\RunJobsTriggerHandler\Interval\OnceAWeek;
+use BlueSpice\Expiry\Process\SendNotification;
 use DateInterval;
+use DateInvalidOperationException;
+use DateInvalidTimeZoneException;
 use DateTime;
 use DateTimeZone;
+use Exception;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Events\Notifier;
 
 class Weekly extends SendNotification {
 
 	/**
-	 *
-	 * @return OnceAWeek
-	 */
-	public function getInterval() {
-		return new OnceAWeek();
-	}
-
-	/**
 	 * @param Title $title
 	 * @param Record $record
 	 * @param Notifier $notifier
-	 * @throws \Exception
+	 *
+	 * @throws Exception
 	 */
-	protected function sendNotifications( Title $title, Record $record, Notifier $notifier ) {
+	protected function sendNotifications( Title $title, Record $record, Notifier $notifier ): void {
 		$comment = $record->get( Record::COMMENT, '' );
 		$event = new ExpiryInOneWeek( $title, $comment );
 		$notifier->emit( $event );
@@ -36,14 +31,12 @@ class Weekly extends SendNotification {
 
 	/**
 	 * @return Title[]
+	 * @throws DateInvalidTimeZoneException
+	 * @throws DateInvalidOperationException
+	 * @throws Exception
 	 */
-	protected function getExpiredTitles() {
-		$timezone = $this->config->get( 'Localtimezone' );
-		if ( !$timezone ) {
-			$timezone = 'UTC';
-		}
-
-		$from = new DateTime( 'now', new DateTimeZone( $timezone ) );
+	protected function getExpiredTitles(): array {
+		$from = new DateTime( 'now', new DateTimeZone( $this->localTimeZone ) );
 		$from->add( DateInterval::createFromDateString( '1 week' ) );
 		$from->setTime( 0, 0, 0 );
 		$to = clone $from;
