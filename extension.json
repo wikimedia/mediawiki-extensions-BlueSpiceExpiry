@@ -50,11 +50,6 @@
 			},
 			"PageInfoElementRegistry": {
 				"bs-expiry-expired": "\\BlueSpice\\Expiry\\PageInfoElement\\Expired::factory"
-			},
-			"RunJobsTriggerHandlerRegistry": {
-				"bs-expiry-send-daily": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Daily::factory",
-				"bs-expiry-send-weekly": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\SendNotification\\Weekly::factory",
-				"bs-expiry-log-expirations": "\\BlueSpice\\Expiry\\RunJobsTriggerHandler\\LogExpirations::factory"
 			}
 		},
 		"BlueSpiceEchoConnector": {
@@ -141,6 +136,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionFunctions": [
+		"BlueSpice\\Expiry\\ExpiryNotificationCron::register"
+	],
 	"ExtensionMessagesFiles": {
 		"ExpiryAlias": "languages/SpecialExpiry.alias.php"
 	},
