@@ -30,7 +30,7 @@
 			try {
 				data = await bs.api.store.getData( 'expiry' );
 				const title = mw.Title.newFromText( this.pageName );
-				pageData = data.results.find( ( item ) => item.page_title === title.getMainText() );
+				pageData = data.results.find( ( item ) => item.page_title === title.getPrefixedText() );
 				if ( pageData ) {
 					message = this.getExpiryMessage( pageData.expiry_date );
 					type = 'warning';
