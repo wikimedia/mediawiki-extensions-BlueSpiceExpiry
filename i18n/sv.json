@@ -3,13 +3,14 @@
 		"authors": [
 			"Mjälten",
 			"Sabelöga",
+			"Stefan2255",
 			"Technic2",
 			"WikiPhoenix"
 		]
 	},
 	"bs-expiry-extension-description": "Sidor kan märkas som utgångna.",
 	"expiry": "Utgångstid",
-	"specialexpiry": "Utgångna artiklar",
+	"specialexpiry": "Utgångna sidor",
 	"prefs-expiry": "Utgångstid",
 	"apihelp-bs-expiry-store-description": "Levererar datan till översiktstabellen i Special:Expiry",
 	"apihelp-bs-expiry-tasks-description": "Utför uppgifter som att uppdatera och radera för översiktstabellen i Special:Expiry",
