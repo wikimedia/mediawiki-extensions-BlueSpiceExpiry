@@ -51,7 +51,7 @@
 	"bs-expiry-edit-grid-header-comment": "Comentario",
 	"bs-expiry-edit-grid-title": "Ediciones desde que esta página expiró",
 	"bs-expiry-edit-grid-empty": "No hay ediciones desde que la página expiró",
-	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
+	"bs-expiry-alert-body-expired": "Esta página caducó el $1. {{#FORMAL:Revisa|Revise}} el contenido.",
 	"bs-expiry-pageinfoelement-expired-label": "expirado",
 	"bs-expiry-pageinfoelement-expired-tooltip": "Esta página ha caducado",
 	"bs-expiry-pageinfoelement-unexpire-label": "sin expirar",
