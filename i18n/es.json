@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Agusbou2015",
-			"Amire80",
+			"AnupamM",
 			"ArenaL5",
 			"Avengium",
 			"Bruno44101",
@@ -58,7 +58,7 @@
 	"bs-expiry-edit-grid-empty": "No hay ediciones desde que la página expiró",
 	"bs-expiry-flyout-body-hint-expired": "Expiró en $1",
 	"bs-expiry-flyout-body-hint-expires": "caduca el $1",
-	"bs-expiry-alert-body-expired": "Esta página caducó el $1. Revisa el contenido.",
+	"bs-expiry-alert-body-expired": "Esta página caducó el $1. {{#FORMAL:Revisa|Revise}} el contenido.",
 	"bs-expiry-pref-enablepdfwatermark": "Mostrar la marca de agua de las páginas vencidas en el PDF",
 	"bs-expiry-pref-enableprintwatermark": "Mostrar la marca de agua de las páginas vencidas en la versión impresa",
 	"bs-expiry-pref-enablepagewatermark": "Mostrar la marca de agua de las páginas vencidas",
@@ -109,5 +109,6 @@
 	"bs-expiry-info-dialog-expired": "¡Esta página ha caducado!",
 	"bs-expiry-info-dialog-current": "¡Esta página caduca {{PLURAL:$1|mañana|en $1 días ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "¡Esta página no está configurada para caducar!",
-	"bs-expiry-info-dialog-comment": "Comentario: $1"
+	"bs-expiry-info-dialog-comment": "Comentario: $1",
+	"bs-expiry-event-one-week-desc": "La página expira en una semana"
 }

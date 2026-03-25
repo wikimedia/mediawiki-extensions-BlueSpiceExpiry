@@ -17,5 +17,6 @@
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła",
 	"bs-expiry-unexpire-article": "Strona wygasła",
 	"bs-expiry-title-delete": "Usuń wygaśnięcie",
-	"bs-expiry-unknown-page-msg": "Strona nie istnieje."
+	"bs-expiry-unknown-page-msg": "Strona nie istnieje.",
+	"bs-expiry-dialog-action-no": "Nie"
 }

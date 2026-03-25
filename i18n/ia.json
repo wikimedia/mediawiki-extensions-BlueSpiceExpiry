@@ -98,5 +98,21 @@
 	"bs-expiry-info-dialog-expired": "Iste pagina es expirate!",
 	"bs-expiry-info-dialog-current": "Iste pagina expira {{PLURAL:$1|deman|in $1 dies ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "Iste pagina non es configurate pro expirar!",
-	"bs-expiry-info-dialog-comment": "Commento: $1"
+	"bs-expiry-info-dialog-comment": "Commento: $1",
+	"bs-expiry-event-today-desc": "Le pagina expira hodie",
+	"bs-expiry-event-one-week-desc": "Le pagina expira in un septimana",
+	"bs-expiry-event-today": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
+	"bs-expiry-event-today-with-comment": "Le pagina $1 expira hodie.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.",
+	"bs-expiry-event-one-week-with-comment": "Le pagina $1 expira in un septimana.<br><br>Per favor verifica le contento del pagina pro decider si illo debe esser actualisate.<br><br>Commento del expiration:<br><b>$2</b>",
+	"bs-expiry-title-edit": "Modificar expiration",
+	"bs-expiry-title-add": "Adder expiration",
+	"bs-expiry-header-action-edit": "Modificar",
+	"bs-expiry-header-action-delete": "Deler",
+	"bs-expiry-pref-enable-page-watermark": "Monstrar marca de aqua",
+	"bs-expiry-pref-enable-page-watermark-help": "Adde un marca de aqua sur un pagina expirate",
+	"bs-expiry-pref-enable-pdf-watermark": "Monstrar marca de aqua in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Adde un marca de aqua pro paginas expirate in sortita PDF",
+	"bs-expiry-event-expiry-today-desc": "Le pagina es marcate como expirate hodie",
+	"bs-expiry-event-expiry-one-week-desc": "Le pagina se considerara como expirate in un septimana"
 }

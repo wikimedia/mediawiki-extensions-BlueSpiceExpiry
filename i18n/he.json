@@ -103,5 +103,21 @@
 	"bs-expiry-info-dialog-expired": "תוקף הדף פג!",
 	"bs-expiry-info-dialog-current": "הדף הזה יפוג {{PLURAL:$1|מחר|מוחרתיים|3=בעוד יומיים|בעוד $1 יום|בעוד $1 ימים}} ($2)!",
 	"bs-expiry-info-dialog-expiry-not-set": "הדף הזה אינו מוגדר לפוג!",
-	"bs-expiry-info-dialog-comment": "הערה: $1"
+	"bs-expiry-info-dialog-comment": "הערה: $1",
+	"bs-expiry-event-today-desc": "הדף פג היום",
+	"bs-expiry-event-one-week-desc": "הדף פג בעוד שבוע",
+	"bs-expiry-event-today": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
+	"bs-expiry-event-today-with-comment": "הדף $1 פג היום.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.",
+	"bs-expiry-event-one-week-with-comment": "הדף $1 פג בעוד שבוע.<br><br>נא לבדוק את תוכן הדף כדי להחליט אם יש לעדכן אותו.<br><br>הערה מהתפוגה:<br><b>$2</b>",
+	"bs-expiry-title-edit": "עריכת תפוגה",
+	"bs-expiry-title-add": "הוספת תפוגה",
+	"bs-expiry-header-action-edit": "עריכה",
+	"bs-expiry-header-action-delete": "מחיקה",
+	"bs-expiry-pref-enable-page-watermark": "הצגת סימן מים",
+	"bs-expiry-pref-enable-page-watermark-help": "הוספת סימן מים בדף שפג תוקפו",
+	"bs-expiry-pref-enable-pdf-watermark": "הצגת סימן מים ב־PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "הוספת סימן מים לדפים שפג תוקפם בפלט PDF",
+	"bs-expiry-event-expiry-today-desc": "הדף הזה מסומן בתור פג־תוקף היום",
+	"bs-expiry-event-expiry-one-week-desc": "הדף הזה ייחשב לפג־תוקף בעוד שבוע"
 }

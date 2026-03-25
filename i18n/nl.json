@@ -5,7 +5,8 @@
 			"Mainframe98",
 			"McDutchie",
 			"Nickthijssen1994",
-			"Romaine"
+			"Romaine",
+			"Siebrand"
 		]
 	},
 	"bs-expiry-extension-description": "Pagina's kunnen als vervallen worden aangemerkt.",
@@ -102,5 +103,21 @@
 	"bs-expiry-info-dialog-expired": "Deze pagina is vervallen!",
 	"bs-expiry-info-dialog-current": "Deze pagina verloopt {{PLURAL:$1|morgen|over $1 dagen ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "Deze pagina heeft geen vervaldatum!",
-	"bs-expiry-info-dialog-comment": "Opmerking: $1"
+	"bs-expiry-info-dialog-comment": "Opmerking: $1",
+	"bs-expiry-event-today-desc": "Pagina verloopt vandaag",
+	"bs-expiry-event-one-week-desc": "Pagina verloopt over één week",
+	"bs-expiry-event-today": "De pagina $1 verloopt vandaag.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.",
+	"bs-expiry-event-today-with-comment": "De pagina $1 verloopt vandaag.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.<br><br>Opmerking m.b.t. de vervaldatum:<br><b>$2</b>",
+	"bs-expiry-event-one-week": "De pagina $1 verloopt over één week.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.",
+	"bs-expiry-event-one-week-with-comment": "De pagina $1 verloopt over één week.<br><br>Controleer de inhoud van de pagina om te bepalen of deze moet worden bijgewerkt.<br><br>Opmerking m.b.t. de vervaldatum:<br><b>$2</b>",
+	"bs-expiry-title-edit": "Vervaldatum bewerken",
+	"bs-expiry-title-add": "Vervaldatum toevoegen",
+	"bs-expiry-header-action-edit": "Bewerken",
+	"bs-expiry-header-action-delete": "Verwijderen",
+	"bs-expiry-pref-enable-page-watermark": "Watermerk weergeven",
+	"bs-expiry-pref-enable-page-watermark-help": "Voegt een watermerk toe aan een verlopen pagina",
+	"bs-expiry-pref-enable-pdf-watermark": "Watermerk weergeven in PDF",
+	"bs-expiry-pref-enable-pdf-watermark-help": "Voegt een watermerk toe aan verlopen pagina’s in PDF-uitvoer",
+	"bs-expiry-event-expiry-today-desc": "De pagina is gemarkeerd als vandaag verlopen",
+	"bs-expiry-event-expiry-one-week-desc": "De pagina wordt over één week als verlopen beschouwd"
 }

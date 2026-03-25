@@ -9,7 +9,7 @@
 	},
 	"bs-expiry-extension-description": "Sayfaların süresi dolmuş olarak işaretlenebilir.",
 	"expiry": "Bitiş",
-	"specialexpiry": "Süresi dolmuş maddeler",
+	"specialexpiry": "Süresi dolmuş sayfalar",
 	"prefs-expiry": "Bitiş",
 	"apihelp-bs-expiry-store-description": "Special:Expiry sonu genel bakış ızgarası için veri sunar",
 	"apihelp-bs-expiry-tasks-description": "Special:Expiry genel bakış ızgarası için güncelleme ve silme gibi görevleri yürütür",
