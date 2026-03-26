@@ -101,5 +101,10 @@
 	"bs-expiry-info-dialog-expired": "Esta página expirou!",
 	"bs-expiry-info-dialog-current": "Esta página expira {{PLURAL:$1|amanhã|em $1 dias ($2)}}!",
 	"bs-expiry-info-dialog-expiry-not-set": "Esta página não está configurada para expirar!",
-	"bs-expiry-info-dialog-comment": "Comentário: $1"
+	"bs-expiry-info-dialog-comment": "Comentário: $1",
+	"bs-expiry-event-today-desc": "A página expira hoje",
+	"bs-expiry-event-one-week-desc": "A página expira em uma semana",
+	"bs-expiry-header-action-edit": "Editar",
+	"bs-expiry-header-action-delete": "Excluir",
+	"bs-expiry-pref-enable-page-watermark": "Mostrar a marca de água"
 }
