@@ -11,7 +11,12 @@ class Expiry extends OOJSGridSpecialPage {
 	 * @inheritDoc
 	 */
 	public function __construct() {
-		parent::__construct( 'Expiry', 'edit' );
+		parent::__construct( 'Expiry' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'edit';
 	}
 
 	/**
