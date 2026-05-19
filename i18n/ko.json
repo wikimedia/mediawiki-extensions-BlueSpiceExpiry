@@ -85,7 +85,7 @@
 	"apihelp-bs-expiry-tasks-summary": "기한을 편집하거나 삭제하는 등의 작업을 제공합니다",
 	"apihelp-bs-expiry-store-summary": "기한을 위한 저장소를 제공하여, 기한을 조회할 수 있게끔 합니다",
 	"right-expiry-delete": "문서에서 만료일을 제거",
-	"action-expiry-delete": "문서에서 만료일을 제거할",
+	"action-expiry-delete": "문서에서 만료일을 제거",
 	"bs-expiry-create-reminder-label": "알림 만들기",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-alias": "기한/만료 되었는지",
 	"bs-expiry-info-dialog": "문서의 기한",
