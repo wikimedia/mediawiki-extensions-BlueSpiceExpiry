@@ -12,7 +12,6 @@ class Extension extends \BlueSpice\Extension {
 	];
 
 	/**
-	 *
 	 * @param int $articleId
 	 * @param bool|null $onlyExpired
 	 * @return \stdClass|false
