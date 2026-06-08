@@ -42,14 +42,11 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $response->success, 'SaveExpiry (create) task failed' );
-		$this->assertSelect(
-			'bs_expiry',
-			[ 'exp_date', 'exp_comment' ],
-			[ 'exp_page_id' => $articleId ],
-			[
-				[ date( 'Y-m-d H:i:s', $nextWeek ), 'Test expiry' ]
-			]
-		);
+		$this->newSelectQueryBuilder()
+			->select( [ 'exp_date', 'exp_comment' ] )
+			->from( 'bs_expiry' )
+			->where( [ 'exp_page_id' => $articleId ] )
+			->assertRowValue( [ date( 'Y-m-d H:i:s', $nextWeek ), 'Test expiry' ] );
 
 		// Update expiry
 		$lastWeek = strtotime( 'midnight -7 days' );
@@ -68,14 +65,11 @@ class ApiExpiryTasksTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $response->success, 'SaveExpiry (update) task failed' );
-		$this->assertSelect(
-			'bs_expiry',
-			[ 'exp_date', 'exp_comment' ],
-			[ 'exp_page_id' => $articleId ],
-			[
-				[ date( 'Y-m-d H:i:s', $lastWeek ), 'Updated expiry' ]
-			]
-		);
+		$this->newSelectQueryBuilder()
+			->select( [ 'exp_date', 'exp_comment' ] )
+			->from( 'bs_expiry' )
+			->where( [ 'exp_page_id' => $articleId ] )
+			->assertRowValue( [ date( 'Y-m-d H:i:s', $lastWeek ), 'Updated expiry' ] );
 	}
 
 	/**
