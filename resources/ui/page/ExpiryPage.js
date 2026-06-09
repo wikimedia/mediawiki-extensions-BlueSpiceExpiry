@@ -9,8 +9,7 @@ bs.expiry.ui.ExpiryPage = function ( cfg ) {
 OO.inheritClass( bs.expiry.ui.ExpiryPage, OOJSPlus.ui.booklet.DialogBookletPage );
 
 bs.expiry.ui.ExpiryPage.prototype.getItems = function () {
-	this.datePicker = new mw.widgets.DateInputWidget( {
-		$overlay: this.dialog.$overlay,
+	this.datePicker = new OOJSPlus.ui.widget.DateInputWidget( {
 		required: true
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
@@ -61,7 +60,6 @@ bs.expiry.ui.ExpiryPage.prototype.setData = function ( value ) {
 		this.pagePicker.setValue( value.page );
 	}
 
-	this.datePicker.calendar.toggle( false );
 	this.updateDialogSize();
 };
 
