@@ -7,8 +7,7 @@ bs.expiry.ui.ChangeDatePage = function ( cfg ) {
 OO.inheritClass( bs.expiry.ui.ChangeDatePage, OOJSPlus.ui.booklet.DialogBookletPage );
 
 bs.expiry.ui.ChangeDatePage.prototype.getItems = function () {
-	this.datePicker = new mw.widgets.DateInputWidget( {
-		$overlay: this.dialog.$overlay,
+	this.datePicker = new OOJSPlus.ui.widget.DateInputWidget( {
 		required: true
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
