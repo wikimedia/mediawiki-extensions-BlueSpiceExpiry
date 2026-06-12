@@ -91,7 +91,7 @@
 	"bs-expiry-info-dialog": "Vervaldatum van pagina",
 	"bs-expiry-info-dialog-button-label": "Beheer vervaldatums",
 	"bs-expiry-dialog-delete-prompt": "Weet u zeker dat u de vervaldatum voor deze pagina wilt verwijderen?",
-	"bs-expiry-error-invalid-date": "Ongeldige datum",
+	"bs-expiry-error-invalid-date": "Incorrecte datum",
 	"bs-expiry-dialog-create-reminder-prompt": "Wilt u een herinnering voor deze pagina aanmaken?",
 	"bs-expiry-dialog-create-reminder-title": "Herinnering aanmaken",
 	"bs-expiry-dialog-action-no": "Nee",
