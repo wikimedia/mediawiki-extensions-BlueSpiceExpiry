@@ -93,5 +93,6 @@
 	"bs-expiry-pref-enable-pdf-watermark": "إظهار العلامة المائية في ملف PDF",
 	"bs-expiry-pref-enable-pdf-watermark-help": "يضيف علامة مائية للصفحات منتهية الصلاحية في ملف PDF الناتج",
 	"bs-expiry-event-expiry-today-desc": "تم وضع علامة \"منتهية الصلاحية\" على الصفحة اليوم.",
-	"bs-expiry-event-expiry-one-week-desc": "تم اعتبار الصفحة منتهية الصلاحية خلال أسبوع واحد"
+	"bs-expiry-event-expiry-one-week-desc": "تم اعتبار الصفحة منتهية الصلاحية خلال أسبوع واحد",
+	"bs-expiry-notification-generic-links-intro": "يمكنك زيارة الصفحة مباشرةً باستخدام الرابط التالي"
 }
