@@ -108,5 +108,6 @@
 	"bs-expiry-pref-enable-pdf-watermark": "在PDF中显示水印",
 	"bs-expiry-pref-enable-pdf-watermark-help": "在PDF输出中为过期页面添加水印",
 	"bs-expiry-event-expiry-today-desc": "该页面今天被标记为已过期。",
-	"bs-expiry-event-expiry-one-week-desc": "该页面将在一周内过期"
+	"bs-expiry-event-expiry-one-week-desc": "该页面将在一周内过期",
+	"bs-expiry-notification-generic-links-intro": "您可以通过以下链接直接访问该页面"
 }
