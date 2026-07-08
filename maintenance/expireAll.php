@@ -1,27 +1,9 @@
 <?php
 
-/**
- * Script to expire all pages (or all pages in defined namespaces)
- *
- * Part of BlueSpice MediaWiki
- *
- * @author     Robert Vogel <vogel@hallowelt.com>, Benedikt Hofmann <hofmann@hallowelt.com>
- * @package    BlueSpice_Reminder
- * @subpackage Expiry
- * @copyright  Copyright (C) 2017 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
- * @filesource
- */
-
 use MediaWiki\Maintenance\Maintenance;
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
-/**
- * Maintenance class to handle the expiration
- * @package BlueSpice_Reminder
- * @subpackage Expiry
- */
 class ExpireAll extends Maintenance {
 
 	public function __construct() {
