@@ -4,6 +4,7 @@ namespace BlueSpice\Expiry\Hook\BeforePageDisplay;
 
 class AddPageWatermark extends \BlueSpice\Hook\BeforePageDisplay {
 
+	/** @inheritDoc */
 	protected function skipProcessing() {
 		if ( $this->out->getTitle()->getArticleID() < 1 ) {
 			return true;
