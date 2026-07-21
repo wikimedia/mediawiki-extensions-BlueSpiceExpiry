@@ -20,5 +20,8 @@
 	"bs-expiry-event-today-desc": "Sàit leeft haut of",
 	"bs-expiry-event-one-week-desc": "Säit leeft an enger Woch of",
 	"bs-expiry-header-action-edit": "Änneren",
-	"bs-expiry-header-action-delete": "Läschen"
+	"bs-expiry-header-action-delete": "Läschen",
+	"bs-expiry-info-dialog-expired": "Dës Säit ass ofgelaf!",
+	"bs-expiry-pageinfoelement-expired-label": "ofgelaf",
+	"bs-expiry-pageinfoelement-expired-tooltip": "Dës Säit ass ofgelaf"
 }
