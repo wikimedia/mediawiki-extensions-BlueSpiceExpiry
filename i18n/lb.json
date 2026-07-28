@@ -12,6 +12,7 @@
 	"bs-expiry-comment-label": "Bemierkung",
 	"bs-expiry-unknown-page-msg": "Säit gëtt et net.",
 	"bs-expiry-info-dialog-expired": "Dës Säit ass ofgelaf!",
+	"bs-expiry-info-dialog-current": "Dës Säit leeft {{PLURAL:$1|muer|a(n) $1 Deeg ($2)}} of!",
 	"bs-expiry-info-dialog-comment": "Bemierkung: $1",
 	"bs-expiry-edit-grid-header-username": "Benotzer",
 	"bs-expiry-edit-grid-header-date": "Datum",
