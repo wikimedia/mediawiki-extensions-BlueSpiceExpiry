@@ -96,5 +96,6 @@
 	"bs-expiry-pref-enable-pdf-watermark": "Afficher le filigrane dans le PDF",
 	"bs-expiry-pref-enable-pdf-watermark-help": "Ajoute un filigrane pour les pages expirées dans la sortie PDF",
 	"bs-expiry-event-expiry-today-desc": "La page est marquée comme expirée aujourd’hui",
-	"bs-expiry-event-expiry-one-week-desc": "La page sera considérée comme expirée dans une semaine"
+	"bs-expiry-event-expiry-one-week-desc": "La page sera considérée comme expirée dans une semaine",
+	"bs-expiry-notification-generic-links-intro": "Vous pouvez consulter la page directement en utilisant le lien suivant"
 }
