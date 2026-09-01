@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"PanWor",
 			"Rail",
 			"WaldiSt"
 		]
@@ -18,5 +19,8 @@
 	"bs-expiry-create-reminder-label": "Stwórz przypomnienie",
 	"bs-expiry-reminder-type-expiry": "Wygasa",
 	"bs-expiry-smwpropertyvalueprovider-isexpired-desc": "Mówi, jeśli strona wygasła",
-	"bs-expiry-dialog-action-no": "Nie"
+	"bs-expiry-dialog-action-no": "Nie",
+	"logentry-bs-expiry-expired": "Strona „$3” wygasła",
+	"logentry-bs-expiry-change-date": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} datę wygaśnięcia na stronie $3",
+	"logentry-bs-expiry-delete": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} datę wygaśnięcia na stronie $3"
 }
