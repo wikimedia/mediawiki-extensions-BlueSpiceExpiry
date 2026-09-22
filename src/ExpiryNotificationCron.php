@@ -53,7 +53,6 @@ class ExpiryNotificationCron {
 				'services' => [
 					'BSExpirySpecialLogLogger',
 					'TitleFactory',
-					'BSUtilityFactory',
 					'WikiPageFactory',
 					'DBLoadBalancer',
 				],
