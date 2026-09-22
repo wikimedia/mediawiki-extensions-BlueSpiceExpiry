@@ -3,7 +3,6 @@
 namespace BlueSpice\Expiry\Process;
 
 use BlueSpice\Expiry\SpecialLogLogger;
-use BlueSpice\UtilityFactory;
 use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Title\Title;
@@ -19,14 +18,12 @@ class LogExpirations implements IProcessStep {
 	/**
 	 * @param SpecialLogLogger $logger
 	 * @param TitleFactory $titleFactory
-	 * @param UtilityFactory $utilityFactory
 	 * @param WikiPageFactory $wikiPageFactory
 	 * @param ILoadBalancer $loadBalancer
 	 */
 	public function __construct(
 		private readonly SpecialLogLogger $logger,
 		private readonly TitleFactory $titleFactory,
-		private readonly UtilityFactory $utilityFactory,
 		private readonly WikiPageFactory $wikiPageFactory,
 		private readonly ILoadBalancer $loadBalancer
 	) {
@@ -59,9 +56,9 @@ class LogExpirations implements IProcessStep {
 			]
 		);
 
+		$user = User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] );
 		foreach ( $expirations as $expiration ) {
 			$title = $this->titleFactory->newFromRow( $expiration );
-			$user = $this->utilityFactory->getMaintenanceUser()->getUser();
 			$this->updateCache( $title, $user );
 			$this->logger->log(
 				$user,
