@@ -67,5 +67,7 @@
 	"bs-expiry-title-edit": "Modifica scadenza",
 	"bs-expiry-title-add": "Aggiungi scadenza",
 	"bs-expiry-header-action-edit": "Modifica",
-	"bs-expiry-header-action-delete": "Cancella"
+	"bs-expiry-header-action-delete": "Cancella",
+	"bs-expiry-event-expiry-one-week-desc": "La pagina scade oggi",
+	"bs-expiry-notification-generic-links-intro": "La pagina scade tra una settimana"
 }
