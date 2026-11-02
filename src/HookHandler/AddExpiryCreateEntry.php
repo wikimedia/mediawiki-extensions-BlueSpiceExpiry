@@ -5,7 +5,7 @@ namespace BlueSpice\Expiry\HookHandler;
 use BlueSpice\Expiry\Extension;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use SkinTemplate;
+use MediaWiki\Skin\SkinTemplate;
 
 class AddExpiryCreateEntry implements SkinTemplateNavigation__UniversalHook {
 
