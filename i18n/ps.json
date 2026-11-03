@@ -85,6 +85,6 @@
 	"bs-expiry-pref-enable-pdf-watermark": "پي‌ډي‌اېف کې اوبنښه ښودل",
 	"bs-expiry-pref-enable-pdf-watermark-help": "د پي‌ډي‌اېف محصول کې د نېټه اوښتو مخونو لپاره اوبنښه ورگډوي",
 	"bs-expiry-event-expiry-today-desc": "دا مخ نن ورځ پای ته رسېدونکي په توگه په نښه شوی",
-	"bs-expiry-event-expiry-one-week-desc": "دا مخ يوه اوونۍ کې پای ته رسېدونکي په توگه په نښه شوی",
-	"bs-expiry-notification-generic-links-intro": "تاسو کولی شئ د لاندې تړوني په کارولو سره نېغ په نېغه د مخ ليدنه وکړئ"
+	"bs-expiry-event-expiry-one-week-desc": "دا مخ نن پای ته رسېږي",
+	"bs-expiry-notification-generic-links-intro": "دا مخ په يوه اوونۍ کې پای ته رسېږي"
 }
