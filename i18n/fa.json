@@ -29,7 +29,7 @@
 	"bs-expiry-delete-error-unknown": "ناتوان در حذف انقضا.",
 	"bs-expiry-unknown-page-msg": "صفحه وجود ندارد.",
 	"bs-expiry-create-error": "ناتوان در ایجاد انقضا.",
-	"bs-expiry-update-error": "ناتوان در بروزرسانی انقضا.",
+	"bs-expiry-update-error": "ناتوان در به‌روزرسانی انقضا.",
 	"bs-expiry-update-success": "انقضا با موفقیت به‌روز شد",
 	"bs-expiry-save-success": "انقضا با موفقیت ایجاد شد",
 	"bs-expiry-unexpire-success": "انقضا با موفقیت حذف شد",
