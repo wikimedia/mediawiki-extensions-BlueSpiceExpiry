@@ -3,6 +3,7 @@
 		"authors": [
 			"Hydra",
 			"Kly",
+			"LowensteinYang",
 			"Winston Sung"
 		]
 	},
@@ -87,5 +88,5 @@
 	"bs-expiry-pref-enable-pdf-watermark": "在 PDF 中顯示浮水印",
 	"bs-expiry-pref-enable-pdf-watermark-help": "在 PDF 輸出中為逾期頁面添加浮水印",
 	"bs-expiry-event-expiry-today-desc": "該頁面今天被標記為逾期",
-	"bs-expiry-event-expiry-one-week-desc": "該頁面將在一週內逾期"
+	"bs-expiry-event-expiry-one-week-desc": "該頁面今天逾期"
 }
